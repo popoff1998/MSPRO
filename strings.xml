@@ -627,41 +627,41 @@
     </string-array>
     
     <!-- Touch Settings Activity -->
-    <string name="touch_activity_title">Configure Touch Actions</string>
-    <string name="labelTopLeft">Top Left Corner:</string>
-    <string name="labelTopCenter">Top Center:</string>
-    <string name="labelTopRight">Top Right Corner:</string>
-    <string name="labelBottomLeft">Bottom Left Corner:</string>
-    <string name="labelBottomCenter">Bottom Center:</string>
+    <string name="touch_activity_title">Configurar Acciones Táctiles</string>
+    <string name="labelTopLeft">Esquina Superior Izquierda:</string>
+    <string name="labelTopCenter">Centro Superior:</string>
+    <string name="labelTopRight">Esquina Superior Derecha:</string>
+    <string name="labelBottomLeft">Esquina Inferior Izquierda:</string>
+    <string name="labelBottomCenter">Centro Inferior:</string>
     
     <string-array name="touch_actions">
-        <item>None</item>
-        <item>Previous Annotation Group</item>
-        <item>Next Annotation Group</item>
-        <item>Start or Pause Audio Player</item>
-        <item>Show or Hide Audio Player</item>
-        <item>Skip to Previous Audio Track</item>
-        <item>Skip to Next Audio Track</item>
-        <item>Start or Stop Metronome</item>
-        <item>Go to Previous Song</item>
-        <item>Go to Next Song</item>
-        <item>Toggle Night Mode</item>
-        <item>Go to Start of Song</item>
-        <item>Go to End of Song</item>
-        <item>Go to Next Metronome Tempo</item>
+        <item>Ninguna</item>
+        <item>Grupo de Anotación Anterior</item>
+        <item>Grupo de Anotación Siguiente</item>
+        <item>Iniciar o Pausar el reproductor de audio</item>
+        <item>Mostrar u Ocultar el reproductor de audio</item>
+        <item>Saltar a la pista de audio anterior</item>
+        <item>Saltar a la pista de audio siguiente</item>
+        <item>Iniciar o parar el metrónomo</item>
+        <item>Ir a la canción anterior</item>
+        <item>Ir a la canción siguiente</item>
+        <item>Cambiar a modo nocturno</item>
+        <item>Ir al principio de la Canción</item>
+        <item>Ir al final de la Canción</item>
+        <item>Ir al siguiente tempo del metrónomo</item>
     </string-array>
     
     <!-- Tab Order Activity -->
-    <string name="displayedTabsLabel">Displayed Tabs:</string>
-    <string name="availableTabsLabel">Available Tabs:</string>
-    <string name="at_least_one_tab">At least one tab must be displayed</string>
+    <string name="displayedTabsLabel">Pestañas mostradas:</string>
+    <string name="availableTabsLabel">Pestañas disponibles:</string>
+    <string name="at_least_one_tab">Debe mostrar al menos una pestaña</string>
     
     <!-- Clear Library Activity -->
-    <string name="clearLibraryMessage">TPulse Aceptar para confirmar la eliminación de toda la librería y los archivos de canciones</string>
+    <string name="clearLibraryMessage">Pulse Aceptar para confirmar la eliminación de toda la librería y los archivos de canciones</string>
     <string name="deleteSdCheck">Eliminar todos los archivos en la ubicación predeterminada (tarjeta SD interna)</string>
     <string name="deleting_files_title">Borrado de archivos</string>
-    <string name="deleting_files_message">La eliminación de archivos, por favor espere</string>
-    <string name="library_clear_success">Biblioteca eliminado correctamente</string>
+    <string name="deleting_files_message">***La eliminación de archivos, por favor espere</string>
+    <string name="library_clear_success">Biblioteca eliminada correctamente</string>
     
     <!-- Import DB Activity -->
     <string name="import_file_dlg">Seleccione la base de datos para importar</string>
@@ -669,7 +669,7 @@
     <string name="db_locked_msg">El archivo de base de datos actual está bloqueado. No se puede importar.</string>
     <string name="db_copy_err_title">Error de Copia </string>
     <string name="db_copy_err_msg">No se puede copiar nueva base de datos en la memoria interna. Restauración de la base de datos.</string>
-    <string name="db_import_success_title">Importación exitosa</string>
+    <string name="db_import_success_title">Importación correcta</string>
     <string name="db_import_success_msg">Base de datos importada con éxito</string>
     
     <!-- Export DB Activity -->
@@ -685,41 +685,41 @@
     <string name="cant_read_folder">¡la carpeta no puede leerse!</string>
     
     <!-- SetlistManager -->
-    <string name="setlist_changes_lost">Los cambios que ha hecho al setlist no se han salvado todavía y se perderán. ¿Seguro que desea continuar?</string>
-    <string name="confirm_setlist_save">Cambios No Guardados - Confirmar Acción</string>
-    <string name="auto_scroll_two">Auto Desplazamiento empieza en 2 segundos</string>
-    <string name="scrolling_not_supported">The current display mode does not support automatic scrolling</string>
+    <string name="setlist_changes_lost">Los cambios que han hecho al setlist no se han salvado todavía y se perderán. ¿Seguro que desea continuar?</string>
+    <string name="confirm_setlist_save">***Cambios No Guardados - Confirmar Acción</string>
+    <string name="auto_scroll_two">El auto Desplazamiento empieza en 2 segundos</string>
+    <string name="scrolling_not_supported">El modo de visualización actual no soporta el desplazamiento automático</string>
     
     <!-- Sharpness dialog -->
-    <string name="sharpenTitle">Enfocar Configuración</string>
+    <string name="sharpenTitle">Configuración de Enfoque </string>
     <string name="enable_sharpen">Habilitar Enfocar</string>  
     <string name="levelLabel">Cantidad:</string>
     
     <!-- Swap File Dialog -->
-    <string name="newFileLabel">New File:</string>
-    <string name="fileToReplaceLabel">Existing File:</string>
-    <string name="autoCrop">Automatically crop pages</string>
-    <string name="checkCopyOrMove">Copy or Move New File</string>
-    <string name="select_file_to_replace">Select File to Replace</string>
-    <string name="copy_move_error">The swap operation has failed while moving or copying the file. The reported error is %1$s</string>
-    <string name="swap_move_error">The swap operation has failed while attempting to move the desired file.</string>
-    <string name="storage_unaccessible">Unable to access the storage location specified in the settings.</string>
-    <string name="swap_conflict_msg">A file with the same name already exists in the destination. What would you like to do?</string>
-    <string name="swap_file_success">Successfully replaced %1$s with %2$s</string>
-    <string name="unable_to_delete_file">Unable to delete file %1$s, file must be renamed.</string>
+    <string name="newFileLabel">Fichero Nuevo:</string>
+    <string name="fileToReplaceLabel">Fichero Existente:</string>
+    <string name="autoCrop">Recortar automáticamente las páginas</string>
+    <string name="checkCopyOrMove">Copiar o Mover Nuevo Fichero</string>
+    <string name="select_file_to_replace">Seleccione el Fichero a remplazar</string>
+    <string name="copy_move_error">La operación de intercambio ha fallado cuando se movía o copiaba el fichero. El error producido es %1$s</string>
+    <string name="swap_move_error">La operación de intercambio ha fallado intentando mover el fichero deseado.</string>
+    <string name="storage_unaccessible">Imposible acceder a la ubicación de almacenamiento especificada en los ajustes.</string>
+    <string name="swap_conflict_msg">Existe un fichero con el mismo nombre en el destino. ¿Qué le gustaría hacer?</string>
+    <string name="swap_file_success">Se cambió con éxito %1$s con %2$s</string>
+    <string name="unable_to_delete_file">Imposible borrar el fichero %1$s, el fichero se debe renombrar.</string>
     <string-array name="copyOptions">
-        <item>Copy new file to same folder as replaced file</item>
-        <item>Move new file to same folder as replaced file</item>
-        <item>Copy new file to MobileSheets storage</item>
-        <item>Move new file to MobileSheets storage</item>
+        <item>Copiar el nuevo fichero a la misma carpeta del que remplaza</item>
+        <item>Mover el nuevo fichero a la misma carpeta del que remplaza</item>
+        <item>Copiar el nuevo fichero al almacenamiento de MobileSheets</item>
+        <item>Mover el nuevo fichero al almacenamiento de MobileSheets</item>
     </string-array>
     <string-array name="simpleCopyOptions">
-        <item>Copy new file to MobileSheets storage</item>
-        <item>Move new file to MobileSheets storage</item>
+        <item>Copiar el nuevo fichero al almacenamiento de MobileSheets</item>
+        <item>Mover el nuevo fichero al almacenamiento de MobileSheets</item>
     </string-array>
     
     <!-- Metronome Settings Dialog -->
-    <string name="metronomeSettingsTitle">Configuración de pantalla Metrónomo</string>
+    <string name="metronomeSettingsTitle">Configuración del Metrónomo</string>
     <string name="displayModeLabel">Modo:</string>
     <string-array name="metronome_display_modes">
     	<item>LEDs</item>
@@ -730,106 +730,106 @@
     <string name="metColorLabel">Color:</string>
     
     <!-- Metronome Playback Dialog -->
-    <string name="autoStartLabel">Auto-Start</string>
-    <string name="countInLabel">Count In</string>
-    <string name="numCounts"># of Beats to count:</string>
-    <string name="beatsPerPageLabel"># Beats on current page:</string>
-    <string name="beatsPerTempoLabel"># Beats per tempo:</string>
-    <string name="autoTurnLabel">Auto-Turn Pages</string>
-    <string name="apply_to_all_pages">Apply to all pages in song</string>
-    <string name="bpp_applied_to_all">All pages set to %1$d beats per page</string>
+    <string name="autoStartLabel">Inicio Automático</string>
+    <string name="countInLabel">Pre cuenta</string>
+    <string name="numCounts"># de pulsos para contar:</string>
+    <string name="beatsPerPageLabel"># pulsos en página actual:</string>
+    <string name="beatsPerTempoLabel"># pulsos por tempo:</string>
+    <string name="autoTurnLabel">Auto-Pasar páginas</string>
+    <string name="apply_to_all_pages">Aplicar a todas las páginas de la canción</string>
+    <string name="bpp_applied_to_all">Todas las páginas puestas a %1$d pulsos por página</string>
     
     <!-- Media Playback Settings Dialog -->
-    <string name="audioPlayerSettingsTitle">Audio Player Settings</string>
-    <string name="fadeOutLabel">Fade Out:</string>
+    <string name="audioPlayerSettingsTitle">Ajustes del reproductor de audio</string>
+    <string name="fadeOutLabel">Desvanecer:</string>
     <string-array name="fade_out_modes">
-        <item>Never</item>
-        <item>With Overlay</item>
-        <item>After 5 Seconds</item>
+        <item>Nunca</item>
+        <item>Con Overlay</item>
+        <item>espués de 5 Segundos</item>
     </string-array>
-    <string name="fadeOutCompletely">Fade Out Completely</string>
-    <string name="transparencyLabel">Transparency:</string>
-    <string name="switchTrackWithSong">Switch track when song changes</string>
-    <string name="showArtistWithTitle">Show artist with title</string>
-    <string name="autoStartTrack">Automatically play audio when song is loaded</string>
-    <string name="autoStartMsg">(Must be set per song)</string>
-    <string name="invalid_notch_pos">The position of the end marker must be after the start</string>
-    <string name="place_a_pos">Tap the start position for the loop</string>
-    <string name="place_b_pos">Tap the end position for the loop</string>
-    <string name="repeat_off">Repeat: Off</string>
-    <string name="repeat_playlist">Repeat: Playlist</string>
-    <string name="repeat_track">Repeat: Track</string>
-    <string name="start_playback">Start Playback</string>
-    <string name="resume_playback">Resume Playback</string>
-    <string name="stop_playback">Stop Playback</string>
-    <string name="pause_playback">Pause Playback</string>
-    <string name="restart_playback">Restart Playback</string>
-    <string name="next_track">Next Track</string>
-    <string name="previous_track">Previous Track</string>
-    <string name="start_of_playlist">Start of Playlist</string>
-    <string name="end_of_playlist">End of Playlist</string>
+    <string name="fadeOutCompletely">Desvanecer completamente</string>
+    <string name="transparencyLabel">Transparencia:</string>
+    <string name="switchTrackWithSong">Cambiar la pista cuando cambie la canción</string>
+    <string name="showArtistWithTitle">Mostrar el artista en el título</string>
+    <string name="autoStartTrack">Reproducir audio automáticamente cuando se cargue la canción</string>
+    <string name="autoStartMsg">(Debe ser ajustado para cada canción)</string>
+    <string name="invalid_notch_pos">La posición del marcador final debe estar después del inicio</string>
+    <string name="place_a_pos">Pulse la posición inicial para el bucle</string>
+    <string name="place_b_pos">Pulse la posición final para el bucle</string>
+    <string name="repeat_off">Repetir: Off</string>
+    <string name="repeat_playlist">Repetir: Lista de reproducción</string>
+    <string name="repeat_track">Repetir: pista</string>
+    <string name="start_playback">Comenzar Reproducción</string>
+    <string name="resume_playback">Reanudar Reproducción</string>
+    <string name="stop_playback">Parar Reproducción</string>
+    <string name="pause_playback">Pausar Reproducción</string>
+    <string name="restart_playback">Reiniciar reproducción</string>
+    <string name="next_track">Siguiente Pista</string>
+    <string name="previous_track">Anterior Pista</string>
+    <string name="start_of_playlist">Inicio de lista de reproducción</string>
+    <string name="end_of_playlist">Final de lista de reproducción</string>
     
     <!-- AutoScroll Settings Dialog -->
-    <string name="autoScrollSettingsTitle">Automatic Scrolling Settings</string>
-    <string name="labelScrollBehavior">Scroll Behavior:</string>
-    <string name="labelPauseDuration">Pause Duration:</string>
-    <string name="labelSpeed">Scroll Speed:</string>
-    <string name="labelFixedDuration">Fixed Duration:</string>
-    <string name="labelScrollAmount">Scroll Amount:</string>
-    <string name="labelTimeBeforeScroll">Time Before Scrolling Starts:</string>
-    <string name="labelPagePercent">% of page</string>
-    <string name="scrollOnLoad">Start Scrolling When Song Loads</string>
-    <string name="btnApplyTo">Apply To&#8230;</string>
-    <string name="setAsDefault">Set as Default</string>
-    <string name="default_set">Current settings are now the default scroll settings</string>
-    <string name="apply_to_title">Apply Scroll Settings To</string>
-    <string name="settings_applied">Scroll Settings Successfully Set</string>
-    <string name="seconds">seconds</string>
+    <string name="autoScrollSettingsTitle">Ajustes de desplazamiento automático.</string>
+    <string name="labelScrollBehavior">Comportamiento del desplazamiento:</string>
+    <string name="labelPauseDuration">Duración de la pausa:</string>
+    <string name="labelSpeed">Velocidad de desplazamiento:</string>
+    <string name="labelFixedDuration">Duración Fija:</string>
+    <string name="labelScrollAmount">Cantidad de desplazamiento:</string>
+    <string name="labelTimeBeforeScroll">Retardo del desplazamiento:</string>
+    <string name="labelPagePercent">% de página</string>
+    <string name="scrollOnLoad">Comenzar desplazamiento cuando se cargue la canción</string>
+    <string name="btnApplyTo">Aplicar a&#8230;</string>
+    <string name="setAsDefault">Establecer como por defecto</string>
+    <string name="default_set">Los ajustes actuales son ahora los ajustes de desplazamiento por defecto</string>
+    <string name="apply_to_title">Aplicar los ajustes de desplazamiento a</string>
+    <string name="settings_applied">Ajustes de desplazamiento ajustados con éxito</string>
+    <string name="seconds">segundos</string>
     
     <string-array name="scrollBehaviors">
-        <item>Scroll and Pause</item>
-        <item>Scroll and Pause After Page Turn</item>
-        <item>Scroll Continuously To End</item>
+        <item>Desplazar y pausar</item>
+        <item>Desplazar y pausar después del cambio de página</item>
+        <item>Desplazar continuamente hasta el final</item>
     </string-array>
     
     <string-array name="scrollSpeeds">
-        <item>Slowest</item>
-        <item>Slower</item>
-        <item>Slow</item>
-        <item>Medium</item>
-        <item>Fast</item>
-        <item>Faster</item>
-        <item>Fastest</item>
-        <item>Immediate</item>
-        <item>Fixed Duration</item>
-        <item>Use Metronome</item>
+        <item>El más lento</item>
+        <item>Más lento</item>
+        <item>Lento</item>
+        <item>Intermedio</item>
+        <item>Rápido</item>
+        <item>Más rápido</item>
+        <item>El más rápido</item>
+        <item>Inmediato</item>
+        <item>Duración fija</item>
+        <item>Usar metrónomo</item>
     </string-array>
     
     <string-array name="applyToScroll">
-        <item>Current Song</item>
-        <item>All Songs in Setlist</item>
-        <item>All Songs in Library</item>
+        <item>Canción actual</item>
+        <item>Todas las canciones en el Setlist</item>
+        <item>Todas las canciones en la Librería</item>
     </string-array>
     
     <!-- Text Display Settings Dialog -->
-    <string name="textDisplaySettingsDefaultTitle">Default Text Display Settings</string>
-    <string name="textDisplaySettingsTitle">Text Display Settings</string>
-    <string name="labelTextSize">Text Size:</string>
-    <string name="labelTitleSize">Title Size:</string>
-    <string name="labelMetaSize">Meta Size:</string>
-    <string name="labelLineSpacing">Line Spacing:</string>
-    <string name="labelChordHighlight">Chord Highlight:</string>
-    <string name="labelLyricsSize">Lyric Size:</string>
-    <string name="labelChordsSize">Chord Size:</string>
-    <string name="labelChordColor">Chord Color:</string>
-    <string name="labelTranspose">Transpose:</string>
+    <string name="textDisplaySettingsDefaultTitle">Ajustes de visualización de texto por defecto</string>
+    <string name="textDisplaySettingsTitle">Ajustes de visualización de texto</string>
+    <string name="labelTextSize">Tamaño del Texto:</string>
+    <string name="labelTitleSize">Tamaño del Título:</string>
+    <string name="labelMetaSize">Tamaño de metadatos:</string>
+    <string name="labelLineSpacing">Espaciado de línea:</string>
+    <string name="labelChordHighlight">Resaltado de acordes:</string>
+    <string name="labelLyricsSize">Tamaño de la letra:</string>
+    <string name="labelChordsSize">Tamaño de acordes:</string>
+    <string name="labelChordColor">Color de acordes:</string>
+    <string name="labelTranspose">Transportar:</string>
     <string name="labelCapo">Capo:</string>
-    <string name="minor">Minor</string>
-    <string name="text_settings_applied">Text Settings Successfully Set</string>
-    <string name="settingsLabel">Settings:</string>
+    <string name="minor">Menor</string>
+    <string name="text_settings_applied">Ajustes de texto aplicados con éxito</string>
+    <string name="settingsLabel">Ajustes:</string>
     <string name="simple">Simple</string>
     <string name="advanced">Avanzado</string>
-    <string name="encodingLabel">Encoding:</string>
+    <string name="encodingLabel">Codificación:</string>
     
     <string name="chorus">Chorus</string>
     
@@ -844,10 +844,10 @@
     </string-array>
     
     <string-array name="applyToTextSettings">
-        <item>Current file</item>
-        <item>All files in current song</item>
-        <item>All files in setlist</item>
-        <item>All files in library</item>
+        <item>Fichero actual</item>
+        <item>Todos los ficheros en la canción actual</item>
+        <item>Todos los ficheros en el setlist</item>
+        <item>Todos los ficheros en la librería</item>
     </string-array>
         
     <!-- random -->
@@ -865,31 +865,31 @@
     <string name="db_load_error">Error al cargar la base de datos y todas las copias de seguridad automáticas. Usted tendrá que restaurar la biblioteca manualmente.</string>
     <string name="db_backup_loaded">Error al cargar la base de datos. Se restauró una copia de seguridad automática.</string>
     <string name="next_song">Canción Siguiente: %1$s</string>
-    <string name="set_first_half_page">Scroll the first half page to the desired position</string>
-    <string name="set_second_half_page">Scroll the second half page to the desired position</string>
+    <string name="set_first_half_page">Desplazar la primera media página a la posición deseada</string>
+    <string name="set_second_half_page">Desplazar la segunda media página a la posición deseada</string>
     
     <!-- Context Menu Strings -->    
-    <string name="mi_go_to_bkmk">Ir a marcador</string>
+    <string name="mi_go_to_bkmk">Ir al marcador</string>
     <string name="mi_edit_bkmk">Editar marcador</string>
     <string name="mi_delete_bkmk">Eliminar marcador</string>
     
     <string name="mi_load_all">Carga Todas las Canciones</string>
     
-    <string name="mi_load_setlist_start">Cargue Inicio del Setlist</string>
+    <string name="mi_load_setlist_start">***Cargue Inicio del Setlist</string>
     
     <string name="mi_load_start_of_song">Cargar inicio de la canción</string>
     <string name="mi_load_last_viewed_page">Cargar la última página visualizada</string>
     <string name="mi_edit_song">Editar canción</string>
     <string name="mi_copy_song">Copiar canción</string>
     <string name="mi_delete_song">Eliminar canción</string>
-    <string name="mi_add_to_setlist">Agregar a la lista de canciones</string>
+    <string name="mi_add_to_setlist">Agregar al Setlist</string>
     <string name="mi_remove_from_setlist">Eliminar del Setlist</string>
     <string name="mi_swap_pdf">Intercambiar PDF</string>
     <string name="mi_view_edit_notes">Ver o editar notas</string>
         
-    <string name="mi_copy_group">Copy</string>
-    <string name="mi_delete_group">Delete</string>
-    <string name="ab_generate_song_list">Generate Song List</string>
+    <string name="mi_copy_group">Copiar</string>
+    <string name="mi_delete_group">Borrar</string>
+    <string name="ab_generate_song_list">Generar lista de canciones</string>
     
     <!-- Annotation Popup Menu Strings -->
     <string name="select_action">Seleccionar una acción</string>
