@@ -3,20 +3,20 @@
 <resources>
     <!-- common -->
     <string name="okText">OK</string>
-    <string name="saveText">Save</string>
+    <string name="saveText">Guardar</string>
     <string name="yesText">Si</string>
     <string name="noText">No</string>
     <string name="tryAgain">Intentar de nuevo</string>
     <string name="any">Cualquiera</string>
-    <string name="blank">Blank</string>
-    <string name="done">Done</string>
+    <string name="blank">En blanco</string>
+    <string name="done">Hecho</string>
     
     <string-array name="default_source_types">
         <item>Partituras</item>
         <item>Tabs de Guitarra</item>
         <item>Letras</item>
         <item>Acordes</item>
-        <item>Lead Sheet</item>
+        <item>Guiones</item>
         <item>Listas</item>
     </string-array>
     
@@ -43,7 +43,7 @@
         <item>Metal</item>
         <item>Musicales</item>
         <item>Navidad</item>
-        <item>Oldies</item>
+        <item>Éxitos</item>
         <item>Otros</item>
         <item>Pop</item>
         <item>Punk</item>
@@ -51,27 +51,27 @@
         <item>Ragtime</item>
         <item>Rap</item>
         <item>Rock</item>
-        <item>Soundtrack</item>
+        <item>Banda Sonora</item>
         <item>Techno</item>
         <item>Vals</item>
         <item>Vocal</item>
     </string-array>
     
     <!-- Filter Manager -->
-    <string name="all_fields">All Fields</string>
-    <string name="name">Name</string>
-    <string name="artist">Artist</string>
+    <string name="all_fields">Todos</string>
+    <string name="name">Nombre</string>
+    <string name="artist">Artista</string>
     <string name="album">Album</string>
-    <string name="genre">Genre</string>
-    <string name="composer">Composer</string>
-    <string name="custom">Custom</string>
-    <string name="custom2">Custom2</string>
+    <string name="genre">Género</string>
+    <string name="composer">Compositor</string>
+    <string name="custom">Personalizado</string>
+    <string name="custom2">Personalizado2</string>
     <string name="tempo">Tempo</string>
-    <string name="key">Key</string>
-    <string name="sig">Signature</string>
-    <string name="duration">Duration</string>
-    <string name="collection">Collection</string>
-    <string name="source">Source</string>
+    <string name="key">Tonalidad</string>
+    <string name="sig">Armadura</string>
+    <string name="duration">Duración</string>
+    <string name="collection">Colección</string>
+    <string name="source">Origen</string>
     
     <!-- Tabs -->
     <string name="recent">Reciente</string>
@@ -80,52 +80,52 @@
     <string name="artists">Artistas</string>
     <string name="albums">Álbumes</string>
     <string name="genres">Géneros</string>
-    <string name="composers">Composers</string>
-    <string name="source_types">Source Types</string>
-    <string name="custom_group_tab">User Defined</string>
-    <string name="keys">Keys</string>
-    <string name="signatures">Signatures</string>
-    <string name="collections">Collections</string>
-    <string name="custom_group">Custom Group</string>
-    <string name="bookmarks">Bookmarks</string>
-    <string name="date_created">Date Created</string>
-    <string name="sources">Sources</string>
+    <string name="composers">Compositores</string>
+    <string name="source_types">Tipo de Origen</string>
+    <string name="custom_group_tab">Personalizado</string>
+    <string name="keys">Tonalidades</string>
+    <string name="signatures">Armaduras</string>
+    <string name="collections">Colecciones</string>
+    <string name="custom_group">Personalizado</string>
+    <string name="bookmarks">Marcadores</string>
+    <string name="date_created">Fecha de Creación</string>
+    <string name="sources">Orígenes</string>
     
-    <string name="sort_az">Sort: A-Z</string>
-    <string name="sort_date_created">Sort: Date Created</string>
-    <string name="sort_date_modified">Sort: Date Modified</string>
+    <string name="sort_az">Orden: A-Z</string>
+    <string name="sort_date_created">Orden: Fecha de Creación</string>
+    <string name="sort_date_modified">Orden: Fecha de Modificación</string>
     
-    <string name="sort_manual">Sort: Manual</string>
-    <string name="sort_shuffle">Sort: Shuffle</string>
-    <string name="reshuffle">Reshuffle</string>
+    <string name="sort_manual">Orden: Manual</string>
+    <string name="sort_shuffle">Orden: Mezclar</string>
+    <string name="reshuffle">Remezclar</string>
     
     <string-array name="song_sort_options">
         <item>A-Z</item>
-        <item>Date Created</item>
-        <item>Dated Modified</item>
+        <item>Fecha de Creación</item>
+        <item>Fecha de Modificación</item>
     </string-array>
     
     <string-array name="setlist_sort_options">
         <item>Manual</item>
         <item>A-Z</item>
-        <item>Shuffle</item>
+        <item>Mezclar</item>
     </string-array>
     
-    <string name="select_sort_title">Select Sort Method</string>
+    <string name="select_sort_title">Seleccione Método de Ordenación</string>
     
-    <string name="setlist_currently_sorted">The setlist is currently sorted. Saving the setlist will overwrite the original order. Are you sure you want to do this?</string>
+    <string name="setlist_currently_sorted">El setlist está ordenado. Si lo guarda sobrescribirá el orden original. ¿Está seguro?</string>
     
     <!-- action_bar.xml -->
-    <string name="ab_edit">Edit</string>
-    <string name="ab_settings">Settings</string>
-    <string name="ab_share">Share</string>
-    <string name="ab_export">Export</string>
+    <string name="ab_edit">Editar</string>
+    <string name="ab_settings">Ajustes</string>
+    <string name="ab_share">Compartir</string>
+    <string name="ab_export">Exportar</string>
     
     <!-- main.xml and library screen -->
-    <string name="clear_recent">Clear List</string>
-    <string name="cant_select_song_setlist">Cannot select both songs and setlists at the same time.</string>
+    <string name="clear_recent">Borrar Lista</string>
+    <string name="cant_select_song_setlist">No puede seleccionar setlists y canciones a la vez.</string>
     <string name="setlist">Setlist</string>
-    <string name="libSongsTitle">@string/songs</string>
+    <string name="libSongsTitle">@string/canciones</string>
     <string name="source_type_label">Tipo:</string>
     <string name="spinnerTypePrompt">Seleccionar el Tipo de Origen</string>
     <string name="key_label">Tonalidad:</string>
@@ -150,45 +150,45 @@
     <string name="stopMetronome">Parar Metrónomo</string>
     <string name="beatCount">Cuenta de Pulsos:</string>
     <string name="metronome">Metrónomo</string>
-    <string name="links">Links</string>
-    <string name="cancelText">Cancel</string>
-    <string name="difficultyLabelShort">Diff:</string>
-    <string name="difficultyLabel">Difficulty:</string>
-    <string name="signatureLabelShort">Sig:</string>
-    <string name="signatureLabel">Signature:</string>
-    <string name="source_type_long_label">Source Type:</string>
-    <string name="collection_long_label">Collection:</string>
-    <string name="ratingLabel">Rating:</string>
+    <string name="links">Enlaces</string>
+    <string name="cancelText">Cancelar</string>
+    <string name="difficultyLabelShort">Dif:</string>
+    <string name="difficultyLabel">Dificultad:</string>
+    <string name="signatureLabelShort">Arm:</string>
+    <string name="signatureLabel">Armadura:</string>
+    <string name="source_type_long_label">Tipo de Origen:</string>
+    <string name="collection_long_label">Colección:</string>
+    <string name="ratingLabel">Clasificación:</string>
     
-    <string name="unsupported_file_type">Unsupported file type selected. Please select one of the supported types such as PDF.</string>
+    <string name="unsupported_file_type">Ha seleccionado un tipo de fichero no soportado. Por favor, seleccione un tipo soportado como PDF.</string>
     
-    <string name="file_changes_detected">File modifications detected. Processing file changes...</string>
+    <string name="file_changes_detected">Se han detectado modificaciones del fichero. Procesando los cambios...</string>
     
-    <string name="select_edit_target">Select item to edit</string>
-    <string name="share_title">Enter the New File Name</string>
+    <string name="select_edit_target">Seleccione el elemento a editar</string>
+    <string name="share_title">Introduzca el nuevo nombre</string>
     
-    <string name="display_modes_title">Select Display Mode</string>
-    <string name="scale_modes_title">Select Page Scaling Mode</string>
-    <string name="two_page_turn_mode_title">Select the Page Turn Mode</string>
+    <string name="display_modes_title">Seleccione el modo de visualización</string>
+    <string name="scale_modes_title">Seleccione el modo de escalado</string>
+    <string name="two_page_turn_mode_title">Seleccione el modo de pasar página</string>
     
     <string-array name="display_modes">
-        <item>Single Page</item>
-        <item>Two Pages</item>
-        <item>Half Page</item>
-        <item>Vertical Scrolling</item>
+        <item>Una Página</item>
+        <item>Dos Páginas</item>
+        <item>Media Página</item>
+        <item>Desplazamiento Vertical</item>
     </string-array>
     
     <string-array name="scale_modes">
-        <item>Fit Screen</item>
-        <item>Fit Width</item>
-        <item>Fit Height</item>
-        <item>Full</item>
+        <item>Ajustar a la Pantalla</item>
+        <item>Ajustar al Ancho</item>
+        <item>Ajustar al Alto</item>
+        <item>Completo</item>
     </string-array>
     
     <string-array name="two_page_turn_modes">
-        <item>Single Page</item>
-        <item>Two Pages</item>
-        <item>Alternate Pages</item>
+        <item>Página a Página</item>
+        <item>Dos Páginas</item>
+        <item>Alternar Páginas</item>
     </string-array>
     
     <!-- add_bookmark_dialog.xml -->
@@ -197,49 +197,49 @@
     <string name="edit_bookmark">Editar Marcador</string>
     <string name="new_bookmark_used">Nuevo Marcador - La página ya tiene Marcador</string>
     <string name="edit_bookmark_used">Editar Marcador - La página ya tiene Marcador</string>
-    <string name="includeInLibrary">Display in Bookmarks Tab</string>
+    <string name="includeInLibrary">Mostrar en la Pestaña de Marcadores</string>
         
     <!-- backup_activity.xml -->
-    <string name="err_db_not_init">Database is not initialized for some reason. Try exiting the settings screen and try again.</string>
+    <string name="err_db_not_init">La Base de Datos no se ha inicializado por alguna razón. Salga de la pantalla de ajustes y reinténtelo.</string>
     <string name="select_backup_dest">Seleccione un destino para la copia de seguridad</string>
     <string name="check_backup_audio">Hacer copia de seguridad de archivos de Audio</string>
-    <string name="backup_select_dialog_title">Seleccione nombre de archivo de la copia de seguridad</string>
-    <string name="uploading_file_dpbox">Carga de archivos a selección</string>
+    <string name="backup_select_dialog_title">Seleccione el nombre de archivo de la copia de seguridad</string>
+    <string name="uploading_file_dpbox">***Carga de archivos a selección</string>
     
     <!-- batch_import_activity.xml -->
     <string name="dir_import_label">Importar Carpeta:</string>
-    <string name="select_batch_folders">Select folders to import from</string>
-    <string name="filterLabel">File Filter:</string>
+    <string name="select_batch_folders">Seleccione la carpeta desde la que importar</string>
+    <string name="filterLabel">Filtro de Fichero:</string>
     <string name="filterAny">*.*</string>
-    <string name="checkScanSubs">Escanear archivos en todas las subcarpetas</string>
+    <string name="checkScanSubs">Buscar archivos en todas las subcarpetas</string>
     <string name="checkAvoidDuplicates">Evitar Canciones Duplicadas</string>
-    <string name="defaultsLabel">Default metadata values for import:</string>
-    <string name="addGroupsLabel">Add songs to the following groups during import:</string>
-    <string name="titleLabel">Title:</string>
-    <string name="customLabel">Custom:</string>
-    <string name="custom2Label">Custom2:</string>
-    <string name="sourcesLabel">Sources:</string>
-    <string name="keysLabel">Keys:</string>
-    <string name="artistsLabel">Artists:</string>
-    <string name="albumsLabel">Albums:</string>
-    <string name="genresLabel">Genres:</string>
-    <string name="composersLabel">Composers:</string>
-    <string name="signaturesLabel">Signatures:</string>
+    <string name="defaultsLabel">Valor del metadato por defecto para importar:</string>
+    <string name="addGroupsLabel">Añadir las canciones a estos grupos durante la importación:</string>
+    <string name="titleLabel">Título:</string>
+    <string name="customLabel">Personalizado:</string>
+    <string name="custom2Label">Personalizado2:</string>
+    <string name="sourcesLabel">Orígenes:</string>
+    <string name="keysLabel">Tonalidades:</string>
+    <string name="artistsLabel">Artistas:</string>
+    <string name="albumsLabel">Álbumes:</string>
+    <string name="genresLabel">Géneros:</string>
+    <string name="composersLabel">Compositores:</string>
+    <string name="signaturesLabel">Armaduras:</string>
     <string name="setlistsLabel">Setlists:</string>
-    <string name="collectionsLabel">Collections:</string>
-    <string name="ab_start_import">Start</string>
+    <string name="collectionsLabel">Colecciones:</string>
+    <string name="ab_start_import">Comenzar</string>
     
     <!-- bookmark window -->
-    <string name="confirm_delete_bookmark">Are you sure you want to delete bookmark %1$s?</string>
-    <string name="bookmarksDisplayAll">Display All Songs</string>
+    <string name="confirm_delete_bookmark">¿Está seguro de que quiere borrar el marcador %1$s?</string>
+    <string name="bookmarksDisplayAll">***Mostrar Todas las Canciones</string>
     
     <!-- collection_name_dialog.xml -->
     <string name="nameLabel">Nombre:</string>
     
     <!-- confirm_delete_layout.xml -->
     <string name="confirmDeleteLabel">¿Seguro que quiere borrar?</string>
-    <string name="deleteSongFiles">Delete Song Pdf/Image/Text Files</string>
-    <string name="deleteAudioFiles">Delete Song Audio Files</string>
+    <string name="deleteSongFiles">Borrar los ficheros Pdf/Image/Text de la Canción</string>
+    <string name="deleteAudioFiles">Borrar los ficheros de Audio de la Canción</string>
         
     <!-- convert_pdf_activity.xml -->
     <string name="pdf_file_label">Archivos de Entrada:</string>
@@ -260,10 +260,10 @@
     <string name="accept">Aceptar</string>
     
     <!-- duration_picker_dialog.xml -->
-    <string name="durationTitle">Enter the duration</string>
-    <string name="hoursLabel">Hours</string>
-    <string name="minutesLabel">Minutes</string>
-    <string name="secondsLabel">Seconds</string>
+    <string name="durationTitle">Introduzca la duración</string>
+    <string name="hoursLabel">Horas</string>
+    <string name="minutesLabel">Minutos</string>
+    <string name="secondsLabel">Segundos</string>
         
     <!-- edit notes dialog -->
     <string name="edit_notes_title">Editar notas de %1$s</string>
@@ -281,84 +281,84 @@
     <string name="select">Seleccionar</string>
     
     <!-- file preparer -->
-    <string name="file_name_conflict_title">File \'%1$s\' Already Exists</string>
-    <string name="rename_select_new">Enter New Filename</string>
-    <string name="replace">Replace</string>
+    <string name="file_name_conflict_title">El Fichero \'%1$s\' ya existe</string>
+    <string name="rename_select_new">Introduzca Nuevo Nombre</string>
+    <string name="replace">Sustituir</string>
     
     <plurals name="file_name_conflict_msg">
-        <item quantity="one">A file already exists in the storage location with the same name, and is used by another song. Would you like to replace the existing file, rename the new file, or cancel?</item>
-        <item quantity="other">A file already exists in the storage location with the same name, and is used by %1$d other songs. Would you like to replace the existing file, rename the new file, or cancel?</item>
+        <item quantity="one">Ya existe un fichero con el mismo nombre en el sitio de almacenamiento y está usado por otra canción. Quiere sustituir el fichero actual, renombrarlo o cancelar?</item>
+        <item quantity="other">Ya existe un fichero con el mismo nombre en el sitio de almacenamiento y está usado por la canción %1$d. Quiere sustituir el fichero actual, renombrarlo o cancelar?</item>
     </plurals>
     
     <!-- group_editor.xml -->
-    <string name="searchSongsLabel">All Songs:</string>
-    <string name="fieldsLabel">Fields:</string>
-    <string name="clear_all_songs">Clear All</string>
-    <string name="create_setlist_from_songs">Create Setlist</string>
-    <string name="add_group">New %1$s</string>
+    <string name="searchSongsLabel">Todas las Canciones:</string>
+    <string name="fieldsLabel">Campos:</string>
+    <string name="clear_all_songs">Borrar Todo</string>
+    <string name="create_setlist_from_songs">Crear un Setlist</string>
+    <string name="add_group">Nuevo %1$s</string>
     
-    <string name="deleting_song_title">Deleting Song</string>
-    <string name="updating_database">Updating database&#8230;</string>
+    <string name="deleting_song_title">Borrando la Canción</string>
+    <string name="updating_database">Actualizando la Base de Datos&#8230;</string>
     
-    <string name="edit_group_name">Edit %1$s Name</string>
-    <string name="new_group_name">Enter New %1$s Name</string>
-    <string name="group_songs_label">Songs in %1$s:</string>
-    <string name="group_songs_by_label">Songs by %1$s:</string>
+    <string name="edit_group_name">Editar %1$s Nombre</string>
+    <string name="new_group_name">Enter New %1$s Nombre</string>
+    <string name="group_songs_label">Canciones en %1$s:</string>
+    <string name="group_songs_by_label">Canciones por %1$s:</string>
     
-    <string name="create_setlist_message">Enter the name of the setlist to create using the songs of %1$s \'%2$s\'</string>
-    <string name="setlist_successful">Setlist %1$s created successfully</string>
-    <string name="setlist_failed">Failed to create setlist %1$s due to a database error. You may need to fully close the app and restart.</string>
+    <string name="create_setlist_message">Introduzca el nombre del setlist que creará usando las canciones de %1$s \'%2$s\'</string>
+    <string name="setlist_successful">El Setlist %1$s se creó correctamente</string>
+    <string name="setlist_failed">No se pudo crear el Setlist %1$s debido a un error de la base de datos. Cierre completamente la aplicación y comienze de nuevo.</string>
     
-    <string name="clear_all_prompt">Are you sure you want to remove all songs from %1$s?</string>
-    <string name="failed_to_clear_songs">Failed to clear songs for %1$s due to a database error. You may need to fully close the app and restart.</string>
+    <string name="clear_all_prompt">Estás seguro de que quiere borrar todas las canciones de %1$s?</string>
+    <string name="failed_to_clear_songs">Falló el borrado de canciones para %1$s debido a un error de la base de datos. Cierre completamente la aplicación y comienze de nuevo.</string>
     
-    <string name="db_update_failed">Failed to update database. You may need to fully close the app and restart.</string>
+    <string name="db_update_failed">Fallo al actualizar la Base de Datos. Cierre completamente la aplicación y comienze de nuevo.</string>
         
     <!-- Import Settings Dialog -->
-    <string name="import_settings_title">Import Settings</string>
+    <string name="import_settings_title">Importar Ajustes</string>
     
-    <string name="importing_title">Importing Files</string>
-    <string name="initializing_import_msg">Initializing resources for file import</string>
-    <string name="import_file_msg">Importing File #%1$d - %2$s</string>
-    <string name="import_results_title">Import Results</string>
-    <string name="free_song_limit_reached">Free Version Song Limit Reached. Upgrade to the paid version for more songs.</string>
-    <string name="import_password_error">Failed to import file %1$s. Password protected PDFs cannot be used with quick import - use the Song Editor instead.</string>
+    <string name="importing_title">Importando Ficheros</string>
+    <string name="initializing_import_msg">Inicializando los recursos para la importación de ficheros</string>
+    <string name="import_file_msg">Importando Fichero #%1$d - %2$s</string>
+    <string name="import_results_title">Resultados de la Importación</string>
+    <string name="free_song_limit_reached">Ha alcanzado el límite de canciones para la versión gratuita. Actualize a la versión de pago para sobrepasarlo.</string>
+    <string name="import_password_error">Falló la importación del fichero %1$s. Los ficheros PDF protegidos con clave no se pueden usar para la importación rápida, use el editor de canciones en su lugar.</string>
     
-    <string name="file_import_failed">Failed to import file %1$s.</string>
+    <string name="file_import_failed">Falló la importación del fichero %1$s.</string>
     
-    <string name="msf_import_setlist">Importing setlist "%1$s" containing %2$d songs.</string>
-    <string name="msf_import_success">Successfully imported song "%1$s"</string>
-    <string name="msf_import_db_error">Successfully created song "%1$s", but encountered database errors. Some settings may be missing.</string>
-    <string name="msf_import_setlist_failed">Failed to add setlist "%1$s" to the database.</string>
-    <string name="msf_import_song_failed">Failed to add song "%1$s" to the database.</string>
+    <string name="msf_import_setlist">Importando el Setlist "%1$s" que contiene %2$d canciones.</string>
+    <string name="msf_import_success">Canción importada con éxito "%1$s"</string>
+    <string name="msf_import_db_error">La canción "%1$s" se ha creado correctamente, pero se encontraron errores en la base de datos. Algunos ajustes son erróneos.</string>
+    <string name="msf_import_setlist_failed">Fallo al añadir el Setlist "%1$s" a la base de datos.</string>
+    <string name="msf_import_song_failed">Fallo al añadir la canción "%1$s" a la base de datos.</string>
     
-    <string name="msf_import_error">Unrecoverable error while importing file %1$s. Aborting import.</string>
-    <string name="msf_not_valid">%1$s is not a valid MobileSheets File (.msf)</string>
+    <string name="msf_import_error">Error irrecuperable mientras importaba el fichero %1$s. Cancelando la importación.</string>
+    <string name="msf_not_valid">%1$s no es un fichero válido para MobileSheets</string>
     
-    <string name="failed_add_group">Failed to add group %1$s to the database.</string>
+    <string name="failed_add_group">No se pudo añadir el grupo %1$s a la base de datos.</string>
     
-    <string name="import_success_msg">Successfully imported %1$d of %2$d files.\n\n</string>
+    <string name="import_success_msg">Se importó correctamente %1$d de %2$d ficheros.\n\n</string>
     
-    <string name="converting_freehand">Converting freehand file %1$s to images.</string>
+    <string name="converting_freehand">Convirtiendo fichero a mano alzada %1$s a imagen.</string>
     
-    <string name="import_cancelled">Import canceled.</string>
+    <string name="import_cancelled">Importación cancelada.</string>
     
-    <string name="apply_conflict_check">Apply selection to all conflicts</string>
+    <string name="apply_conflict_check">Aplicar la selección a todos los conflictos</string>
     
     <string name="rename">Renombrar</string>
-    <string name="duplicate_file">Duplicate file \'%1$s\' found. Ignoring file.</string>
-    <string name="duplicateBehaviorLabel">Duplicate File Behavior:</string>
+    <string name="duplicate_file">Se encontro el fichero \'%1$s\' duplicado. Ignorándolo.</string>
+    <string name="duplicateBehaviorLabel">Comportamiento para ficheros duplicados:</string>
     
     <string-array name="duplicate_behaviors">
-        <item>Create New Song From Existing File</item>
-        <item>Ignore Duplicate Files</item>
+        <item>Crear una nueva canción desde el fichero existente</item>
+        <item>Ignorar los ficheros duplicados</item>
     </string-array>
        
     <string-array name="conflict_actions">
-        <item>Use Original File</item>
-        <item>Rename</item>
-        <item>Overwrite</item>
-        <item>Update Existing Song With New File</item>
+        <item>Usar el fichero original</item>
+        <item>Renombrar</item>
+        <item>Sobrescribir</item>
+        <item>Actualizar la canción existente con el nuevo fichero</item>
     </string-array>
     
     <string name="song_match_title">Duplicate Song Title Found</string>
