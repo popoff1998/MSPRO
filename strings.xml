@@ -992,53 +992,55 @@
     <string name="creating_snippet_msg">Creating Snippet in Database, please wait...</string>
     
     <!-- Restore Database Activity -->
-    <string name="no_backups_available">No database backups are currently available.</string>
-    <string name="confirm_db_replace_title">Confirm Database Replacement</string>
-    <string name="confirm_db_replace_msg">Are you sure you want to completely replace your database? This action cannot be undone and may result in the loss of library content. Restoring a library backup is the preferred way to restore the database.</string>
-    <string name="db_restore_successful_title">Restore Successful</string>
-    <string name="db_restore_successful_msg">The database has been successfully restored.</string>
-    <string name="db_restore_failed_title">Restore Failed</string>
-    <string name="db_restore_failed_msg">Failed to restore the database backup. The original database has been restored.</string>
-    <string name="db_restore_Failed_move_failed_msg">Failed to restore the database backup. The original database could not be restored.</string>
+    <string name="no_backups_available">No hay copias de seguridad de la base de datos disponibles.</string>
+    <string name="confirm_db_replace_title">Confirme el cambio de la base de datos</string>
+    <string name="confirm_db_replace_msg">¿Está seguro de que quiere remplazar completamente la base de datos? Esta acción no se podrá deshacer y puede ocasionar la pérdida del contenido de la librería. Restaurar una copia de seguridad de la base de datos es el método preferido para recuperarla</string>
+
+    <string name="db_restore_successful_title">Restauración Completaba</string>
+    <string name="db_restore_successful_msg">La base de datos ha sido restaurada correctamente.</string>
+    <string name="db_restore_failed_title">Restauración Fallida</string>
+    <string name="db_restore_failed_msg">Falló la restauración de la base de datos. La base de datos original ha sido restaurada.</string>
+    <string name="db_restore_Failed_move_failed_msg">Fallço la restauración de la base de datos. La base de datos original no ha podido ser restaurada.</string>
     
     <!-- Quick Find Song Dialog -->
-    <string name="find_song_title">Find and Load Song</string>
-    <string name="positionSetlistLabel">Position in Setlist:</string>
-    <string name="positionLabel">Position:</string>
+    <string name="find_song_title">Buscar y cargar una canción</string>
+    <string name="positionSetlistLabel">Posición en el Setlist:</string>
+    <string name="positionLabel">Posición:</string>
     
     <!-- Misc strings -->
-    <string name="not_specified_text">Not Specified</string>
-    <string name="unknown">Unknown</string>
-    <string name="none">None</string>
-    <string name="load_all">Load All</string>
-    <string name="all_albums">All Albums</string>
+    <string name="not_specified_text">Sin Especificar</string>
+    <string name="unknown">Desconocido</string>
+    <string name="none">Ninguno</string>
+    <string name="load_all">Cargar Todos</string>
+    <string name="all_albums">Todos los Álbumes</string>
     
     <!-- Help Messages -->
-    <string name="helpTitle">Getting Started</string>
-    <string name="helpLibraryMessage">Welcome to MobileSheets! If this is your first time using the app, it is highly recommended that you read the online manual before getting started. There are a huge number of features in MobileSheets, and you will get much more out of the app if you know what is available. To read the manual, click the button below. To continue, tap OK or the back button.</string>
-    <string name="viewManualButton">View Online Manual</string>
+    <string name="helpTitle">Primeros Pasos</string>
+    <string name="helpLibraryMessage">Bienvenido a MobileSheets! Si es la primera vez que usa la aplicación le recomendamos que lea el manual en línea antes de comenzar. Hay una gran cantidad de posibilidades en MobileSheets, y conseguirá mucho más de la aplicación si conoce cuales son. Para leer el manual, pulse en el botón de abajo. Para continuar, pulse el botón OK o el botón para volver.</string>
+
+    <string name="viewManualButton">Ver el Manual en Línea</string>
     
     <!-- Activity names -->
     <string name="email_activity_name">Escribir un Email al Soporte de Zubersoft</string>
     <string name="annotations_activity_name">Editor de Anotaciones</string>
     <string name="backup_activity_name">Copia de Seguridad de la Librería de MobileSheets</string>
     <string name="restore_activity_name">Restaurar Librería de MobileSheets</string>
-    <string name="storage_activity_name">Select Storage Location</string>
+    <string name="storage_activity_name">Seleccionar la Ubicación de Almacenamiento</string>
     <string name="directory_dialog_name">Diálogo de Selección de Carpeta de Copia de Seguridad</string>
     <string name="file_dialog_name">Diálogo de Elección de Archivo</string>
     <string name="settings_activity_name">Configuración de MobileSheets</string>
-    <string name="group_editor_activity_name">MobileSheets Group Editor</string>
+    <string name="group_editor_activity_name">Editor de Grupos de MobileSheets</string>
     <string name="sync_activity_name">Sincronización con PC de MobileSheets</string>
     <string name="batch_import_activity_name">Importador de Archivos por Lotes de MobileSheets</string>
     <string name="convert_pdf_activity_name">Conversor PDF de MobileSheets PDF</string>
     <string name="import_activity_name">Importar base de datos de MobileSheets </string>
     <string name="export_activity_name">Exportar base de datos de MobileSheets</string>
-    <string name="restore_db_activity_name">MobileSheets Database Restore</string>
-    <string name="release_notes_activity_name">MobileSheets Release Notes</string>
-    <string name="clear_library_activity_name">Despejar la Librería</string>
-    <string name="crop_activity_name">Crop Editor</string>
-    <string name="pedal_action_activity_name">Pedal Action Settings</string>
-    <string name="touch_action_activity_name">Touch Action Settings</string>
+    <string name="restore_db_activity_name">Restaurar base de datos de MobileSheets</string>
+    <string name="release_notes_activity_name">Notas de la Versión de MobileSheets</string>
+    <string name="clear_library_activity_name">Borrar la Librería</string>
+    <string name="crop_activity_name">Editor de Recorte</string>
+    <string name="pedal_action_activity_name">Ajustes de Acción del Pedal</string>
+    <string name="touch_action_activity_name">Ajustes de Acción de los Toques</string>
     
     <!-- Settings screen values -->
     
@@ -1049,48 +1051,48 @@
     <string name="version_title">Versión</string>
     <string name="email_title">Escribir un Email al Soporte de Zubersoft</string>
     <string name="email_summary">Cargar un email con un formulario preescrito para el soporte de Zubersoft.</string>
-    <string name="release_notes_title">Release Notes</string>
-    <string name="release_notes_summary">View the recent changes to MobileSheets.</string>
+    <string name="release_notes_title">Notas de la Versión</string>
+    <string name="release_notes_summary">Ver los cambios recientes en MobileSheets.</string>
     
     <!-- Library Settings section -->
     <string name="library_header">Configuración de la Librería</string>
     
     <string name="library_display_preferences">Configuración de Pantalla de la Librería</string>
-    <string name="letters_pref">Usar Letras Grandes Para Salto Alfabético</string>
+    <string name="letters_pref">Usar Letras Grandes Para Selección Alfabética</string>
     <string name="summary_letters_pref">Usa letras mucho mas grandes en el lado derecho de la librería para saltar a canciones que empiecen por una letra dada.</string>
-    <string name="song_format_title">Song Title Formatting</string>
-    <string name="summary_song_format">Changes the formatting of song titles to include the fields you want displayed.</string>
-    <string name="generate_list_format_title">Generate Song List Format</string>
-    <string name="summary_generate_list_format">Changes the formatting of song titles when generating a setlist song list.</string>
-    <string name="title_custom_group_pref">Custom Category Name</string>
-    <string name="summary_custom_group_pref">Sets the name to be displayed for the custom category</string>
-    <string name="title_row_colors_pref">Color de Fila Alternado</string>
-    <string name="summary_row_colors_pref">Proporciona colores de fila alternados para facilitar la distinción de entradas individuales en la pantalla de la librería.</string>
+    <string name="song_format_title">Formato del Título de la Canción</string>
+    <string name="summary_song_format">Cambia el formato del título de la canción para incluir los campos que quiera mostrar.</string>
+    <string name="generate_list_format_title">Formato de Generación de Listado de Canciones</string>
+    <string name="summary_generate_list_format">Cambia el formato de los títulos cuando genere una lista de canciones desde un Setlist.</string>
+    <string name="title_custom_group_pref">Nombre de Categoría Personalizada</string>
+    <string name="summary_custom_group_pref">Seleccione el nombre para mostrar de la categoría personalizada</string>
+    <string name="title_row_colors_pref">Color de Filas Alternas</string>
+    <string name="summary_row_colors_pref">Proporciona colores de filas alternas para facilitar la distinción de entradas individuales en la pantalla de la librería.</string>
     <string name="title_text_size_pref">Tamaño de Texto de la Librería</string>
     <string name="summary_text_size_pref">Permite modificar el tamaño de texto de la librería</string>
-    <string name="title_tab_order_pref">Tab Order</string>
-    <string name="summary_tab_order_pref">Determines what tabs are shown and in what order.</string>
-    <string name="title_show_song_count_pref">Show Number of Songs</string>
-    <string name="summary_show_song_count_pref">Shows the number of songs next to the title of any library entry that contains a list of songs (i.e. Setlists/Collections/Artists)</string>
+    <string name="title_tab_order_pref">Orden de Pestañas</string>
+    <string name="summary_tab_order_pref">Determina qué pestañas se muestran y en qué orden.</string>
+    <string name="title_show_song_count_pref">Mostrar el Número de Canciones</string>
+    <string name="summary_show_song_count_pref">Muestra el número de canciones al lado del título en cada entrada de la librería que contenga una lista de canciones (ej. Setlists/Colecciones/Artistas)</string>
     
-    <string name="sorting_header">Sorting Options</string>
-    <string name="title_sort_ignore_pref">Ignore Articles (The, An, A) While Sorting</string>
-    <string name="summary_sort_ignore_pref">Determines if articles (the, an, and a) are ignored while grouping songs by letter.</string>
-    <string name="title_ignore_articles">Articles To Ignore</string>
-    <string name="summary_ignore_articles">Sets the list of articles that should be ignored. Values must be separated by commas.</string>
+    <string name="sorting_header">Opciones de Ordenación</string>
+    <string name="title_sort_ignore_pref">Ignorar los Artículos (The, An, A, El, La) al Ordenar</string>
+    <string name="summary_sort_ignore_pref">Determina si los artículos (the, an, a, él,la) se ignoran al agrupar una canción por una letra.</string>
+    <string name="title_ignore_articles">Artículos Para Ignorar</string>
+    <string name="summary_ignore_articles">Ponga la lista de artículos que serán ignorados separados por comas.</string>
     <string name="default_ignore_articles"></string>
     
-    <string name="cropping_preferences">Cropping Options</string>
-    <string name="title_aggressively_crop_pref">Aggressively Crop</string>
-    <string name="summary_aggressively_crop_pref">Switches the automatic cropping to aggressively crop files, which prioritizes eliminating margins over preserving content.</string>
+    <string name="cropping_preferences">Opciones de Recorte</string>
+    <string name="title_aggressively_crop_pref">Recorte Agresivo</string>
+    <string name="summary_aggressively_crop_pref">Cambia el recorte automático al modo agresivo priorizando la eliminación de los márgenes a la preservación del contenido.</string>
     
-    <string name="load_preferences">Load Options</string>
-    <string name="title_rlp_pref">Automatically Reload Last Viewed Page</string>
-    <string name="summary_rlp_pref">If set, when a song is clicked on the library screen, the last viewed page of the song will be loaded.</string>
-    <string name="initial_load_pref">Initial Library Tab</string>
-    <string name="summary_initial_load_pref">Select the tab that will first be shown when the application loads.</string>
-    <string name="title_load_entire_setlist">Always Load Whole Setlist</string>
-    <string name="summary_load_entire_setlist">If selected, tapping on a song in a setlist will load the entire setlist and skip to the song. If not, just that one song is loaded.</string>
+    <string name="load_preferences">Opciones de carga</string>
+    <string name="title_rlp_pref">Recargar Automáticamente la Última Página Vista</string>
+    <string name="summary_rlp_pref">Si está seleccionado, cuando pulse una canción en la pantalla de la librería, se cargará la última página vista.</string>
+    <string name="initial_load_pref">Pestaña Inicial de la Librería</string>
+    <string name="summary_initial_load_pref">Seleccione la pestaña que se mostrará primero cuando cargue la aplicación.</string>
+    <string name="title_load_entire_setlist">Cargar Siempre el Setlist Completo</string>
+    <string name="summary_load_entire_setlist">Si está seleccionado, al pulsar una canción del setlist este se cargará completo y se posicionará en ella. Si no solo se cargará dicha canción.</string>
     
     <!-- Display Settings section -->
     <string name="display_header">Configuración de Pantalla</string>
@@ -1100,40 +1102,40 @@
     <string name="title_language_pref">Idioma</string>
     
     <string name="song_display_preferences">Configuración de Pantalla de Canción</string>
-    <string name="overlay_display_preferences">Overlay Settings</string>
-    <string name="system_display_preferences">System Settings</string>
-    <string name="title_allow_zoom_out">Allow Zoom Out Past 100%</string>
-    <string name="summary_allow_zoom_out">Determines if, when zooming out, the document can be made smaller than the screen dimensions.</string>
-    <string name="title_instant_page_turns">Disable Page Turn Animation</string>
-    <string name="summary_instant_page_turns">Disables the page turn animation, making pages turn instantly.</string>
+    <string name="overlay_display_preferences">Ajustes de Overlay</string>
+    <string name="system_display_preferences">Ajustes del Sistema</string>
+    <string name="title_allow_zoom_out">Permitir Zoom Más Allá Del 100%</string>
+    <string name="summary_allow_zoom_out">Determina si al alejar el zoom el documento puede hacerse más pequeño que las dimensiones de la pantalla.</string>
+    <string name="title_instant_page_turns">Deshabilitar la Animación de Cmabio de Página</string>
+    <string name="summary_instant_page_turns">Deshabilita la animación, haciendo el cambio de página instantáneo.</string>
     <string name="title_show_next_pref">Mostrar Canción Siguiente</string>
     <string name="summary_show_next_pref">Determina si se muestra una barra en la parte superior de la pantalla indicando la canción que viene a continuación</string>
     <string name="dim_status_pref">Atenuar la Barra de Estado</string>
     <string name="summary_dim_status_pref">En HoneyComb o posterior, la barra de estado se atenuará, en versiones anteriores no tiene efecto.</string>
     <string name="hide_status_pref">Ocultar la barra de navegación</string>
-    <string name="summary_hide_status_pref">Si se activa esta opción, la barra de navegación será totalmente oculta, lo que requiere un golpe de demostrarlo.</string>
-    <string name="repeat_mode_pref">El Modo de Repetición</string>
-    <string name="summary_repeat_mode_pref">Si está activado, se salta de nuevo al principio de una canción o lista de canciones que los avances de un usuario más allá de la última página, y salta al final de la canción, si avanza hacia atrás a partir de la primera página de los usuarios.</string>
+    <string name="summary_hide_status_pref">Si se activa esta opción, la barra de navegación se ocultará, tendrá que pulsar la pantalla para mostrarla.</string>
+    <string name="repeat_mode_pref">Modo de Repetición</string>
+    <string name="summary_repeat_mode_pref">Si está activado, se vuelve al principio de una canción o setlist cuando el usuario avanza más allá de la última página, y salta al final de la canción, si avanza hacia atrás desde la primera página.</string>
     <string name="half_landscape_pref">Mostrar Media Página en Apaisado</string>
     <string name="summary_half_landscape_pref">Mostrar la mitad de una página en apaisado, y permitir desplazar la página arriba y abajo.</string>
-    <string name="title_uhpt_pref">Semi Pasado de Página en Modo Apaisado</string>
+    <string name="title_uhpt_pref">***Semi Pasado de Página en Modo Apaisado</string>
     <string name="summary_uhpt_pref">Avanza media página cada vez en Modo Apaisado. El desplazamiento vertical se deshabilita.</string>
-    <string name="title_force_landscape_two_pages">Force Landscape With Two Pages</string>
-    <string name="summary_force_landscape_two_pages">Forces the tablet into landscape orientation while using the two page display mode.</string>
-    <string name="title_show_one_song">Separate Songs in Two Page Mode</string>
-    <string name="summary_show_one_song">Ensures that only one song will be visible at a time in the two page display.</string>
+    <string name="title_force_landscape_two_pages">Forzar Modo Apaisado con Dos Páginas</string>
+    <string name="summary_force_landscape_two_pages">Fuerza el modo apaisado cuando use el modo de visualización de dos páginas.</string>
+    <string name="title_show_one_song">Separar las Canciones en el Modo de Dos Páginas</string>
+    <string name="summary_show_one_song">Asegura que en el modo de dos páginas, solo se muestre una canción a la vez en la pantalla.</string>
     <string name="night_mode_pref">Modo Nocturno</string>
     <string name="summary_night_mode_pref">Invierte blanco y negro para ayudar en entornos oscuros</string>
-    <string name="title_vertically_center_pref">Center Pages</string>
-    <string name="summary_vertically_center_pref">Ensures that if a page is vertically smaller than the tablet it will be centered in the middle of the viewable area.</string>
+    <string name="title_vertically_center_pref">Centrar Páginas</string>
+    <string name="summary_vertically_center_pref">Asegura que si una página en vertical es más pequeña que la tableta, se muestre centrada en medio del área de visualización.</string>
         
-    <string name="overlay_click_pref">Modo Alternar Overlay</string>
-    <string name="summary_overlay_click_pref">Determina que acción táctil saca el overlay. Un toque simple siempre lo cierra.</string>
+    <string name="overlay_click_pref">Modo Mostrar Overlay</string>
+    <string name="summary_overlay_click_pref">Determina que acción táctil muestra el overlay. Un toque simple siempre lo cierra.</string>
     <string name="bk_color_pref">Color de Imagen de Fondo</string>
     <string name="summary_bk_color_pref">El color que se usa para llenar el espacio vacío al ver imágenes/PDFs. También se usa como el color de fondo para imágenes transparentes.</string>
     <string name="link_size_pref">Radio del Punto de Enlace</string>
     <string name="summary_link_size_pref">Cambia el tamaño de los puntos de enlace. El valor por defecto es 28.</string>
-    <string name="title_show_preview_pref">Mostar Previsualización Durante Búsqueda de Página</string>
+    <string name="title_show_preview_pref">Mostrar Previsualización Durante Búsqueda de Página</string>
     <string name="summary_show_preview_pref">Habilita/Deshabilita la mini ventana de previsualización que aparece al usar el deslizador para cambiar de página.</string>
     <string name="title_asps_pref">Visibilidad del Deslizador de Página</string>
     <string name="summary_asps_pref">Determina si el deslizador de página está oculto, mostrándose con el overlay, o siempre visible en la parte inferior de la pantalla mientras se visualiza una canción.</string>
@@ -1141,135 +1143,135 @@
     <string name="summary_astb_pref">Determina si la barra de información está siempre visible en la parte superior de la pantalla mientras se visualiza una canción.</string>
     
     <!-- Pedal Settings section -->
-    <string name="bluetooth_header">Pedal Configuración</string>
-    <string name="bluetooth_preferences">Pedal Configuración</string>
-    <string name="pedal_action_pref">Pedal Actions</string>
-    <string name="pedal_action_summary">Select the actions that will occur when pedals are pressed.</string>
+    <string name="bluetooth_header">***Configuración del Pedal</string>
+    <string name="bluetooth_preferences">***Pedal Configuración</string>
+    <string name="pedal_action_pref">Acciones del Pedal</string>
+    <string name="pedal_action_summary">Seleccione las acciones que ocurrirán al pulsar el pedal.</string>
     
-    <string name="tap_preferences">Touch Settings</string>
-    <string name="tap_action_pref">Touch Actions</string>
-    <string name="tap_action_summary">Select the actions that will occur when various parts of the screen are touched</string>
+    <string name="tap_preferences">Ajustes Táctile</string>
+    <string name="tap_action_pref">Acciones Táctiles</string>
+    <string name="tap_action_summary">Seleccione las acciones que ocurrirán cuando toque en determinadas partes de la pantalla</string>
     
     <string name="mouse_preferences">Configuración del ratón USB</string>
     <string name="enable_usb_mouse_pref">Habilitar procesamiento ratón USB</string>
-    <string name="summary_enable_use_mouse">Determina si clics del ratón USB se utilizan para pasar las páginas</string>
-    <string name="mouse_click_swap_pref">Intercambia ratón Haga clic en Acciones</string>
-    <string name="summary_mouse_click">Cambia las acciones de clic del ratón para que el botón izquierdo del ratón se vuelve una página, y el botón derecho del ratón se convierte a la página siguiente</string>
-    <string name="mouse_as_pedal_pref">Treat Mouse Click as Pedal Press</string>
-    <string name="summary_mouse_as_pedal">Treat every mouse click the same as if a left or right bluetooth pedal was pressed</string>
+    <string name="summary_enable_use_mouse">Determina si los clics del ratón USB se utilizan para pasar las páginas</string>
+    <string name="mouse_click_swap_pref">***Intercambia ratón Haga clic en Acciones</string>
+    <string name="summary_mouse_click">***Cambia las acciones del clic del ratón para que el botón izquierdo del ratón se vuelve una página, y el botón derecho del ratón se convierte a la página siguiente</string>
+    <string name="mouse_as_pedal_pref">Tratar Clicks del Ratón Como Pulsaciones de Pedal</string>
+    <string name="summary_mouse_as_pedal">Trata cada click del ratón como si se pulsaran los pedales bluetooth izquierdo o derecho</string>
     
     <!-- Text File Settings -->
-    <string name="text_header">Text File Settings</string>
-    <string name="text_preferences">Text File Settings</string>
-    <string name="title_default_display_settings">Default Display Settings</string>
-    <string name="summary_default_display_settings">The default settings to use when displaying text files. Default settings can be overriden for each file if needed.</string>
-    <string name="title_transpose_method">Transpose Method</string>
-    <string name="summary_transpose_method">Determines if a song will be transposed based upon key or steps.</string>
-    <string name="title_wrap_text">Wrap Text</string>
-    <string name="summary_wrap_text">Wraps text if it exceeds the width of the screen</string>
-    <string name="title_use_two_columns">Use Two Columns</string>
-    <string name="summary_use_two_columns">Displays text in two columns on the screen if it is narrow enough to fit.</string>
-    <string name="title_place_chords_above">Place Chords Above Text</string>
-    <string name="summary_place_chords_above">Places chords above text instead of inline</string>
-    <string name="title_use_fields_song">Use Text Fields During Song Creation</string>
-    <string name="summary_use_fields_song">If enabled, text fields in a file such as album and key will be used for song metadata during creation</string>
-    <string name="title_modulate_capo_down">Modulate Capo Down</string>
-    <string name="summary_modulate_capo_down">If enabled, a song will be tranposed down when a capo is applied. If disabled, the song will be transposed up.</string>
-    <string name="title_detect_key_by">Detect Key By</string>
-    <string name="summary_detect_key_by">Determines how the key of a text file is determined when it is first added to a song.</string>
-    <string name="title_enable_encoding_pref">Display File Encodings</string>
-    <string name="summary_enable_encoding_pref">Displays a dropdown to switch a text file\'s encoding. Enable this if you see ? characters in your text files.</string>
+    <string name="text_header">Ajustes de Fichero de Texto</string>
+    <string name="text_preferences">Ajustes de Fichero de Texto</string>
+    <string name="title_default_display_settings">Ajustes de Visualización Por Defecto</string>
+    <string name="summary_default_display_settings">Los ajustes por defecto que se usarán al mostrar ficheros de texto. Pueden especificarse para cada fichero individual.</string>
+    <string name="title_transpose_method">Método de Transporte</string>
+    <string name="summary_transpose_method">Determina si una canción se transportará basada en su tonalidad o por pasos.</string>
+    <string name="title_wrap_text">Ajustar Texto</string>
+    <string name="summary_wrap_text">Ajusta el texto si excede el ancho de la pantalla</string>
+    <string name="title_use_two_columns">Usar Dos Columnas</string>
+    <string name="summary_use_two_columns">Muestra el texto en dos columnas en pantalla si es suficientemente estrecho.</string>
+    <string name="title_place_chords_above">Poner Acordes Encima del Texto</string>
+    <string name="summary_place_chords_above">Pone los acordes encima del texto en lugar de entre el mismo</string>
+    <string name="title_use_fields_song">Usar Campos del Texto al Crear la Canción</string>
+    <string name="summary_use_fields_song">Habilitado los campos del fichero de texto como album o tonalidad se usarán como metadatos al crear la canción</string>
+    <string name="title_modulate_capo_down">Cejilla Transporta Hacia Abajo</string>
+    <string name="summary_modulate_capo_down">Si está habilitado, la canción se transportará hacia abajo cuando se aplique la cejilla. Si no se transportará hacia arriba.</string>
+    <string name="title_detect_key_by">Detectar Tonalidad</string>
+    <string name="summary_detect_key_by">Determina como se detecta la tonalidad de un fichero de texto cuando se añade a una canción por primera vez.</string>
+    <string name="title_enable_encoding_pref">Mostrar Codificación del Fichero</string>
+    <string name="summary_enable_encoding_pref">Despliega una lista para cambiar la codificación de un fichero de texto. Habilitelo si ve caracteres ? en su ficheros.</string>
     
     <string-array name="transposeMethods">
-        <item>Key</item>
-        <item>Steps</item>
+        <item>Tonalidad</item>
+        <item>Pasos</item>
     </string-array>
     
     <string-array name="detectKeyByEntries">
-        <item>First Chord</item>
-        <item>Last Chord</item>
-        <item>Chord Progression</item>
+        <item>Primer Acorde</item>
+        <item>Último Acorde</item>
+        <item>Progresión de Acordes</item>
     </string-array>
     
     <!-- MIDI Settings -->
-    <string name="midi_header">MIDI Settings</string>
-    <string name="midi_preferences">MIDI Settings</string>
-    <string name="title_midi_channel">MIDI Channel</string>
-    <string name="summary_midi_channel">Sets the default MIDI channel on which MIDI commands will be sent and received.</string>
-    <string name="title_multiple_channels">Allow Multiple MIDI Channels</string>
-    <string name="summary_multiple_channels">Allows MIDI messages to be sent to multiple devices on different channels. Additional settings will be shown in the song editor.</string>
-    <string name="title_midi_device_type">MIDI Device</string>
-    <string name="summary_midi_device_type">Selects the type of MIDI keyboard or device. This allows vendor specific messages to be sent.</string>
+    <string name="midi_header">Ajustes MIDI</string>
+    <string name="midi_preferences">Ajustes MIDI</string>
+    <string name="title_midi_channel">Canal MIDI</string>
+    <string name="summary_midi_channel">Selecciona el canal MIDI por defecto por el que se mandarán y recibirán los comandos MIDI.</string>
+    <string name="title_multiple_channels">Permitir Múltiples Canales MIDI</string>
+    <string name="summary_multiple_channels">Permite que los mensajes MIDI se manden a diferentes dispositivos por diferentes canales. Otros ajustes se mostrarán en el editor de canciones.</string>
+    <string name="title_midi_device_type">Dispositivo MIDI</string>
+    <string name="summary_midi_device_type">Selecciona el tipo de teclado o dispositivo MIDI. Permite mandar mensajes específicos del fabricante.</string>
     
     <string-array name="midiDeviceTypes">
-        <item>Generic</item>
+        <item>Genérico</item>
         <item>KORG</item>
     </string-array>
     
     <!-- Annotations section -->
     <string name="annotations_header">Anotaciones</string>
-    <string name="ann_preferences">Configuración de Anotaciones</string>
-    <string name="auto_save_ann_pref">Auto Guardar Cuando se cambia de Página</string>
+    <string name="ann_preferences">Preferencias de Anotaciones</string>
+    <string name="auto_save_ann_pref">Guardar Automáticamente Cuando se cambia de Página</string>
     <string name="summary_auto_save_ann_pref">Si está marcado, los cambios en las anotaciones se guardarán automáticamente al cambiar de página.</string>
         
     <!-- Miscellaneous section -->
     <string name="misc_header">Ajustes Varios</string>
     <string name="misc_preferences">Ajustes Varios</string>
-    <string name="stop_audio_back_pref">Stop Audio on Back</string>
-    <string name="summary_stop_audio_back_pref">Stops audio playback when returning to the library screen.</string>
-    <string name="ask_exit_pref">Prompt Before Exit</string>
-    <string name="summary_ask_exit_pref">Determines if confirmation is required before exiting the app by hitting the back button.</string>
-    <string name="number_keyboard_pref">Mostrar Teclado Numérico Primero</string>
-    <string name="summary_number_keyboard_pref">Por defecto muestra la sección numérica del teclado primero. En algunas tabletas, se muestran los números y las letras juntos por defecto y este ajuste no tiene efecto.</string>
+    <string name="stop_audio_back_pref">Parar el Audio al Volver</string>
+    <string name="summary_stop_audio_back_pref">Para la reproducción de audio al volver a la pantalla de la librería.</string>
+    <string name="ask_exit_pref">Preguntar Antes de Salir</string>
+    <string name="summary_ask_exit_pref">Determina si se requiere confirmación antes de salir de la aplicación al pulsar el botón volver.</string>
+    <string name="number_keyboard_pref">Mostrar Primero Teclado Numérico</string>
+    <string name="summary_number_keyboard_pref">Por defecto muestra primero la sección numérica del teclado. En algunas tabletas, se muestran los números y las letras juntos por defecto y este ajuste no tiene efecto.</string>
     
     <!-- Utilities section -->
     <string name="utilities_header">Utilidades</string>
     <string name="utilities_preferences">Utilidades</string>
     <string name="backup_title">Copia de Seguridad de la Librería</string>
-    <string name="backup_summary">Hace Copia de Seguridad de todas las canciones, imágenes/PDFs, y archivos de audio privados a un archivo .msb en una ubicación especificada por el usuario.</string>
+    <string name="backup_summary">Hace una Copia de Seguridad de todas las canciones, imágenes/PDFs, y archivos de audio privados a un archivo .msb en una ubicación especificada por el usuario.</string>
     <string name="restore_title">Restaurar Librería desde la Copia de Seguridad.</string>
-    <string name="restore_summary">Extrae la base de datos, las imágenes/PDFs, y archivos privados de audio desde un archivo .msb seleccionado por el usuario. NOTA: ESTO REMPLAZARÁ POR COMPLETO SU LIBRERÍA ACTUAL.</string>
+    <string name="restore_summary">Restaura la base de datos, las imágenes/PDFs, y archivos privados de audio desde un archivo .msb seleccionado por el usuario. NOTA: ESTO REMPLAZARÁ POR COMPLETO SU LIBRERÍA ACTUAL.</string>
     <string name="batch_title">Importar por Lotes</string>
-    <string name="batch_summary">Crear canciones de todos los PDFs e imágenes que se encuentren en la carpeta seleccionada.</string>
+    <string name="batch_summary">Crea canciones de todos los PDFs e imágenes que se encuentren en la carpeta seleccionada.</string>
     <string name="convert_pdf_title">Convertir PDF a Imágenes</string>
     <string name="convert_pdf_summary">Conversor para producir imágenes a partir de un PDF</string>
         
     <!-- Advanced section -->
-    <string name="advanced_header">@string/advanced</string>
+    <string name="advanced_header">***@string/advanced</string>
     <string name="advanced_preferences">Opciones avanzadas</string>
     <string name="import_db_title">Importar base de datos</string>
     <string name="import_db_summary">Proporciona una forma de reemplazar el archivo de base de datos. Esto reemplazará todos los metadatos y las canciones. Proceda con cautela.</string>
     <string name="export_db_title">Exportar base de datos</string>
-    <string name="export_db_summary">Permite que un archivo de base de datos para ser exportado. Esto hará una copia del archivo de base de datos en la ubicación que seleccione. Esto no se copia de seguridad de imágenes o archivos PDF.</string>
-    <string name="restore_db_backup_title">Restaurar base de datos de copia de seguridad</string>
-    <string name="restore_db_backup_summary">Permite una de las copias de seguridad de bases de datos automáticas para ser restaurados en el caso de que los datos se ha perdido. Restaurar una copia de seguridad de base de datos es irreversible, así que tenga cuidado al usar esta función.</string>
-    <string name="wake_lock_pref">Tenga en pantalla</string>
-    <string name="summary_wake_lock_pref">Mantiene la pantalla siempre encendida y asegura que no hay tabletas características se ponen a dormir (como bluetooth)</string>
-    <string name="cpu_lock_pref">Keep CPU On</string>
-    <string name="summary_cpu_lock_pref">Stops the CPU and other processing resources from sleeping. If you experience problems with a bluetooth pedal sleeping, turn on this setting. Note that this can cause battery drain.</string>
+    <string name="export_db_summary">Permite exportar un archivo de base de datos. Hará una copia del archivo de base de datos en la ubicación que seleccione. No se hará copia de seguridad de imágenes o archivos PDF.</string>
+    <string name="restore_db_backup_title">Restaurar base de datos desde copia de seguridad</string>
+    <string name="restore_db_backup_summary">***Permite una de las copias de seguridad de bases de datos automáticas para ser restaurados en el caso de que los datos se ha perdido. Restaurar una copia de seguridad de base de datos es irreversible, así que tenga cuidado al usar esta función.</string>
+    <string name="wake_lock_pref">No Apagar Pantalla</string>
+    <string name="summary_wake_lock_pref">Mantiene la pantalla siempre encendida y asegura que no se apaguen ciertas características (como bluetooth)</string>
+    <string name="cpu_lock_pref">Mantener Actividad de la CPU</string>
+    <string name="summary_cpu_lock_pref">Impide que la CPU y otros recursos se detengan. Si experimenta problemas con el pedal bluetooth, active este ajuste. Esto gastará más batería.</string>
     <string name="clear_library_title">Eliminar Librería</string>
     <string name="clear_library_summary">Borra toda la librería, y opcionalmente elimina los archivos de canciones.</string>
-    <string name="reset_settings_title">Reset Settings to Default</string>
-    <string name="summary_reset_settings">Resets all user preferences to their default settings.</string>
-    <string name="reset_settings_msg">Are you sure you want to clear all user settings? This cannot be undone.</string>
+    <string name="reset_settings_title">Volver a los Ajustes por Defecto</string>
+    <string name="summary_reset_settings">Vuelve todas las preferencias de usuario a su valor por defecto.</string>
+    <string name="reset_settings_msg">¿Está seguro de que quiere borrar todos los ajustes de usuario? Esto no se podrá deshacer.</string>
     
     <!-- Storage section -->
-    <string name="storage_header">Storage</string>
-    <string name="storage_preferences">Storage Options</string>
-    <string name="mobilesheets_manage_title">Let MobileSheets Manage My Files</string>
-    <string name="mobilesheets_manage_summary">Determines if MobileSheets should make copies of all imported files and organize them in the MobileSheets storage location (as shown below). If you uncheck this option, MobileSheets will always use files in their original directories.</string>
-    <string name="storage_title">Set the MobileSheets Storage Location</string>
-    <string name="storage_summary">Sets the folder to use for files managed by MobileSheets. If you import from Dropbox, an email, or some other non-local source, your files will be copied into this directory.</string>
-    <string name="title_expose_database">Expose Database File</string>
-    <string name="summary_expose_database">Places the database file into the MobileSheets storage location instead of making it application private.</string>
-    <string name="title_delete_after_copy">Delete Original After Copy</string>
-    <string name="summary_delete_after_copy">Deletes original files after MobileSheets has copied them to the storage location.</string>
-    <string name="title_create_subdirs">Create Subdirectories For Songs</string>
-    <string name="summary_create_subdirs">If enabled, a new folder will be created for every song to hold its files.</string>
-    <string name="title_copy_audio_files">Copy Audio Files</string>
-    <string name="summary_copy_audio_files">Determines whether or not MobileSheets will copy audio files into the storage location.</string>
-    <string name="title_add_unique_id">Add Unique Id to Filenames</string>
-    <string name="summary_add_unique_id">Adds a unique identifier to files when being imported to help reduce file name conflicts. Use this if you regularly import files with duplicate names.</string>
+    <string name="storage_header">Almacenamiento</string>
+    <string name="storage_preferences">Opciones de Almacenamiento</string>
+    <string name="mobilesheets_manage_title">Permitir que MobileSheets Maneje mis Ficheros</string>
+    <string name="mobilesheets_manage_summary">Determina si MobileSheets deberá hacer copias de todos los ficheros importados y organizarlos en la unicación de almacenamiento de MobileSheets (como se muestra abajo). Si no selecciona esta opción, MobileSheets usará siempre los ficheros en sus directorios originales.</string>
+    <string name="storage_title">Seleccionar la Ubicación de Almacenamiento de MobileSheets</string>
+    <string name="storage_summary">Selecciona la carpeta para los ficheros manejados por MobileSheets. Si importa desde DropBox, email u otra fuente no local, sus ficheros se copiarán en este directorio.</string>
+    <string name="title_expose_database">Exponer Fichero de Base de Datos</string>
+    <string name="summary_expose_database">Coloca el fichero de base de datos en la ubicación de almacenamiento de MobileSheets en lugar de mantenerlo privado para la aplicación.</string>
+    <string name="title_delete_after_copy">Borrar Original Después de Copiar</string>
+    <string name="summary_delete_after_copy">Borra los ficheros de origen después de que MobileSheets los copie a la ubicación de almacenamiento.</string>
+    <string name="title_create_subdirs">Crear Subdirectorios Para Cada Canción</string>
+    <string name="summary_create_subdirs">Si se habilita, se creará un nuevo directorio para mantener los ficheros de una canción.</string>
+    <string name="title_copy_audio_files">Copiar Ficheros de Audio</string>
+    <string name="summary_copy_audio_files">Determina si MobileSheets copiará los ficheros de audio a la ubicación de almacenamiento o no.</string>
+    <string name="title_add_unique_id">Añadir Id Único para Ficheros</string>
+    <string name="summary_add_unique_id">Añade un identificador único a los ficheros que se importen para evitar conflictos. Úselo si importa habitualmente ficheros con nombres duplicados.</string>
             
     <!-- Messages displayed to the user, titles and labels -->
     <string name="export_file_success">Successfully exported file %1$s</string>
