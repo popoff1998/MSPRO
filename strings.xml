@@ -361,49 +361,49 @@
         <item>Actualizar la canción existente con el nuevo fichero</item>
     </string-array>
     
-    <string name="song_match_title">Duplicate Song Title Found</string>
-    <string name="song_match_found">A song named \'%1$s\' already exists. Would you like to update that song or create a new one?</string>
-    <string name="setlist_match_title">Duplicate Setlist Title Found</string>
-    <string name="setlist_match_found">A setlist named \'%1$s\' already exists. Would you like to update that setlist or create a new one?</string>
-    <string name="update">Update</string>
+    <string name="song_match_title">Se encontró un título de canción duplicado</string>
+    <string name="song_match_found">Una Canción llamada \'%1$s\' ya existe. ¿Quiere actualizarla o crear una nueva?</string>
+    <string name="setlist_match_title">Se encontró un título de Setlist duplicado</string>
+    <string name="setlist_match_found">Un Setlist llamado \'%1$s\' ya existe. ¿Quiere actualizarlo o crear uno nuevo?</string>
+    <string name="update">Actualizar</string>
         
     <!-- midi_dialog_layout.xml -->
-    <string name="commandTypeLabel">Command Type:</string>
-    <string name="channelLabel">Channel:</string>
-    <string name="commandLabel">Command:</string>
-    <string name="korgNumberLabel">Number:</string>
-    <string name="bankSelectLabel">(Bank Select)</string>
-    <string name="programChangeLabel">(Program Change)</string>
+    <string name="commandTypeLabel">Tipo de Comando:</string>
+    <string name="channelLabel">Canal:</string>
+    <string name="commandLabel">Comando:</string>
+    <string name="korgNumberLabel">Número:</string>
+    <string name="bankSelectLabel">(Selección de Banco)</string>
+    <string name="programChangeLabel">(Cambio de Programa)</string>
     <string name="msbLabel">MSB</string>
     <string name="lsbLabel">LSB</string>
-    <string name="valueLabel">Value (Patch)</string>
-    <string name="numberLabel">Number</string>
-    <string name="ccValueLabel">Value</string>
-    <string name="sendOnLoadLabel">Send on Song Load:</string>
-    <string name="loadOnRecvLabel">Load Song on Receive:</string>
-    <string name="sendOnLoad">Send on Load</string>
-    <string name="loadOnRecv">Load on Receive</string>
-    <string name="sysExExample">e.g. F0 43 10 7F 01 0A 00 01 01 F7</string>
-    <string name="enterMidiValue">Enter the Value</string>
-    <string name="createCommandFirst">Create a MIDI Command first</string>
+    <string name="valueLabel">Valor (Patch)</string>
+    <string name="numberLabel">Número</string>
+    <string name="ccValueLabel">Valor</string>
+    <string name="sendOnLoadLabel">Enviar al cargar la Canción:</string>
+    <string name="loadOnRecvLabel">Cargar la Canción al recibir:</string>
+    <string name="sendOnLoad">Enviar al Cargar</string>
+    <string name="loadOnRecv">Cargar al Recibir</string>
+    <string name="sysExExample">ej. F0 43 10 7F 01 0A 00 01 01 F7</string>
+    <string name="enterMidiValue">Introduzca el valor</string>
+    <string name="createCommandFirst">Cree el comando MIDI ante</string>
     
     <string-array name="commandTypes">
         <item>Patch Select</item>
         <item>Control Change</item>
         <item>Program Change</item>
         <item>System Exclusive</item>
-        <item>Number</item>
+        <item>Número</item>
     </string-array>
     
     <!-- midi_activity_layout.xml -->
-    <string name="midiCommandsLabel">MIDI Commands:</string>
+    <string name="midiCommandsLabel">Comandos MIDI:</string>
     <string name="patch">(Patch)</string>
     
     <!-- media player -->
-    <string name="trackListLabel">Track List:</string>
+    <string name="trackListLabel">Lista de Pistas:</string>
     
     <!-- multi_choice_dialog.xml -->
-    <string name="multiChoiceTitle">Select Items</string>
+    <string name="multiChoiceTitle">Seleccione los items</string>
     
     <!-- next_up_settings_dialog.xml -->
     <string name="showNextUpLabel">Mostrar Canción Siguiente:</string>
@@ -414,9 +414,9 @@
     <string name="nextSongTitle">Configuración Canción Siguiente</string>
     
     <!-- Rename dialog -->
-    <string name="rename_title">File Already Exists - Choose a Different Name</string>
+    <string name="rename_title">El Fichero ya existe - Escoja un nombre diferente</string>
     
-    <string name="group_already_exists">%1$s Already Exists - Choose a Different Name</string>
+    <string name="group_already_exists">%1$s ya existe - Escoja un nombre diferente</string>
     
     <string-array name="next_up_fade_modes">
     	<item>Nunca</item>
@@ -438,7 +438,7 @@
         <item>Personalizado</item>
     </string-array>
     <string-array name="next_back_colors">
-    	<item>Defecto</item>
+    	<item>Por defecto</item>
     	<item>Gris Oscuro</item>
         <item>Blanco</item>
         <item>Verde</item>
@@ -451,7 +451,7 @@
     </string-array>
     
     <!-- Setlist window -->
-    <string name="pause_for_request">Pause Setlist for Song</string>
+    <string name="pause_for_request">***Pausar el setlist para cada canción</string>
         
     <!-- notes_dialog_layout.xml -->
     <string name="notesLabel">Notas:</string>
@@ -463,14 +463,14 @@
     <string name="password_title">Introduzca contraseña para el %1$s</string>
     
     <!-- storage_activity.xml -->
-    <string name="storage_label">Path:</string>
-    <string name="confirm_copy_title">Confirm Storage Change</string>
-    <string name="confirm_copy_msg">MobileSheets is currently managing files in the storage location. All of these files must be moved to the new location, and the process may take awhile. If you do not want files to be moved, you must first disable the "Manage My Files" setting.</string>
-    <string name="moving_files_title">Moving Files to New Location</string>
-    <string name="moving_files_msg">Moving files to the new storage folder, please wait&#8230;</string>
-    <string name="confirm_cancel_move_title">Confirm Cancellation</string>
-    <string name="confirm_cancel_move_msg">Are you sure you want to cancel moving files? Files that have already been moved will be left in the new location.</string>
-    <string name="directory_not_writable">The directory "%1$s" is read-only. Please select a different directory that can be written to. If the path is on an external SD card, use the SD card button to find a writable path.</string>
+    <string name="storage_label">Ruta:</string>
+    <string name="confirm_copy_title">Confirme el cambio de Almacenamiento</string>
+    <string name="confirm_copy_msg">MobileSheets está manejando los ficheros en la ubicación de almacenamiento. Se moverán todos los ficheros a la nueva ubicación, el proceso tardará un rato. Si no desea que los ficheros se muevan, deshabilite la el ajuste "Manejar mis Ficheros".</string>
+    <string name="moving_files_title">Moviendo los ficheros a la nueva ubicación</string>
+    <string name="moving_files_msg">Moviendo los ficheros a la nueva carpeta de almacenamiento, por favor espere&#8230;</string>
+    <string name="confirm_cancel_move_title">Confirme la cancelación</string>
+    <string name="confirm_cancel_move_msg">Está seguro de que quiere cancelar el movimiento de ficheros? Los que ya hayan sido movidos se mantendrán en la nueva ubicación.</string>
+    <string name="directory_not_writable">El directorio "%1$s" es de solo lectura. Seleccione un directorio diferente que pueda escribirse. Si la ruta está en una tarjeta SD externa, use el botón SD para encontrar una ruta escribible.</string>
     
     <!-- restore_activity.xml -->
     <string name="file_label">Copia de Seguridad de Archivo:</string>
@@ -478,152 +478,152 @@
     <string name="restoreToLabel">Restaurar a:</string>
     <string name="checkCreateSubdirs">Crear una subcarpeta por canción</string>
     <string name="delete_all_files">Borrar todos los archivos en almacenamiento Interno y en Tarjeta SD (Recomendado)</string>
-    <string name="no_internet_connection">Restaurar no se ha iniciado, no puede conectarse a Dropbox - Sin conexión a Internet Detectado</string>
+    <string name="no_internet_connection">Restaurar no se ha iniciado, no puede conectarse a Dropbox - No se ha detectado conexión a Internet</string>
         
     <!-- sharing -->
-    <string name="gen_share_file_title">Generating File</string>
-    <string name="gen_share_file_msg">Generating file, please wait&#8230;</string>
-    <string name="gen_share_progress_msg">Generating file, %1$d%% complete</string>
+    <string name="gen_share_file_title">Generando fichero</string>
+    <string name="gen_share_file_msg">Generando fichero, espere&#8230;</string>
+    <string name="gen_share_progress_msg">Generando fichero %1$d%% completado</string>
         
     <!-- song_editor.xml -->
-    <string name="editing_title">Editing \'%1$s\'</string>
-    <string name="new_song_title">Enter Data for New Song</string>
-    <string name="copying_title">Copy of \'%1$s\'</string>
+    <string name="editing_title">Editando \'%1$s\'</string>
+    <string name="new_song_title">Introduzca los datos para la nueva Canción</string>
+    <string name="copying_title">Copia de \'%1$s\'</string>
     
-    <string name="fieldsTab">Fields</string>
-    <string name="filesTab">Files</string>
+    <string name="fieldsTab">Campos</string>
+    <string name="filesTab">Fichero </string>
     <string name="audioTab">Audio</string>
     <string name="midiTab">MIDI</string>
     
-    <string name="audioFileLabel">Audio Files:</string>
+    <string name="audioFileLabel">Ficheros de Audio:</string>
     <string name="manage_song_name">Editor de Canciones de MobileSheets</string>
     <string name="starting_dropbox_download">Descarga de archivos de Dropbox</string>
     <string name="initiating_dropbox_connection">Iniciando conexión Dropbox</string>
-    <string name="customSortTitleLabel">Sort Title:</string>
-    <string name="addToSetlistsLabel">Add to Setlists:</string>
-    <string name="addToCollectionsLabel">Add to Collections:</string>
+    <string name="customSortTitleLabel">Título de ordenación:</string>
+    <string name="addToSetlistsLabel">Añadir a los Setlists:</string>
+    <string name="addToCollectionsLabel">Añadir a las Colecciones:</string>
     <string name="temposLabel">Tempos:</string>
-    <string name="durationLabel">Duration:</string>
+    <string name="durationLabel">Duración:</string>
     
-    <string name="filesLabel">Files:</string>
-    <string name="pageOrderLabel">Page Order:</string>
-    <string name="pageCountLabel">Pages in File:</string>
-    <string name="rotationLabel">Rotation:</string>
-    <string name="autoCropButton">Auto-Crop</string>
-    <string name="resetCropButton">Reset Crop</string>
+    <string name="filesLabel">Ficheros:</string>
+    <string name="pageOrderLabel">Orden de Páginas:</string>
+    <string name="pageCountLabel">Páginas en Fichero:</string>
+    <string name="rotationLabel">Rotación:</string>
+    <string name="autoCropButton">Auto-Recorte</string>
+    <string name="resetCropButton">Reinicializar Recorte</string>
         
-    <string name="startEndLabel">Track Start/End:</string>
+    <string name="startEndLabel">Pista Inicio/Fin:</string>
     
-    <string name="no_title_err">A title is required for every song.</string>
+    <string name="no_title_err">Se necesita un título para cada Canción.</string>
     
-    <string name="no_files_err">You must add at least one file or blank page!</string>
+    <string name="no_files_err">Debe añadir al menos un fichero o una página en blanco!</string>
     
-    <string name="file_exists">A file with that name already exists</string>
+    <string name="file_exists">Ya existe un fichero con ese nombre</string>
     
-    <string name="enter_page_val">Enter the Page Number</string>
-    <string name="enter_rotation_val">Enter The Rotation Value</string>
-    <string name="enter_file_first">You must first add a file!</string>
+    <string name="enter_page_val">Introduzca el número de página</string>
+    <string name="enter_rotation_val">Introduzca el valor de la rotación</string>
+    <string name="enter_file_first">Debes añadir un fichero antes!</string>
     
-    <string name="only_one_text">Only one text file is allowed per song</string>
-    <string name="only_one_chord_pro">Only one chord pro file is allowed per song</string>
-    <string name="cant_combine_text">You cannot mix text files with other file types.</string>
-    <string name="cant_combine_chord_pro">You cannot mix chord pro files with other file types.</string>
+    <string name="only_one_text">Solo se permite un fichero de texto por cación</string>
+    <string name="only_one_chord_pro">Solo se permite un fichero chordPro por cación</string>
+    <string name="cant_combine_text">No puedes mezclar ficheros de texto con otros tipos.</string>
+    <string name="cant_combine_chord_pro">No puedes mezclar ficheros chordPro con otros tipos.</string>
     
-    <string name="select_blank_count">How Many Blank Pages?</string>
+    <string name="select_blank_count">¿Cuántas páginas en blanco?</string>
     
     <plurals name="blank_page_desc">
-        <item quantity="one">%1$d Blank Page</item>
-        <item quantity="other">%1$d Blank Pages</item>
+        <item quantity="one">%1$d Página en Blanco</item>
+        <item quantity="other">%1$d Páginas en Blanco</item>
     </plurals>
     
-    <string name="accept_discard_changes">Are you sure you want to discard all changes?</string>
+    <string name="accept_discard_changes">¿Está seguro de que desea descartar todos los cambios?</string>
     
-    <string name="getting_duration_title">Retrieving Audio Information</string>
-    <string name="getting_duration_msg">Loading audio file to get track information, please wait&#8230;</string>
-    <string name="unable_get_duration_err">Unable to get duration of audio for file %1$s. Is the file valid?</string>
+    <string name="getting_duration_title">Recuperando la información de Audio</string>
+    <string name="getting_duration_msg">Cargando el fichero de audio para recuperar la  información de pista, espera&#8230;</string>
+    <string name="unable_get_duration_err">Imposible recuperar la duración de audio del fichero %1$s. ¿Es un fichero válido?</string>
     
-    <string name="cropping_title">Cropping Pages</string>
-    <string name="cropping_msg">Calculating crop points, please wait&#8230;</string>
-    <string name="not_croppable">Not Croppable</string>
+    <string name="cropping_title">Recortando páginas</string>
+    <string name="cropping_msg">Calculando los puntos de recorte, espere&#8230;</string>
+    <string name="not_croppable">No es recortable</string>
     
-    <string name="add_a_file_msg">Add a file using one of the buttons beside the file list.</string>
-    <string name="processing_file_modifications_title">File Modifications Detected</string>
-    <string name="processing_file_modifications_msg">Processing file modifications, please wait...</string>
+    <string name="add_a_file_msg">Añada un fichero usando uno de los botones junto a la lista de ficheros.</string>
+    <string name="processing_file_modifications_title">Se detectaron modificaciones del fichero</string>
+    <string name="processing_file_modifications_msg">Procesando las modificaciones del fichero, espere...</string>
     
-    <string name="copying_file_title">Copying File</string>
-    <string name="copying_file_msg">Copying file to tablet, please wait...</string>
+    <string name="copying_file_title">Copiando fichero</string>
+    <string name="copying_file_msg">Copiando el fichero a la tableta, espere...</string>
     
-    <string name="ab_text_display_settings">Text File Settings</string>
+    <string name="ab_text_display_settings">Ajustes del fichero de texto</string>
         
     <!-- Page Order Dialog -->
-    <string name="page_order_title">Enter the Page Order</string>
-    <string name="orderLabel">Page Order:</string>
-    <string name="invalid_page_order">"%1$s" is not a valid page ordering.</string>
-    <string name="page_out_of_bounds">The maximum allowed page is %1$d</string>
+    <string name="page_order_title">Introduzca el orden de la página</string>
+    <string name="orderLabel">Orden de Página:</string>
+    <string name="invalid_page_order">"%1$s" no es un orden de página válido.</string>
+    <string name="page_out_of_bounds">El número máximo de página es %1$d</string>
     
     <!-- Song Editor Settings Dialog -->
-    <string name="apply_rotation_label">Apply Rotation:</string>
-    <string name="apply_crop_label">Apply Crop:</string>
-    <string name="autoCropLabel">Auto-Crop Imported Files:</string>
-    <string name="aggressiveLabel">Aggressively Crop:</string>
-    <string name="populateFieldsAudioLabel">Populate Metadata When Importing Audio:</string>
-    <string name="song_editor_settings_title">Song Editor Settings</string>
+    <string name="apply_rotation_label">Aplicar Rotación:</string>
+    <string name="apply_crop_label">Aplicar Recorte:</string>
+    <string name="autoCropLabel">Recortar automáticamente los ficheros importados:</string>
+    <string name="aggressiveLabel">Recorte Agresivo:</string>
+    <string name="populateFieldsAudioLabel">Rellenar metadatos al importar audio:</string>
+    <string name="song_editor_settings_title">Ajustes del Editor de Canciones</string>
     <string-array name="apply_rotation_crop_choices">
-        <item>Current page only</item>
-        <item>All pages in selected file</item>
-        <item>All pages in all files</item>
+        <item>Solo la página actual</item>
+        <item>Todas las páginas de este fichero</item>
+        <item>Todas las páginas de todos los ficheros</item>
     </string-array>
     
     <!-- Crop activity -->
-    <string name="crop_apply_to">Apply To</string>
-    <string name="ab_reset">Reset</string>
-    <string name="ab_clear">Clear</string>
-    <string name="ab_goto">Go To</string>
-    <string name="ab_crop_page_msg">Page %1$d / %2$d</string>
-    <string name="ab_auto_crop_all">Auto-Crop All Pages</string>
+    <string name="crop_apply_to">Aplicar a</string>
+    <string name="ab_reset">Restaurar</string>
+    <string name="ab_clear">Borrar</string>
+    <string name="ab_goto">Ir A</string>
+    <string name="ab_crop_page_msg">Página %1$d / %2$d</string>
+    <string name="ab_auto_crop_all">Auto recortar todas las páginas</string>
     
-    <string name="crop_apply_title">Apply Crop To Which?</string>
+    <string name="crop_apply_title">¿Aplicar recorte a quien?</string>
     
     <!-- Pedal Settings Activity -->
-    <string name="debounceLabel">Debounce:</string>
-    <string name="pedal_error">Error initializing pedal settings, please restart the application.</string>
+    <string name="debounceLabel">Evitar Rebotes:</string>
+    <string name="pedal_error">Error al inicializar los ajustes del pedal, por favor reinicie la aplicación.</string>
     <string name="pedalOneLabel">Pedal 1</string>
     <string name="pedalTwoLabel">Pedal 2</string>
     <string name="pedalThreeLabel">Pedal 3</string>
     <string name="pedalFourLabel">Pedal 4</string>
-    <string name="pedal_keys_label">Keys:</string>
-    <string name="pedal_action_label">Action:</string>
+    <string name="pedal_keys_label">Teclas:</string>
+    <string name="pedal_action_label">Acción:</string>
     
-    <string name="pedal_key_msg">Press each pedal or key to map to the action.</string>
-    <string name="pedal_key_title">Press Pedal</string>
-    <string name="close">Close</string>
+    <string name="pedal_key_msg">Pulse cada pedal o tecla para mapear la acción.</string>
+    <string name="pedal_key_title">Pulse el pedal</string>
+    <string name="close">Cerrar</string>
     
     <string-array name="pedal_actions">
-        <item>None</item>
-        <item>Go to Previous Page</item>
-        <item>Go to Next Page</item>
-        <item>Scroll to Top of Page</item>
-        <item>Scroll to Bottom of Page</item>
-        <item>Activate Link Point or Turn Page</item>
-        <item>Scroll Down or Turn Page if at Bottom</item>
-        <item>Scroll Up or Turn Page if at Top</item>
-        <item>Predictive Scroll Down and Turn</item>
-        <item>Predictive Scroll Up and Turn</item>
-        <item>Activate Previous Link</item>
-        <item>Activate Next Link</item>
-        <item>Activate Previous Link Or Go to Previous Page</item>
-        <item>Activate Next Link Or Go to Next Page</item>
-        <item>Previous Annotation Group</item>
-        <item>Next Annotation Group</item>
-        <item>Show or Hide the Audio Player</item>
-        <item>Previous Audio Track</item>
-        <item>Next Audio Track</item>
-        <item>Start or Pause Audio Track</item>
-        <item>Start or Stop Metronome</item>
-        <item>Go to Previous Song</item>
-        <item>Go to Next Song</item>
-        <item>Go to Start of Song</item>
-        <item>Go to End of Song</item>
+        <item>Ninguna</item>
+        <item>Ir a Página Anterior</item>
+        <item>Ir a Página Siguiente</item>
+        <item>Desplazar al inicio de la Página</item>
+        <item>Desplazar al final de la Página</item>
+        <item>Activar el enlace o pasar Página</item>
+        <item>Desplazar abajo o pase página si está al final</item>
+        <item>Desplazar arriba o pase página si está al principio</item>
+        <item>Desplazamiento predictivo abajo y pase página</item>
+        <item>Desplazamiento predictivo arriba y pase página</item>
+        <item>Activar el enlace anterior</item>
+        <item>Activar el enlace siguiente</item>
+        <item>Activar el enlace anterior o ir a la página anterior</item>
+        <item>Activar el enlace siguiente o ir a la página siguiente</item>
+        <item>Grupo de anotaciones anterior</item>
+        <item>Grupo de anotaciones siguiente</item>
+        <item>Mostrar u Ocultar el Reproductor de Audio</item>
+        <item>Pista de audio anterior</item>
+        <item>Pista de audio siguiente</item>
+        <item>Iniciar o pausar la pista de audio</item>
+        <item>Iniciar o pausar el metrónomo</item>
+        <item>Ir a la Canción anterior</item>
+        <item>Ir a la Canción siguiente</item>
+        <item>Ir al principio de la Canción</item>
+        <item>ir al final de la Canción</item>
     </string-array>
     
     <!-- Touch Settings Activity -->
