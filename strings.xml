@@ -900,96 +900,96 @@
     <string name="delete">Borrar</string>
     
     <!-- Library QuickActions -->
-    <string name="quick_add_item">New</string>
+    <string name="quick_add_item">Nuevo</string>
     <string name="quick_voice_search">Búsqueda por Voz</string>
     <string name="quick_manual">Manual</string>
     <string name="quick_sync">Sincronizar con PC</string>
     <string name="quick_batch">Importar por Lotes</string>
         
-    <string name="ab_quick_import">Import</string>
-    <string name="ab_local_file">Local File</string>
+    <string name="ab_quick_import">Importar</string>
+    <string name="ab_local_file">Fichero Local</string>
     <string name="ab_dropbox_file">Dropbox</string>
-    <string name="ab_external_cloud_file">External/Cloud</string>
+    <string name="ab_external_cloud_file">Externo/Cloud</string>
     
-    <string name="ab_show_filters">Show Filters</string>
-    <string name="ab_hide_filters">Hide Filters</string>
+    <string name="ab_show_filters">Mostrar Filtros</string>
+    <string name="ab_hide_filters">Ocultar Filtros</string>
     
     <!-- Overlay QuickActions -->
     <string name="notes">Notas</string>
-    <string name="crop">Crop</string>
-    <string name="show_annotations">Show Annotations</string>
-    <string name="zoom_pan_settings">Zoom/Pan Settings</string>
-    <string name="sharpen_image">Enfocar Imagen</string>
+    <string name="crop">Recortar</string>
+    <string name="show_annotations">Mostrar Anotaciones</string>
+    <string name="zoom_pan_settings">Ajustes Zoom/Desplazamiento</string>
+    <string name="sharpen_image">Mejorar Imagen</string>
     <string name="orientation">Orientación</string>
-    <string name="text_display_settings">Text Display Settings</string>
+    <string name="text_display_settings">Ajustes Visualización Texto</string>
     
-    <string name="start_scroll">Start Scrolling</string>
-    <string name="scroll_settings">Desplazar ajustes</string>
+    <string name="start_scroll">Comenzar Desplazamiento</string>
+    <string name="scroll_settings">Ajustes Desplazamiento</string>
     
     <!-- Setlist window -->
-    <string name="add_song_to_setlist_title">Add Song to Setlist</string>
+    <string name="add_song_to_setlist_title">Añadir Canción al Setlist</string>
         
     <!-- Song Format Dialog -->
-    <string name="labelTitleFormat">Title Format:</string>
-    <string name="labelCaptionFormat">Caption Format:</string>
-    <string name="labelFormat">Format:</string>
-    <string name="labelExampleOutput">Example Output:</string>
-    <string name="labelFields">Fields:</string>
-    <string name="checkShowCaption">Show Caption</string>
+    <string name="labelTitleFormat">Formato de Título:</string>
+    <string name="labelCaptionFormat">Formato de Subtítulo:</string>
+    <string name="labelFormat">Formato:</string>
+    <string name="labelExampleOutput">Ejemplo de Salida:</string>
+    <string name="labelFields">Campos:</string>
+    <string name="checkShowCaption">Mostrar Subtítulo</string>
     
-    <string name="btnTitle">Title</string>
+    <string name="btnTitle">Título</string>
     <string name="tempos">Tempos</string>
-    <string name="difficulty">Difficulty</string>
-    <string name="pages">Pages</string>
-    <string name="rating">Rating</string>
+    <string name="difficulty">Dificultad</string>
+    <string name="pages">Páginas</string>
+    <string name="rating">Calificación</string>
     
-    <string name="labelSeparators">Separators:</string>
-    <string name="title_format">Title Format</string>
-    <string name="caption_format">Caption Format</string>
+    <string name="labelSeparators">Separadores:</string>
+    <string name="title_format">Formato de Título</string>
+    <string name="caption_format">Formato de Subtítulo</string>
     
     <!-- Generate Song List Format Dialog -->
-    <string name="show_setlist_title">Show Setlist Title</string>
+    <string name="show_setlist_title">Mostrar Título de Setlist</string>
     
     <!-- Link Edit Dialog -->
-    <string name="link_edit_title">Edit Link Size</string>
-    <string name="apply_to_link_title">Apply Link Radius To</string>
-    <string name="link_radius_applied_default">Default Link Radius Set</string>
+    <string name="link_edit_title">Edit Tamaño de Enlace</string>
+    <string name="apply_to_link_title">Aplicar Radio de Enlace a</string>
+    <string name="link_radius_applied_default">Poner Radio de Enlace por Defecto</string>
     
-    <string name="link_settings_applied">Link Settings Successfully Applied</string>
+    <string name="link_settings_applied">Radio de Enlace Aplicado Correctamente</string>
     
     <string-array name="apply_link_points">
-        <item>Current Link Only</item>
-        <item>All Link Points in Current Song</item>
-        <item>All Link Points in Setlist</item>
-        <item>All Link Points in All Songs</item>
+        <item>Solo al Enlace Actual</item>
+        <item>Todos los Enlaces de la Canción</item>
+        <item>Todos los Enlaces del Setlist</item>
+        <item>Todos los Enlaces de Todas las Canciones</item>
     </string-array>
     
     <!-- Zoom/Pan Settings Dialog -->
-    <string name="zoom_pan_title">Apply Zoom/Pan Settings</string>
-    <string name="zoom_settings_label">Zoom Settings:</string>
-    <string name="pan_settings_label">Pan Settings:</string>
-    <string name="reset_pan_zoom">Reset Pan and Zoom</string>
-    <string name="reset_successful">Pan and zoom successfully set to defaults.</string>
-    <string name="zoom_less_than">Allow zoom out smaller than 100%</string>
+    <string name="zoom_pan_title">Aplicar Ajustes de Zoom/Desplazamiento</string>
+    <string name="zoom_settings_label">Ajustes de Zoom:</string>
+    <string name="pan_settings_label">Ajustes de Desplazamiento:</string>
+    <string name="reset_pan_zoom">Revertir Zoom y Desplazamiento</string>
+    <string name="reset_successful">Ajustes de Zoom/Desplazamiento ajustados a valores por defecto.</string>
+    <string name="zoom_less_than">Permitir zoom menor que 100%</string>
     
     <string-array name="apply_entries">
-        <item>Current Page Only</item>
-        <item>All Pages in Current File</item>
-        <item>All Pages in All Files (Current Song)</item>
-        <item>All Pages in Setlist</item>
+        <item>Solo la Página Actual</item>
+        <item>Todas las Páginas del Fichero Actual</item>
+        <item>Todas las Páginas de Todos los Ficheros (Canción Actual)</item>
+        <item>Todas las Páginas del Setlist</item>
     </string-array>
     
     <!-- Create Placeholder Dialog -->
-    <string name="create_placeholder_title">Create Placeholder</string>
-    <string name="add_placeholder_title">Add Placeholder</string>
+    <string name="create_placeholder_title">Crear Marcador</string>
+    <string name="add_placeholder_title">Añadir Marcador</string>
     
     <!-- Create Snippet Dialog -->
-    <string name="create_snippet_title">Create Snippet</string>
-    <string name="copy_metadata">Copy Metadata</string>
-    <string name="copy_annotations">Copy Annotations</string>
-    <string name="load_after_creation">Load Snippet After Creation</string>
-    <string name="creating_snippet_title">Creating Snippet</string>
-    <string name="creating_snippet_msg">Creating Snippet in Database, please wait...</string>
+    <string name="create_snippet_title">Crear Fragmento</string>
+    <string name="copy_metadata">Copiar Metadatos</string>
+    <string name="copy_annotations">Copiar Anotaciones</string>
+    <string name="load_after_creation">Cargar Fragmento Después de Crearlo</string>
+    <string name="creating_snippet_title">Creando Fragmento</string>
+    <string name="creating_snippet_msg">Creando Fragmento en la Base de Datos, espere...</string>
     
     <!-- Restore Database Activity -->
     <string name="no_backups_available">No hay copias de seguridad de la base de datos disponibles.</string>
