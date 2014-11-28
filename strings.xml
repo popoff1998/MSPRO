@@ -209,11 +209,11 @@
     <string name="select_backup_dest">Seleccione un destino para la copia de seguridad</string>
     <string name="check_backup_audio">Hacer copia de seguridad de archivos de Audio</string>
     <string name="backup_select_dialog_title">Seleccione el nombre de archivo de la copia de seguridad</string>
-    <string name="uploading_file_dpbox">***Carga de archivos a selección</string>
+    <string name="uploading_file_dpbox">Subiendo Archivo a DropBox</string>
     
     <!-- batch_import_activity.xml -->
-    <string name="dir_import_label">Importar Carpeta:</string>
-    <string name="select_batch_folders">Seleccione la carpeta desde la que importar</string>
+    <string name="dir_import_label">Importar Carpetas:</string>
+    <string name="select_batch_folders">Seleccione las carpetas desde las que importar</string>
     <string name="filterLabel">Filtro de Fichero:</string>
     <string name="filterAny">*.*</string>
     <string name="checkScanSubs">Buscar archivos en todas las subcarpetas</string>
@@ -237,7 +237,7 @@
     
     <!-- bookmark window -->
     <string name="confirm_delete_bookmark">¿Está seguro de que quiere borrar el marcador %1$s?</string>
-    <string name="bookmarksDisplayAll">***Mostrar Todas las Canciones</string>
+    <string name="bookmarksDisplayAll">Mostrar Todas las Canciones</string>
     
     <!-- collection_name_dialog.xml -->
     <string name="nameLabel">Nombre:</string>
@@ -457,7 +457,7 @@
     </string-array>
     
     <!-- Setlist window -->
-    <string name="pause_for_request">***Pausar el setlist para cada canción</string>
+    <string name="pause_for_request">Pausar el setlist para cada canción</string>
         
     <!-- notes_dialog_layout.xml -->
     <string name="notesLabel">Notas:</string>
@@ -573,7 +573,7 @@
     <string name="autoCropLabel">Recortar automáticamente los ficheros importados:</string>
     <string name="aggressiveLabel">Recorte Agresivo:</string>
     <string name="populateFieldsAudioLabel">Rellenar metadatos al importar audio:</string>
-    <string name="showCustomSortTitle">***Mostrar Título de Orden Personalizado :</string>
+    <string name="showCustomSortTitle">Mostrar Título de Orden Personalizado :</string>
     <string name="song_editor_settings_title">Ajustes del Editor de Canciones</string>
     <string-array name="apply_rotation_crop_choices">
         <item>Solo la página actual</item>
@@ -667,7 +667,7 @@
     <string name="clearLibraryMessage">Pulse Aceptar para confirmar la eliminación de toda la librería y los archivos de canciones</string>
     <string name="deleteSdCheck">Eliminar todos los archivos en la ubicación predeterminada (tarjeta SD interna)</string>
     <string name="deleting_files_title">Borrado de archivos</string>
-    <string name="deleting_files_message">***La eliminación de archivos, por favor espere</string>
+    <string name="deleting_files_message">Borrando ficheros, por favor espere</string>
     <string name="library_clear_success">Biblioteca eliminada correctamente</string>
     
     <!-- Import DB Activity -->
@@ -693,7 +693,7 @@
     
     <!-- SetlistManager -->
     <string name="setlist_changes_lost">Los cambios que han hecho al setlist no se han salvado todavía y se perderán. ¿Seguro que desea continuar?</string>
-    <string name="confirm_setlist_save">***Cambios No Guardados - Confirmar Acción</string>
+    <string name="confirm_setlist_save">Cambios No Guardados - Confirmar Acción</string>
     <string name="auto_scroll_two">El auto Desplazamiento empieza en 2 segundos</string>
     <string name="scrolling_not_supported">El modo de visualización actual no soporta el desplazamiento automático</string>
     
@@ -882,7 +882,7 @@
     
     <string name="mi_load_all">Carga Todas las Canciones</string>
     
-    <string name="mi_load_setlist_start">***Cargue Inicio del Setlist</string>
+    <string name="mi_load_setlist_start">Cargar Inicio del Setlist</string>
     
     <string name="mi_load_start_of_song">Cargar inicio de la canción</string>
     <string name="mi_load_last_viewed_page">Cargar la última página visualizada</string>
@@ -1123,7 +1123,7 @@
     <string name="summary_repeat_mode_pref">Si está activado, se vuelve al principio de una canción o setlist cuando el usuario avanza más allá de la última página, y salta al final de la canción, si avanza hacia atrás desde la primera página.</string>
     <string name="half_landscape_pref">Mostrar Media Página en Apaisado</string>
     <string name="summary_half_landscape_pref">Mostrar la mitad de una página en apaisado, y permitir desplazar la página arriba y abajo.</string>
-    <string name="title_uhpt_pref">***Semi Pasado de Página en Modo Apaisado</string>
+    <string name="title_uhpt_pref">Cambios de Media Página en Modo Apaisado</string>
     <string name="summary_uhpt_pref">Avanza media página cada vez en Modo Apaisado. El desplazamiento vertical se deshabilita.</string>
     <string name="title_force_landscape_two_pages">Forzar Modo Apaisado con Dos Páginas</string>
     <string name="summary_force_landscape_two_pages">Fuerza el modo apaisado cuando use el modo de visualización de dos páginas.</string>
@@ -1148,20 +1148,20 @@
     <string name="summary_astb_pref">Determina si la barra de información está siempre visible en la parte superior de la pantalla mientras se visualiza una canción.</string>
     
     <!-- Pedal Settings section -->
-    <string name="bluetooth_header">***Configuración del Pedal</string>
-    <string name="bluetooth_preferences">***Pedal Configuración</string>
+    <string name="bluetooth_header">Ajustes Táctiles y del Pedal</string>
+    <string name="bluetooth_preferences">Ajustes Pedal</string>
     <string name="pedal_action_pref">Acciones del Pedal</string>
-    <string name="pedal_action_summary">Seleccione las acciones que ocurrirán al pulsar el pedal.</string>
+    <string name="pedal_action_summary">Seleccione las acciones que sucederán al pulsar el pedal.</string>
     
-    <string name="tap_preferences">Ajustes Táctile</string>
+    <string name="tap_preferences">Ajustes Táctiles</string>
     <string name="tap_action_pref">Acciones Táctiles</string>
-    <string name="tap_action_summary">Seleccione las acciones que ocurrirán cuando toque en determinadas partes de la pantalla</string>
+    <string name="tap_action_summary">Seleccione las acciones que sucederán cuando toque en determinadas partes de la pantalla</string>
     
     <string name="mouse_preferences">Configuración del ratón USB</string>
-    <string name="enable_usb_mouse_pref">Habilitar procesamiento ratón USB</string>
-    <string name="summary_enable_use_mouse">Determina si los clics del ratón USB se utilizan para pasar las páginas</string>
-    <string name="mouse_click_swap_pref">***Intercambia ratón Haga clic en Acciones</string>
-    <string name="summary_mouse_click">***Cambia las acciones del clic del ratón para que el botón izquierdo del ratón se vuelve una página, y el botón derecho del ratón se convierte a la página siguiente</string>
+    <string name="enable_usb_mouse_pref">Habilitar procesamiento del ratón USB</string>
+    <string name="summary_enable_use_mouse">Determina si los clicks del ratón USB se utilizan para pasar las páginas</string>
+    <string name="mouse_click_swap_pref">Intercambiar Acciones al Pulsar el Ratón</string>
+    <string name="summary_mouse_click">Cambia las acciones del clic del ratón para que el botón izquierdo del ratón vuelva a la página anterior, y el botón derecho del ratón pase a la página siguiente</string>
     <string name="mouse_as_pedal_pref">Tratar Clicks del Ratón Como Pulsaciones de Pedal</string>
     <string name="summary_mouse_as_pedal">Trata cada click del ratón como si se pulsaran los pedales bluetooth izquierdo o derecho</string>
     
@@ -1242,14 +1242,14 @@
     <string name="convert_pdf_summary">Conversor para producir imágenes a partir de un PDF</string>
         
     <!-- Advanced section -->
-    <string name="advanced_header">***@string/advanced</string>
+    <string name="advanced_header">@string/advanced</string>
     <string name="advanced_preferences">Opciones avanzadas</string>
     <string name="import_db_title">Importar base de datos</string>
     <string name="import_db_summary">Proporciona una forma de reemplazar el archivo de base de datos. Esto reemplazará todos los metadatos y las canciones. Proceda con cautela.</string>
     <string name="export_db_title">Exportar base de datos</string>
     <string name="export_db_summary">Permite exportar un archivo de base de datos. Hará una copia del archivo de base de datos en la ubicación que seleccione. No se hará copia de seguridad de imágenes o archivos PDF.</string>
     <string name="restore_db_backup_title">Restaurar base de datos desde copia de seguridad</string>
-    <string name="restore_db_backup_summary">***Permite una de las copias de seguridad de bases de datos automáticas para ser restaurados en el caso de que los datos se ha perdido. Restaurar una copia de seguridad de base de datos es irreversible, así que tenga cuidado al usar esta función.</string>
+    <string name="restore_db_backup_summary">Permite restaurar una de las copias de seguridad de base de datos automática en el caso de que los datos se hayan perdido. Restaurar una copia de seguridad de base de datos es irreversible, así que tenga cuidado al usar esta función.</string>
     <string name="wake_lock_pref">No Apagar Pantalla</string>
     <string name="summary_wake_lock_pref">Mantiene la pantalla siempre encendida y asegura que no se apaguen ciertas características (como bluetooth)</string>
     <string name="cpu_lock_pref">Mantener Actividad de la CPU</string>
