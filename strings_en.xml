@@ -4,34 +4,34 @@
     <!-- common -->
     <string name="okText">OK</string>
     <string name="saveText">Save</string>
-    <string name="yesText">Si</string>
+    <string name="yesText">Yes</string>
     <string name="noText">No</string>
-    <string name="tryAgain">Intentar de nuevo</string>
-    <string name="any">Cualquiera</string>
+    <string name="tryAgain">Try Again</string>
+    <string name="any">Any</string>
     <string name="blank">Blank</string>
     <string name="done">Done</string>
     
     <string-array name="default_source_types">
-        <item>Partituras</item>
-        <item>Tabs de Guitarra</item>
-        <item>Letras</item>
-        <item>Acordes</item>
+        <item>Sheet Music</item>
+        <item>Tab</item>
+        <item>Lyrics</item>
+        <item>Chords</item>
         <item>Lead Sheet</item>
-        <item>Listas</item>
+        <item>Charts</item>
     </string-array>
     
     <string-array name="default_genres">
         <item>Acapella</item>
-        <item>Acústico</item>
-        <item>Alternativo</item>
-        <item>Balada</item>
+        <item>Acoustic</item>
+        <item>Alternative</item>
+        <item>Ballad</item>
         <item>Big Band</item>
         <item>Bluegrass</item>
         <item>Blues</item>
-        <item>Clásico</item>
-        <item>Contemporáneo</item>
+        <item>Christmas</item>
+        <item>Classical</item>
+        <item>Contemporary</item>
         <item>Country</item>
-        <item>Culto</item>
         <item>Dance</item>
         <item>Death Metal</item>
         <item>Disco</item>
@@ -41,10 +41,9 @@
         <item>Jazz</item>
         <item>Mambo</item>
         <item>Metal</item>
-        <item>Musicales</item>
-        <item>Navidad</item>
+        <item>Musicals</item>
         <item>Oldies</item>
-        <item>Otros</item>
+        <item>Other</item>
         <item>Pop</item>
         <item>Punk</item>
         <item>Rhythm and Blues</item>
@@ -53,8 +52,9 @@
         <item>Rock</item>
         <item>Soundtrack</item>
         <item>Techno</item>
-        <item>Vals</item>
         <item>Vocal</item>
+        <item>Waltz</item>
+        <item>Worship</item>
     </string-array>
     
     <!-- Filter Manager -->
@@ -74,12 +74,12 @@
     <string name="source">Source</string>
     
     <!-- Tabs -->
-    <string name="recent">Reciente</string>
-    <string name="songs">Canciones</string>
+    <string name="recent">Recent</string>
+    <string name="songs">Songs</string>
     <string name="setlists">Setlists</string>
-    <string name="artists">Artistas</string>
-    <string name="albums">Álbumes</string>
-    <string name="genres">Géneros</string>
+    <string name="artists">Artists</string>
+    <string name="albums">Albums</string>
+    <string name="genres">Genres</string>
     <string name="composers">Composers</string>
     <string name="source_types">Source Types</string>
     <string name="custom_group_tab">User Defined</string>
@@ -117,39 +117,44 @@
     
     <!-- action_bar.xml -->
     <string name="ab_edit">Edit</string>
+    <string name="ab_configure_fields">Configure Fields</string>
     <string name="ab_settings">Settings</string>
     <string name="ab_share">Share</string>
     <string name="ab_export">Export</string>
+    
+    <!-- configure_fields_layout.xml -->
+    <string name="configure_fields_title">Select Fields to Show</string>
+    <string name="checkCustomSort">Custom Sort Title</string>
     
     <!-- main.xml and library screen -->
     <string name="clear_recent">Clear List</string>
     <string name="cant_select_song_setlist">Cannot select both songs and setlists at the same time.</string>
     <string name="setlist">Setlist</string>
     <string name="libSongsTitle">@string/songs</string>
-    <string name="source_type_label">Tipo:</string>
-    <string name="spinnerTypePrompt">Seleccionar el Tipo de Origen</string>
-    <string name="key_label">Tonalidad:</string>
-    <string name="keyPrompt">Seleccionar la Tonalidad</string>
-    <string name="searchLabel">Buscar:</string>
-    <string name="collectionLabel">Col:</string>
-    <string name="spinnerColPrompt">Seleccionar la Colección</string>
-    <string name="difficultyPrompt">Seleccionar la Dificultad</string>
+    <string name="source_type_label">Source:</string>
+    <string name="spinnerTypePrompt">Select the Source Type</string>
+    <string name="key_label">Key:</string>
+    <string name="keyPrompt">Select the Key</string>
+    <string name="searchLabel">Search:</string>
+    <string name="collectionLabel">Collection:</string>
+    <string name="spinnerColPrompt">Select the Collection</string>
+    <string name="difficultyPrompt">Select the Difficulty</string>
     <string name="tempoLabel">Tempo</string>
-    <string name="tapTempoButton">\'Tap\' para Ajustar el Tempo</string>
-    <string name="timeSigLabel">Compás:</string>
-    <string name="beatsPerMeasurePrompt">Seleccionar pulsos por compás</string>
-    <string name="promptBeatUnit">Seleccionar valor de nota para pulso</string>
-    <string name="beatSubPrompt">Seleccionar subdivisión de pulso</string>
-    <string name="beatSubdivisionLabel">Subdivisión de pulso:</string>
-    <string name="beatSoundPrompt">Seleccionar sonido del metrónomo</string>
-    <string name="beatSoundLabel">Efecto del Sonido de Pulso</string>
-    <string name="accentFirstBeat">Acentuar Primer Pulso</string>
-    <string name="modeLabel">Modo de Reproducción:</string>
-    <string name="volumeLabel">Volumen:</string>
-    <string name="startMetronome">Iniciar Metrónomo</string>
-    <string name="stopMetronome">Parar Metrónomo</string>
-    <string name="beatCount">Cuenta de Pulsos:</string>
-    <string name="metronome">Metrónomo</string>
+    <string name="tapTempoButton">Tap to Set Tempo</string>
+    <string name="timeSigLabel">Time Signature:</string>
+    <string name="beatsPerMeasurePrompt">Select beats per measure</string>
+    <string name="promptBeatUnit">Select beat note value</string>
+    <string name="beatSubPrompt">Select beat subdivision</string>
+    <string name="beatSubdivisionLabel">Beat Subdivision:</string>
+    <string name="beatSoundPrompt">Select the metronome sound</string>
+    <string name="beatSoundLabel">Beat Sound FX:</string>
+    <string name="accentFirstBeat">Accent First Beat</string>
+    <string name="modeLabel">Playback Mode:</string>
+    <string name="volumeLabel">Volume:</string>
+    <string name="startMetronome">Start Metronome</string>
+    <string name="stopMetronome">Stop Metronome</string>
+    <string name="beatCount">Beat Count:</string>
+    <string name="metronome">Metronome</string>
     <string name="links">Links</string>
     <string name="cancelText">Cancel</string>
     <string name="difficultyLabelShort">Diff:</string>
@@ -192,27 +197,27 @@
     </string-array>
     
     <!-- add_bookmark_dialog.xml -->
-    <string name="pageLabel">Página:</string>
-    <string name="new_bookmark">Nuevo Marcador</string>
-    <string name="edit_bookmark">Editar Marcador</string>
-    <string name="new_bookmark_used">Nuevo Marcador - La página ya tiene Marcador</string>
-    <string name="edit_bookmark_used">Editar Marcador - La página ya tiene Marcador</string>
+    <string name="pageLabel">Page:</string>
+    <string name="new_bookmark">New Bookmark</string>
+    <string name="edit_bookmark">Edit Bookmark</string>
+    <string name="new_bookmark_used">New Bookmark - Page Already Has Bookmark</string>
+    <string name="edit_bookmark_used">Edit Bookmark - Page Already Has Bookmark</string>
     <string name="includeInLibrary">Display in Bookmarks Tab</string>
         
     <!-- backup_activity.xml -->
     <string name="err_db_not_init">Database is not initialized for some reason. Try exiting the settings screen and try again.</string>
-    <string name="select_backup_dest">Seleccione un destino para la copia de seguridad</string>
-    <string name="check_backup_audio">Hacer copia de seguridad de archivos de Audio</string>
-    <string name="backup_select_dialog_title">Seleccione nombre de archivo de la copia de seguridad</string>
-    <string name="uploading_file_dpbox">Carga de archivos a selección</string>
+    <string name="select_backup_dest">Select a backup destination</string>
+    <string name="check_backup_audio">Backup Audio files</string>
+    <string name="backup_select_dialog_title">Select Backup File Name</string>
+    <string name="uploading_file_dpbox">Uploading File to Dropbox</string>
     
     <!-- batch_import_activity.xml -->
-    <string name="dir_import_label">Importar Carpeta:</string>
+    <string name="dir_import_label">Import Directories:</string>
     <string name="select_batch_folders">Select folders to import from</string>
     <string name="filterLabel">File Filter:</string>
     <string name="filterAny">*.*</string>
-    <string name="checkScanSubs">Escanear archivos en todas las subcarpetas</string>
-    <string name="checkAvoidDuplicates">Evitar Canciones Duplicadas</string>
+    <string name="checkScanSubs">Scan all subdirectories for files</string>
+    <string name="checkAvoidDuplicates">Avoid Duplicate Songs</string>
     <string name="defaultsLabel">Default metadata values for import:</string>
     <string name="addGroupsLabel">Add songs to the following groups during import:</string>
     <string name="titleLabel">Title:</string>
@@ -224,6 +229,7 @@
     <string name="albumsLabel">Albums:</string>
     <string name="genresLabel">Genres:</string>
     <string name="composersLabel">Composers:</string>
+    <string name="yearsLabel">Years:</string>
     <string name="signaturesLabel">Signatures:</string>
     <string name="setlistsLabel">Setlists:</string>
     <string name="collectionsLabel">Collections:</string>
@@ -234,30 +240,30 @@
     <string name="bookmarksDisplayAll">Display All Songs</string>
     
     <!-- collection_name_dialog.xml -->
-    <string name="nameLabel">Nombre:</string>
+    <string name="nameLabel">Name:</string>
     
     <!-- confirm_delete_layout.xml -->
-    <string name="confirmDeleteLabel">¿Seguro que quiere borrar?</string>
+    <string name="confirmDeleteLabel">Are you sure you want to delete</string>
     <string name="deleteSongFiles">Delete Song Pdf/Image/Text Files</string>
     <string name="deleteAudioFiles">Delete Song Audio Files</string>
         
     <!-- convert_pdf_activity.xml -->
-    <string name="pdf_file_label">Archivos de Entrada:</string>
-    <string name="output_label">Carpeta de Destino:</string>
-    <string name="image_type_label">Tipo de Imagen:</string>
-    <string name="desired_height_label">Altura Deseada</string>
-    <string name="pagesLabel">Páginas:</string>
-    <string name="status_label">Estado:</string>
-    <string name="add_after_convert">Añadir a Canción Tras Conversión</string>
-    <string name="closeText">Cerrar</string>
-    <string name="convert_text">Convertir</string>
-    <string name="convert_pdf_dialog_title">Seleccionar un PDF para Convertir a Imágenes</string>
+    <string name="pdf_file_label">Input Files:</string>
+    <string name="output_label">Output Dir:</string>
+    <string name="image_type_label">Image Type:</string>
+    <string name="desired_height_label">Desired Height:</string>
+    <string name="pagesLabel">Pages:</string>
+    <string name="status_label">Status:</string>
+    <string name="add_after_convert">Add to Song After Convert</string>
+    <string name="closeText">Close</string>
+    <string name="convert_text">Convert</string>
+    <string name="convert_pdf_dialog_title">Select a PDF to Convert to Images</string>
         
     <!-- directory_dialog_main.xml -->
-    <string name="backup_file_name">Nombre del Archivo de Copia de Seguridad:</string>
-    <string name="ddCreate">Crear</string>
-    <string name="no_data">Sin Datos</string>
-    <string name="accept">Aceptar</string>
+    <string name="backup_file_name">Backup File Name:</string>
+    <string name="ddCreate">Create</string>
+    <string name="no_data">No Data</string>
+    <string name="accept">Accept</string>
     
     <!-- duration_picker_dialog.xml -->
     <string name="durationTitle">Enter the duration</string>
@@ -266,19 +272,19 @@
     <string name="secondsLabel">Seconds</string>
         
     <!-- edit notes dialog -->
-    <string name="edit_notes_title">Editar notas de %1$s</string>
+    <string name="edit_notes_title">Edit Notes for %1$s</string>
         
     <!-- email_activity -->
     <string name="addressLabel">Email:</string>
-    <string name="systemInfoLabel">Sistema:</string>
-    <string name="messageLabel">Mensaje:</string>
-    <string name="send_text">Enviar</string>
+    <string name="systemInfoLabel">System:</string>
+    <string name="messageLabel">Message:</string>
+    <string name="send_text">Send</string>
     
     <!-- file_dialog_main.xml -->
-    <string name="file_name">Nombre de archivo:</string>
-    <string name="create">Guardar</string>
-    <string name="nnew">Nuevo</string>
-    <string name="select">Seleccionar</string>
+    <string name="file_name">File name:</string>
+    <string name="create">Save</string>
+    <string name="nnew">New</string>
+    <string name="select">Select</string>
     
     <!-- file preparer -->
     <string name="file_name_conflict_title">File \'%1$s\' Already Exists</string>
@@ -345,7 +351,7 @@
     
     <string name="apply_conflict_check">Apply selection to all conflicts</string>
     
-    <string name="rename">Renombrar</string>
+    <string name="rename">Rename</string>
     <string name="duplicate_file">Duplicate file \'%1$s\' found. Ignoring file.</string>
     <string name="duplicateBehaviorLabel">Duplicate File Behavior:</string>
     
@@ -406,12 +412,12 @@
     <string name="multiChoiceTitle">Select Items</string>
     
     <!-- next_up_settings_dialog.xml -->
-    <string name="showNextUpLabel">Mostrar Canción Siguiente:</string>
-    <string name="nextUpFadeLabel">Desaparecer:</string>
-    <string name="nextUpTextSizeLabel">Tamaño del texto:</string>
-    <string name="textColorLabel">Color del Texto:</string>
-    <string name="backColorLabel">Color de Fondo:</string>
-    <string name="nextSongTitle">Configuración Canción Siguiente</string>
+    <string name="showNextUpLabel">Show Next Song:</string>
+    <string name="nextUpFadeLabel">Fade Out:</string>
+    <string name="nextUpTextSizeLabel">Text Size:</string>
+    <string name="textColorLabel">Text Color:</string>
+    <string name="backColorLabel">Background Color:</string>
+    <string name="nextSongTitle">Next Song Settings</string>
     
     <!-- Rename dialog -->
     <string name="rename_title">File Already Exists - Choose a Different Name</string>
@@ -419,48 +425,48 @@
     <string name="group_already_exists">%1$s Already Exists - Choose a Different Name</string>
     
     <string-array name="next_up_fade_modes">
-    	<item>Nunca</item>
-    	<item>Después de 2 segundos</item>
-    	<item>Después de 3 segundos</item>
-    	<item>Después de 4 segundos</item>
-    	<item>Después de 5 segundos</item>
-    	<item>Después de 10 segundos</item>
+        <item>Never</item>
+        <item>After 2 Seconds</item>
+        <item>After 3 Seconds</item>
+        <item>After 4 Seconds</item>
+        <item>After 5 Seconds</item>
+        <item>After 10 Seconds</item>
     </string-array>
         
     <string-array name="next_text_colors">
-        <item>Blanco</item>
-        <item>Negro</item>
-        <item>Verde</item>
-        <item>Rojo</item>
-        <item>Azul</item>
-        <item>Naranja</item>
-        <item>Amarillo</item>
-        <item>Personalizado</item>
+        <item>White</item>
+        <item>Black</item>
+        <item>Green</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Custom</item>
     </string-array>
     <string-array name="next_back_colors">
-    	<item>Defecto</item>
-    	<item>Gris Oscuro</item>
-        <item>Blanco</item>
-        <item>Verde</item>
-        <item>Rojo</item>
-        <item>Azul</item>
-        <item>Naranja</item>
-        <item>Amarillo</item>
-        <item>Negro</item>
-        <item>Personalizado</item>
+        <item>Default</item>
+        <item>Dark Gray</item>
+        <item>White</item>
+        <item>Green</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Black</item>
+        <item>Custom</item>
     </string-array>
     
     <!-- Setlist window -->
     <string name="pause_for_request">Pause Setlist for Song</string>
         
     <!-- notes_dialog_layout.xml -->
-    <string name="notesLabel">Notas:</string>
+    <string name="notesLabel">Notes:</string>
     
     <!-- password_dialog_layout.xml -->
-    <string name="passwordLabel">Contraseña:</string>
-    <string name="save_password">Guardar Contraseña</string>
-    <string name="invalid_password">Contraseña no válida, vuelva a intentarlo</string>
-    <string name="password_title">Introduzca contraseña para el %1$s</string>
+    <string name="passwordLabel">Password:</string>
+    <string name="save_password">Save Password</string>
+    <string name="invalid_password">Invalid password, try again</string>
+    <string name="password_title">Enter Password for %1$s</string>
     
     <!-- storage_activity.xml -->
     <string name="storage_label">Path:</string>
@@ -473,12 +479,12 @@
     <string name="directory_not_writable">The directory "%1$s" is read-only. Please select a different directory that can be written to. If the path is on an external SD card, use the SD card button to find a writable path.</string>
     
     <!-- restore_activity.xml -->
-    <string name="file_label">Copia de Seguridad de Archivo:</string>
-    <string name="select_backup">Seleccionar el archivo de copia de seguridad</string>
-    <string name="restoreToLabel">Restaurar a:</string>
-    <string name="checkCreateSubdirs">Crear una subcarpeta por canción</string>
-    <string name="delete_all_files">Borrar todos los archivos en almacenamiento Interno y en Tarjeta SD (Recomendado)</string>
-    <string name="no_internet_connection">Restaurar no se ha iniciado, no puede conectarse a Dropbox - Sin conexión a Internet Detectado</string>
+    <string name="file_label">Backup File:</string>
+    <string name="select_backup">Select a backup file</string>
+    <string name="restoreToLabel">Restore To:</string>
+    <string name="checkCreateSubdirs">Create Subdirectory Per Song</string>
+    <string name="delete_all_files">Delete all existing files in default storage location (Recommended)</string>
+    <string name="no_internet_connection">Cannot Connect to Dropbox - No Connection to Internet Detected</string>
         
     <!-- sharing -->
     <string name="gen_share_file_title">Generating File</string>
@@ -496,9 +502,9 @@
     <string name="midiTab">MIDI</string>
     
     <string name="audioFileLabel">Audio Files:</string>
-    <string name="manage_song_name">Editor de Canciones de MobileSheets</string>
-    <string name="starting_dropbox_download">Descarga de archivos de Dropbox</string>
-    <string name="initiating_dropbox_connection">Iniciando conexión Dropbox</string>
+    <string name="manage_song_name">MobileSheets Song Editor</string>
+    <string name="starting_dropbox_download">Downloading Files from Dropbox</string>
+    <string name="initiating_dropbox_connection">Initiating Dropbox Connection</string>
     <string name="customSortTitleLabel">Sort Title:</string>
     <string name="addToSetlistsLabel">Add to Setlists:</string>
     <string name="addToCollectionsLabel">Add to Collections:</string>
@@ -567,6 +573,7 @@
     <string name="autoCropLabel">Auto-Crop Imported Files:</string>
     <string name="aggressiveLabel">Aggressively Crop:</string>
     <string name="populateFieldsAudioLabel">Populate Metadata When Importing Audio:</string>
+    <string name="showCustomSortTitle">Show Custom Sort Title:</string>
     <string name="song_editor_settings_title">Song Editor Settings</string>
     <string-array name="apply_rotation_crop_choices">
         <item>Current page only</item>
@@ -657,43 +664,43 @@
     <string name="at_least_one_tab">At least one tab must be displayed</string>
     
     <!-- Clear Library Activity -->
-    <string name="clearLibraryMessage">TPulse Aceptar para confirmar la eliminación de toda la librería y los archivos de canciones</string>
-    <string name="deleteSdCheck">Eliminar todos los archivos en la ubicación predeterminada (tarjeta SD interna)</string>
-    <string name="deleting_files_title">Borrado de archivos</string>
-    <string name="deleting_files_message">La eliminación de archivos, por favor espere</string>
-    <string name="library_clear_success">Biblioteca eliminado correctamente</string>
+    <string name="clearLibraryMessage">Tap OK to confirm deletion of your entire library and song files.</string>
+    <string name="deleteSdCheck">Delete All Song Files (PDFs, Images, etc)</string>
+    <string name="deleting_files_title">Deleting Files</string>
+    <string name="deleting_files_message">Deleting files, please wait</string>
+    <string name="library_clear_success">Library Successfully Cleared</string>
     
     <!-- Import DB Activity -->
-    <string name="import_file_dlg">Seleccione la base de datos para importar</string>
-    <string name="db_locked_title">Base de datos bloqueada</string>
-    <string name="db_locked_msg">El archivo de base de datos actual está bloqueado. No se puede importar.</string>
-    <string name="db_copy_err_title">Error de Copia </string>
-    <string name="db_copy_err_msg">No se puede copiar nueva base de datos en la memoria interna. Restauración de la base de datos.</string>
-    <string name="db_import_success_title">Importación exitosa</string>
-    <string name="db_import_success_msg">Base de datos importada con éxito</string>
+    <string name="import_file_dlg">Select the database to import</string>
+    <string name="db_locked_title">Database Locked</string>
+    <string name="db_locked_msg">Current database file is locked. Unable to import.</string>
+    <string name="db_copy_err_title">Copy Error</string>
+    <string name="db_copy_err_msg">Unable to copy new database to internal storage. Restoring database.</string>
+    <string name="db_import_success_title">Import Successful</string>
+    <string name="db_import_success_msg">Database successfully imported</string>
     
     <!-- Export DB Activity -->
-    <string name="export_file_dlg">Seleccione el destino de la exportación</string>
-    <string name="file_locked_title">Archivo bloqueado</string>
-    <string name="file_locked_msg">El archivo seleccionado está bloqueado. No se puede exportar la base de datos.</string>
-    <string name="db_copy_err_exp_msg">No se puede copiar la base de datos a la nueva ubicación.</string>
-    <string name="db_export_success_title">Exportación exitosa</string>
-    <string name="db_export_success_msg">Base de datos exportada con éxito a %1$s</string>
+    <string name="export_file_dlg">Select the export destination</string>
+    <string name="file_locked_title">File Locked</string>
+    <string name="file_locked_msg">Selected file is locked. Unable to export database.</string>
+    <string name="db_copy_err_exp_msg">Unable to copy database to new location.</string>
+    <string name="db_export_success_title">Export Successful</string>
+    <string name="db_export_success_msg">Database successfully exported to %1$s</string>
     
     <!-- Directory Dialog -->
-    <string name="location">Ubicación</string>
-    <string name="cant_read_folder">¡la carpeta no puede leerse!</string>
+    <string name="location">Location</string>
+    <string name="cant_read_folder">folder can\'t be read!</string>
     
     <!-- SetlistManager -->
-    <string name="setlist_changes_lost">Los cambios que ha hecho al setlist no se han salvado todavía y se perderán. ¿Seguro que desea continuar?</string>
-    <string name="confirm_setlist_save">Cambios No Guardados - Confirmar Acción</string>
-    <string name="auto_scroll_two">Auto Desplazamiento empieza en 2 segundos</string>
+    <string name="setlist_changes_lost">The changes you\'ve made to the setlist haven\'t been saved yet, and will be lost. Are you sure you wish to continue?</string>
+    <string name="confirm_setlist_save">Changes Not Saved - Confirm Action</string>
+    <string name="auto_scroll_two">Auto-Scrolling starts in 2 seconds</string>
     <string name="scrolling_not_supported">The current display mode does not support automatic scrolling</string>
     
     <!-- Sharpness dialog -->
-    <string name="sharpenTitle">Enfocar Configuración</string>
-    <string name="enable_sharpen">Habilitar Enfocar</string>  
-    <string name="levelLabel">Cantidad:</string>
+    <string name="sharpenTitle">Sharpen Settings</string>
+    <string name="enable_sharpen">Enable Sharpen</string>
+    <string name="levelLabel">Level:</string>
     
     <!-- Swap File Dialog -->
     <string name="newFileLabel">New File:</string>
@@ -719,13 +726,13 @@
     </string-array>
     
     <!-- Metronome Settings Dialog -->
-    <string name="metronomeSettingsTitle">Configuración de pantalla Metrónomo</string>
-    <string name="displayModeLabel">Modo:</string>
+    <string name="metronomeSettingsTitle">Metronome Display Settings</string>
+    <string name="displayModeLabel">Mode:</string>
     <string-array name="metronome_display_modes">
-    	<item>LEDs</item>
-    	<item>Brillar</item>
-    	<item>Metrónomo</item>
-    	<item>Círculo</item>
+        <item>LEDs</item>
+        <item>Glow</item>
+        <item>Metronome</item>
+        <item>Circle</item>
     </string-array>
     <string name="metColorLabel">Color:</string>
     
@@ -828,7 +835,7 @@
     <string name="text_settings_applied">Text Settings Successfully Set</string>
     <string name="settingsLabel">Settings:</string>
     <string name="simple">Simple</string>
-    <string name="advanced">Avanzado</string>
+    <string name="advanced">Advanced</string>
     <string name="encodingLabel">Encoding:</string>
     
     <string name="chorus">Chorus</string>
@@ -854,57 +861,57 @@
     <string name="google_store">Google Play</string>
     <string name="amazon_store">Amazon App Store</string>
     <string name="nook_store">NOOK Storefront</string>
-    <string name="import_label">Importar a MobileSheets</string>
-    <string name="touch_link_from">Tocar la ubicación desde la que enlazar. Deslizar para pasar páginas.</string>
-    <string name="touch_link_to">Tocar la ubicación a la que enlazar. Deslizar para pasar páginas.</string>
-    <string name="unnamed">Sin nombre</string>
-    <string name="song_not_valid">Esa canción no parece tener ninguna imagen asociada a ella y es inválida.</string>
-    <string name="err_add_set_db">Error añadiendo setlist a la base de datos</string>
-    <string name="err_save_set_db">Error guardando setlist a la base de datos</string>
-    <string name="change_log_title">Lista de Cambios</string>
-    <string name="db_load_error">Error al cargar la base de datos y todas las copias de seguridad automáticas. Usted tendrá que restaurar la biblioteca manualmente.</string>
-    <string name="db_backup_loaded">Error al cargar la base de datos. Se restauró una copia de seguridad automática.</string>
-    <string name="next_song">Canción Siguiente: %1$s</string>
+    <string name="import_label">Import into MobileSheets</string>
+    <string name="touch_link_from">Touch the location to link from. Swipe to turn pages.</string>
+    <string name="touch_link_to">Touch the location to link to. Swipe to turn pages.</string>
+    <string name="unnamed">Unnamed</string>
+    <string name="song_not_valid">That song does not appear to have any images associated with it and is invalid.</string>
+    <string name="err_add_set_db">Error adding setlist to database.</string>
+    <string name="err_save_set_db">Error save setlist to database.</string>
+    <string name="change_log_title">Change Log</string>
+    <string name="db_load_error">Failed to load database and all automatic backups. You will need to restore your library manually.</string>
+    <string name="db_backup_loaded">Failed to load database. An automatic backup was restored.</string>
+    <string name="next_song">Next Song: %1$s</string>
     <string name="set_first_half_page">Scroll the first half page to the desired position</string>
     <string name="set_second_half_page">Scroll the second half page to the desired position</string>
     
     <!-- Context Menu Strings -->    
-    <string name="mi_go_to_bkmk">Ir a marcador</string>
-    <string name="mi_edit_bkmk">Editar marcador</string>
-    <string name="mi_delete_bkmk">Eliminar marcador</string>
+    <string name="mi_go_to_bkmk">Go to Bookmark</string>
+    <string name="mi_edit_bkmk">Edit Bookmark</string>
+    <string name="mi_delete_bkmk">Delete Bookmark</string>
     
-    <string name="mi_load_all">Carga Todas las Canciones</string>
+    <string name="mi_load_all">Load All Songs</string>
     
-    <string name="mi_load_setlist_start">Cargue Inicio del Setlist</string>
+    <string name="mi_load_setlist_start">Load Start of Setlist</string>
     
-    <string name="mi_load_start_of_song">Cargar inicio de la canción</string>
-    <string name="mi_load_last_viewed_page">Cargar la última página visualizada</string>
-    <string name="mi_edit_song">Editar canción</string>
-    <string name="mi_copy_song">Copiar canción</string>
-    <string name="mi_delete_song">Eliminar canción</string>
-    <string name="mi_add_to_setlist">Agregar a la lista de canciones</string>
-    <string name="mi_remove_from_setlist">Eliminar del Setlist</string>
-    <string name="mi_swap_pdf">Intercambiar PDF</string>
-    <string name="mi_view_edit_notes">Ver o editar notas</string>
+    <string name="mi_load_start_of_song">Load Start of Song</string>
+    <string name="mi_load_last_viewed_page">Load Last Viewed Page</string>
+    <string name="mi_edit_song">Edit Song</string>
+    <string name="mi_copy_song">Copy Song</string>
+    <string name="mi_delete_song">Delete Song</string>
+    <string name="mi_add_to_setlist">Add to Setlist</string>
+    <string name="mi_remove_from_setlist">Remove from Setlist</string>
+    <string name="mi_swap_file">Swap File</string>
+    <string name="mi_view_edit_notes">View/Edit Notes</string>
         
     <string name="mi_copy_group">Copy</string>
     <string name="mi_delete_group">Delete</string>
     <string name="ab_generate_song_list">Generate Song List</string>
     
     <!-- Annotation Popup Menu Strings -->
-    <string name="select_action">Seleccionar una acción</string>
-    <string name="edit_ff">Editar Forma Libre</string>
-    <string name="copy">Copiar</string>
-    <string name="cut">Cortar</string>
-    <string name="paste">Pegar</string>
-    <string name="delete">Borrar</string>
+    <string name="select_action">Select an action</string>
+    <string name="edit_ff">Edit freeform</string>
+    <string name="copy">Copy</string>
+    <string name="cut">Cut</string>
+    <string name="paste">Paste</string>
+    <string name="delete">Delete</string>
     
     <!-- Library QuickActions -->
     <string name="quick_add_item">New</string>
-    <string name="quick_voice_search">Búsqueda por Voz</string>
+    <string name="quick_voice_search">Voice Search</string>
     <string name="quick_manual">Manual</string>
-    <string name="quick_sync">Sincronizar con PC</string>
-    <string name="quick_batch">Importar por Lotes</string>
+    <string name="quick_sync">Sync to PC</string>
+    <string name="quick_batch">Batch Import</string>
         
     <string name="ab_quick_import">Import</string>
     <string name="ab_local_file">Local File</string>
@@ -915,16 +922,16 @@
     <string name="ab_hide_filters">Hide Filters</string>
     
     <!-- Overlay QuickActions -->
-    <string name="notes">Notas</string>
+    <string name="notes">Notes</string>
     <string name="crop">Crop</string>
     <string name="show_annotations">Show Annotations</string>
     <string name="zoom_pan_settings">Zoom/Pan Settings</string>
-    <string name="sharpen_image">Enfocar Imagen</string>
-    <string name="orientation">Orientación</string>
+    <string name="sharpen_image">Sharpen Image</string>
+    <string name="orientation">Orientation</string>
     <string name="text_display_settings">Text Display Settings</string>
     
     <string name="start_scroll">Start Scrolling</string>
-    <string name="scroll_settings">Desplazar ajustes</string>
+    <string name="scroll_settings">Scroll Settings</string>
     
     <!-- Setlist window -->
     <string name="add_song_to_setlist_title">Add Song to Setlist</string>
@@ -1019,23 +1026,23 @@
     <string name="viewManualButton">View Online Manual</string>
     
     <!-- Activity names -->
-    <string name="email_activity_name">Escribir un Email al Soporte de Zubersoft</string>
-    <string name="annotations_activity_name">Editor de Anotaciones</string>
-    <string name="backup_activity_name">Copia de Seguridad de la Librería de MobileSheets</string>
-    <string name="restore_activity_name">Restaurar Librería de MobileSheets</string>
+    <string name="email_activity_name">Email Zubersoft Support</string>
+    <string name="annotations_activity_name">Annotations Editor</string>
+    <string name="backup_activity_name">MobileSheets Library Backup</string>
+    <string name="restore_activity_name">MobileSheets Library Restore</string>
     <string name="storage_activity_name">Select Storage Location</string>
-    <string name="directory_dialog_name">Diálogo de Selección de Carpeta de Copia de Seguridad</string>
-    <string name="file_dialog_name">Diálogo de Elección de Archivo</string>
-    <string name="settings_activity_name">Configuración de MobileSheets</string>
+    <string name="directory_dialog_name">Choose Backup Directory Dialog</string>
+    <string name="file_dialog_name">Choose File Dialog</string>
+    <string name="settings_activity_name">MobileSheets Settings</string>
     <string name="group_editor_activity_name">MobileSheets Group Editor</string>
-    <string name="sync_activity_name">Sincronización con PC de MobileSheets</string>
-    <string name="batch_import_activity_name">Importador de Archivos por Lotes de MobileSheets</string>
-    <string name="convert_pdf_activity_name">Conversor PDF de MobileSheets PDF</string>
-    <string name="import_activity_name">Importar base de datos de MobileSheets </string>
-    <string name="export_activity_name">Exportar base de datos de MobileSheets</string>
+    <string name="sync_activity_name">MobileSheets PC Sync</string>
+    <string name="batch_import_activity_name">Batch File Import</string>
+    <string name="convert_pdf_activity_name">MobileSheets PDF Converter</string>
+    <string name="import_activity_name">MobileSheets Database Import</string>
+    <string name="export_activity_name">MobileSheets Database Export</string>
     <string name="restore_db_activity_name">MobileSheets Database Restore</string>
     <string name="release_notes_activity_name">MobileSheets Release Notes</string>
-    <string name="clear_library_activity_name">Despejar la Librería</string>
+    <string name="clear_library_activity_name">Clear Library</string>
     <string name="crop_activity_name">Crop Editor</string>
     <string name="pedal_action_activity_name">Pedal Action Settings</string>
     <string name="touch_action_activity_name">Touch Action Settings</string>
@@ -1043,42 +1050,42 @@
     <!-- Settings screen values -->
     
     <!-- About section -->
-    <string name="about_header">Acerca de</string>
+    <string name="about_header">About</string>
     
-    <string name="about_preferences">Acerca de MobileSheets"</string>
-    <string name="version_title">Versión</string>
-    <string name="email_title">Escribir un Email al Soporte de Zubersoft</string>
-    <string name="email_summary">Cargar un email con un formulario preescrito para el soporte de Zubersoft.</string>
+    <string name="about_preferences">About MobileSheets</string>
+    <string name="version_title">Version</string>
+    <string name="email_title">Email Zubersoft Support</string>
+    <string name="email_summary">Load pre-populated email form for Zubersoft support.</string>
     <string name="release_notes_title">Release Notes</string>
     <string name="release_notes_summary">View the recent changes to MobileSheets.</string>
     
     <!-- Library Settings section -->
-    <string name="library_header">Configuración de la Librería</string>
+    <string name="library_header">Library Settings</string>
     
-    <string name="library_display_preferences">Configuración de Pantalla de la Librería</string>
-    <string name="letters_pref">Usar Letras Grandes Para Salto Alfabético</string>
-    <string name="summary_letters_pref">Usa letras mucho mas grandes en el lado derecho de la librería para saltar a canciones que empiecen por una letra dada.</string>
+    <string name="library_display_preferences">Library Display Settings</string>
+    <string name="letters_pref">Use Large Letters For Alphabet List</string>
+    <string name="summary_letters_pref">Uses much larger letters on the right hand side of the library for jumping to songs starting with a given letter.</string>
     <string name="song_format_title">Song Title Formatting</string>
     <string name="summary_song_format">Changes the formatting of song titles to include the fields you want displayed.</string>
     <string name="generate_list_format_title">Generate Song List Format</string>
     <string name="summary_generate_list_format">Changes the formatting of song titles when generating a setlist song list.</string>
     <string name="title_custom_group_pref">Custom Category Name</string>
     <string name="summary_custom_group_pref">Sets the name to be displayed for the custom category</string>
-    <string name="title_row_colors_pref">Color de Fila Alternado</string>
-    <string name="summary_row_colors_pref">Proporciona colores de fila alternados para facilitar la distinción de entradas individuales en la pantalla de la librería.</string>
-    <string name="title_text_size_pref">Tamaño de Texto de la Librería</string>
-    <string name="summary_text_size_pref">Permite modificar el tamaño de texto de la librería</string>
+    <string name="title_row_colors_pref">Alternate Row Color</string>
+    <string name="summary_row_colors_pref">Provides alternating row colors to make it easier to distinguish individual entries on the library screen.</string>
+    <string name="title_text_size_pref">Library Text Size</string>
+    <string name="summary_text_size_pref">Allows the library text size to be modified.</string>
     <string name="title_tab_order_pref">Tab Order</string>
     <string name="summary_tab_order_pref">Determines what tabs are shown and in what order.</string>
     <string name="title_show_song_count_pref">Show Number of Songs</string>
     <string name="summary_show_song_count_pref">Shows the number of songs next to the title of any library entry that contains a list of songs (i.e. Setlists/Collections/Artists)</string>
     
     <string name="sorting_header">Sorting Options</string>
-    <string name="title_sort_ignore_pref">Ignore Articles (The, An, A) While Sorting</string>
-    <string name="summary_sort_ignore_pref">Determines if articles (the, an, and a) are ignored while grouping songs by letter.</string>
+    <string name="title_sort_ignore_pref">Ignore Articles While Sorting</string>
+    <string name="summary_sort_ignore_pref">Determines if articles such as \'the\', \'an\', and \'a\' are ignored while grouping songs by letter.</string>
     <string name="title_ignore_articles">Articles To Ignore</string>
     <string name="summary_ignore_articles">Sets the list of articles that should be ignored. Values must be separated by commas.</string>
-    <string name="default_ignore_articles"></string>
+    <string name="default_ignore_articles">A, An, The</string>
     
     <string name="cropping_preferences">Cropping Options</string>
     <string name="title_aggressively_crop_pref">Aggressively Crop</string>
@@ -1093,56 +1100,56 @@
     <string name="summary_load_entire_setlist">If selected, tapping on a song in a setlist will load the entire setlist and skip to the song. If not, just that one song is loaded.</string>
     
     <!-- Display Settings section -->
-    <string name="display_header">Configuración de Pantalla</string>
+    <string name="display_header">Display Settings</string>
     
-    <string name="language_display_preferences">Configuración de idioma</string>
-    <string name="system_default">Predeterminado del sistema</string>
-    <string name="title_language_pref">Idioma</string>
+    <string name="language_display_preferences">Language Settings</string>
+    <string name="system_default">System Default</string>
+    <string name="title_language_pref">Language</string>
     
-    <string name="song_display_preferences">Configuración de Pantalla de Canción</string>
+    <string name="song_display_preferences">Song Display Settings</string>
     <string name="overlay_display_preferences">Overlay Settings</string>
     <string name="system_display_preferences">System Settings</string>
     <string name="title_allow_zoom_out">Allow Zoom Out Past 100%</string>
     <string name="summary_allow_zoom_out">Determines if, when zooming out, the document can be made smaller than the screen dimensions.</string>
     <string name="title_instant_page_turns">Disable Page Turn Animation</string>
     <string name="summary_instant_page_turns">Disables the page turn animation, making pages turn instantly.</string>
-    <string name="title_show_next_pref">Mostrar Canción Siguiente</string>
-    <string name="summary_show_next_pref">Determina si se muestra una barra en la parte superior de la pantalla indicando la canción que viene a continuación</string>
-    <string name="dim_status_pref">Atenuar la Barra de Estado</string>
-    <string name="summary_dim_status_pref">En HoneyComb o posterior, la barra de estado se atenuará, en versiones anteriores no tiene efecto.</string>
-    <string name="hide_status_pref">Ocultar la barra de navegación</string>
-    <string name="summary_hide_status_pref">Si se activa esta opción, la barra de navegación será totalmente oculta, lo que requiere un golpe de demostrarlo.</string>
-    <string name="repeat_mode_pref">El Modo de Repetición</string>
-    <string name="summary_repeat_mode_pref">Si está activado, se salta de nuevo al principio de una canción o lista de canciones que los avances de un usuario más allá de la última página, y salta al final de la canción, si avanza hacia atrás a partir de la primera página de los usuarios.</string>
-    <string name="half_landscape_pref">Mostrar Media Página en Apaisado</string>
-    <string name="summary_half_landscape_pref">Mostrar la mitad de una página en apaisado, y permitir desplazar la página arriba y abajo.</string>
-    <string name="title_uhpt_pref">Semi Pasado de Página en Modo Apaisado</string>
-    <string name="summary_uhpt_pref">Avanza media página cada vez en Modo Apaisado. El desplazamiento vertical se deshabilita.</string>
+    <string name="title_show_next_pref">Show Next Song Indicator</string>
+    <string name="summary_show_next_pref">Determines when a bar is shown at the top of the screen indicating what song is coming up next</string>
+    <string name="dim_status_pref">Dim the Navigation Bar</string>
+    <string name="summary_dim_status_pref">If running HoneyComb or later, the navigation bar will be dimmed, otherwise this has no effect.</string>
+    <string name="hide_status_pref">Hide the Navigation Bar</string>
+    <string name="summary_hide_status_pref">If this option is checked, the navigation bar will be completely hidden, requiring a swipe to show it.</string>
+    <string name="repeat_mode_pref">Repeat Mode</string>
+    <string name="summary_repeat_mode_pref">If enabled, skips back to the beginning of a song or setlist when a user advances past the last page, and skips to the end of a song if the users advances backwards from the first page.</string>
+    <string name="half_landscape_pref">Display Half Page In Landscape</string>
+    <string name="summary_half_landscape_pref">Displays half a page when the tablet is in landscape orientation while using the single page display mode.</string>
+    <string name="title_uhpt_pref">Half-Page Turns In Landscape Mode</string>
+    <string name="summary_uhpt_pref">Advances half a page at a time while using the single page display mode in landscape orientation.</string>
     <string name="title_force_landscape_two_pages">Force Landscape With Two Pages</string>
     <string name="summary_force_landscape_two_pages">Forces the tablet into landscape orientation while using the two page display mode.</string>
     <string name="title_show_one_song">Separate Songs in Two Page Mode</string>
     <string name="summary_show_one_song">Ensures that only one song will be visible at a time in the two page display.</string>
-    <string name="night_mode_pref">Modo Nocturno</string>
-    <string name="summary_night_mode_pref">Invierte blanco y negro para ayudar en entornos oscuros</string>
+    <string name="night_mode_pref">Night Mode</string>
+    <string name="summary_night_mode_pref">Inverts black and white to help in dark environments.</string>
     <string name="title_vertically_center_pref">Center Pages</string>
     <string name="summary_vertically_center_pref">Ensures that if a page is vertically smaller than the tablet it will be centered in the middle of the viewable area.</string>
         
-    <string name="overlay_click_pref">Modo Alternar Overlay</string>
-    <string name="summary_overlay_click_pref">Determina que acción táctil saca el overlay. Un toque simple siempre lo cierra.</string>
-    <string name="bk_color_pref">Color de Imagen de Fondo</string>
-    <string name="summary_bk_color_pref">El color que se usa para llenar el espacio vacío al ver imágenes/PDFs. También se usa como el color de fondo para imágenes transparentes.</string>
-    <string name="link_size_pref">Radio del Punto de Enlace</string>
-    <string name="summary_link_size_pref">Cambia el tamaño de los puntos de enlace. El valor por defecto es 28.</string>
-    <string name="title_show_preview_pref">Mostar Previsualización Durante Búsqueda de Página</string>
-    <string name="summary_show_preview_pref">Habilita/Deshabilita la mini ventana de previsualización que aparece al usar el deslizador para cambiar de página.</string>
-    <string name="title_asps_pref">Visibilidad del Deslizador de Página</string>
-    <string name="summary_asps_pref">Determina si el deslizador de página está oculto, mostrándose con el overlay, o siempre visible en la parte inferior de la pantalla mientras se visualiza una canción.</string>
-    <string name="title_astb_pref">Mostrar Siempre la Barra de Título</string>
-    <string name="summary_astb_pref">Determina si la barra de información está siempre visible en la parte superior de la pantalla mientras se visualiza una canción.</string>
+    <string name="overlay_click_pref">Overlay Toggle Mode</string>
+    <string name="summary_overlay_click_pref">Determines what finger action brings up the overlay. A single tap always closes it.</string>
+    <string name="bk_color_pref">Background Image Color</string>
+    <string name="summary_bk_color_pref">The color that is used to fill empty space while viewing images/PDFs. Also acts as the background color for transparent images.</string>
+    <string name="link_size_pref">Link Point Default Size</string>
+    <string name="summary_link_size_pref">Changes the rendered size of the link points. The default radius is 28.</string>
+    <string name="title_show_preview_pref">Show Preview During Page Seek</string>
+    <string name="summary_show_preview_pref">Enables/disables the mini-preview window that appears while using the page slider to change pages.</string>
+    <string name="title_asps_pref">Page Slider Visibility</string>
+    <string name="summary_asps_pref">Determines if the page slider is hidden, shown with the overlay, or always visible at the bottom of the screen while viewing a song.</string>
+    <string name="title_astb_pref">Always Show The Title Bar</string>
+    <string name="summary_astb_pref">Determines if the information bar is always visible at the top of the screen while viewing a song.</string>
     
     <!-- Pedal Settings section -->
-    <string name="bluetooth_header">Pedal Configuración</string>
-    <string name="bluetooth_preferences">Pedal Configuración</string>
+    <string name="bluetooth_header">Touch &amp; Pedal Settings</string>
+    <string name="bluetooth_preferences">Pedal Settings</string>
     <string name="pedal_action_pref">Pedal Actions</string>
     <string name="pedal_action_summary">Select the actions that will occur when pedals are pressed.</string>
     
@@ -1150,11 +1157,11 @@
     <string name="tap_action_pref">Touch Actions</string>
     <string name="tap_action_summary">Select the actions that will occur when various parts of the screen are touched</string>
     
-    <string name="mouse_preferences">Configuración del ratón USB</string>
-    <string name="enable_usb_mouse_pref">Habilitar procesamiento ratón USB</string>
-    <string name="summary_enable_use_mouse">Determina si clics del ratón USB se utilizan para pasar las páginas</string>
-    <string name="mouse_click_swap_pref">Intercambia ratón Haga clic en Acciones</string>
-    <string name="summary_mouse_click">Cambia las acciones de clic del ratón para que el botón izquierdo del ratón se vuelve una página, y el botón derecho del ratón se convierte a la página siguiente</string>
+    <string name="mouse_preferences">USB Mouse Settings</string>
+    <string name="enable_usb_mouse_pref">Enable USB Mouse Processing</string>
+    <string name="summary_enable_use_mouse">Determines whether or not USB mouse clicks will be used to turn pages</string>
+    <string name="mouse_click_swap_pref">Swap Mouse Click Actions</string>
+    <string name="summary_mouse_click">Switches the mouse click actions so that a left mouse click turns back one page, and a right mouse click turns forward one page</string>
     <string name="mouse_as_pedal_pref">Treat Mouse Click as Pedal Press</string>
     <string name="summary_mouse_as_pedal">Treat every mouse click the same as if a left or right bluetooth pedal was pressed</string>
     
@@ -1207,48 +1214,48 @@
     </string-array>
     
     <!-- Annotations section -->
-    <string name="annotations_header">Anotaciones</string>
-    <string name="ann_preferences">Configuración de Anotaciones</string>
-    <string name="auto_save_ann_pref">Auto Guardar Cuando se cambia de Página</string>
-    <string name="summary_auto_save_ann_pref">Si está marcado, los cambios en las anotaciones se guardarán automáticamente al cambiar de página.</string>
+    <string name="annotations_header">Annotations</string>
+    <string name="ann_preferences">Annotations Settings</string>
+    <string name="auto_save_ann_pref">Auto-save When Switching Pages</string>
+    <string name="summary_auto_save_ann_pref">If enabled, annotation changes will be automatically saved when changing pages.</string>
         
     <!-- Miscellaneous section -->
-    <string name="misc_header">Ajustes Varios</string>
-    <string name="misc_preferences">Ajustes Varios</string>
+    <string name="misc_header">Miscellaneous</string>
+    <string name="misc_preferences">Miscellaneous</string>
     <string name="stop_audio_back_pref">Stop Audio on Back</string>
     <string name="summary_stop_audio_back_pref">Stops audio playback when returning to the library screen.</string>
     <string name="ask_exit_pref">Prompt Before Exit</string>
     <string name="summary_ask_exit_pref">Determines if confirmation is required before exiting the app by hitting the back button.</string>
-    <string name="number_keyboard_pref">Mostrar Teclado Numérico Primero</string>
-    <string name="summary_number_keyboard_pref">Por defecto muestra la sección numérica del teclado primero. En algunas tabletas, se muestran los números y las letras juntos por defecto y este ajuste no tiene efecto.</string>
+    <string name="number_keyboard_pref">Show Number Keyboard First</string>
+    <string name="summary_number_keyboard_pref">Defaults to showing the number section of the keyboard first. For some tablets, they show numbers and letters together by default, so this setting has no effect.</string>
     
     <!-- Utilities section -->
-    <string name="utilities_header">Utilidades</string>
-    <string name="utilities_preferences">Utilidades</string>
-    <string name="backup_title">Copia de Seguridad de la Librería</string>
-    <string name="backup_summary">Hace Copia de Seguridad de todas las canciones, imágenes/PDFs, y archivos de audio privados a un archivo .msb en una ubicación especificada por el usuario.</string>
-    <string name="restore_title">Restaurar Librería desde la Copia de Seguridad.</string>
-    <string name="restore_summary">Extrae la base de datos, las imágenes/PDFs, y archivos privados de audio desde un archivo .msb seleccionado por el usuario. NOTA: ESTO REMPLAZARÁ POR COMPLETO SU LIBRERÍA ACTUAL.</string>
-    <string name="batch_title">Importar por Lotes</string>
-    <string name="batch_summary">Crear canciones de todos los PDFs e imágenes que se encuentren en la carpeta seleccionada.</string>
-    <string name="convert_pdf_title">Convertir PDF a Imágenes</string>
-    <string name="convert_pdf_summary">Conversor para producir imágenes a partir de un PDF</string>
+    <string name="utilities_header">Utilities</string>
+    <string name="utilities_preferences">Utilities</string>
+    <string name="backup_title">Backup Library</string>
+    <string name="backup_summary">Backup all songs, images/PDFs, and private audio files to a msb file at a user specified location.</string>
+    <string name="restore_title">Restore Library from Backup</string>
+    <string name="restore_summary">Extracts the database, images/PDFs, and private audio files from a selected .msb file. TAKE NOTE: THIS WILL COMPLETELY REPLACE YOUR CURRENT LIBRARY.</string>
+    <string name="batch_title">Batch Import</string>
+    <string name="batch_summary">Create songs from all PDFs and images found under a selected directory.</string>
+    <string name="convert_pdf_title">Convert PDF to Images</string>
+    <string name="convert_pdf_summary">Provides a converter to produce image files from a PDF.</string>
         
     <!-- Advanced section -->
     <string name="advanced_header">@string/advanced</string>
-    <string name="advanced_preferences">Opciones avanzadas</string>
-    <string name="import_db_title">Importar base de datos</string>
-    <string name="import_db_summary">Proporciona una forma de reemplazar el archivo de base de datos. Esto reemplazará todos los metadatos y las canciones. Proceda con cautela.</string>
-    <string name="export_db_title">Exportar base de datos</string>
-    <string name="export_db_summary">Permite que un archivo de base de datos para ser exportado. Esto hará una copia del archivo de base de datos en la ubicación que seleccione. Esto no se copia de seguridad de imágenes o archivos PDF.</string>
-    <string name="restore_db_backup_title">Restaurar base de datos de copia de seguridad</string>
-    <string name="restore_db_backup_summary">Permite una de las copias de seguridad de bases de datos automáticas para ser restaurados en el caso de que los datos se ha perdido. Restaurar una copia de seguridad de base de datos es irreversible, así que tenga cuidado al usar esta función.</string>
-    <string name="wake_lock_pref">Tenga en pantalla</string>
-    <string name="summary_wake_lock_pref">Mantiene la pantalla siempre encendida y asegura que no hay tabletas características se ponen a dormir (como bluetooth)</string>
+    <string name="advanced_preferences">Advanced Options</string>
+    <string name="import_db_title">Import Database</string>
+    <string name="import_db_summary">Allows a database file to be imported. This will completely replace all metadata and songs listed in your library. Proceed with caution.</string>
+    <string name="export_db_title">Export Database</string>
+    <string name="export_db_summary">Allows a database file to be exported. This will make a copy of the database file in the location you select. This will NOT backup your images or PDFs.</string>
+    <string name="restore_db_backup_title">Restore Database Backup</string>
+    <string name="restore_db_backup_summary">Allows one of the automatic database backups to be restored in the case that data has been lost. Restoring a database backup is irreversible, so be cautious when using this feature.</string>
+    <string name="wake_lock_pref">Keep Screen On</string>
+    <string name="summary_wake_lock_pref">Controls when the screen is prevented from turning off due to inactivity.</string>
     <string name="cpu_lock_pref">Keep CPU On</string>
     <string name="summary_cpu_lock_pref">Stops the CPU and other processing resources from sleeping. If you experience problems with a bluetooth pedal sleeping, turn on this setting. Note that this can cause battery drain.</string>
-    <string name="clear_library_title">Eliminar Librería</string>
-    <string name="clear_library_summary">Borra toda la librería, y opcionalmente elimina los archivos de canciones.</string>
+    <string name="clear_library_title">Clear Library</string>
+    <string name="clear_library_summary">Deletes your entire library, and optionally deletes song files.</string>
     <string name="reset_settings_title">Reset Settings to Default</string>
     <string name="summary_reset_settings">Resets all user preferences to their default settings.</string>
     <string name="reset_settings_msg">Are you sure you want to clear all user settings? This cannot be undone.</string>
@@ -1278,31 +1285,31 @@
     <string name="text_document_failed">Failed to open and read text document: %1$s</string>
     <string name="file_does_not_exist">File %1$s does not exist.</string>
     <string name="select_database_backup">Select a database backup</string>
-    <string name="clear_recent_title">Borrar lista reciente</string>
-    <string name="clear_recent_message">¿Está seguro que desea borrar la lista reciente?</string>
-    <string name="song_add_progress_title">Añadiendo Canción a la Librería</string>
-    <string name="song_add_progress_message">Guardando Información de Canción. Por favor, espere&#8230;</string>
-    <string name="song_edit_progress_title">Procesando Modificaciones de la Canción</string>
-    <string name="song_edit_progress_message">Guardando Modificaciones de la Canción. Por favor, espere&#8230;</string>
+    <string name="clear_recent_title">Clear Recent List</string>
+    <string name="clear_recent_message">Are you sure you want to clear the recent list?</string>
+    <string name="song_add_progress_title">Adding Song to Library</string>
+    <string name="song_add_progress_message">Storing information for song. Please wait&#8230;</string>
+    <string name="song_edit_progress_title">Processing Song Modifications</string>
+    <string name="song_edit_progress_message">Storing song modifications. Please wait&#8230;</string>
     <string name="db_load_failed">Unable to both load database or create a new one. Please try restarting MobileSheets. If this does not work, you may need to reinstall.</string>
-    <string name="db_backup_found">Sin archivo de base de datos está presente en la tableta, pero no se encontró una copia de seguridad. ¿Le gustaría cargar la copia de seguridad (recomendado)? La biblioteca estará vacía contrario.</string>
-    <string name="db_backup_found_title">Copia de seguridad de base de datos Encontrado</string>
-    <string name="pdf_library_error">Imposible cargar el recurso requerido. La instalación puede haberse corrompido. Seguramente no se cargarán los PDFs. Debería reinstalar MobileSheets.</string>
-    <string name="downloading_pdf_library">Descarga de biblioteca de renderizado PDF. Por favor, espere &#8230;</string>
-    <string name="downloading_pdf_lib_title">Descarga de Recursos Obligatorio</string>
-    <string name="downloading_pdf_interrupted">No se puede descargar la biblioteca de representación en PDF. Usted no será capaz de ver archivos PDF hasta que se descargue la biblioteca.</string>
-    <string name="download_pdf_successful">La biblioteca de renderizado PDF se descarga correcta. A continuación, se reinicia la aplicación.</string>
-    <string name="wifi_not_enabled_pdf">Wifi no parece ser habilitado. Se requiere una conexión a Internet para la biblioteca PDF para descargar. Conectarse a una red y vuelva a intentarlo.</string>
-    <string name="eight_song_limit">Solo se permiten %1$d canciones hasta que la comprobación de licencia tenga éxito.</string>
-    <string name="no_voice_rec">No se encontró un reconocedor de voz en el dispositivo</string>
-    <string name="no_voice_rec_func">Este dispositivo no parece soportar reconocimiento de voz. Esta funcionalidad se deshabilitará.</string>
+    <string name="db_backup_found">No database file is present on the tablet, but a backup was found. Would you like to load the backup (recommended)? Your library will be empty otherwise.</string>
+    <string name="db_backup_found_title">Database Backup Found</string>
+    <string name="pdf_library_error">Unable to load required resource. The resource will be automatically downloaded if wifi is enabled and active.</string>
+    <string name="downloading_pdf_library">Downloading PDF rendering library. Please wait&#8230;</string>
+    <string name="downloading_pdf_lib_title">Downloading Required Resource</string>
+    <string name="downloading_pdf_interrupted">Unable to download PDF rendering library. You will not be able to view PDFs until the library is downloaded.</string>
+    <string name="download_pdf_successful">The PDF rendering library was successful download. The application will now be restarted.</string>
+    <string name="wifi_not_enabled_pdf">Wifi does not appear to be enabled. An internet connection is required for the PDF library to be downloaded. Connect to a network and try again.</string>
+    <string name="eight_song_limit">Only %1$d songs are allowed in your library until the license check succeeds.</string>
+    <string name="no_voice_rec">No voice recognizer found on the device.</string>
+    <string name="no_voice_rec_func">This device does not appear to support voice recognition. This functionality will be disabled.</string>
     <string name="voice_rec_msg">Speak the name of the entry to find in the current list</string>
-    <string name="wifi_not_enabled">No parece estar activado el Wifi. No puede conectar a un PC sin activarlo.</string>
-    <string name="wifi_not_enabled_title">Wifi No Activado</string>
-    <string name="no_conn">No parece estar conectado a una red inalámbrica. Por favor, conéctese e inténtelo de nuevo.</string>
-    <string name="no_conn_title">No se encontró ninguna Conexión Inalámbrica.</string>
-    <string name="voice_hint">Diga un setlist, canción, álbum, artista o género.</string>
-    <string name="setlist_empty">El setlist está vacío</string>
+    <string name="wifi_not_enabled">Wifi does not appear to be enabled. You cannot connect to a pc without it.</string>
+    <string name="wifi_not_enabled_title">Wifi Not Enabled</string>
+    <string name="no_conn">You do not appear to be connected to a wireless network. Please connect and try again.</string>
+    <string name="no_conn_title">No Wireless Connection Found</string>
+    <string name="voice_hint">Speak a setlist, song, album, artist or genre</string>
+    <string name="setlist_empty">The setlist is empty.</string>
     <string name="group_empty">The list is empty.</string>
     <string name="random_selection_error">Unable to make random selection.</string>
     <string name="confirm_deletion_message">Are you sure you want to remove %1$s from your library?</string>
@@ -1316,141 +1323,141 @@
     <string name="delete_group_failed">Unable to delete %1$s: %2$s.</string>
     <string name="delete_items_success">Successfully deleted all selected items.</string>
     <string name="delete_items_failed">The following items could not be deleted:\n\n%1$s</string>
-    <string name="cannot_swap_error">No puede intercambiar usando PDFs protegidos por contraseña por ahora. Use el editor de canciones.</string>
-    <string name="select_setlist_title">Seleccionar el Setlist Deseado</string>
+    <string name="cannot_swap_error">The PDF is password protected and cannot be used without a valid password.</string>
+    <string name="select_setlist_title">Select Desired Setlist</string>
     <string name="add_song_to_setlist">Add Song to Setlist</string>
-    <string name="add_song_db_error">No se pudo añadir la canción al setlist. Error de base de datos.</string>
-    <string name="setlist_remove_title">Seleccionar el Setlist del que Borrar Canción</string>
-    <string name="remove_song_db_error">No se pudo borrar la canción del setlist. Error de base de datos.</string>
-    <string name="upgrading_db">Actualizando Base de Datos</string>
-    <string name="loading_songs_db">Cargando canciones de la base de datos</string>
-    <string name="initial_db">Inicializando base de datos</string>
-    <string name="matches_found">Coincidencias Encontradas</string>
-    <string name="unable_to_load_title">Imposible Cargar Archivo</string>
-    <string name="unable_to_load_file">Imposible cargar archivo: %1$s</string>
-    <string name="file_overwrite_msg">%1$s ya existe en esa ubicación. ¿Desea sobreescribirlo?</string>
-    <string name="cant_load_song">No se pudo Cargar Canción</string>
-    <string name="cant_load_song_msg">No se pudo cargar la canción y/o página seleccionada.</string>
-    <string name="invalid_song">La canción actual parece ser inválida. Puede que necesite recrearla.</string>
-    <string name="cannot_remove_group">¡No puede borrar el único grupo!</string>
-    <string name="saving_title">Guardando Cambios</string>
-    <string name="saving_msg">Escribiendo cambios a la base de datos, por favor, espere</string>
-    <string name="save_prompt">¿Desea guardar sus cambios?</string>
-    <string name="ann_save_error">No se pudo modificar la base de datos para guardar modificaciones. Se han restaurado sus anotaciones originales.</string>
-    <string name="confirm_save_page">¿Desea guardar sus cambios a esta página?</string>
-    <string name="cell_size_prompt">Introducir el Valor de Tamaño de Celda</string>
-    <string name="alpha_value_prompt">Introducir el Valor de Transparencia</string>
-    <string name="text_size_prompt">Introducir el Valor de Tamaño de Texto</string>
-    <string name="border_width_prompt">Introducir el Valor de Ancho de Borde</string>
-    <string name="line_width_prompt">Introducir el Valor de Ancho de Línea</string>
-    <string name="stamp_size_prompt">Introducir el Valor de Tamaño de Sello</string>
-    <string name="out_of_mem">No se pudo cargar la página actual debido a una excepción por no haber suficiente memoria disponible.</string>
-    <string name="start_of_song">Inicio de Canción</string>
-    <string name="start_of_setlist">Inicio de Setlist</string>
-    <string name="start_of_song_link">Inicio de Canción. Los enlaces solo pueden colocarse dentro de la misma canción.</string>
-    <string name="end_of_song">Fin de Canción</string>
-    <string name="end_of_setlist">Fin de Setlist</string>
-    <string name="end_of_song_link">Fin de Canción. Los enlaces solo pueden colocarse en la misma canción.</string>
-    <string name="link_string">De la Página %1$d a la Página %2$d %3$s</string>
-    <string name="unable_parse_metadata">No se pudo leer los metadatos del archivo de audio.</string>
-    <string name="select_audio_file">Seleccionar archivo de audio</string>
-    <string name="file_add_error">No se pudo añadir fichero. Si el problema persiste, pruebe con un explorador de archivos diferente.</string>
-    <string name="unable_access_music">No se pudo acceder a la pista de música seleccionada.</string>
-    <string name="unable_access_try_another">@string/unable_access_music</string>
-    <string name="backing_up_library">Haciendo Copia de Seguridad de la Librería</string>
-    <string name="initiating_backup">Iniciando Copia de Seguridad</string>
-    <string name="backup_cancelled">La copia de seguridad se ha cancelado. El archivo con la copia de seguridad parcial se borrará.</string>
-    <string name="backup_failed">La copia de seguridad no ha podido completarse debido a lo siguiente:</string>
-    <string name="backup_mem_issue">La copia de seguridad ha fallado debido a un error por no tener suficiente memoria. Por favor, informe de esto a support@zubersoft.com</string>
-    <string name="packing_song">Empaquetando canción %1$d de %2$d - %3$s</string>
-    <string name="dropbox_transfer_pct">Dropbox transferencia de %1$s es %2$d%% completado</string>
-    <string name="dropbox_no_connection">No se puede conectar a Dropbox - Sin conexión a Internet Detectado</string>
-    <string name="backup_success">Copia de Seguridad completada con éxito. Archivo escrito como %1$s</string>
-    <string name="backup_error">No se pudo crear el archivo de copia de seguridad %1$s. Error reportado - %2$s</string>
-    <string name="backup_db_error">No se pudeo escribir la base de datos al archivo de copia de seguridad.</string>
-    <string name="no_batch_license">No se permite la Importación por Lotes sin una versión con licencia.</string>
-    <string name="lic_ver_req">Requerida Versión con Licencia</string>
-    <string name="perf_batch_import">Ejecutando Importación por Lotes</string>
-    <string name="init_batch_import">Iniciando Importación por Lotes</string>
-    <string name="batch_import_cancel">La importación por lotes se ha cancelado.</string>
-    <string name="batch_import_failed">La importación por lotes ha no se ha completado debido al siguiente error: 1$s</string>
-    <string name="batch_mem_issue">La importación por lotes ha fallado por un error de memoria insuficiente. Por favor, informe de esto a support@zubersoft.com</string>
-    <string name="batch_import_some_failed">La importación por lotes de %1$d canciones se completó con éxito, pero %2$d archivo(s) no pudieron importarse:\n\n</string>
-    <string name="batch_failed_more">y %1$d archivos más</string>
-    <string name="batch_import_success">La importación por lotes de %1$d canciones se completó con éxito.</string>
+    <string name="add_song_db_error">Unable to add song to setlist. Database error.</string>
+    <string name="setlist_remove_title">Select Setlist To Remove Song From</string>
+    <string name="remove_song_db_error">Unable to remove song from setlist. Database error.</string>
+    <string name="upgrading_db">Upgrading Database</string>
+    <string name="loading_songs_db">Loading songs from database</string>
+    <string name="initial_db">Initializing database</string>
+    <string name="matches_found">Matches Found</string>
+    <string name="unable_to_load_title">Unable to Load File</string>
+    <string name="unable_to_load_file">Unable to load file: %1$s</string>
+    <string name="file_overwrite_msg">%1$s already exists at that location. Would you like to overwrite it?</string>
+    <string name="cant_load_song">Unable to Load Song</string>
+    <string name="cant_load_song_msg">Unable to load the selected song and/or page.</string>
+    <string name="invalid_song">The current song appears to be invalid. You may need to recreate it.</string>
+    <string name="cannot_remove_group">You cannot remove the only group!</string>
+    <string name="saving_title">Saving Changes</string>
+    <string name="saving_msg">Writing changes to database, please wait&#8230;</string>
+    <string name="save_prompt">Do you want to save your changes?</string>
+    <string name="ann_save_error">Unable to modify database to save annotations. Your original annotations have been restored.</string>
+    <string name="confirm_save_page">Do you want to save your changes to this page?</string>
+    <string name="cell_size_prompt">Enter The Cell Size Value</string>
+    <string name="alpha_value_prompt">Enter The Alpha Value</string>
+    <string name="text_size_prompt">Enter The Text Size Value</string>
+    <string name="border_width_prompt">Enter The Border Width Value</string>
+    <string name="line_width_prompt">Enter The Line Width Value</string>
+    <string name="stamp_size_prompt">Enter The Stamp Size Value</string>
+    <string name="out_of_mem">Unable to load the current page due to an out of memory exception.</string>
+    <string name="start_of_song">Start of Song</string>
+    <string name="start_of_setlist">Start of Setlist</string>
+    <string name="start_of_song_link">Start of Song. Links can only be placed within the same song.</string>
+    <string name="end_of_song">End of Song</string>
+    <string name="end_of_setlist">End of Setlist</string>
+    <string name="end_of_song_link">End of Song. Links can only be placed in the same song.</string>
+    <string name="link_string">From Page %1$d to Page %2$d %3$s</string>
+    <string name="unable_parse_metadata">Unable to parse audio file metadata.</string>
+    <string name="select_audio_file">Select audio file</string>
+    <string name="file_add_error">Unable to add file. If problem persists, try using a different file manager.</string>
+    <string name="unable_access_music">Unable to access selected music track.</string>
+    <string name="unable_access_try_another">Cannot access selected music track. Please try using another method to select audio.</string>
+    <string name="backing_up_library">Backing Up Library</string>
+    <string name="initiating_backup">Initiating Backup</string>
+    <string name="backup_cancelled">The backup has been canceled. The partial backup file will be deleted.</string>
+    <string name="backup_failed">The backup has failed to complete due to the following:</string>
+    <string name="backup_mem_issue">The backup has failed due to an out of memory error. Please report this to support@zubersoft.com</string>
+    <string name="packing_song">Packing song %1$d of %2$d - %3$s</string>
+    <string name="dropbox_transfer_pct">Dropbox transfer of %1$s is %2$d%% complete</string>
+    <string name="dropbox_no_connection">Cannot Connect to Dropbox - No Internet Connection Detected</string>
+    <string name="backup_success">Backup completed successfully. File written to %1$s</string>
+    <string name="backup_error">Unable to create backup file %1$s. Reported error - %2$s</string>
+    <string name="backup_db_error">Unable to write out database to backup file.</string>
+    <string name="no_batch_license">Batch Importing is not allowed without a licensed version.</string>
+    <string name="lic_ver_req">Licensed Version Required</string>
+    <string name="perf_batch_import">Performing Batch Import</string>
+    <string name="init_batch_import">Initiating Batch Import</string>
+    <string name="batch_import_cancel">The batch import has been canceled.</string>
+    <string name="batch_import_failed">The batch import has failed to complete due to the following error: %1$s</string>
+    <string name="batch_mem_issue">The batch import has failed due to an out of memory error. Please report this to support@zubersoft.com</string>
+    <string name="batch_import_some_failed">Batch import of %1$d songs completed successfully, but %2$d file(s) failed to import:\n\n</string>
+    <string name="batch_failed_more">and %1$d more files</string>
+    <string name="batch_import_success">Batch import of %1$d songs completed successfully.</string>
     <string name="confirm_del_song_lib">Are you sure you want to remove %1$s from your library?</string>
     <string name="sel_set_first">Select a setlist first</string>
     <string name="set_db_song_error">Unable to remove song \'%1$s\' from setlist \'%2$s\' due to database error. A reinstall may be required.</string>
-    <string name="confirm_del_title">Confirmar Eliminación</string>
-    <string name="convert_pdf_ok">Página %1$d convertida con éxito\n</string>
-    <string name="convert_pdf_failed">Error convirtiendo página: %1$d\n</string>
-    <string name="convert_pdf_page">Convirtiendo página %1$d del PDF&#8230;</string>
-    <string name="convert_done">Conversión completada.\n</string>
-    <string name="convert_pdf_error">La conversión falló debido al siguiente error:\n%1$s</string>
-    <string name="select_pdf">Debe seleccionar un PDF válido antes de convertir.</string>
-    <string name="select_output">Debe deleccionar una ruta de destino antes de convertir.</string>
-    <string name="desired_height_err">Falló la conversión de la altura deseada a un número entero. Se usará la altura de imagen por defecto del PDF.\n</string>
-    <string name="start_pdf_convert">Iniciando la conversión de %1$s\n</string>
-    <string name="converting_pdf_title">Convirtiendo PDF</string>
-    <string name="cancel_pdf_convert">Cancelando la conversion&#8230;</string>
-    <string name="fail_open_pdf">No se pudo abrir el archivo PDF.</string>
-    <string name="pdf_open_dim">%1$s cargado con éxito.\nLas dimensiones del PDF son: %2$dx%3$d</string>
-    <string name="pdf_open_error">No se pudo abrir el archivo PDF debido al error: %1$s</string>
-    <string name="bookmark_entry">%1$s - Página %2$d</string>
-    <string name="failed_add_bkmk">No se pudo añadir marcador. Esto puede indicar un problema con la base de datos.</string>
-    <string name="failed_update_bkmk">No se pudo actualizar marcador. Esto puede indicar un problema con la base de datos.</string>
-    <string name="select_confirm">¿Seleccionar \'%1$s\'?</string>
-    <string name="confirm_selection">Confirmar Selección</string>
-    <string name="open_song_confirm">¿Abrir canción \'%1$s\'?</string>
-    <string name="song_update_db_fail">La actualización de la base de datos ha fallado. La canción puede ser inválida y requerir ser editada.</string>
-    <string name="exit_confirm">¿Seguro que desea salir de MobileSheets?</string>
-    <string name="begin_of_links">Inicio de los puntos de enlace</string>
-    <string name="end_of_links">Fin de los puntos de enlace</string>
-    <string name="no_backup_songs">No se pudo encontrar una canción válida en el archivo de copia de seguridad.</string>
-    <string name="invalid_backup">El archivo de copia de seguridad parece ser inválido.</string>
-    <string name="backup_file_error">No se pudo leer el archivo de copia de seguridad %1$s. Error reportado - %2$s</string>
-    <string name="dropbox_file_error">No se puede leer el archivo de Dropbox: %1$s. Reportado error - %2$s</string>    
-    <string name="cant_write_db">No se pudo guardar la base de datos en el disco.</string>
-    <string name="invalid_backup_file">Archivo seleccionado inválido. Solo se permiten Archivos de Copia de Seguridad de MobileSheets con extensión .msb</string>
-    <string name="restore_req_lic">No se permite restaurar la Librería sin una versión con licencia.</string>
-    <string name="restore_req_lic_title">Requerida Versión con Licencia</string>
-    <string name="restore_no_cancel">Restaurando Librería - NO CANCELAR</string>
-    <string name="restore_no_cancel_or_disconnect">Restauración de la librería - NO CANCELAR O DESCONECTAR DE LA RED</string>
-    <string name="init_restore">Iniciando Restauración</string>
-    <string name="restore_warn_cancel">Se encuetra en mitad de la restauración de su librería. ¿Está seguro de que desea cancelar? Las canciones que no hayan sido restauradas pueden no cargarse correctamente si continúa.</string>
-    <string name="restore_failed_error">La restauración no ha podido completarse debido a un error:\n\n%1$s%2$s</string>
-    <string name="restore_lib_error">\n\nSu librería puede no volver a funcionar correctamente.</string>
-    <string name="restore_fail_mem">La restauración no ha podido completarse debido a un error de memoria insuficiente en la tableta. Por favor informe de esto a support@zubersoft.com.</string>
-    <string name="sel_backup_invalid">El archivo de copia de seguridad seleccionado no es un archivo de copia de seguridad de MobileSheets válido.</string>
-    <string name="skip_bad_data">Error en el archivo de copia de seguridad. Intentando ignorar datos incorrectos&#8230;</string>
-    <string name="restore_unpack">Desempaquetando canción %1$d de %2$d - %3$s</string>
-    <string name="restore_retrieve_unpack">Recuperación y Desembalaje canción %1$d de %2$d - %3$s</string>
-    <string name="restore_success">Restauración completada con éxito.</string>
-    <string name="restore_success_err">Restauración completada con éxito. Algunos archivos no se pudieron escribir en el disco debido a una ruta de destino incompleta o inválida, o a un error en la base de datos. Esto puede deberse a que ejecutó la restauración sin tener accesible su disco de almacenamiento externo y/o extraíble. En tal caso, conéctelo y ejecute la restauración de nuevo. Esto también puede ocurrir si ha usado un archivo de copia de seguridad de una tableta diferente.</string>
-    <string name="free_song_limit">La versión gratuita de MobileSheets solo permite un máximo de %1$d canciones en su librería. ¿Desea ir a la tienda y actualizarse a la versión de pago?</string>
-    <string name="free_song_title">Límite Máximo de Canciones Alcanzado</string>
-    <string name="free_link_limit">La versión gratuita de MobileSheets solo permite un máximo de %1$d puntos de enlace por canción. ¿Desea ir a la tienda y actualizarse a la versión de pago?</string>
-    <string name="free_link_title">Límite Máximo de Puntos de Enlace Alcanzado</string>
-    <string name="free_link_max">Solo se puede añadir %1$d enlaces por canción por ahora.</string>
-    <string name="free_bkmk_limit">La versión gratuita de MobileSheets solo permite un máximo de %1$d marcadores por canción. ¿Desea ir a la tienda y actualizarse a la versión de pago?</string>
-    <string name="free_bkmk_title">Límite Máximo de Marcadores Alcanzado</string>
+    <string name="confirm_del_title">Confirm Delete</string>
+    <string name="convert_pdf_ok">Successfully converted page: %1$d\n</string>
+    <string name="convert_pdf_failed">Failed to convert page: %1$d\n</string>
+    <string name="convert_pdf_page">Converting page %1$d of PDF&#8230;</string>
+    <string name="convert_done">Conversion complete.\n</string>
+    <string name="convert_pdf_error">Conversion failed due to the following error:\n%1$s</string>
+    <string name="select_pdf">You must select a valid PDF file before converting.</string>
+    <string name="select_output">You must select an output path before converting.</string>
+    <string name="desired_height_err">Failed to convert desired height to integer. Defaulting to PDF size for image height.\n</string>
+    <string name="start_pdf_convert">Starting conversion of %1$s\n</string>
+    <string name="converting_pdf_title">Converting PDF</string>
+    <string name="cancel_pdf_convert">Canceling conversion&#8230;</string>
+    <string name="fail_open_pdf">Failed to open PDF file.</string>
+    <string name="pdf_open_dim">Successfully loaded %1$s.\nPDF dimensions are: %2$dx%3$d</string>
+    <string name="pdf_open_error">Failed to open PDF file due to error: %1$s</string>
+    <string name="bookmark_entry">%1$s - Page %2$d</string>
+    <string name="failed_add_bkmk">Failed to add new bookmark. This may indicate a problem with the database.</string>
+    <string name="failed_update_bkmk">Failed to update bookmark. This may indicate a problem with the database.</string>
+    <string name="select_confirm">Select \'%1$s\'?</string>
+    <string name="confirm_selection">Confirm Selection</string>
+    <string name="open_song_confirm">Open song \'%1$s\'?</string>
+    <string name="song_update_db_fail">The database update failed. The song may be invalid and require editing.</string>
+    <string name="exit_confirm">Are you sure you want to exit MobileSheets?</string>
+    <string name="begin_of_links">Beginning of link points</string>
+    <string name="end_of_links">End of link points</string>
+    <string name="no_backup_songs">Unable to find a valid song in the backup file.</string>
+    <string name="invalid_backup">The backup file seems to be invalid.</string>
+    <string name="backup_file_error">Unable to read backup file %1$s. Reported error - %2$s</string>
+    <string name="dropbox_file_error">Unable to read file from Dropbox: %1$s. Reported error - %2$s</string>    
+    <string name="cant_write_db">Unable to write database file to disk.</string>
+    <string name="invalid_backup_file">Invalid file selected. Only valid MobileSheets Backup Files with a .msb extension are allowed.</string>
+    <string name="restore_req_lic">Library restore is not allowed without a licensed version.</string>
+    <string name="restore_req_lic_title">Licensed Version Required</string>
+    <string name="restore_no_cancel">Restoring Library - DO NOT CANCEL</string>
+    <string name="restore_no_cancel_or_disconnect">Restoring Library - DO NOT CANCEL OR DISCONNECT FROM THE NETWORK</string>
+    <string name="init_restore">Initiating Restore</string>
+    <string name="restore_warn_cancel">You are the middle of restoring your library. Are you sure you want to cancel? Songs that have not been restored may not be able to load correctly if you proceed.</string>
+    <string name="restore_failed_error">The restore has failed to complete due to an error:\n\n%1$s%2$s</string>
+    <string name="restore_lib_error">\n\nYour library may no longer work correctly.</string>
+    <string name="restore_fail_mem">The restore has failed to complete due to an out of memory error on the tablet. Please report this to support@zubersoft.com.</string>
+    <string name="sel_backup_invalid">The selected backup file is not a valid MobileSheets backup file.</string>
+    <string name="skip_bad_data">Error in backup file. Trying to skip bad data&#8230;</string>
+    <string name="restore_unpack">Unpacking song %1$d of %2$d - %3$s</string>
+    <string name="restore_retrieve_unpack">Retrieving and Unpacking song %1$d of %2$d - %3$s</string>
+    <string name="restore_success">Restore completed successfully.</string>
+    <string name="restore_success_err">Restore completed successfully. Some files could not be written to disk due to invalid or incompatible paths, or an error in the database. This may be because some files were not accessible (SD card not inserted?). Using a backup file from a different tablet may also cause this.</string>
+    <string name="free_song_limit">The free version of MobileSheets only allows a maximum of %1$d songs in your library. Would you like to go to the market to upgrade to the paid version?</string>
+    <string name="free_song_title">Maximum Song Limit Reached</string>
+    <string name="free_link_limit">The free version of MobileSheets only allows a maximum of %1$d link points per song. Would you like to go to the market to upgrade to the paid version?</string>
+    <string name="free_link_title">Maximum Link Points Limit Reached</string>
+    <string name="free_link_max">Only %1$d links can be added per song at this time.</string>
+    <string name="free_bkmk_limit">The free version of MobileSheets only allows a maximum of %1$d bookmarks per song. Would you like to go to the market to upgrade to the paid version?</string>
+    <string name="free_bkmk_title">Maximum Bookmark Limit Reached</string>
     <string name="android_ver_str">Android OS SDK v%1$d, MobileSheets v%2$s%3$s, Device: %4$s</string>
-    <string name="bought_from">%1$s de %2$s</string>
+    <string name="bought_from">%1$s from %2$s</string>
     <string name="modify_alpha_sort">You can only modify the setlist order when manual sort is selected.</string>
-    <string name="sel_file_invalid">El archivo seleccionado no es ni un archivo de imagen soportado ni un pdf. No se pudo añadir la imagen.</string>
-    <string name="err_diff_mgr">No se pudo añadir la imagen. Si el problema persiste, pruebe a usar un explorador de archivos diferente.</string>
+    <string name="sel_file_invalid">Selected file was neither a supported image file type or pdf. Unable to add image.</string>
+    <string name="err_diff_mgr">Unable to add file. If problem persists, try using a different file manager.</string>
     <string name="select_file">Select File</string>
-    <string name="mobile_img">Imagen de MobileSheets</string>
-    <string name="device_no_camera">Este dispositivo no parece tener una cámara. Esta funcionalidad se deshabilitará.</string>
-    <string name="err_init_song">Error durante la inicialización de la canción. No pudo cargar correctamente.</string>
-    <string name="unable_to_fhand">No se puede abrir y convertir el archivo a mano alzada: %1$s</string>
-    <string name="sd_cant_load">El almacenamiento de tarjeta SD externa está bloqueado o inaccesible. La base de datos se cargará desde una copia de seguridad.</string>
-    <string name="sd_cant_access">No es posible acceder a la tarjeta SD</string>
-    <string name="cant_copy_db">No se puede copiar la base de datos</string>
-    <string name="cant_load_attach_title">No se puede cargar el adjunto de correo electrónico</string>
-    <string name="cant_load_attach_msg">MobileSheets no debe estar en ejecución antes de importar los archivos adjuntos de correo electrónico de Google, debido a permisos de seguridad. Pulse Aceptar para cerrar MobileSheets, y a continuación, importe el archivo de nuevo desde Gmail.</string>
-    <string name="perf_mode_enabled">Modo Performance Activado</string>
-    <string name="perf_mode_disabled">Modo Performance Desactivado</string>
+    <string name="mobile_img">MobileSheets Image</string>
+    <string name="device_no_camera">This device does not appear to have a camera. This functionality will be disabled.</string>
+    <string name="err_init_song">Error during song initialization. Song may not load correctly.</string>
+    <string name="unable_to_fhand">Unable to open and convert freehand file: %1$s</string>
+    <string name="sd_cant_load">The SD Card external storage is locked or inaccessible. The database will be loaded from a backup in internal storage.</string>
+    <string name="sd_cant_access">Unable to access SD Card</string>
+    <string name="cant_copy_db">Unable to copy database.</string>
+    <string name="cant_load_attach_title">Can\'t Load Email Attachment</string>
+    <string name="cant_load_attach_msg">MobileSheets must not be running before importing email attachments due to Google security permissions. Tap OK to close MobileSheets, and then import the file again from Gmail.</string>
+    <string name="perf_mode_enabled">Performance Mode Enabled, Overlay Disabled</string>
+    <string name="perf_mode_disabled">Performance Mode Disabled, Overlay Enabled</string>
     <string name="choose_song_title">Choose Song to Load</string>
     <string name="song_has_no_pages">The song has no pages or files.</string>
     <string name="dropbox_export_error">Dropbox error encountered, unable to export</string>
@@ -1495,236 +1502,236 @@
     <string name="unable_to_load_page_file">Unable to load page %1$d for file %2$s</string>
     
     <!-- License and other top level strings -->
-    <string name="lic_not_auth_title">Licencia No Autorizada</string>
-    <string name="lic_not_auth_msg">El periodo de gracia para la aplicación ha expirado y la comprobación de la licencia ha fallado. Por favor, establezca una conexión wifi para autorizar el uso de esta aplicación. Si ya ha pagado por esta app, pulse Enviar Email para proporcionar información sobre su dispositivo y comprobar la licencia de un modo alternativo. Por favor, conceda 24 horas a Zubersoft para procesar su petición.</string>
-    <string name="send_email_title">Enviar Email</string>
-    <string name="email_content">\nPedido #: (Debe rellenar esto)\n\nMi comprobación de licencia ha fallado. Por favor añadan mi dispositivo a la lista de excepciones.</string>
-    <string name="slideme_email_content">\nID de Transacción de SlideME #: (Debe rellenar esto)\n\nMi comprobación de licencia ha fallado. Por favor añadan mi dispositivo a la lista de excepciones</string>
-    <string name="failed_lic_check_title">Comprobación de Licencia Fallido</string>
-    <string name="grace_period_msg">La comprobación de Licencia ha fallado. Un periodo de gracia de 72 HORAS se ha activado antes de que se deniegue el acceso. Debe obtener acceso wifi para pasar la comprobación de licencia.</string>
-    <string name="grace_period_title">%1$d Horas Restantes</string>
-    <string name="grace_period_left_msg">Su licencia aún no se ha verificado. Le quedan %1$d horas antes de que no pueda ejecutar MobileSheets. Por favor, obtenga una conexión wifi y recargue MobileSheets para pasar la comprobación de licencia.</string>
-    <string name="grace_period_left_hour">Su licencia aún no se ha verificado. Tiene menos de una hora antes de que no pueda ejecutar MobileSheets. Por favor, obtenga una conexión wifi y recargue MobileSheets para pasar la comprobación de licencia.</string>
-    <string name="device_id">ID de Dispositivo:</string>
-    <string name="contact_support">Esta aplicación ha encontrado un error al comprobar la licencia. Por favor, contacte con soporte en http://www.zubersoft.com/mobilesheets/support.html</string>
+    <string name="lic_not_auth_title">License Not Authorized</string>
+    <string name="lic_not_auth_msg">The grace period for the app has ended and the license check has failed. Please establish a wifi connection to authorize use of this app. If you have already paid for this app, click Send Email to provide information about your device for an alternative license check model. Please allow 24 hours for Zubersoft to process the request.</string>
+    <string name="send_email_title">Send Email</string>
+    <string name="email_content">\nOrder #: (You must supply this)\n\nMy license check has failed. Please add my device to the exception list.</string>
+    <string name="slideme_email_content">\nSlideME Transaction ID #: (You must supply this)\n\nMy license check has failed. Please add my device to the exception list.</string>
+    <string name="failed_lic_check_title">Failed License Check</string>
+    <string name="grace_period_msg">License check failed. A grace period of 72 HOURS is in effect before access will not be allowed. You must get wifi access to pass the license check.</string>
+    <string name="grace_period_title">%1$d Hours Remaining</string>
+    <string name="grace_period_left_msg">Your license is still not verified. You have %1$d hours left before you will not be able to load MobileSheets. Please obtain a wifi connection and reload MobileSheets to pass the license check.</string>
+    <string name="grace_period_left_hour">Your license is still not verified. You have less than one hour left before you will not be able to load MobileSheets. Please obtain a wifi connection and reload MobileSheets to pass the license check.</string>
+    <string name="device_id">Device ID:</string>
+    <string name="contact_support">This application has encountered an error while checking the license. Please contact support at http://www.zubersoft.com/mobilesheets/support.html</string>
         
     <!-- Sync screen strings -->
-    <string name="usb_debug_msg">Con el fin de conectar a través de USB, Depuración USB debe estar activado. Ir al menú de aplicaciones compañero y haga clic en Ayuda -> ¿Cómo Habilitar la depuración USB para obtener más información.</string>
-    <string name="usb_debug_title">USB Depuración no Habilitada</string>
-    <string name="use_wifi">Utilice Wifi</string>
-    <string name="do_not_turn_off_screen">No apague la pantalla!</string>
-    <string name="ipAddress">Dirección IP:</string>
-    <string name="disconnect">Desconectar</string>
-    <string name="conn_lost_title">Conexión Perdida</string>
-    <string name="conn_lost_msg">No se pudo conectar al pc. ¿Intentar reconexión?</string>
-    <string name="reply">Reintentar</string>
-    <string name="pc_out_of_date">La versión de la aplicación acompañante está obsoleta. Se requiere al menos la versión 1$s.</string>
-    <string name="pc_del_count">El PC ha solicitado el borrado de %1$d archivos</string>
-    <string name="success_del_file">Borrado con éxito: %1$s</string>
-    <string name="failed_del_file">No se pudo borrar: %1$s</string>
-    <string name="unable_process_del">No se pudo procesar el mensaje de borrado de imágenes debido a un error de conexión.</string>
-    <string name="unable_process_mem">No se pudo procesar el mensaje de borrado de imágenes debido a un error de memoria insuficiente de la tableta.</string>
-    <string name="unable_read_song_del">No se pudo leer los datos de mensaje de borrado de canción desde el PC</string>
-    <string name="failed_retrieve_song">No se pudo recuperar la canción solicitada mientras se borraban las imágenes.</string>
-    <string name="pc_del_song">el PC ha solicitado el borrado de la canción: %1$s</string>
-    <string name="del_empty_dir">Borrando carpeta vacía: %1$s</string>
-    <string name="unable_process_del_msg">No se pudo procesar el mensage de borrado de imágenes: %1$s</string>
-    <string name="success_del_song">Canción borrada con éxito</string>
-    <string name="pc_send_ver_1">Error enviando la versión de la aplicación de la tableta al PC debido a un problema en la conexión.</string>
-    <string name="pc_send_ver_2">Error enviando la versión de la aplicación de la tableta al PC: %1$s</string>
-    <string name="pc_ver_okay">MobileSheetsCompanion está ejecutando la versión %1$d. Ésta es compatible.</string>
-    <string name="pc_ver_not_okay">MobileSheetsCompanion está ejecutando la versión %1$d. Ésta es incompatible con esta versión.</string>
-    <string name="pc_ver_error">Error de conexión recibiendo la versión del PC: %1$s</string>
-    <string name="sending_db">Enviando archivo de base de datos al PC.</string>
-    <string name="err_send_db">Error enviando base de datos al PC: %1$s</string>
-    <string name="sent_files_db_good">Enviados %1$d bytes correctamente del archivo: %2$s</string>
-    <string name="sending_cancel_ack">Enviando reconocimiento de cancelación</string>
-    <string name="sending_broadcast">Enviando mensaje de identificador de broadcast.</string>
-    <string name="wait_for_conn">Esperando al usuario para establecer conexión a través de la ventana emergente de MobileSheets Companion&#8230;</string>
+    <string name="usb_debug_msg">In order to connect using USB, USB Debugging must first be enabled. Go to the companion app menu and click Help -> How to Enable USB Debugging for more information.</string>
+    <string name="usb_debug_title">USB Debugging Not Enabled</string>
+    <string name="use_wifi">Use Wifi</string>
+    <string name="do_not_turn_off_screen">Do Not Turn Off The Screen!</string>
+    <string name="ipAddress">IP Address:</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="conn_lost_title">Connection Lost</string>
+    <string name="conn_lost_msg">Unable to connect to host pc. Do you want to try to reconnect?</string>
+    <string name="reply">Retry</string>
+    <string name="pc_out_of_date">The version of the companion app is out of date. At least version %1$s is required.</string>
+    <string name="pc_del_count">PC has requested deletion of %1$d files</string>
+    <string name="success_del_file">Successfully deleted: %1$s</string>
+    <string name="failed_del_file">Failed to delete: %1$s</string>
+    <string name="unable_process_del">Unable to process delete images message due to connection error</string>
+    <string name="unable_process_mem">Unable to process delete images messages due to tablet reporting out of memory error.</string>
+    <string name="unable_read_song_del">Unable to read data for song deletion message from PC</string>
+    <string name="failed_retrieve_song">Failed to retrieve requested song while deleting images.</string>
+    <string name="pc_del_song">PC has requested the deletion of song: %1$s</string>
+    <string name="del_empty_dir">Deleting empty directory: %1$s</string>
+    <string name="unable_process_del_msg">Unable to process delete images message: %1$s</string>
+    <string name="success_del_song">Song successfully deleted</string>
+    <string name="pc_send_ver_1">Error sending tablet app version to PC due to connection problem.</string>
+    <string name="pc_send_ver_2">Error sending tablet app version to PC: %1$s</string>
+    <string name="pc_ver_okay">MobileSheetsCompanion is running version %1$d. This is compatible.</string>
+    <string name="pc_ver_not_okay">MobileSheetsCompanion is running version %1$d. This is incompatible with this version.</string>
+    <string name="pc_ver_error">Connection error while receiving PC version: %1$s</string>
+    <string name="sending_db">Sending database file to PC.</string>
+    <string name="err_send_db">Error sending database to PC: %1$s</string>
+    <string name="sent_files_db_good">%1$d  bytes successfully sent for file: %2$s</string>
+    <string name="sending_cancel_ack">Sending cancel acknowledgement</string>
+    <string name="sending_broadcast">Sending out broadcast identifier message.</string>
+    <string name="wait_for_conn">Waiting for user to establish connection through MobileSheets Companion pop up window. If no window pops up, please exit MobileSheets, turn your tablet wifi off, then back on, and restart MobileSheets.</string>
     <string name="wait_for_usb_conn">Waiting for USB connection&#8230;</string>
     <string name="send_ack_pc">Connection from PC accepted, sending acknowledgement.</string>
-    <string name="ending_conn_1">Terminando conexión, liberando recursos y enviando mensaje de desconexión al PC.</string>
-    <string name="ending_conn_2">Terminando conexión, liberando recursos.</string>
-    <string name="invalid_pc_msg">Error: mensaje inválido recibido desde el PC. Ignorando mensaje.</string>
-    <string name="conn_err_retry">Error de conexión, esperando confirmación de reintento&#8230;</string>
-    <string name="packaging_song">Empaquetando - %1$s</string>
-    <string name="backup_cancel_pc">Cancelación de Copia de Seguridad recibida desde el PC.</string>
-    <string name="backup_failed_complete">La copia de seguridad no ha podido completarse debido a un error.</string>
-    <string name="backup_req_pc">Solicitud de copia de seguridad recibida desde el PC, iniciando transferencia.</string>
-    <string name="no_backup_unlic">Esta copia no está licenciada. No se permiten copias de seguridad hasta que la verificación de licencia tenga éxito.</string>
-    <string name="stop_pc_backup">Deteniendo copia de seguridad de la librería y enviando reconocimiento de cancielación.</string>
-    <string name="transfer_song_data">Transfiriendo datos de canción: %1$s</string>
-    <string name="file_not_found_backup">Archivo no encontrado durante copia de seguridad: %1$s. El archivo se omitirá.</string>
-    <string name="skipping_file">Omitiendo archivo: %1$s</string>
-    <string name="no_files_invalid">La canción no tiene ningún archivo asociado. Esto no es posible actualmente.</string>
+    <string name="ending_conn_1">Ending connection, freeing resources, and sending disconnect message to PC</string>
+    <string name="ending_conn_2">Ending connection, and freeing resources.</string>
+    <string name="invalid_pc_msg">Error: invalid message received from PC. Ignoring message.</string>
+    <string name="conn_err_retry">Connection error, waiting for retry confirmation&#8230;</string>
+    <string name="packaging_song">Packaging - %1$s</string>
+    <string name="backup_cancel_pc">Backup cancellation received from PC.</string>
+    <string name="backup_failed_complete">The backup has failed to complete due to an error.</string>
+    <string name="backup_req_pc">Backup request received from PC, starting transfer.</string>
+    <string name="no_backup_unlic">This copy is not licensed. Backups are not allowed until the license check succeeds.</string>
+    <string name="stop_pc_backup">Stopping library backup and sending cancellation acknowledgement</string>
+    <string name="transfer_song_data">Transferring data for song: %1$s</string>
+    <string name="file_not_found_backup">File not found during backup: %1$s. File will be skipped.</string>
+    <string name="skipping_file">Skipping file: %1$s</string>
+    <string name="no_files_invalid">Song has no files listed. This is not currently valid.</string>
     <string name="tablet_out_of_mem_backup">Tablet has run out of memory during backup.</string>
-    <string name="backup_err_transfer">Error encontrado durante la copia de seguridad: %1$s</string>
-    <string name="success_transfer_bytes">Transferidos con éxito %1$d bytes del archivo: %2$s</string>
-    <string name="send_pc_music">Enviando listado de la librería de música al PC</string>
-    <string name="send_pc_music_err">Error enviando listado de la librería de música al PC. La selección de canciones no será posible.</string>
-    <string name="audio_files_recv">%1$d archivos de audio recibidos desde el PC. Procesanto.</string>
-    <string name="audio_file_transfer">Pista de audio a transferir: %1$s</string>
-    <string name="store_music_folder">Carpeta de Music</string>
-    <string name="audio_bytes_recv">%1$d bytes recibidos. Guardando en %2$s.</string>
-    <string name="audio_track_written">Pista de audio escrita con éxito a: %1$s</string>
-    <string name="err_recv_tracks_1">Error recibiendo pistas de audio desde el PC debido a un error en la conexión.</string>
-    <string name="err_recv_tracks_2">Error recibiendo pistas de audio desde el PC. La tableta se quedó sin memoria.</string>
-    <string name="err_recv_tracks_3">Error recibiendo pistas de audio desde el PC.</string>
-    <string name="sending_pc_paths">Enviando rutas de archivos de audio al PC</string>
-    <string name="sending_pc_paths_err">Error enviando rutas de nuevos archivos de audio al PC. Esto inhibirá la creación de nuevas canciones.</string>
-    <string name="pc_db_update">Recibiendo actualización de la base de datos desde el PC.</string>
-    <string name="db_update_success">Base de datos actualizada con éxito.</string>
-    <string name="db_err_revert">No se pudo recibir la base de datos actualizada. Revirtiendo la base de datos anterior.</string>
-    <string name="pc_unable_req_msg">No se pudo leer datos de mensaje de solicitud de canción recibido desde el PC.</string>
-    <string name="failed_ret_song">No se pudo obtener la canción solicitada para el PC.</string>
-    <string name="send_pc_files_song">Enviando al pc archivos de la canción: %1$s</string>
-    <string name="cancel_pc_transfer">El usuario ha cerrado la ventana del editor de canción. Cancelando transferencia de archivos para previsualización.</string>
-    <string name="unable_open_file_transfer">No se pudo abrir el archivo a transferir: %1$s</string>
-    <string name="read_bytes_file">Leyendo %1$d bytes del archivo: %2$s</string>
-    <string name="file_write_success">Archivo recibido con éxito y escrito en %1$s</string>
-    <string name="unable_write_file">No se pudo escribir archivo en %1$s. El archivo puede estar bloqueado o inaccesible (¿Está bloqueándolo el PC?). Saltando al siguiente archivo.</string>
-    <string name="unable_create_file">No se pudo crear el archivo para transferir: %1$s</string>
-    <string name="conn_err_fail_transfer">Error de conexión encontrado. La transferencia ha fallado.</string>
-    <string name="err_transfer_files">Error encontrado al transferir imágenes: %1$s</string>
-    <string name="err_transfer_files_mem">Error encontrado al transferir imágenes. La tableta se ha quedado sin memoria. Por favor, inténtelo de nuevo.</string>
-    <string name="sending_pc_err_list">Enviando lista de archivos que no pudieron transferirse al PC</string>
-    <string name="waiting_pc_conn">Esperando conexión al PC&#8230;</string>
-    <string name="conn_pc_good">Conectado al PC&#8230;</string>
+    <string name="backup_err_transfer">Error encountered during backup: %1$s</string>
+    <string name="success_transfer_bytes">Successfully transferred %1$d bytes from file: %2$s</string>
+    <string name="send_pc_music">Sending music library listing to PC</string>
+    <string name="send_pc_music_err">Error sending music libray listing to PC. Song selection will not be possible.</string>
+    <string name="audio_files_recv">%1$d audio files received from PC. Processing.</string>
+    <string name="audio_file_transfer">Audio track to transfer: %1$s</string>
+    <string name="store_music_folder">Music folder</string>
+    <string name="audio_bytes_recv">%1$d bytes received. Storing in %2$s.</string>
+    <string name="audio_track_written">Audio track file successfully written to: %1$s</string>
+    <string name="err_recv_tracks_1">Error receiving audio tracks from PC due to error with connection.</string>
+    <string name="err_recv_tracks_2">Error receiving audio tracks from PC. Tablet ran out of memory.</string>
+    <string name="err_recv_tracks_3">Error receiving audio tracks from PC.</string>
+    <string name="sending_pc_paths">Sending PC paths to audio track files</string>
+    <string name="sending_pc_paths_err">Error sending new audio track paths to PC. This will inhibit new song creation</string>
+    <string name="pc_db_update">Receiving database update from PC</string>
+    <string name="db_update_success">Database successfully updated.</string>
+    <string name="db_err_revert">Unable to receive updated database. Reverting to previous database.</string>
+    <string name="pc_unable_req_msg">Unable to read data from song request message received from PC</string>
+    <string name="failed_ret_song">Failed to retrieve requested song for PC.</string>
+    <string name="send_pc_files_song">Sending PC files for song: %1$s</string>
+    <string name="cancel_pc_transfer">User has closed song editor window. Cancelling transfer of files for previewing.</string>
+    <string name="unable_open_file_transfer">Unable to open file for transfer: %1$s</string>
+    <string name="read_bytes_file">Reading %1$d bytes for file: %2$s</string>
+    <string name="file_write_success">File successfully received and written to %1$s</string>
+    <string name="unable_write_file">Unable to write file to %1$s. File may be locked or inaccessible (is PC locking file?). Skipping to next file.</string>
+    <string name="unable_create_file">Unable to create file for transfer: %1$s</string>
+    <string name="conn_err_fail_transfer">Connection error encountered. Transfer has failed.</string>
+    <string name="err_transfer_files">Error encountered transferring images: %1$s</string>
+    <string name="err_transfer_files_mem">Error encountered transferring images. Tablet is out of memory. Please try again.</string>
+    <string name="sending_pc_err_list">Sending list of files that failed to transfer to PC</string>
+    <string name="waiting_pc_conn">Waiting for connection to PC&#8230;</string>
+    <string name="conn_pc_good">Connected to PC&#8230;</string>
     
     <plurals name="recv_pc_files">
-        <item quantity="one">Recibiendo un archivo del PC. Escribiendo archivo a</item>
-        <item quantity="other">Recibiendo %d archivos del PC. Escribiendo archivo a</item>
+        <item quantity="one">Receiving one file from PC. Writing file to</item>
+        <item quantity="other">Receiving %d files from PC. Writing file to</item>
     </plurals>
     
     <!-- Link colors -->
-    <string name="link_color_1">(Azul)</string>
-    <string name="link_color_2">(Rojo)</string>
-    <string name="link_color_3">(Verde)</string>
-    <string name="link_color_4">(Amarillo)</string>
-    <string name="link_color_5">(Naranja)</string>
-    <string name="link_color_6">(Turquesa)</string>
-    <string name="link_color_7">(Púrpura)</string>
-    <string name="link_color_8">(Verde Oscuro)</string>
-    <string name="link_color_9">(Azul Pálido)</string>
+    <string name="link_color_1">(Blue)</string>
+    <string name="link_color_2">(Red)</string>
+    <string name="link_color_3">(Green)</string>
+    <string name="link_color_4">(Yellow)</string>
+    <string name="link_color_5">(Orange)</string>
+    <string name="link_color_6">(Turquoise)</string>
+    <string name="link_color_7">(Purple)</string>
+    <string name="link_color_8">(Dark Green)</string>
+    <string name="link_color_9">(Light Blue)</string>
     <string name="link_color_10">(Magenta)</string>
     
     <!-- String arrays -->
     <string-array name="sliderOptions">
-        <item>Escondido</item>
-        <item>Mostrado con el Overlay</item>
-        <item>Siempre Visible</item>
+        <item>Hidden</item>
+        <item>Shown With Overlay</item>
+        <item>Always Visible</item>
     </string-array>
     <string-array name="overlayModesArray">
-        <item>Pulsación Simple</item>
-        <item>Pulsación Larga</item>
-        <item>Deslizar Arriba o Abajo</item>
+        <item>Single Tap</item>
+        <item>Long Press</item>
+        <item>Swipe Diagonally</item>
     </string-array>
     <string-array name="debounceArray">
-        <item>Deshabilitado</item>
-        <item>Un Cuarto de Segundo</item>
-        <item>Medio Segundo</item>
-        <item>Un Segundo</item>
-        <item>Dos Segundos</item>
+        <item>Disabled</item>
+        <item>Quarter Second</item>
+        <item>Half Second</item>
+        <item>One Second</item>
+        <item>Two Seconds</item>
     </string-array>
     <string-array name="rowColors">
-        <item>Ninguno</item>
-        <item>Gris Pálido</item>
-        <item>Gris</item>
-        <item>Gris Oscuro</item>
+        <item>None</item>
+        <item>Light Gray</item>
+        <item>Gray</item>
+        <item>Dark Gray</item>
     </string-array>
     <string-array name="profiles">
-        <item>Estándar</item>
-        <item>Configuración 1</item>
-        <item>Configuración 2</item>
-        <item>Personalizados</item>
+        <item>Default</item>
+        <item>Profile 1</item>
+        <item>Profile 2</item>
+        <item>Custom</item>
     </string-array>
     <string-array name="keyArray">
         <item>@string/any</item>
-        <item>Do</item>
-        <item>Dom</item>
-        <item>Do#</item>
-        <item>Do#m</item>
-        <item>Reb</item>
-        <item>Rebm</item>
-        <item>Re</item>
-        <item>Rem</item>
-        <item>Re#</item>
-        <item>Re#m</item>
-        <item>Mib</item>
-        <item>Mibm</item>
-        <item>Mi</item>
-        <item>Mim</item>
-        <item>Fa</item>
-        <item>Fam</item>
-        <item>Fa#</item>
-        <item>Fa#m</item>
-        <item>Solb</item>
-        <item>Solbm</item>
-        <item>Sol</item>
-        <item>Solm</item>
-        <item>Sol#</item>
-        <item>Sol#m</item>
-        <item>Lab</item>
-        <item>Labm</item>
-        <item>La</item>
-        <item>Lam</item>
-        <item>La#</item>
-        <item>La#m</item>
-        <item>Sib</item>
-        <item>Sibm</item>
-        <item>Si</item>
-        <item>Sim</item>
+        <item>C</item>
+        <item>Cm</item>
+        <item>C#</item>
+        <item>C#m</item>
+        <item>Db</item>
+        <item>Dbm</item>
+        <item>D</item>
+        <item>Dm</item>
+        <item>D#</item>
+        <item>D#m</item>
+        <item>Eb</item>
+        <item>Ebm</item>
+        <item>E</item>
+        <item>Em</item>
+        <item>F</item>
+        <item>Fm</item>
+        <item>F#</item>
+        <item>F#m</item>
+        <item>Gb</item>
+        <item>Gbm</item>
+        <item>G</item>
+        <item>Gm</item>
+        <item>G#</item>
+        <item>G#m</item>
+        <item>Ab</item>
+        <item>Abm</item>
+        <item>A</item>
+        <item>Am</item>
+        <item>A#</item>
+        <item>A#m</item>
+        <item>Bb</item>
+        <item>Bbm</item>
+        <item>B</item>
+        <item>Bm</item>
     </string-array>
     <string-array name="beatSubArray">
-        <item>negras</item>
-        <item>corcheas</item>
-        <item>tresillos</item>
-        <item>semicorcheas</item>
-        <item>quintillos</item>
-        <item>seisillos</item>
+        <item>quarter notes</item>
+        <item>eighth notes</item>
+        <item>triplet notes</item>
+        <item>sixteenth notes</item>
+        <item>quintuplet notes</item>
+        <item>sextuplet notes</item>
     </string-array>
     <string-array name="beatSubHalfArray">
-        <item>corcheas</item>
-        <item>semicorcheas</item>
-        <item>seisillos</item>
+        <item>eighth notes</item>
+        <item>sixteenth notes</item>
+        <item>sextuplet notes</item>
     </string-array>
     <string-array name="beatSounds">
-        <item>Metrónomo de Madera</item>
+        <item>Wooden Metronome</item>
         <item>Ping</item>
-        <item>Metrónomo Digital</item>
+        <item>Digital Metronome</item>
         <item>Hi-Hat</item>
-        <item>Bombo y Hi-Hat</item>
+        <item>Kick and Hi-Hat</item>
         <item>Bongo</item>
-        <item>Cencerro</item>
-        <item>Metrónomo de Metal</item>
-        <item>Caja China</item>
+        <item>Cowbell</item>
+        <item>Metal Metronome</item>
+        <item>Woodblock</item>
     </string-array>
     <string-array name="bk_color_entries">
-        <item>Negro</item>
-        <item>Blanco</item>
+        <item>Black</item>
+        <item>White</item>
     </string-array>
     <string-array name="restoreToLocations">
-        <item>Ubicación Original del Archivo</item>
-        <item>MobileSheets Lagerort</item>
+        <item>Original File Locations</item>
+        <item>MobileSheets Storage Location</item>
     </string-array>
     <string-array name="title_options">
-        <item>Suponer Título a partir del Nombre de Archivo</item>
-        <item>Usar Nombre de Archivo como Título</item>
+        <item>Guess Title From Filename</item>
+        <item>Use Filename As Title</item>
     </string-array>
     <string-array name="modes">
-        <item>Audio y Visual</item>
-        <item>Solo Visual</item>
-        <item>Solo Audio</item>
+        <item>Audio and Visual</item>
+        <item>Visual Only</item>
+        <item>Audio Only</item>
     </string-array>
     <string-array name="wakelock_modes">
-    	<item>Nunca</item>
-    	<item>Mientras Visualiza Canciones</item>
-    	<item>Siempre</item>
+        <item>Never</item>
+        <item>While Viewing Scores</item>
+        <item>Always</item>
     </string-array>
     <string-array name="next_up_modes">
-    	<item>Nunca</item>
-    	<item>En la página antes de la próxima canción</item>
-    	<item>Siempre</item>
+        <item>Never</item>
+        <item>On page before next song</item>
+        <item>Always</item>
     </string-array>
     <string-array name="collectionModes">
         <item>Include</item>
@@ -1735,31 +1742,31 @@
     <!-- Annotations (annotation_editor_layout.xml) -->
     <string name="drawWindowTitle">Pen Settings</string>
     <string name="highlightWindowTitle">Highlight Settings</string>
-    <string name="lineWidthLabel">Tamaño de Línea:</string>
-    <string name="drawTypeLabel">Modo:</string>
+    <string name="lineWidthLabel">Line Size:</string>
+    <string name="drawTypeLabel">Mode:</string>
     <string name="colorLabel">Color:</string>
-    <string name="fillLabel">Relleno:</string>
-    <string name="textSizeLabel">Tamaño de Texto:</string>
-    <string name="textSizeLabel2">Tamaño:</string>
-    <string name="fontLabel">Fuente</string>
+    <string name="fillLabel">Fill:</string>
+    <string name="textSizeLabel">Text Size:</string>
+    <string name="textSizeLabel2">Size:</string>
+    <string name="fontLabel">Font:</string>
     <string name="stampWindowTitle">Stamp Settings</string>
-    <string name="stampLabel">Sello:</string>
-    <string name="groupLabel">Grupo:</string>
-    <string name="hasBorderLabel">Borde</string>
-    <string name="highlight">Resaltado</string>
-    <string name="line">Línea</string>
-    <string name="rect">Rectángulo</string>
-    <string name="circle">Círculo</string>
-    <string name="freeform">Forma Libre</string>
-    <string name="stamp">Sello</string>
-    <string name="size">Tamaño</string>
-    <string name="pen_type">Tipo de Pincel:</string>
-    <string name="snap_to_grid">Ajustar a Rejilla</string>
-    <string name="show_grid">Mostrar Rejilla</string>
-    <string name="grid_cell_size">Tamaño de Celda de Rejilla:</string>
-    <string name="opacity">Opacidad:</string>
-    <string name="auto_size_text">Tamaño Automático de Caja de Texto</string>
-    <string name="smooth_mode">Modo de suavizado:</string>
+    <string name="stampLabel">Stamp:</string>
+    <string name="groupLabel">Group:</string>
+    <string name="hasBorderLabel">Border</string>
+    <string name="highlight">Highlight</string>
+    <string name="line">Line</string>
+    <string name="rect">Rectangle</string>
+    <string name="circle">Circle</string>
+    <string name="freeform">Freeform</string>
+    <string name="stamp">Stamp</string>
+    <string name="size">Size</string>
+    <string name="pen_type">Pen Type:</string>
+    <string name="snap_to_grid">Snap to Grid</string>
+    <string name="show_grid">Show Grid</string>
+    <string name="grid_cell_size">Grid Cell Size:</string>
+    <string name="opacity">Opacity:</string>
+    <string name="auto_size_text">Auto-size Textbox</string>
+    <string name="smooth_mode">Smooth:</string>
     <string name="grid_settings_title">Grid Settings</string>
     
     <!-- Quick action bar -->
@@ -1780,106 +1787,106 @@
     <!-- Quick action list -->
     <string name="show_pen_settings">Show Pen Settings</string>
     <string name="show_highlight_settings">Show Highlight Settings</string>
-    <string name="show_settings">Mostrar Ajustes</string>
-    <string name="show_list">Mostrar Lista</string>
-    <string name="show_toolbox">Mostrar Caja de Herramientas</string>
-    <string name="stylus_mode">Modo Estilete</string>
-    <string name="prev_page">Pág Anterior</string>
-    <string name="next_page">Pág Siguiente</string>
+    <string name="show_stamp_settings">Show Stamp Settings</string>
+    <string name="show_list">Show List</string>
+    <string name="show_toolbox">Show Toolbox</string>
+    <string name="stylus_mode">Stylus Mode</string>
+    <string name="prev_page">Prev Page</string>
+    <string name="next_page">Next Page</string>
     
     <string-array name="drawTypes">
-        <item>Línea</item>
-        <item>Rectángulo</item>
-        <item>Círculo</item>
-        <item>Forma Libre</item>
+        <item>Line</item>
+        <item>Rectangle</item>
+        <item>Circle</item>
+        <item>FreeForm</item>
     </string-array>
     <string-array name="fonts">
-        <item>Por Defecto</item>
+        <item>Default</item>
         <item>Monospace</item>
         <item>Sans Serif</item>
         <item>Serif</item>
     </string-array>
     <string-array name="fore_colors">
-        <item>Negro</item>
-        <item>Verde</item>
-        <item>Rojo</item>
-        <item>Azul</item>
-        <item>Naranja</item>
-        <item>Amarillo</item>
-        <item>Blanco</item>
-        <item>Último Personalizado</item>
-        <item>Personalizado</item>
+        <item>Black</item>
+        <item>Green</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>White</item>
+        <item>LastCm</item>
+        <item>Custom</item>
     </string-array>
     <string-array name="fill_colors">
-        <item>Ninguno</item>
-        <item>Blanco</item>
-        <item>Verde</item>
-        <item>Rojo</item>
-        <item>Azul</item>
-        <item>Naranja</item>
-        <item>Amarillo</item>
-        <item>Negro</item>
-        <item>Último Personalizado</item>
-        <item>Personalizado</item>
+        <item>None</item>
+        <item>White</item>
+        <item>Green</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Black</item>
+        <item>LastCm</item>
+        <item>Custom</item>
     </string-array>
     <string-array name="penModes">
-        <item>Por defecto</item>
-        <item>Redondeado</item>
-        <item>Cuadrado</item>
-        <item>Discontínuo</item>
+        <item>Default</item>
+        <item>Round</item>
+        <item>Square</item>
+        <item>Dashed</item>
     </string-array>
     <string-array name="smoothModes">
-        <item>Ninguno</item>
-        <item>Menor</item>
+        <item>None</item>
+        <item>Minor</item>
         <item>Normal</item>
-        <item>Agresivo</item>
+        <item>Aggressive</item>
     </string-array>
     <string-array name="stamps">
-        <item>Redonda</item>
-        <item>Blanca</item>
-        <item>Negra</item>
-        <item>Corchea</item>
-        <item>Semicorchea</item>
-        <item>Fusa</item>
-        <item>Semifusa</item>
-        <item>Blanca hacia abajo</item>
-        <item>Negra hacia abajo</item>
-        <item>Corchea hacia abajo</item>
-        <item>Semicorchea hacia abajo</item>
-        <item>Fusa hacia abajo</item>
-        <item>Semifusa hacia abajo</item>
-        <item>Sostenido</item>
-        <item>Bemol</item>
-        <item>Becuadro</item>
-        <item>Doble Sostenido</item>
-        <item>Doble Bemol</item>
-        <item>Trino</item>
+        <item>Whole Note</item>
+        <item>Half Note</item>
+        <item>4th Note</item>
+        <item>8th Note</item>
+        <item>16th Note</item>
+        <item>32nd Note</item>
+        <item>64th Note</item>
+        <item>Half Note Lower</item>
+        <item>4th Note Lower</item>
+        <item>8th Note Lower</item>
+        <item>16th Note Lower</item>
+        <item>32nd Note Lower</item>
+        <item>64th Note Lower</item>
+        <item>Sharp</item>
+        <item>Flat</item>
+        <item>Natural</item>
+        <item>Double Sharp</item>
+        <item>Double Flat</item>
+        <item>Trill</item>
         <item>Tenuto</item>
         <item>Staccato</item>
-        <item>Mordente</item>
-        <item>Arpegio</item>
+        <item>Mordent</item>
+        <item>Arpeggio</item>
         <item>Crescendo Sm</item>
         <item>Crescendo</item>
         <item>Decrescendo Sm</item>
         <item>Decrescendo</item>
-        <item>Pedal</item>
+        <item>Pedal Down</item>
         <item>Da Capo</item>
         <item>Dal Segno</item>
         <item>Coda</item>
         <item>Segno</item>
-        <item>Inicio Repetición</item>
-        <item>Final Repetición</item>
-        <item>Silencio Redonda</item>
-        <item>Silencio Blanca</item>
-        <item>Silencio Negra</item>
-        <item>Silencio Negra 2</item>
-        <item>Silencio Corchea</item>
-        <item>Silencio Semicorchea</item>
-        <item>Silencio Fusa</item>
-        <item>Compás 2/2</item>
-        <item>Compás 4/4</item>
-        <item>Compás 3/4</item>
-        <item>Compás 6/8</item>
+        <item>Repeat Start</item>
+        <item>Repeat End</item>
+        <item>Whole Rest</item>
+        <item>Half Rest</item>
+        <item>4th Rest</item>
+        <item>4th Rest 2</item>
+        <item>8th Rest</item>
+        <item>16th Rest</item>
+        <item>32nd Rest</item>
+        <item>2/2 Timing</item>
+        <item>4/4 Timing</item>
+        <item>3/4 Timing</item>
+        <item>6/8 Timing</item>
         <item>f</item>
         <item>ff</item>
         <item>fff</item>
@@ -1890,28 +1897,28 @@
         <item>mp</item>
         <item>sf</item>
         <item>fz</item>
-        <item>Calderón</item>
-        <item>Octava Alta</item>
-        <item>Clave de Sol</item>
-        <item>Clafe de Fa</item>
-        <item>Compás de Compasillo</item>
-        <item>Compás Binario</item>
-        <item>Pentagrama completo</item>
-        <item>Pentagrama de Piano</item>
-        <item>Inicio de Pentagrama</item>
-        <item>Mitad de Pentagrama</item>
-        <item>Final de Pentagrama</item>
-        <item>Inicio de Pentagrama de Piano</item>
-        <item>Mitad de Pentagrama de Piano</item>
-        <item>Final de Pentagrama de Piano</item>
-        <item>Redonda con puntillo</item>
-        <item>Blanca con puntillo</item>
-        <item>Negra con puntillo</item>
-        <item>Corchea con puntillo</item>
-        <item>Semicorchea con puntillo</item>
-        <item>Blanca con puntillo hacia abajo</item>
-        <item>Negra con puntillo hacia abajo</item>
-        <item>Corchea con puntillo hacia abajo</item>
-        <item>Semicorchea con puntillo hacia abajo</item>
+        <item>Fermatta</item>
+        <item>Ottavaalta</item>
+        <item>Treble Clef</item>
+        <item>Bass Clef</item>
+        <item>Common Time</item>
+        <item>Cut Time</item>
+        <item>Full Staff</item>
+        <item>Grand Staff</item>
+        <item>Full Staff Start</item>
+        <item>Full Staff Mid</item>
+        <item>Full Staff End</item>
+        <item>Grand Staff Start</item>
+        <item>Grand Staff Mid</item>
+        <item>Grand Staff End</item>
+        <item>Whole Note Dotted</item>
+        <item>Half Note Dotted</item>
+        <item>4th Note Dotted</item>
+        <item>8th Note Dotted</item>
+        <item>16th Note Dotted</item>
+        <item>Half Dotted Lower</item>
+        <item>4th Dotted Lower</item>
+        <item>8th Dotted Lower</item>
+        <item>16th Dotted Lower</item>
     </string-array>
 </resources>

@@ -117,10 +117,15 @@
     
     <!-- action_bar.xml -->
     <string name="ab_edit">Editar</string>
+    <string name="ab_configure_fields">Configurar Campos</string>    
     <string name="ab_settings">Ajustes</string>
     <string name="ab_share">Compartir</string>
     <string name="ab_export">Exportar</string>
-    
+
+    <!-- configure_fields_layout.xml -->
+    <string name="configure_fields_title">Seleccione Campos para Mostrar</string>
+    <string name="checkCustomSort">Personalizar Ordenación por Título</string>
+        
     <!-- main.xml and library screen -->
     <string name="clear_recent">Borrar Lista</string>
     <string name="cant_select_song_setlist">No puede seleccionar setlists y canciones a la vez.</string>
@@ -224,6 +229,7 @@
     <string name="albumsLabel">Álbumes:</string>
     <string name="genresLabel">Géneros:</string>
     <string name="composersLabel">Compositores:</string>
+    <string name="yearsLabel">Años:</string>    
     <string name="signaturesLabel">Armaduras:</string>
     <string name="setlistsLabel">Setlists:</string>
     <string name="collectionsLabel">Colecciones:</string>
@@ -567,6 +573,7 @@
     <string name="autoCropLabel">Recortar automáticamente los ficheros importados:</string>
     <string name="aggressiveLabel">Recorte Agresivo:</string>
     <string name="populateFieldsAudioLabel">Rellenar metadatos al importar audio:</string>
+    <string name="showCustomSortTitle">***Mostrar Título de Orden Personalizado :</string>
     <string name="song_editor_settings_title">Ajustes del Editor de Canciones</string>
     <string-array name="apply_rotation_crop_choices">
         <item>Solo la página actual</item>
@@ -995,7 +1002,6 @@
     <string name="no_backups_available">No hay copias de seguridad de la base de datos disponibles.</string>
     <string name="confirm_db_replace_title">Confirme el cambio de la base de datos</string>
     <string name="confirm_db_replace_msg">¿Está seguro de que quiere remplazar completamente la base de datos? Esta acción no se podrá deshacer y puede ocasionar la pérdida del contenido de la librería. Restaurar una copia de seguridad de la base de datos es el método preferido para recuperarla</string>
-
     <string name="db_restore_successful_title">Restauración Completaba</string>
     <string name="db_restore_successful_msg">La base de datos ha sido restaurada correctamente.</string>
     <string name="db_restore_failed_title">Restauración Fallida</string>
@@ -1017,7 +1023,6 @@
     <!-- Help Messages -->
     <string name="helpTitle">Primeros Pasos</string>
     <string name="helpLibraryMessage">Bienvenido a MobileSheets! Si es la primera vez que usa la aplicación le recomendamos que lea el manual en línea antes de comenzar. Hay una gran cantidad de posibilidades en MobileSheets, y conseguirá mucho más de la aplicación si conoce cuales son. Para leer el manual, pulse en el botón de abajo. Para continuar, pulse el botón OK o el botón para volver.</string>
-
     <string name="viewManualButton">Ver el Manual en Línea</string>
     
     <!-- Activity names -->
@@ -1490,20 +1495,20 @@
     </plurals>
         
     <plurals name="confirm_setlists_msg">
-        <item quantity="one">Warning: Songs will be removed from one setlist</item>
-        <item quantity="other">Warning: Songs will be removed from %1$d setlists</item>
+        <item quantity="one">Precaución: Las canciones se eliminarán del setlist</item>
+        <item quantity="other">Precaución: Las canciones se eliminarán de %1$d setlists</item>
     </plurals>
                 
-    <string name="unable_to_load_page_file">Unable to load page %1$d for file %2$s</string>
+    <string name="unable_to_load_page_file">Imposible cargar la página %1$d del fichero %2$s</string>
     
     <!-- License and other top level strings -->
     <string name="lic_not_auth_title">Licencia No Autorizada</string>
-    <string name="lic_not_auth_msg">El periodo de gracia para la aplicación ha expirado y la comprobación de la licencia ha fallado. Por favor, establezca una conexión wifi para autorizar el uso de esta aplicación. Si ya ha pagado por esta app, pulse Enviar Email para proporcionar información sobre su dispositivo y comprobar la licencia de un modo alternativo. Por favor, conceda 24 horas a Zubersoft para procesar su petición.</string>
+    <string name="lic_not_auth_msg">El periodo de gracia para la aplicación ha expirado y la comprobación de la licencia ha fallado. Por favor, establezca una conexión wifi para autorizar el uso de esta aplicación. Si ya ha pagado por esta app, pulse Enviar un Email para proporcionar información sobre su dispositivo y comprobar la licencia de un modo alternativo. Por favor, denos 24 horas a Zubersoft para procesar su petición.</string>
     <string name="send_email_title">Enviar Email</string>
     <string name="email_content">\nPedido #: (Debe rellenar esto)\n\nMi comprobación de licencia ha fallado. Por favor añadan mi dispositivo a la lista de excepciones.</string>
     <string name="slideme_email_content">\nID de Transacción de SlideME #: (Debe rellenar esto)\n\nMi comprobación de licencia ha fallado. Por favor añadan mi dispositivo a la lista de excepciones</string>
     <string name="failed_lic_check_title">Comprobación de Licencia Fallido</string>
-    <string name="grace_period_msg">La comprobación de Licencia ha fallado. Un periodo de gracia de 72 HORAS se ha activado antes de que se deniegue el acceso. Debe obtener acceso wifi para pasar la comprobación de licencia.</string>
+    <string name="grace_period_msg">La comprobación de Licencia ha fallado. Se ha activado un periodo de gracia de 72 HORAS antes de que se deniegue el acceso. Debe obtener acceso wifi para pasar la comprobación de licencia.</string>
     <string name="grace_period_title">%1$d Horas Restantes</string>
     <string name="grace_period_left_msg">Su licencia aún no se ha verificado. Le quedan %1$d horas antes de que no pueda ejecutar MobileSheets. Por favor, obtenga una conexión wifi y recargue MobileSheets para pasar la comprobación de licencia.</string>
     <string name="grace_period_left_hour">Su licencia aún no se ha verificado. Tiene menos de una hora antes de que no pueda ejecutar MobileSheets. Por favor, obtenga una conexión wifi y recargue MobileSheets para pasar la comprobación de licencia.</string>
@@ -1511,42 +1516,42 @@
     <string name="contact_support">Esta aplicación ha encontrado un error al comprobar la licencia. Por favor, contacte con soporte en http://www.zubersoft.com/mobilesheets/support.html</string>
         
     <!-- Sync screen strings -->
-    <string name="usb_debug_msg">Con el fin de conectar a través de USB, Depuración USB debe estar activado. Ir al menú de aplicaciones compañero y haga clic en Ayuda -> ¿Cómo Habilitar la depuración USB para obtener más información.</string>
-    <string name="usb_debug_title">USB Depuración no Habilitada</string>
+    <string name="usb_debug_msg">Con el fin de conectar a través de USB, la depuración USB debe estar activada. Ir al menú de aplicaciones de MS Companion y haga clic en Ayuda -> Cómo Habilitar la depuración USB para obtener más información.</string>
+    <string name="usb_debug_title">No está habilitada la Depuración USB</string>
     <string name="use_wifi">Utilice Wifi</string>
     <string name="do_not_turn_off_screen">No apague la pantalla!</string>
     <string name="ipAddress">Dirección IP:</string>
     <string name="disconnect">Desconectar</string>
     <string name="conn_lost_title">Conexión Perdida</string>
-    <string name="conn_lost_msg">No se pudo conectar al pc. ¿Intentar reconexión?</string>
+    <string name="conn_lost_msg">No se pudo conectar al PC. ¿Quiere reintentar la conexión?</string>
     <string name="reply">Reintentar</string>
-    <string name="pc_out_of_date">La versión de la aplicación acompañante está obsoleta. Se requiere al menos la versión 1$s.</string>
+    <string name="pc_out_of_date">La versión de la aplicación MS Companion está obsoleta. Se requiere al menos la versión 1$s.</string>
     <string name="pc_del_count">El PC ha solicitado el borrado de %1$d archivos</string>
     <string name="success_del_file">Borrado con éxito: %1$s</string>
     <string name="failed_del_file">No se pudo borrar: %1$s</string>
     <string name="unable_process_del">No se pudo procesar el mensaje de borrado de imágenes debido a un error de conexión.</string>
-    <string name="unable_process_mem">No se pudo procesar el mensaje de borrado de imágenes debido a un error de memoria insuficiente de la tableta.</string>
-    <string name="unable_read_song_del">No se pudo leer los datos de mensaje de borrado de canción desde el PC</string>
+    <string name="unable_process_mem">No se pudo procesar el mensaje de borrado de imágenes debido a un error de memoria insuficiente en la tableta.</string>
+    <string name="unable_read_song_del">No se pudieron leer los datos del mensaje de borrado de la canción desde el PC</string>
     <string name="failed_retrieve_song">No se pudo recuperar la canción solicitada mientras se borraban las imágenes.</string>
-    <string name="pc_del_song">el PC ha solicitado el borrado de la canción: %1$s</string>
+    <string name="pc_del_song">El PC ha solicitado el borrado de la canción: %1$s</string>
     <string name="del_empty_dir">Borrando carpeta vacía: %1$s</string>
     <string name="unable_process_del_msg">No se pudo procesar el mensage de borrado de imágenes: %1$s</string>
     <string name="success_del_song">Canción borrada con éxito</string>
     <string name="pc_send_ver_1">Error enviando la versión de la aplicación de la tableta al PC debido a un problema en la conexión.</string>
     <string name="pc_send_ver_2">Error enviando la versión de la aplicación de la tableta al PC: %1$s</string>
-    <string name="pc_ver_okay">MobileSheetsCompanion está ejecutando la versión %1$d. Ésta es compatible.</string>
-    <string name="pc_ver_not_okay">MobileSheetsCompanion está ejecutando la versión %1$d. Ésta es incompatible con esta versión.</string>
+    <string name="pc_ver_okay">MobileSheets Companion está ejecutando la versión %1$d. Es compatible.</string>
+    <string name="pc_ver_not_okay">MobileSheetsCompanion está ejecutando la versión %1$d. Es incompatible con esta versión.</string>
     <string name="pc_ver_error">Error de conexión recibiendo la versión del PC: %1$s</string>
     <string name="sending_db">Enviando archivo de base de datos al PC.</string>
     <string name="err_send_db">Error enviando base de datos al PC: %1$s</string>
-    <string name="sent_files_db_good">Enviados %1$d bytes correctamente del archivo: %2$s</string>
-    <string name="sending_cancel_ack">Enviando reconocimiento de cancelación</string>
+    <string name="sent_files_db_good">%1$d bytes enviados correctamente del archivo: %2$s</string>
+    <string name="sending_cancel_ack">Enviando orden de cancelación</string>
     <string name="sending_broadcast">Enviando mensaje de identificador de broadcast.</string>
-    <string name="wait_for_conn">Esperando al usuario para establecer conexión a través de la ventana emergente de MobileSheets Companion&#8230;</string>
-    <string name="wait_for_usb_conn">Waiting for USB connection&#8230;</string>
-    <string name="send_ack_pc">Connection from PC accepted, sending acknowledgement.</string>
-    <string name="ending_conn_1">Terminando conexión, liberando recursos y enviando mensaje de desconexión al PC.</string>
-    <string name="ending_conn_2">Terminando conexión, liberando recursos.</string>
+    <string name="wait_for_conn">Esperando que el usuario establezca la conexión a través de la ventana emergente de MobileSheets Companion&#8230;</string>
+    <string name="wait_for_usb_conn">Esperando la conexión USB&#8230;</string>
+    <string name="send_ack_pc">Conexión desde el PC aceptada, enviando contestación.</string>
+    <string name="ending_conn_1">Cerrando la conexión, liberando recursos y enviando mensaje de desconexión al PC.</string>
+    <string name="ending_conn_2">Cerrando la conexión, liberando recursos.</string>
     <string name="invalid_pc_msg">Error: mensaje inválido recibido desde el PC. Ignorando mensaje.</string>
     <string name="conn_err_retry">Error de conexión, esperando confirmación de reintento&#8230;</string>
     <string name="packaging_song">Empaquetando - %1$s</string>
@@ -1554,33 +1559,33 @@
     <string name="backup_failed_complete">La copia de seguridad no ha podido completarse debido a un error.</string>
     <string name="backup_req_pc">Solicitud de copia de seguridad recibida desde el PC, iniciando transferencia.</string>
     <string name="no_backup_unlic">Esta copia no está licenciada. No se permiten copias de seguridad hasta que la verificación de licencia tenga éxito.</string>
-    <string name="stop_pc_backup">Deteniendo copia de seguridad de la librería y enviando reconocimiento de cancielación.</string>
+    <string name="stop_pc_backup">Deteniendo copia de seguridad de la librería y enviando contestación de cancelación.</string>
     <string name="transfer_song_data">Transfiriendo datos de canción: %1$s</string>
-    <string name="file_not_found_backup">Archivo no encontrado durante copia de seguridad: %1$s. El archivo se omitirá.</string>
+    <string name="file_not_found_backup">Archivo no encontrado durante la copia de seguridad: %1$s. El archivo se omitirá.</string>
     <string name="skipping_file">Omitiendo archivo: %1$s</string>
-    <string name="no_files_invalid">La canción no tiene ningún archivo asociado. Esto no es posible actualmente.</string>
-    <string name="tablet_out_of_mem_backup">Tablet has run out of memory during backup.</string>
-    <string name="backup_err_transfer">Error encontrado durante la copia de seguridad: %1$s</string>
+    <string name="no_files_invalid">La canción no tiene ningún archivo asociado. Esto no es válido actualmente.</string>
+    <string name="tablet_out_of_mem_backup">La tableta se ha quedado sin memoria durante la copia de seguridad.</string>
+    <string name="backup_err_transfer">Se produjo un error durante la copia de seguridad: %1$s</string>
     <string name="success_transfer_bytes">Transferidos con éxito %1$d bytes del archivo: %2$s</string>
     <string name="send_pc_music">Enviando listado de la librería de música al PC</string>
     <string name="send_pc_music_err">Error enviando listado de la librería de música al PC. La selección de canciones no será posible.</string>
-    <string name="audio_files_recv">%1$d archivos de audio recibidos desde el PC. Procesanto.</string>
+    <string name="audio_files_recv">%1$d archivos de audio recibidos desde el PC. Procesando.</string>
     <string name="audio_file_transfer">Pista de audio a transferir: %1$s</string>
-    <string name="store_music_folder">Carpeta de Music</string>
+    <string name="store_music_folder">Carpeta de Música</string>
     <string name="audio_bytes_recv">%1$d bytes recibidos. Guardando en %2$s.</string>
     <string name="audio_track_written">Pista de audio escrita con éxito a: %1$s</string>
     <string name="err_recv_tracks_1">Error recibiendo pistas de audio desde el PC debido a un error en la conexión.</string>
     <string name="err_recv_tracks_2">Error recibiendo pistas de audio desde el PC. La tableta se quedó sin memoria.</string>
     <string name="err_recv_tracks_3">Error recibiendo pistas de audio desde el PC.</string>
-    <string name="sending_pc_paths">Enviando rutas de archivos de audio al PC</string>
-    <string name="sending_pc_paths_err">Error enviando rutas de nuevos archivos de audio al PC. Esto inhibirá la creación de nuevas canciones.</string>
+    <string name="sending_pc_paths">Enviando rutas de archivos del PC a los ficheros de pistas de audio</string>
+    <string name="sending_pc_paths_err">Error enviando rutas de nuevos archivos de audio al PC. Esto impedirá la creación de nuevas canciones.</string>
     <string name="pc_db_update">Recibiendo actualización de la base de datos desde el PC.</string>
     <string name="db_update_success">Base de datos actualizada con éxito.</string>
-    <string name="db_err_revert">No se pudo recibir la base de datos actualizada. Revirtiendo la base de datos anterior.</string>
-    <string name="pc_unable_req_msg">No se pudo leer datos de mensaje de solicitud de canción recibido desde el PC.</string>
+    <string name="db_err_revert">No se pudo recibir la base de datos actualizada. Revirtiendo a la base de datos anterior.</string>
+    <string name="pc_unable_req_msg">No se pudieron leer los datos del mensaje de solicitud de canción recibido desde el PC.</string>
     <string name="failed_ret_song">No se pudo obtener la canción solicitada para el PC.</string>
-    <string name="send_pc_files_song">Enviando al pc archivos de la canción: %1$s</string>
-    <string name="cancel_pc_transfer">El usuario ha cerrado la ventana del editor de canción. Cancelando transferencia de archivos para previsualización.</string>
+    <string name="send_pc_files_song">Enviando al PC los archivos de la canción: %1$s</string>
+    <string name="cancel_pc_transfer">El usuario ha cerrado la ventana del editor de canción. Cancelando la transferencia de archivos para la previsualización.</string>
     <string name="unable_open_file_transfer">No se pudo abrir el archivo a transferir: %1$s</string>
     <string name="read_bytes_file">Leyendo %1$d bytes del archivo: %2$s</string>
     <string name="file_write_success">Archivo recibido con éxito y escrito en %1$s</string>
@@ -1612,14 +1617,14 @@
     
     <!-- String arrays -->
     <string-array name="sliderOptions">
-        <item>Escondido</item>
-        <item>Mostrado con el Overlay</item>
+        <item>Oculto</item>
+        <item>Visible con el Overlay</item>
         <item>Siempre Visible</item>
     </string-array>
     <string-array name="overlayModesArray">
         <item>Pulsación Simple</item>
         <item>Pulsación Larga</item>
-        <item>Deslizar Arriba o Abajo</item>
+        <item>Deslizar en diagonal</item>
     </string-array>
     <string-array name="debounceArray">
         <item>Deshabilitado</item>
@@ -1638,7 +1643,7 @@
         <item>Estándar</item>
         <item>Configuración 1</item>
         <item>Configuración 2</item>
-        <item>Personalizados</item>
+        <item>Personalizado</item>
     </string-array>
     <string-array name="keyArray">
         <item>@string/any</item>
@@ -1707,10 +1712,10 @@
     </string-array>
     <string-array name="restoreToLocations">
         <item>Ubicación Original del Archivo</item>
-        <item>MobileSheets Lagerort</item>
+        <item>Ubicación de Almacenamiento de MobileSheets</item>
     </string-array>
     <string-array name="title_options">
-        <item>Suponer Título a partir del Nombre de Archivo</item>
+        <item>Estimar Título a partir del Nombre de Archivo</item>
         <item>Usar Nombre de Archivo como Título</item>
     </string-array>
     <string-array name="modes">
@@ -1729,14 +1734,14 @@
     	<item>Siempre</item>
     </string-array>
     <string-array name="collectionModes">
-        <item>Include</item>
-        <item>Exclude</item>
-        <item>Unassigned</item>
+        <item>Incluir</item>
+        <item>Excluir</item>
+        <item>Sin Asignar</item>
     </string-array>
     
     <!-- Annotations (annotation_editor_layout.xml) -->
-    <string name="drawWindowTitle">Pen Settings</string>
-    <string name="highlightWindowTitle">Highlight Settings</string>
+    <string name="drawWindowTitle">Ajustes del Lápiz</string>
+    <string name="highlightWindowTitle">Ajustes del Marcador</string>
     <string name="lineWidthLabel">Tamaño de Línea:</string>
     <string name="drawTypeLabel">Modo:</string>
     <string name="colorLabel">Color:</string>
@@ -1744,7 +1749,7 @@
     <string name="textSizeLabel">Tamaño de Texto:</string>
     <string name="textSizeLabel2">Tamaño:</string>
     <string name="fontLabel">Fuente</string>
-    <string name="stampWindowTitle">Stamp Settings</string>
+    <string name="stampWindowTitle">Ajustes del Sello</string>
     <string name="stampLabel">Sello:</string>
     <string name="groupLabel">Grupo:</string>
     <string name="hasBorderLabel">Borde</string>
@@ -1755,37 +1760,37 @@
     <string name="freeform">Forma Libre</string>
     <string name="stamp">Sello</string>
     <string name="size">Tamaño</string>
-    <string name="pen_type">Tipo de Pincel:</string>
+    <string name="pen_type">Tipo de Lápiz:</string>
     <string name="snap_to_grid">Ajustar a Rejilla</string>
     <string name="show_grid">Mostrar Rejilla</string>
-    <string name="grid_cell_size">Tamaño de Celda de Rejilla:</string>
+    <string name="grid_cell_size">Tamaño de Celda de la Rejilla:</string>
     <string name="opacity">Opacidad:</string>
     <string name="auto_size_text">Tamaño Automático de Caja de Texto</string>
-    <string name="smooth_mode">Modo de suavizado:</string>
-    <string name="grid_settings_title">Grid Settings</string>
+    <string name="smooth_mode">Modo de Suavizado:</string>
+    <string name="grid_settings_title">Ajustes de Rejilla</string>
     
     <!-- Quick action bar -->
     <string-array name="user_actions">
-        <item>Show setlist window</item>
-        <item>Show bookmarks</item>
-        <item>Add new song to setlist</item>
-        <item>Pause setlist for request</item>
-        <item>Quick find song</item>
-        <item>Edit song</item>
-        <item>Settings Screen</item>
-        <item>Set Pedal Actions</item>
-        <item>Toggle Night Mode</item>
-        <item>Annotate Song</item>
-        <item>Change Text File Settings</item>
+        <item>Mostrar ventana de setlist</item>
+        <item>Mostrar marcadores</item>
+        <item>Añadir nueva canción al setlist</item>
+        <item>***Pausar setlist y esperar solicitud</item>
+        <item>Búsqueda rápida de canción</item>
+        <item>Editar canción</item>
+        <item>Pantalla de ajustes</item>
+        <item>Acciones de pedal</item>
+        <item>Alternar Modo Nocturno</item>
+        <item>Anotar canción</item>
+        <item>Cambiar ajustes de fichero de texto</item>
     </string-array>
     
     <!-- Quick action list -->
-    <string name="show_pen_settings">Show Pen Settings</string>
-    <string name="show_highlight_settings">Show Highlight Settings</string>
-    <string name="show_settings">Mostrar Ajustes</string>
+    <string name="show_pen_settings">Mostrar Ajustes del Lápiz</string>
+    <string name="show_highlight_settings">Mostrar Ajustes del Marcador</string>
+    <string name="show_stamp_settings">Mostrar Ajustes del Sello</string>
     <string name="show_list">Mostrar Lista</string>
     <string name="show_toolbox">Mostrar Caja de Herramientas</string>
-    <string name="stylus_mode">Modo Estilete</string>
+    <string name="stylus_mode">Modo del Stylus</string>
     <string name="prev_page">Pág Anterior</string>
     <string name="next_page">Pág Siguiente</string>
     
@@ -1809,7 +1814,7 @@
         <item>Naranja</item>
         <item>Amarillo</item>
         <item>Blanco</item>
-        <item>Último Personalizado</item>
+        <item>ÚltimoPers.</item>
         <item>Personalizado</item>
     </string-array>
     <string-array name="fill_colors">
@@ -1821,7 +1826,7 @@
         <item>Naranja</item>
         <item>Amarillo</item>
         <item>Negro</item>
-        <item>Último Personalizado</item>
+        <item>ÚltimoPers</item>
         <item>Personalizado</item>
     </string-array>
     <string-array name="penModes">
