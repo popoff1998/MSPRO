@@ -321,10 +321,10 @@
     <string name="db_update_failed">Fallo al actualizar la Base de Datos. Cierre completamente la aplicación y comienze de nuevo.</string>
         
     <!-- Import Settings Dialog -->
-    <string name="import_settings_title">Importar Ajustes</string>
+    <string name="import_settings_title">Ajustes de Importar</string>
     
     <string name="importing_title">Importando Ficheros</string>
-    <string name="initializing_import_msg">Inicializando los recursos para la importación de ficheros</string>
+    <string name="initializing_import_msg">Inicializando los recursos para la importar los ficheros</string>
     <string name="import_file_msg">Importando Fichero #%1$d - %2$s</string>
     <string name="import_results_title">Resultados de la Importación</string>
     <string name="free_song_limit_reached">Ha alcanzado el límite de canciones para la versión gratuita. Actualize a la versión de pago para sobrepasarlo.</string>
@@ -384,14 +384,14 @@
     <string name="lsbLabel">LSB</string>
     <string name="valueLabel">Valor (Patch)</string>
     <string name="numberLabel">Número</string>
-    <string name="ccValueLabel">Valor</string>
+    <string name="ccValueLabel">Valor (cc)</string>
     <string name="sendOnLoadLabel">Enviar al cargar la Canción:</string>
     <string name="loadOnRecvLabel">Cargar la Canción al recibir:</string>
     <string name="sendOnLoad">Enviar al Cargar</string>
     <string name="loadOnRecv">Cargar al Recibir</string>
     <string name="sysExExample">ej. F0 43 10 7F 01 0A 00 01 01 F7</string>
     <string name="enterMidiValue">Introduzca el valor</string>
-    <string name="createCommandFirst">Cree el comando MIDI ante</string>
+    <string name="createCommandFirst">Cree el comando MIDI antes</string>
     
     <string-array name="commandTypes">
         <item>Patch Select</item>
@@ -505,7 +505,7 @@
     <string name="manage_song_name">Editor de Canciones de MobileSheets</string>
     <string name="starting_dropbox_download">Descarga de archivos de Dropbox</string>
     <string name="initiating_dropbox_connection">Iniciando conexión Dropbox</string>
-    <string name="customSortTitleLabel">Título de ordenación:</string>
+    <string name="customSortTitleLabel">Título de Ordenación:</string>
     <string name="addToSetlistsLabel">Añadir a los Setlists:</string>
     <string name="addToCollectionsLabel">Añadir a las Colecciones:</string>
     <string name="temposLabel">Tempos:</string>
