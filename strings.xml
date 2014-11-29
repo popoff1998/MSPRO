@@ -81,7 +81,7 @@
     <string name="albums">Álbumes</string>
     <string name="genres">Géneros</string>
     <string name="composers">Compositores</string>
-    <string name="source_types">Tipo de Origen</string>
+    <string name="source_types">Origen</string>
     <string name="custom_group_tab">Personalizado</string>
     <string name="keys">Tonalidades</string>
     <string name="signatures">Armaduras</string>
@@ -124,7 +124,7 @@
 
     <!-- configure_fields_layout.xml -->
     <string name="configure_fields_title">Seleccione Campos para Mostrar</string>
-    <string name="checkCustomSort">Personalizar Ordenación por Título</string>
+    <string name="checkCustomSort">***Personalizar Ordenación por Título</string>
         
     <!-- main.xml and library screen -->
     <string name="clear_recent">Borrar Lista</string>
