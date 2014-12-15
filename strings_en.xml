@@ -64,6 +64,7 @@
     <string name="album">Album</string>
     <string name="genre">Genre</string>
     <string name="composer">Composer</string>
+    <string name="keywords">Keywords</string>
     <string name="custom">Custom</string>
     <string name="custom2">Custom2</string>
     <string name="tempo">Tempo</string>
@@ -72,6 +73,7 @@
     <string name="duration">Duration</string>
     <string name="collection">Collection</string>
     <string name="source">Source</string>
+    <string name="year">Year</string>
     
     <!-- Tabs -->
     <string name="recent">Recent</string>
@@ -87,8 +89,8 @@
     <string name="signatures">Signatures</string>
     <string name="collections">Collections</string>
     <string name="custom_group">Custom Group</string>
+    <string name="years">Years</string>
     <string name="bookmarks">Bookmarks</string>
-    <string name="date_created">Date Created</string>
     <string name="sources">Sources</string>
     
     <string name="sort_az">Sort: A-Z</string>
@@ -102,7 +104,7 @@
     <string-array name="song_sort_options">
         <item>A-Z</item>
         <item>Date Created</item>
-        <item>Dated Modified</item>
+        <item>Date Modified</item>
     </string-array>
     
     <string-array name="setlist_sort_options">
@@ -122,6 +124,13 @@
     <string name="ab_share">Share</string>
     <string name="ab_export">Export</string>
     
+    <string name="ab_add_songs_to_setlist">Add Songs to Setlist</string>
+    <string name="ab_add_songs_to_collection">Add Songs to Collection</string>
+    <string name="ab_remove_songs_from_setlist">Remove Songs from Setlist</string>
+    <string name="ab_remove_songs_from_collection">Remove Songs from Collection</string>
+    <string name="ab_create_setlist_from_songs">Create Setlist From Songs</string>
+    <string name="ab_create_collection_from_songs">Create Collection From Songs</string>
+    
     <!-- configure_fields_layout.xml -->
     <string name="configure_fields_title">Select Fields to Show</string>
     <string name="checkCustomSort">Custom Sort Title</string>
@@ -137,6 +146,7 @@
     <string name="keyPrompt">Select the Key</string>
     <string name="searchLabel">Search:</string>
     <string name="collectionLabel">Collection:</string>
+    <string name="genreLabel">Genre:</string>
     <string name="spinnerColPrompt">Select the Collection</string>
     <string name="difficultyPrompt">Select the Difficulty</string>
     <string name="tempoLabel">Tempo</string>
@@ -167,6 +177,8 @@
     
     <string name="unsupported_file_type">Unsupported file type selected. Please select one of the supported types such as PDF.</string>
     
+    <string name="group_creation_successful">%1$s %2$s created successfully with %3$d songs</string>
+    
     <string name="file_changes_detected">File modifications detected. Processing file changes...</string>
     
     <string name="select_edit_target">Select item to edit</string>
@@ -195,6 +207,24 @@
         <item>Two Pages</item>
         <item>Alternate Pages</item>
     </string-array>
+        
+    <!-- additional_filters_layout.xml -->
+    <string name="additionalFiltersTitle">Additional Filters</string>
+    <string name="metronomeLabel">Metronome:</string>
+    <string name="audioFilesLabel">Audio Files:</string>
+    <string name="clearAdditionalFilters">Clear Additional Filters</string>
+        
+    <string-array name="filter_metronome_choices">
+        <item>Off</item>
+        <item>Not Configured</item>
+        <item>Configured</item>
+    </string-array>
+    
+    <string-array name="filter_audio_choices">
+        <item>Off</item>
+        <item>Has No Audio Files</item>
+        <item>Has Audio Files</item>
+    </string-array>
     
     <!-- add_bookmark_dialog.xml -->
     <string name="pageLabel">Page:</string>
@@ -221,6 +251,7 @@
     <string name="defaultsLabel">Default metadata values for import:</string>
     <string name="addGroupsLabel">Add songs to the following groups during import:</string>
     <string name="titleLabel">Title:</string>
+    <string name="keywordsLabel">Keywords:</string>
     <string name="customLabel">Custom:</string>
     <string name="custom2Label">Custom2:</string>
     <string name="sourcesLabel">Sources:</string>
@@ -246,6 +277,7 @@
     <string name="confirmDeleteLabel">Are you sure you want to delete</string>
     <string name="deleteSongFiles">Delete Song Pdf/Image/Text Files</string>
     <string name="deleteAudioFiles">Delete Song Audio Files</string>
+    <string name="deleteFilesNote">Note: Files shared by multiple songs will not be deleted</string>
         
     <!-- convert_pdf_activity.xml -->
     <string name="pdf_file_label">Input Files:</string>
@@ -352,7 +384,7 @@
     <string name="apply_conflict_check">Apply selection to all conflicts</string>
     
     <string name="rename">Rename</string>
-    <string name="duplicate_file">Duplicate file \'%1$s\' found. Ignoring file.</string>
+    <string name="duplicate_file">Ignoring duplicate file \'%1$s\'.</string>
     <string name="duplicateBehaviorLabel">Duplicate File Behavior:</string>
     
     <string-array name="duplicate_behaviors">
@@ -372,6 +404,10 @@
     <string name="setlist_match_title">Duplicate Setlist Title Found</string>
     <string name="setlist_match_found">A setlist named \'%1$s\' already exists. Would you like to update that setlist or create a new one?</string>
     <string name="update">Update</string>
+    
+    <string name="extracting_song">Extracting song \'%1$s\'</string>
+    <string name="extracting_setlist">Extracting setlist \'%1$s\'</string>
+    <string name="extracting_song_from_setlist">Extracting song \'%1$s\' from setlist \'%2$s\'</string>
         
     <!-- midi_dialog_layout.xml -->
     <string name="commandTypeLabel">Command Type:</string>
@@ -410,6 +446,9 @@
     
     <!-- multi_choice_dialog.xml -->
     <string name="multiChoiceTitle">Select Items</string>
+    <string name="select_none">Select None</string>
+    <string name="select_all">Select All</string>
+    <string name="unassigned">Unassigned</string>
     
     <!-- next_up_settings_dialog.xml -->
     <string name="showNextUpLabel">Show Next Song:</string>
@@ -566,6 +605,7 @@
     <string name="orderLabel">Page Order:</string>
     <string name="invalid_page_order">"%1$s" is not a valid page ordering.</string>
     <string name="page_out_of_bounds">The maximum allowed page is %1$d</string>
+    <string name="totalPagesLabel">Total Pages in File:</string>
     
     <!-- Song Editor Settings Dialog -->
     <string name="apply_rotation_label">Apply Rotation:</string>
@@ -573,7 +613,6 @@
     <string name="autoCropLabel">Auto-Crop Imported Files:</string>
     <string name="aggressiveLabel">Aggressively Crop:</string>
     <string name="populateFieldsAudioLabel">Populate Metadata When Importing Audio:</string>
-    <string name="showCustomSortTitle">Show Custom Sort Title:</string>
     <string name="song_editor_settings_title">Song Editor Settings</string>
     <string-array name="apply_rotation_crop_choices">
         <item>Current page only</item>
@@ -588,6 +627,8 @@
     <string name="ab_goto">Go To</string>
     <string name="ab_crop_page_msg">Page %1$d / %2$d</string>
     <string name="ab_auto_crop_all">Auto-Crop All Pages</string>
+    <string name="enable_aggressive_crop">Enable Aggressive Cropping</string>
+    <string name="disable_aggressive_crop">Disable Aggressive Cropping</string>
     
     <string name="crop_apply_title">Apply Crop To Which?</string>
     
@@ -600,6 +641,8 @@
     <string name="pedalFourLabel">Pedal 4</string>
     <string name="pedal_keys_label">Keys:</string>
     <string name="pedal_action_label">Action:</string>
+    
+    <string name="pedal_action_title">Select the Pedal Action</string>
     
     <string name="pedal_key_msg">Press each pedal or key to map to the action.</string>
     <string name="pedal_key_title">Press Pedal</string>
@@ -631,6 +674,8 @@
         <item>Go to Next Song</item>
         <item>Go to Start of Song</item>
         <item>Go to End of Song</item>
+        <item>Go to Previous Bookmark</item>
+        <item>Go to Next Bookmark</item>
     </string-array>
     
     <!-- Touch Settings Activity -->
@@ -656,6 +701,9 @@
         <item>Go to Start of Song</item>
         <item>Go to End of Song</item>
         <item>Go to Next Metronome Tempo</item>
+        <item>Annotate Song</item>
+        <item>Go to Previous Bookmark</item>
+        <item>Go to Next Bookmark</item>
     </string-array>
     
     <!-- Tab Order Activity -->
@@ -761,8 +809,7 @@
     <string name="autoStartTrack">Automatically play audio when song is loaded</string>
     <string name="autoStartMsg">(Must be set per song)</string>
     <string name="invalid_notch_pos">The position of the end marker must be after the start</string>
-    <string name="place_a_pos">Tap the start position for the loop</string>
-    <string name="place_b_pos">Tap the end position for the loop</string>
+    <string name="place_b_pos">Set the end position for the loop</string>
     <string name="repeat_off">Repeat: Off</string>
     <string name="repeat_playlist">Repeat: Playlist</string>
     <string name="repeat_track">Repeat: Track</string>
@@ -891,6 +938,8 @@
     <string name="mi_delete_song">Delete Song</string>
     <string name="mi_add_to_setlist">Add to Setlist</string>
     <string name="mi_remove_from_setlist">Remove from Setlist</string>
+    <string name="mi_add_to_collection">Add to Collection</string>
+    <string name="mi_remove_from_collection">Remove from Collection</string>
     <string name="mi_swap_file">Swap File</string>
     <string name="mi_view_edit_notes">View/Edit Notes</string>
         
@@ -1025,6 +1074,9 @@
     <string name="helpLibraryMessage">Welcome to MobileSheets! If this is your first time using the app, it is highly recommended that you read the online manual before getting started. There are a huge number of features in MobileSheets, and you will get much more out of the app if you know what is available. To read the manual, click the button below. To continue, tap OK or the back button.</string>
     <string name="viewManualButton">View Online Manual</string>
     
+    <string name="prompt_manage_files_title">Select File Storage Setting</string>
+    <string name="prompt_manage_files">Would you like MobileSheetsPro to copy and manage all imported files? This setting and the storage location for files can be changed at any time on the main settings screen.</string>
+    
     <!-- Activity names -->
     <string name="email_activity_name">Email Zubersoft Support</string>
     <string name="annotations_activity_name">Annotations Editor</string>
@@ -1046,8 +1098,10 @@
     <string name="crop_activity_name">Crop Editor</string>
     <string name="pedal_action_activity_name">Pedal Action Settings</string>
     <string name="touch_action_activity_name">Touch Action Settings</string>
+    <string name="switch_dropbox_activity_name">Switch Dropbox Account</string>
     
     <!-- Settings screen values -->
+    <string name="settings_value">Current Setting: %1$s</string>
     
     <!-- About section -->
     <string name="about_header">About</string>
@@ -1079,6 +1133,8 @@
     <string name="summary_tab_order_pref">Determines what tabs are shown and in what order.</string>
     <string name="title_show_song_count_pref">Show Number of Songs</string>
     <string name="summary_show_song_count_pref">Shows the number of songs next to the title of any library entry that contains a list of songs (i.e. Setlists/Collections/Artists)</string>
+    <string name="title_clear_filters_pref">Clear Filters After Load</string>
+    <string name="summary_clear_filters_pref">Automatically clears the current filters if a song or setlist is loaded</string>
     
     <string name="sorting_header">Sorting Options</string>
     <string name="title_sort_ignore_pref">Ignore Articles While Sorting</string>
@@ -1092,7 +1148,7 @@
     <string name="summary_aggressively_crop_pref">Switches the automatic cropping to aggressively crop files, which prioritizes eliminating margins over preserving content.</string>
     
     <string name="load_preferences">Load Options</string>
-    <string name="title_rlp_pref">Automatically Reload Last Viewed Page</string>
+    <string name="title_rlp_pref">Always Load Last Viewed Page</string>
     <string name="summary_rlp_pref">If set, when a song is clicked on the library screen, the last viewed page of the song will be loaded.</string>
     <string name="initial_load_pref">Initial Library Tab</string>
     <string name="summary_initial_load_pref">Select the tab that will first be shown when the application loads.</string>
@@ -1152,6 +1208,8 @@
     <string name="bluetooth_preferences">Pedal Settings</string>
     <string name="pedal_action_pref">Pedal Actions</string>
     <string name="pedal_action_summary">Select the actions that will occur when pedals are pressed.</string>
+    <string name="prevent_song_change_pref">Prevent Pedal From Changing Songs</string>
+    <string name="summary_prevent_song_change">Stops the pedal from changing songs, requiring a tap on the screen instead.</string>
     
     <string name="tap_preferences">Touch Settings</string>
     <string name="tap_action_pref">Touch Actions</string>
@@ -1277,6 +1335,8 @@
     <string name="summary_copy_audio_files">Determines whether or not MobileSheets will copy audio files into the storage location.</string>
     <string name="title_add_unique_id">Add Unique Id to Filenames</string>
     <string name="summary_add_unique_id">Adds a unique identifier to files when being imported to help reduce file name conflicts. Use this if you regularly import files with duplicate names.</string>
+    <string name="dropbox_switch_title">Switch Dropbox Account</string>
+    <string name="dropbox_switch_summary">Switches the active dropbox account for file imports.</string>
             
     <!-- Messages displayed to the user, titles and labels -->
     <string name="export_file_success">Successfully exported file %1$s</string>
@@ -1325,10 +1385,11 @@
     <string name="delete_items_failed">The following items could not be deleted:\n\n%1$s</string>
     <string name="cannot_swap_error">The PDF is password protected and cannot be used without a valid password.</string>
     <string name="select_setlist_title">Select Desired Setlist</string>
+    <string name="select_collection_title">Select Desired Collection</string>
     <string name="add_song_to_setlist">Add Song to Setlist</string>
-    <string name="add_song_db_error">Unable to add song to setlist. Database error.</string>
-    <string name="setlist_remove_title">Select Setlist To Remove Song From</string>
-    <string name="remove_song_db_error">Unable to remove song from setlist. Database error.</string>
+    <string name="add_song_db_error">Unable to add song to %1$s. Database error.</string>
+    <string name="group_remove_title">Select %1$s To Remove Song From</string>
+    <string name="remove_song_db_error">Unable to remove song from %1$s. Database error.</string>
     <string name="upgrading_db">Upgrading Database</string>
     <string name="loading_songs_db">Loading songs from database</string>
     <string name="initial_db">Initializing database</string>
@@ -1400,7 +1461,7 @@
     <string name="start_pdf_convert">Starting conversion of %1$s\n</string>
     <string name="converting_pdf_title">Converting PDF</string>
     <string name="cancel_pdf_convert">Canceling conversion&#8230;</string>
-    <string name="fail_open_pdf">Failed to open PDF file.</string>
+    <string name="fail_open_pdf">Failed to open PDF file %1$s.</string>
     <string name="pdf_open_dim">Successfully loaded %1$s.\nPDF dimensions are: %2$dx%3$d</string>
     <string name="pdf_open_error">Failed to open PDF file due to error: %1$s</string>
     <string name="bookmark_entry">%1$s - Page %2$d</string>
@@ -1471,11 +1532,12 @@
     <string name="usb_device_attached">USB MIDI Device %1$s has been attached.</string>
     <string name="usb_device_detached">USB MIDI Device %1$s has been detached.</string>
     
-    <string name="added_song_to_setlist_successful">Successfully added %1$d song to setlist %2$s</string>
-    <string name="removed_song_from_setlist_successful">Successfully removed %1$d song from setlist %2$s</string>
-    <string name="added_songs_to_setlist_successful">Successfully added %1$d songs to setlist %2$s</string>
-    <string name="removed_songs_from_setlist_successful">Successfully removed %1$d songs from setlist %2$s</string>
+    <string name="added_song_to_group_successful">Successfully added %1$d song to %2$s %3$s</string>
+    <string name="removed_song_from_group_successful">Successfully removed %1$d song from %2$s %3$s</string>
+    <string name="added_songs_to_group_successful">Successfully added %1$d songs to %2$s %3$s</string>
+    <string name="removed_songs_from_group_successful">Successfully removed %1$d songs from %2$s %3$s</string>
     <string name="selected_songs_no_setlist">The selected songs are not currently in any setlists.</string>
+    <string name="selected_songs_no_collection">The selected songs are not currently in any collections.</string>
     
     <string name="added_songs">Added %1$d songs to %2$s</string>
     
@@ -1736,7 +1798,7 @@
     <string-array name="collectionModes">
         <item>Include</item>
         <item>Exclude</item>
-        <item>Unassigned</item>
+        <item>@string/unassigned</item>
     </string-array>
     
     <!-- Annotations (annotation_editor_layout.xml) -->
@@ -1768,6 +1830,7 @@
     <string name="auto_size_text">Auto-size Textbox</string>
     <string name="smooth_mode">Smooth:</string>
     <string name="grid_settings_title">Grid Settings</string>
+    <string name="list">List</string>
     
     <!-- Quick action bar -->
     <string-array name="user_actions">
