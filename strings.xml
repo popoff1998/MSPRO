@@ -61,7 +61,7 @@
     <string name="all_fields">Todos</string>
     <string name="name">Nombre</string>
     <string name="artist">Artista</string>
-    <string name="album">Album</string>
+    <string name="album">Álbum</string>
     <string name="genre">Género</string>
     <string name="composer">Compositor</string>
     <string name="keywords">Palabras Clave</string>
@@ -345,12 +345,12 @@
     
     <string name="create_setlist_message">Introduzca el nombre del setlist que se creará usando las canciones de %1$s \'%2$s\'</string>
     <string name="setlist_successful">El Setlist %1$s se creó correctamente</string>
-    <string name="setlist_failed">No se pudo crear el Setlist %1$s debido a un error de la base de datos. Cierre completamente la aplicación y comienze de nuevo.</string>
+    <string name="setlist_failed">No se pudo crear el Setlist %1$s debido a un error de la base de datos. Cierre completamente la aplicación y comience de nuevo.</string>
     
     <string name="clear_all_prompt">Estás seguro de que quiere borrar todas las canciones de %1$s?</string>
-    <string name="failed_to_clear_songs">Falló el borrado de canciones para %1$s debido a un error de la base de datos. Cierre completamente la aplicación y comienze de nuevo.</string>
+    <string name="failed_to_clear_songs">Falló el borrado de canciones para %1$s debido a un error de la base de datos. Cierre completamente la aplicación y comience de nuevo.</string>
     
-    <string name="db_update_failed">Fallo al actualizar la Base de Datos. Cierre completamente la aplicación y comienze de nuevo.</string>
+    <string name="db_update_failed">Fallo al actualizar la Base de Datos. Cierre completamente la aplicación y comience de nuevo.</string>
         
     <!-- Import Settings Dialog -->
     <string name="import_settings_title">Ajustes de Importar</string>
@@ -554,7 +554,7 @@
     <string name="pageOrderLabel">Orden de Página:</string>
     <string name="pageCountLabel">Páginas en el Fichero:</string>
     <string name="rotationLabel">Rotación:</string>
-    <string name="autoCropButton">Auto-Recorte</string>
+    <string name="autoCropButton">Auto Recorte</string>
     <string name="resetCropButton">Reinicializar Recorte</string>
         
     <string name="startEndLabel">Pista Inicio/Fin:</string>
@@ -1033,7 +1033,7 @@
         <item>Todas las Páginas del Fichero Actual</item>
         <item>Todas las Páginas de Todos los Ficheros (Canción Actual)</item>
         <item>Todas las Páginas del Setlist</item>
-    </string-array>
+    </string-array>  
     
     <!-- Create Placeholder Dialog -->
     <string name="create_placeholder_title">Crear Marcador</string>
