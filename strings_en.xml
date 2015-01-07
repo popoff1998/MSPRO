@@ -247,7 +247,8 @@
     <string name="filterLabel">File Filter:</string>
     <string name="filterAny">*.*</string>
     <string name="checkScanSubs">Scan all subdirectories for files</string>
-    <string name="checkAvoidDuplicates">Avoid Duplicate Songs</string>
+    <string name="checkAvoidDuplicates">Avoid duplicate songs</string>
+    <string name="checkUpdateOnMatch">Update songs if matching files are found</string>
     <string name="defaultsLabel">Default metadata values for import:</string>
     <string name="addGroupsLabel">Add songs to the following groups during import:</string>
     <string name="titleLabel">Title:</string>
@@ -404,6 +405,7 @@
     <string name="setlist_match_title">Duplicate Setlist Title Found</string>
     <string name="setlist_match_found">A setlist named \'%1$s\' already exists. Would you like to update that setlist or create a new one?</string>
     <string name="update">Update</string>
+    <string name="updated_song_successfully">Updated song \'%1$s\' with file \'%2$s\'</string>
     
     <string name="extracting_song">Extracting song \'%1$s\'</string>
     <string name="extracting_setlist">Extracting setlist \'%1$s\'</string>
@@ -804,6 +806,7 @@
     </string-array>
     <string name="fadeOutCompletely">Fade Out Completely</string>
     <string name="transparencyLabel">Transparency:</string>
+    <string name="autoPlayNextTrack">Automatically play next track</string>
     <string name="switchTrackWithSong">Switch track when song changes</string>
     <string name="showArtistWithTitle">Show artist with title</string>
     <string name="autoStartTrack">Automatically play audio when song is loaded</string>
@@ -884,18 +887,9 @@
     <string name="simple">Simple</string>
     <string name="advanced">Advanced</string>
     <string name="encodingLabel">Encoding:</string>
+    <string name="autoSizeFont">Auto-Size Font</string>
     
     <string name="chorus">Chorus</string>
-    
-    <string-array name="encodings">
-        <item>UTF-8</item>
-        <item>ASCII</item>
-        <item>ISO-8859-1</item>
-        <item>UTF-16BE</item>
-        <item>UTF-16LE</item>
-        <item>windows-1251</item>
-        <item>windows-1256</item>
-    </string-array>
     
     <string-array name="applyToTextSettings">
         <item>Current file</item>
@@ -935,7 +929,9 @@
     <string name="mi_load_last_viewed_page">Load Last Viewed Page</string>
     <string name="mi_edit_song">Edit Song</string>
     <string name="mi_copy_song">Copy Song</string>
+    <string name="mi_remove">Remove</string>
     <string name="mi_delete_song">Delete Song</string>
+    <string name="mi_delete_song_library">Delete Song From Library</string>
     <string name="mi_add_to_setlist">Add to Setlist</string>
     <string name="mi_remove_from_setlist">Remove from Setlist</string>
     <string name="mi_add_to_collection">Add to Collection</string>
@@ -1099,6 +1095,7 @@
     <string name="pedal_action_activity_name">Pedal Action Settings</string>
     <string name="touch_action_activity_name">Touch Action Settings</string>
     <string name="switch_dropbox_activity_name">Switch Dropbox Account</string>
+    <string name="auto_save_turn">Auto-save on Page Turn</string>
     
     <!-- Settings screen values -->
     <string name="settings_value">Current Setting: %1$s</string>
@@ -1142,12 +1139,10 @@
     <string name="title_ignore_articles">Articles To Ignore</string>
     <string name="summary_ignore_articles">Sets the list of articles that should be ignored. Values must be separated by commas.</string>
     <string name="default_ignore_articles">A, An, The</string>
-    
-    <string name="cropping_preferences">Cropping Options</string>
-    <string name="title_aggressively_crop_pref">Aggressively Crop</string>
-    <string name="summary_aggressively_crop_pref">Switches the automatic cropping to aggressively crop files, which prioritizes eliminating margins over preserving content.</string>
-    
+        
     <string name="load_preferences">Load Options</string>
+    <string name="title_load_next_song_pref">Automatically Load Next Song</string>
+    <string name="summary_load_next_song_pref">If selected, automatically loads the next song listed on the library screen when turning past the last page of the current song. This setting does not apply if a setlist is loaded.</string>
     <string name="title_rlp_pref">Always Load Last Viewed Page</string>
     <string name="summary_rlp_pref">If set, when a song is clicked on the library screen, the last viewed page of the song will be loaded.</string>
     <string name="initial_load_pref">Initial Library Tab</string>
@@ -1163,46 +1158,47 @@
     <string name="title_language_pref">Language</string>
     
     <string name="song_display_preferences">Song Display Settings</string>
-    <string name="overlay_display_preferences">Overlay Settings</string>
-    <string name="system_display_preferences">System Settings</string>
     <string name="title_allow_zoom_out">Allow Zoom Out Past 100%</string>
     <string name="summary_allow_zoom_out">Determines if, when zooming out, the document can be made smaller than the screen dimensions.</string>
     <string name="title_instant_page_turns">Disable Page Turn Animation</string>
     <string name="summary_instant_page_turns">Disables the page turn animation, making pages turn instantly.</string>
-    <string name="title_show_next_pref">Show Next Song Indicator</string>
-    <string name="summary_show_next_pref">Determines when a bar is shown at the top of the screen indicating what song is coming up next</string>
-    <string name="dim_status_pref">Dim the Navigation Bar</string>
-    <string name="summary_dim_status_pref">If running HoneyComb or later, the navigation bar will be dimmed, otherwise this has no effect.</string>
-    <string name="hide_status_pref">Hide the Navigation Bar</string>
-    <string name="summary_hide_status_pref">If this option is checked, the navigation bar will be completely hidden, requiring a swipe to show it.</string>
     <string name="repeat_mode_pref">Repeat Mode</string>
     <string name="summary_repeat_mode_pref">If enabled, skips back to the beginning of a song or setlist when a user advances past the last page, and skips to the end of a song if the users advances backwards from the first page.</string>
     <string name="half_landscape_pref">Display Half Page In Landscape</string>
     <string name="summary_half_landscape_pref">Displays half a page when the tablet is in landscape orientation while using the single page display mode.</string>
     <string name="title_uhpt_pref">Half-Page Turns In Landscape Mode</string>
     <string name="summary_uhpt_pref">Advances half a page at a time while using the single page display mode in landscape orientation.</string>
-    <string name="title_force_landscape_two_pages">Force Landscape With Two Pages</string>
-    <string name="summary_force_landscape_two_pages">Forces the tablet into landscape orientation while using the two page display mode.</string>
     <string name="title_show_one_song">Separate Songs in Two Page Mode</string>
     <string name="summary_show_one_song">Ensures that only one song will be visible at a time in the two page display.</string>
+    <string name="link_size_pref">Link Point Default Size</string>
+    <string name="summary_link_size_pref">Changes the rendered size of the link points. The default radius is 28.</string>
+    <string name="bk_color_pref">Background Image Color</string>
+    <string name="summary_bk_color_pref">The color that is used to fill empty space while viewing images/PDFs. Also acts as the background color for transparent images.</string>
     <string name="night_mode_pref">Night Mode</string>
     <string name="summary_night_mode_pref">Inverts black and white to help in dark environments.</string>
     <string name="title_vertically_center_pref">Center Pages</string>
     <string name="summary_vertically_center_pref">Ensures that if a page is vertically smaller than the tablet it will be centered in the middle of the viewable area.</string>
-        
-    <string name="overlay_click_pref">Overlay Toggle Mode</string>
-    <string name="summary_overlay_click_pref">Determines what finger action brings up the overlay. A single tap always closes it.</string>
-    <string name="bk_color_pref">Background Image Color</string>
-    <string name="summary_bk_color_pref">The color that is used to fill empty space while viewing images/PDFs. Also acts as the background color for transparent images.</string>
-    <string name="link_size_pref">Link Point Default Size</string>
-    <string name="summary_link_size_pref">Changes the rendered size of the link points. The default radius is 28.</string>
-    <string name="title_show_preview_pref">Show Preview During Page Seek</string>
-    <string name="summary_show_preview_pref">Enables/disables the mini-preview window that appears while using the page slider to change pages.</string>
-    <string name="title_asps_pref">Page Slider Visibility</string>
-    <string name="summary_asps_pref">Determines if the page slider is hidden, shown with the overlay, or always visible at the bottom of the screen while viewing a song.</string>
+    
+    <string name="overlay_display_preferences">Overlay Settings</string>
+    <string name="title_show_next_pref">Show Next Song Indicator</string>
+    <string name="summary_show_next_pref">Determines when a bar is shown at the top of the screen indicating what song is coming up next</string>
     <string name="title_astb_pref">Always Show The Title Bar</string>
     <string name="summary_astb_pref">Determines if the information bar is always visible at the top of the screen while viewing a song.</string>
+    <string name="title_show_preview_pref">Show Preview During Page Seek</string>
+    <string name="summary_show_preview_pref">Enables/disables the mini-preview window that appears while using the page slider to change pages.</string>
+    <string name="overlay_click_pref">Overlay Toggle Mode</string>
+    <string name="summary_overlay_click_pref">Determines what finger action brings up the overlay. A single tap always closes it.</string>
+    <string name="title_asps_pref">Page Slider Visibility</string>
+    <string name="summary_asps_pref">Determines if the page slider is hidden, shown with the overlay, or always visible at the bottom of the screen while viewing a song.</string>
     
+    <string name="system_display_preferences">System Settings</string>
+    <string name="dim_status_pref">Dim the Navigation Bar</string>
+    <string name="summary_dim_status_pref">If running HoneyComb or later, the navigation bar will be dimmed, otherwise this has no effect.</string>
+    <string name="hide_status_pref">Hide the Navigation Bar</string>
+    <string name="summary_hide_status_pref">If this option is checked, the navigation bar will be completely hidden, requiring a swipe to show it.</string>
+    <string name="full_screen_pref">Fullscreen Mode</string>
+    <string name="summary_full_screen_pref">Enables fullscreen mode, which hides the Android notification bar at the top of the screen.</string>
+            
     <!-- Pedal Settings section -->
     <string name="bluetooth_header">Touch &amp; Pedal Settings</string>
     <string name="bluetooth_preferences">Pedal Settings</string>
@@ -1244,6 +1240,10 @@
     <string name="summary_detect_key_by">Determines how the key of a text file is determined when it is first added to a song.</string>
     <string name="title_enable_encoding_pref">Display File Encodings</string>
     <string name="summary_enable_encoding_pref">Displays a dropdown to switch a text file\'s encoding. Enable this if you see ? characters in your text files.</string>
+    <string name="title_auto_size_font_pref">Auto-Size Font</string>
+    <string name="summary_auto_size_font">Automatically sizes the font for new text or chord pro files so that they take up as much of the screen width as possible, up to the font size specified in the \"Maximum Auto Font Size\" setting.</string>
+    <string name="title_max_size_font_pref">Maximum Auto Font Size</string>
+    <string name="summary_max_size_font_pref">The maximum setting that will be used for automatically sizing font. This ensures files with short lines will not be made too large on the screen.</string>
     
     <string-array name="transposeMethods">
         <item>Key</item>
@@ -1270,15 +1270,15 @@
         <item>Generic</item>
         <item>KORG</item>
     </string-array>
-    
-    <!-- Annotations section -->
-    <string name="annotations_header">Annotations</string>
-    <string name="ann_preferences">Annotations Settings</string>
-    <string name="auto_save_ann_pref">Auto-save When Switching Pages</string>
-    <string name="summary_auto_save_ann_pref">If enabled, annotation changes will be automatically saved when changing pages.</string>
-        
+                
     <!-- Miscellaneous section -->
-    <string name="misc_header">Miscellaneous</string>
+    <string name="misc_header">Other Settings</string>
+    <string name="screen_cpu_header">Screen and CPU Locks</string>
+    <string name="wake_lock_pref">Keep Screen On</string>
+    <string name="summary_wake_lock_pref">Controls when the screen is prevented from turning off due to inactivity.</string>
+    <string name="cpu_lock_pref">Keep CPU On</string>
+    <string name="summary_cpu_lock_pref">Stops the CPU and other processing resources from sleeping. If you experience problems with a bluetooth pedal sleeping, turn on this setting. Note that this can cause battery drain.</string>
+        
     <string name="misc_preferences">Miscellaneous</string>
     <string name="stop_audio_back_pref">Stop Audio on Back</string>
     <string name="summary_stop_audio_back_pref">Stops audio playback when returning to the library screen.</string>
@@ -1286,37 +1286,25 @@
     <string name="summary_ask_exit_pref">Determines if confirmation is required before exiting the app by hitting the back button.</string>
     <string name="number_keyboard_pref">Show Number Keyboard First</string>
     <string name="summary_number_keyboard_pref">Defaults to showing the number section of the keyboard first. For some tablets, they show numbers and letters together by default, so this setting has no effect.</string>
-    
-    <!-- Utilities section -->
-    <string name="utilities_header">Utilities</string>
-    <string name="utilities_preferences">Utilities</string>
-    <string name="backup_title">Backup Library</string>
-    <string name="backup_summary">Backup all songs, images/PDFs, and private audio files to a msb file at a user specified location.</string>
-    <string name="restore_title">Restore Library from Backup</string>
-    <string name="restore_summary">Extracts the database, images/PDFs, and private audio files from a selected .msb file. TAKE NOTE: THIS WILL COMPLETELY REPLACE YOUR CURRENT LIBRARY.</string>
-    <string name="batch_title">Batch Import</string>
-    <string name="batch_summary">Create songs from all PDFs and images found under a selected directory.</string>
     <string name="convert_pdf_title">Convert PDF to Images</string>
     <string name="convert_pdf_summary">Provides a converter to produce image files from a PDF.</string>
-        
-    <!-- Advanced section -->
-    <string name="advanced_header">@string/advanced</string>
-    <string name="advanced_preferences">Advanced Options</string>
-    <string name="import_db_title">Import Database</string>
-    <string name="import_db_summary">Allows a database file to be imported. This will completely replace all metadata and songs listed in your library. Proceed with caution.</string>
-    <string name="export_db_title">Export Database</string>
-    <string name="export_db_summary">Allows a database file to be exported. This will make a copy of the database file in the location you select. This will NOT backup your images or PDFs.</string>
-    <string name="restore_db_backup_title">Restore Database Backup</string>
-    <string name="restore_db_backup_summary">Allows one of the automatic database backups to be restored in the case that data has been lost. Restoring a database backup is irreversible, so be cautious when using this feature.</string>
-    <string name="wake_lock_pref">Keep Screen On</string>
-    <string name="summary_wake_lock_pref">Controls when the screen is prevented from turning off due to inactivity.</string>
-    <string name="cpu_lock_pref">Keep CPU On</string>
-    <string name="summary_cpu_lock_pref">Stops the CPU and other processing resources from sleeping. If you experience problems with a bluetooth pedal sleeping, turn on this setting. Note that this can cause battery drain.</string>
     <string name="clear_library_title">Clear Library</string>
     <string name="clear_library_summary">Deletes your entire library, and optionally deletes song files.</string>
     <string name="reset_settings_title">Reset Settings to Default</string>
     <string name="summary_reset_settings">Resets all user preferences to their default settings.</string>
     <string name="reset_settings_msg">Are you sure you want to clear all user settings? This cannot be undone.</string>
+    <string name="confirm_clear_library_title">Confirm Clear Library</string>
+    <string name="confirm_clear_library_msg">This will delete everything in your library. This action cannot be undone. Are you sure you want to clear your library?</string>
+    
+    <!-- Backup and Restore section -->
+    <string name="backup_restore_header">Backup and Restore</string>
+    <string name="backup_restore_preferences">Backup and Restore</string>
+    <string name="backup_title">Backup Library</string>
+    <string name="backup_summary">Backup all songs and files to a msb file at a user specified location.</string>
+    <string name="restore_title">Restore Library from Backup</string>
+    <string name="restore_summary">Replaces the current library with all songs and files from a selected .msb file.</string>
+    <string name="restore_confirmation_title">Confirm Library Restore</string>
+    <string name="restore_confirmation_msg">This will completely replace your current library. This operation cannot be undone. Are you sure you want to restore backup file \"%1$s\"?</string>
     
     <!-- Storage section -->
     <string name="storage_header">Storage</string>
@@ -1525,6 +1513,7 @@
     <string name="file_export_canceled">The export has been canceled.</string>
     <string name="export_select_dialog_title">Select the Export Location and Filename</string>
     <string name="failed_to_move_db">Failed to move the database.</string>
+    <string name="no_app_found">No application found that supports loading file: %1$s</string>
         
     <string name="confirm_group_delete">Are you sure you want to delete %1$s \'%2$s\'?</string>
     <string name="confirm_groups_delete">Are you sure you want to delete the selected %1$d items?</string>
@@ -1831,6 +1820,9 @@
     <string name="smooth_mode">Smooth:</string>
     <string name="grid_settings_title">Grid Settings</string>
     <string name="list">List</string>
+    <string name="toolboxWindowTitle">Toolbox</string>
+    <string name="show_nudge_select">Show Nudge with Select Tool</string>
+    <string name="show_nudge_other">Show Nudge with Other Tools</string>
     
     <!-- Quick action bar -->
     <string-array name="user_actions">
@@ -1856,18 +1848,13 @@
     <string name="stylus_mode">Stylus Mode</string>
     <string name="prev_page">Prev Page</string>
     <string name="next_page">Next Page</string>
+    <string name="default_font">System Default</string>
     
     <string-array name="drawTypes">
         <item>Line</item>
         <item>Rectangle</item>
         <item>Circle</item>
         <item>FreeForm</item>
-    </string-array>
-    <string-array name="fonts">
-        <item>Default</item>
-        <item>Monospace</item>
-        <item>Sans Serif</item>
-        <item>Serif</item>
     </string-array>
     <string-array name="fore_colors">
         <item>Black</item>

@@ -247,7 +247,8 @@
     <string name="filterLabel">Filtro de Fichero:</string>
     <string name="filterAny">*.*</string>
     <string name="checkScanSubs">Buscar archivos en todas las subcarpetas</string>
-    <string name="checkAvoidDuplicates">Evitar Canciones Duplicadas</string>
+    <string name="checkAvoidDuplicates">Evitar canciones duplicadas</string>
+    <string name="checkUpdateOnMatch">Actualizar canciones si se encuentran ficheros coincidentes</string>
     <string name="defaultsLabel">Valor del metadato por defecto para importar:</string>
     <string name="addGroupsLabel">Añadir las canciones a estos grupos durante la importación:</string>
     <string name="titleLabel">Título:</string>
@@ -404,6 +405,7 @@
     <string name="setlist_match_title">Se encontró un título de Setlist duplicado</string>
     <string name="setlist_match_found">Un Setlist llamado \'%1$s\' ya existe. ¿Quiere actualizarlo o crear uno nuevo?</string>
     <string name="update">Actualizar</string>
+    <string name="updated_song_successfully">Actualizada canción \'%1$s\' con el fichero \'%2$s\'</string>
     
     <string name="extracting_song">Extrayendo canción \'%1$s\'</string>
     <string name="extracting_setlist">Extrayendo setlist \'%1$s\'</string>
@@ -804,6 +806,7 @@
     </string-array>
     <string name="fadeOutCompletely">Desvanecer completamente</string>
     <string name="transparencyLabel">Transparencia:</string>
+    <string name="autoPlayNextTrack">Reproducir automáticamente la siguiente pista</string>
     <string name="switchTrackWithSong">Cambiar la pista cuando cambie la canción</string>
     <string name="showArtistWithTitle">Mostrar el artista en el título</string>
     <string name="autoStartTrack">Reproducir el audio automáticamente cuando se cargue la canción</string>
@@ -884,18 +887,9 @@
     <string name="simple">Simple</string>
     <string name="advanced">Avanzado</string>
     <string name="encodingLabel">Codificación:</string>
+    <string name="autoSizeFont">Tamaño Automático de Letra</string>
     
     <string name="chorus">Chorus</string>
-    
-    <string-array name="encodings">
-        <item>UTF-8</item>
-        <item>ASCII</item>
-        <item>ISO-8859-1</item>
-        <item>UTF-16BE</item>
-        <item>UTF-16LE</item>
-        <item>windows-1251</item>
-        <item>windows-1256</item>
-    </string-array>
     
     <string-array name="applyToTextSettings">
         <item>Fichero actual</item>
@@ -935,7 +929,9 @@
     <string name="mi_load_last_viewed_page">Cargar la Última Página Visualizada</string>
     <string name="mi_edit_song">Editar Canción</string>
     <string name="mi_copy_song">Copiar Canción</string>
+    <string name="mi_remove">Eliminar</string>
     <string name="mi_delete_song">Eliminar Canción</string>
+    <string name="mi_delete_song_library">Borrar Canción de la Librería</string>
     <string name="mi_add_to_setlist">Agregar al Setlist</string>
     <string name="mi_remove_from_setlist">Eliminar del Setlist</string>
     <string name="mi_add_to_collection">Añadir a la Colección</string>
@@ -1099,6 +1095,7 @@
     <string name="pedal_action_activity_name">Ajustes de Acciones del Pedal</string>
     <string name="touch_action_activity_name">Ajustes de Acciones de los Toques</string>
     <string name="switch_dropbox_activity_name">Cambiar Cuenta de Dropbox</string>
+    <string name="auto_save_turn">Auto Guardar al Cambiar de Página</string>
     
     <!-- Settings screen values -->
     <string name="settings_value">Ajuste Actual: %1$s</string>
@@ -1143,11 +1140,9 @@
     <string name="summary_ignore_articles">Ponga la lista de artículos que serán ignorados separados por comas.</string>
     <string name="default_ignore_articles"></string>
     
-    <string name="cropping_preferences">Opciones de Recorte</string>
-    <string name="title_aggressively_crop_pref">Recorte Agresivo</string>
-    <string name="summary_aggressively_crop_pref">Cambia el recorte automático al modo agresivo priorizando la eliminación de los márgenes a la preservación del contenido.</string>
-    
     <string name="load_preferences">Opciones al Cargar</string>
+    <string name="title_load_next_song_pref">Cargar Automáticamente la Siguiente Canción</string>
+    <string name="summary_load_next_song_pref">Si está seleccionado, se carga automáticamente la siguiente canción listada en la pantalla de librería cuando se cambia de página tras la última página de la canción actual. Este ajuste no se aplica si se ha cargado un setlist.</string>
     <string name="title_rlp_pref">Cargar Siempre la Última Página Vista</string>
     <string name="summary_rlp_pref">Si está seleccionado, cuando pulse una canción en la pantalla de la librería, se cargará la última página vista.</string>
     <string name="initial_load_pref">Pestaña Inicial de la Librería</string>
@@ -1163,46 +1158,47 @@
     <string name="title_language_pref">Idioma</string>
     
     <string name="song_display_preferences">Configuración de Pantalla de Canción</string>
-    <string name="overlay_display_preferences">Ajustes de Overlay</string>
-    <string name="system_display_preferences">Ajustes del Sistema</string>
     <string name="title_allow_zoom_out">Permitir Zoom Más Allá Del 100%</string>
     <string name="summary_allow_zoom_out">Determina si al alejar el zoom el documento puede hacerse más pequeño que las dimensiones de la pantalla.</string>
     <string name="title_instant_page_turns">Deshabilitar la Animación al Cambiar Página</string>
     <string name="summary_instant_page_turns">Deshabilita la animación, haciendo el cambio de página instantáneo.</string>
-    <string name="title_show_next_pref">Mostrar Canción Siguiente</string>
-    <string name="summary_show_next_pref">Determina si se muestra una barra en la parte superior de la pantalla indicando la canción que viene a continuación</string>
-    <string name="dim_status_pref">Atenuar la Barra de Estado</string>
-    <string name="summary_dim_status_pref">En HoneyComb o posterior, la barra de estado se atenuará, en versiones anteriores no tiene efecto.</string>
-    <string name="hide_status_pref">Ocultar la barra de navegación</string>
-    <string name="summary_hide_status_pref">Si se activa esta opción, la barra de navegación se ocultará. Tendrá que tocar la pantalla para mostrarla.</string>
     <string name="repeat_mode_pref">Modo de Repetición</string>
     <string name="summary_repeat_mode_pref">Si está activado, vuelve al principio de una canción o setlist cuando el usuario avanza más allá de la última página, y salta al final de la canción, si avanza hacia atrás desde la primera página.</string>
     <string name="half_landscape_pref">Mostrar Media Página en Apaisado</string>
     <string name="summary_half_landscape_pref">Mostrar la mitad de una página en apaisado y permitir desplazar la página arriba y abajo.</string>
     <string name="title_uhpt_pref">Cambios de Media Página en Modo Apaisado</string>
     <string name="summary_uhpt_pref">Avanza media página cada vez en Modo Apaisado. El desplazamiento vertical se deshabilita.</string>
-    <string name="title_force_landscape_two_pages">Forzar Modo Apaisado con Dos Páginas</string>
-    <string name="summary_force_landscape_two_pages">Fuerza el modo apaisado cuando use el modo de visualización de dos páginas.</string>
     <string name="title_show_one_song">Separar las Canciones en el Modo de Dos Páginas</string>
     <string name="summary_show_one_song">Asegura que en el modo de dos páginas, solo se muestre una canción a la vez en la pantalla.</string>
+    <string name="link_size_pref">Radio del Punto de Enlace</string>
+    <string name="summary_link_size_pref">Cambia el tamaño de los puntos de enlace. El valor por defecto es 28.</string>
+    <string name="bk_color_pref">Color de Imagen de Fondo</string>
+    <string name="summary_bk_color_pref">El color que se usa para llenar el espacio vacío al ver imágenes/PDFs. También se usa como el color de fondo para imágenes transparentes.</string>
     <string name="night_mode_pref">Modo Nocturno</string>
     <string name="summary_night_mode_pref">Invierte blanco y negro para ayudar en entornos oscuros</string>
     <string name="title_vertically_center_pref">Centrar Páginas</string>
     <string name="summary_vertically_center_pref">Asegura que si una página en vertical es más pequeña que la tableta, se muestre centrada en medio del área de visualización.</string>
-        
-    <string name="overlay_click_pref">Modo Mostrar Overlay</string>
-    <string name="summary_overlay_click_pref">Determina qué acción táctil muestra el overlay. Un toque simple siempre lo cierra.</string>
-    <string name="bk_color_pref">Color de Imagen de Fondo</string>
-    <string name="summary_bk_color_pref">El color que se usa para llenar el espacio vacío al ver imágenes/PDFs. También se usa como el color de fondo para imágenes transparentes.</string>
-    <string name="link_size_pref">Radio del Punto de Enlace</string>
-    <string name="summary_link_size_pref">Cambia el tamaño de los puntos de enlace. El valor por defecto es 28.</string>
-    <string name="title_show_preview_pref">Mostrar Previsualización Durante Búsqueda de Página</string>
-    <string name="summary_show_preview_pref">Habilita/Deshabilita la mini ventana de previsualización que aparece al usar el deslizador para cambiar de página.</string>
-    <string name="title_asps_pref">Visibilidad del Deslizador de Página</string>
-    <string name="summary_asps_pref">Determina si el deslizador de página está oculto, mostrándose con el overlay, o siempre visible en la parte inferior de la pantalla mientras se visualiza una canción.</string>
+    
+    <string name="overlay_display_preferences">Ajustes de Overlay</string>
+    <string name="title_show_next_pref">Mostrar Canción Siguiente</string>
+    <string name="summary_show_next_pref">Determina si se muestra una barra en la parte superior de la pantalla indicando la canción que viene a continuación</string>
     <string name="title_astb_pref">Mostrar Siempre la Barra de Título</string>
     <string name="summary_astb_pref">Determina si la barra de información está siempre visible en la parte superior de la pantalla mientras se visualiza una canción.</string>
-    
+    <string name="title_show_preview_pref">Mostrar Previsualización Durante Búsqueda de Página</string>
+    <string name="summary_show_preview_pref">Habilita/Deshabilita la mini ventana de previsualización que aparece al usar el deslizador para cambiar de página.</string>
+    <string name="overlay_click_pref">Modo Mostrar Overlay</string>
+    <string name="summary_overlay_click_pref">Determina qué acción táctil muestra el overlay. Un toque simple siempre lo cierra.</string>
+    <string name="title_asps_pref">Visibilidad del Deslizador de Página</string>
+    <string name="summary_asps_pref">Determina si el deslizador de página está oculto, mostrándose con el overlay, o siempre visible en la parte inferior de la pantalla mientras se visualiza una canción.</string>
+
+    <string name="system_display_preferences">Ajustes del Sistema</string>
+    <string name="dim_status_pref">Atenuar la Barra de Estado</string>
+    <string name="summary_dim_status_pref">En HoneyComb o posterior, la barra de estado se atenuará, en versiones anteriores no tiene efecto.</string>
+    <string name="hide_status_pref">Ocultar la barra de navegación</string>
+    <string name="summary_hide_status_pref">Si se activa esta opción, la barra de navegación se ocultará. Tendrá que tocar la pantalla para mostrarla.</string> 
+    <string name="full_screen_pref">Modo Pantalla Completa</string>
+    <string name="summary_full_screen_pref">Habilita el modo pantalla completael cual oculta la barra de notificación de Android en la parte superior de la pantalla.</string>
+        
     <!-- Pedal Settings section -->
     <string name="bluetooth_header">Ajustes Táctiles y del Pedal</string>
     <string name="bluetooth_preferences">Ajustes del Pedal</string>
@@ -1244,7 +1240,11 @@
     <string name="summary_detect_key_by">Determina como se detecta la tonalidad de un fichero de texto cuando se añade a una canción por primera vez.</string>
     <string name="title_enable_encoding_pref">Mostrar Codificación del Fichero</string>
     <string name="summary_enable_encoding_pref">Despliega una lista para cambiar la codificación del fichero de texto. Habilitelo si ve caracteres ? en su ficheros.</string>
-    
+ <string name="title_auto_size_font_pref">Tamaño Automático de Letra</string>
+    <string name="summary_auto_size_font">Escala automáticamente la letra de los nuevos ficheros chord pro de manera que ocupen tanto ancho de pantalla como sea posible, hasta el tamaño especificado en el ajuste "Máximo Tamaño de Letra".</string>
+    <string name="title_max_size_font_pref">Máximo Tamaño de Letra</string>
+    <string name="summary_max_size_font_pref">El ajuste máximo que se usará para el escalado automático de letra. Esto asegura que los ficheros con líneas cortas no se vean demasiado grandes en la pantalla.</string>
+       
     <string-array name="transposeMethods">
         <item>Tonalidad</item>
         <item>Pasos</item>
@@ -1271,14 +1271,14 @@
         <item>KORG</item>
     </string-array>
     
-    <!-- Annotations section -->
-    <string name="annotations_header">Anotaciones</string>
-    <string name="ann_preferences">Preferencias de Anotaciones</string>
-    <string name="auto_save_ann_pref">Guardar Automáticamente Cuando se cambia de Página</string>
-    <string name="summary_auto_save_ann_pref">Si está marcado, los cambios en las anotaciones se guardarán automáticamente al cambiar de página.</string>
-        
     <!-- Miscellaneous section -->
-    <string name="misc_header">Ajustes Varios</string>
+    <string name="misc_header">Otros Ajustes</string>
+    <string name="screen_cpu_header">Bloquear Pantalla y CPU</string>
+    <string name="wake_lock_pref">No Apagar Pantalla</string>
+    <string name="summary_wake_lock_pref">Mantiene la pantalla siempre encendida y asegura que no se apaguen ciertas características (como bluetooth)</string>
+    <string name="cpu_lock_pref">Mantener Actividad de la CPU</string>
+    <string name="summary_cpu_lock_pref">Impide que la CPU y otros recursos se detengan. Si experimenta problemas con el pedal bluetooth, active este ajuste. Esto consumirá más batería.</string>
+    
     <string name="misc_preferences">Ajustes Varios</string>
     <string name="stop_audio_back_pref">Parar el Audio al Volver</string>
     <string name="summary_stop_audio_back_pref">Para la reproducción de audio al volver a la pantalla de la librería.</string>
@@ -1286,37 +1286,25 @@
     <string name="summary_ask_exit_pref">Determina si se requiere confirmación antes de salir de la aplicación al pulsar el botón volver.</string>
     <string name="number_keyboard_pref">Mostrar Primero Teclado Numérico</string>
     <string name="summary_number_keyboard_pref">Por defecto muestra primero la sección numérica del teclado. En algunas tabletas, se muestran los números y las letras juntos por defecto y este ajuste no tiene efecto.</string>
-    
-    <!-- Utilities section -->
-    <string name="utilities_header">Utilidades</string>
-    <string name="utilities_preferences">Utilidades</string>
-    <string name="backup_title">Copia de Seguridad de la Librería</string>
-    <string name="backup_summary">Hace una Copia de Seguridad de todas las canciones, imágenes/PDFs, y archivos de audio privados a un archivo .msb en una ubicación especificada por el usuario.</string>
-    <string name="restore_title">Restaurar Librería desde la Copia de Seguridad.</string>
-    <string name="restore_summary">Restaura la base de datos, las imágenes/PDFs, y archivos privados de audio desde un archivo .msb seleccionado por el usuario. NOTA: ESTO REMPLAZARÁ POR COMPLETO SU LIBRERÍA ACTUAL.</string>
-    <string name="batch_title">Importar por Lotes</string>
-    <string name="batch_summary">Crea canciones de todos los PDFs e imágenes que se encuentren en la carpeta seleccionada.</string>
     <string name="convert_pdf_title">Convertir PDF a Imágenes</string>
     <string name="convert_pdf_summary">Conversor para producir imágenes a partir de un PDF</string>
-        
-    <!-- Advanced section -->
-    <string name="advanced_header">@string/advanced</string>
-    <string name="advanced_preferences">Opciones avanzadas</string>
-    <string name="import_db_title">Importar base de datos</string>
-    <string name="import_db_summary">Proporciona una forma de reemplazar el archivo de base de datos. Esto reemplazará todos los metadatos y las canciones. Proceda con cautela.</string>
-    <string name="export_db_title">Exportar base de datos</string>
-    <string name="export_db_summary">Permite exportar un archivo de base de datos. Hará una copia del archivo de base de datos en la ubicación que seleccione. No se hará copia de seguridad de imágenes o archivos PDF.</string>
-    <string name="restore_db_backup_title">Restaurar base de datos desde copia de seguridad</string>
-    <string name="restore_db_backup_summary">Permite restaurar una de las copias de seguridad automáticas de la base de datos en el caso de que los datos se hayan perdido. Restaurar una copia de seguridad de ls base de datos es irreversible, así que tenga cuidado al usar esta función.</string>
-    <string name="wake_lock_pref">No Apagar Pantalla</string>
-    <string name="summary_wake_lock_pref">Mantiene la pantalla siempre encendida y asegura que no se apaguen ciertas características (como bluetooth)</string>
-    <string name="cpu_lock_pref">Mantener Actividad de la CPU</string>
-    <string name="summary_cpu_lock_pref">Impide que la CPU y otros recursos se detengan. Si experimenta problemas con el pedal bluetooth, active este ajuste. Esto consumirá más batería.</string>
     <string name="clear_library_title">Eliminar Librería</string>
     <string name="clear_library_summary">Borra toda la librería y opcionalmente elimina los archivos de canciones.</string>
     <string name="reset_settings_title">Volver a los Ajustes por Defecto</string>
     <string name="summary_reset_settings">Ajusta todas las preferencias de usuario a su valor por defecto.</string>
     <string name="reset_settings_msg">¿Está seguro de que quiere borrar todos los ajustes de usuario? Esto no se podrá deshacer.</string>
+    <string name="confirm_clear_library_title">Confirmar Borrar Librería</string>
+    <string name="confirm_clear_library_msg">Esto borrará toda su librería. Esta acción no se puede deshacer. ¿Está seguro de que desea borrar su librería?</string>
+
+    <!-- Backup and Restore section -->
+    <string name="backup_restore_header">Copia de Seguridad y Restauración</string>
+    <string name="backup_restore_preferences">Copia de Seguridad y Restauración</string>
+    <string name="backup_title">Copia de Seguridad de Librería</string>
+    <string name="backup_summary">Copia todas las canciones y ficheros a un fichero .msb en la ubicación especificada por el usuario.</string>
+    <string name="restore_title">Restaurar Librería desde Copia de Seguridad</string>
+    <string name="restore_summary">Sustituye la librería actual con las canciones y ficheros del fichero .msb seleccionado.</string>
+    <string name="restore_confirmation_title">Confirmar Restauración de Librería</string>
+    <string name="restore_confirmation_msg">Esto remplazará completamente su librería actual. Esta operación no se puede deshacer. ¿Está seguro que quiere restaurar la copia de seguridad \"%1$s\"?</string>
     
     <!-- Storage section -->
     <string name="storage_header">Almacenamiento</string>
@@ -1525,6 +1513,7 @@
     <string name="file_export_canceled">La exportación ha sido cancelada.</string>
     <string name="export_select_dialog_title">Seleccione Ubicación y Nombre de Fichero para Exportar</string>
     <string name="failed_to_move_db">Fallo al mover la base de datos.</string>
+    <string name="no_app_found">No se encontró una aplicación que pueda cargar el fichero: %1$s</string>
         
     <string name="confirm_group_delete">¿Está seguro que desea borrar %1$s \'%2$s\'?</string>
     <string name="confirm_groups_delete">¿Está seguro que desea borrar los %1$d items seleccionados?</string>
@@ -1831,6 +1820,9 @@
     <string name="smooth_mode">Modo de Suavizado:</string>
     <string name="grid_settings_title">Ajustes de Rejilla</string>
     <string name="list">Lista</string>
+    <string name="toolboxWindowTitle">Herramientas</string>
+    <string name="show_nudge_select">Mostrar Empujar con Herramienta de Selección</string>
+    <string name="show_nudge_other">Mostrar Empujar con Otras Herramientas</string>
     
     <!-- Quick action bar -->
     <string-array name="user_actions">
@@ -1856,18 +1848,13 @@
     <string name="stylus_mode">Modo del Stylus</string>
     <string name="prev_page">Pág Anterior</string>
     <string name="next_page">Pág Siguiente</string>
+    <string name="default_font">Predeterminado del Sistema</string>
     
     <string-array name="drawTypes">
         <item>Línea</item>
         <item>Rectángulo</item>
         <item>Círculo</item>
         <item>Forma Libre</item>
-    </string-array>
-    <string-array name="fonts">
-        <item>Por Defecto</item>
-        <item>Monospace</item>
-        <item>Sans Serif</item>
-        <item>Serif</item>
     </string-array>
     <string-array name="fore_colors">
         <item>Negro</item>
