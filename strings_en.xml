@@ -533,9 +533,10 @@
     <string name="gen_share_progress_msg">Generating file, %1$d%% complete</string>
         
     <!-- song_editor.xml -->
-    <string name="editing_title">Editing \'%1$s\'</string>
+    <string name="editing_title">Editing: %1$s</string>
     <string name="new_song_title">Enter Data for New Song</string>
-    <string name="copying_title">Copy of \'%1$s\'</string>
+    <string name="copying_title">Editing Copy: %1$s</string>
+    <string name="new_song_edit_title">New Song: %1$s</string>
     
     <string name="fieldsTab">Fields</string>
     <string name="filesTab">Files</string>
@@ -678,6 +679,7 @@
         <item>Go to End of Song</item>
         <item>Go to Previous Bookmark</item>
         <item>Go to Next Bookmark</item>
+        <item>Start automatic scrolling</item>
     </string-array>
     
     <!-- Touch Settings Activity -->
@@ -706,6 +708,7 @@
         <item>Annotate Song</item>
         <item>Go to Previous Bookmark</item>
         <item>Go to Next Bookmark</item>
+        <item>@string/start_scroll</item>
     </string-array>
     
     <!-- Tab Order Activity -->
@@ -744,7 +747,7 @@
     <!-- SetlistManager -->
     <string name="setlist_changes_lost">The changes you\'ve made to the setlist haven\'t been saved yet, and will be lost. Are you sure you wish to continue?</string>
     <string name="confirm_setlist_save">Changes Not Saved - Confirm Action</string>
-    <string name="auto_scroll_two">Auto-Scrolling starts in 2 seconds</string>
+    <string name="auto_scroll_two">Auto-Scrolling starts in %1$d seconds</string>
     <string name="scrolling_not_supported">The current display mode does not support automatic scrolling</string>
     
     <!-- Sharpness dialog -->
@@ -793,8 +796,10 @@
     <string name="beatsPerPageLabel"># Beats on current page:</string>
     <string name="beatsPerTempoLabel"># Beats per tempo:</string>
     <string name="autoTurnLabel">Auto-Turn Pages</string>
-    <string name="apply_to_all_pages">Apply to all pages in song</string>
+    <string name="apply_to_all_pages">Apply to all pages in current song</string>
     <string name="bpp_applied_to_all">All pages set to %1$d beats per page</string>
+    <string name="apply_to_all_songs">Apply to all songs in setlist</string>
+    <string name="settings_applied_to_songs">Successfully applied settings to all songs in setlist</string>
     
     <!-- Media Playback Settings Dialog -->
     <string name="audioPlayerSettingsTitle">Audio Player Settings</string>
@@ -1810,7 +1815,7 @@
     <string name="circle">Circle</string>
     <string name="freeform">Freeform</string>
     <string name="stamp">Stamp</string>
-    <string name="size">Size</string>
+    <string name="size">Size:</string>
     <string name="pen_type">Pen Type:</string>
     <string name="snap_to_grid">Snap to Grid</string>
     <string name="show_grid">Show Grid</string>

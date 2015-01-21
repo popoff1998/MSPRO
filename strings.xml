@@ -533,9 +533,10 @@
     <string name="gen_share_progress_msg">Generando fichero, %1$d%% completado</string>
         
     <!-- song_editor.xml -->
-    <string name="editing_title">Editando \'%1$s\'</string>
+    <string name="editing_title">Editando: %1$s</string>
     <string name="new_song_title">Introduzca los datos para la nueva Canción</string>
-    <string name="copying_title">Copia de \'%1$s\'</string>
+    <string name="copying_title">Editando Copia: %1$s</string>
+    <string name="new_song_edit_title">Nueva Canción: %1$s</string>
     
     <string name="fieldsTab">Campos</string>
     <string name="filesTab">Fichero </string>
@@ -678,6 +679,7 @@
         <item>Ir al Final de la Canción</item>
         <item>Ir al Marcador Anterior</item>
         <item>Ir al Marcador Siguiente</item>
+        <item>Comenzar Auto Desplazamiento</item>
     </string-array>
     
     <!-- Touch Settings Activity -->
@@ -706,6 +708,7 @@
         <item>Anotar Canción</item>
         <item>Ir al Marcador Anterior</item>
         <item>Ir al Marcador Siguiente</item>
+        <item>@string/start_scroll</item>
     </string-array>
     
     <!-- Tab Order Activity -->
@@ -744,7 +747,7 @@
     <!-- SetlistManager -->
     <string name="setlist_changes_lost">Los cambios que han hecho al setlist no se han salvado todavía y se perderán. ¿Seguro que desea continuar?</string>
     <string name="confirm_setlist_save">Cambios No Guardados - Confirmar Acción</string>
-    <string name="auto_scroll_two">El auto desplazamiento empieza en 2 segundos</string>
+    <string name="auto_scroll_two">El auto desplazamiento empieza en %1$d segundos</string>
     <string name="scrolling_not_supported">El modo de visualización actual no soporta el desplazamiento automático</string>
     
     <!-- Sharpness dialog -->
@@ -793,8 +796,10 @@
     <string name="beatsPerPageLabel"># pulsos en página actual:</string>
     <string name="beatsPerTempoLabel"># pulsos por tempo:</string>
     <string name="autoTurnLabel">Auto-Pasar páginas</string>
-    <string name="apply_to_all_pages">Aplicar a todas las páginas de la canción</string>
+    <string name="apply_to_all_pages">Aplicar a todas las páginas de la canción actual</string>
     <string name="bpp_applied_to_all">Todas las páginas configuradas a %1$d pulsos por página</string>
+    <string name="apply_to_all_songs">Aplicar a todas las canciones del setlist</string>
+    <string name="settings_applied_to_songs">Aplicados con éxito los ajustes a todas las canciones del setlist</string>
     
     <!-- Media Playback Settings Dialog -->
     <string name="audioPlayerSettingsTitle">Ajustes del Reproductor de Audio</string>
@@ -1810,7 +1815,7 @@
     <string name="circle">Círculo</string>
     <string name="freeform">Forma Libre</string>
     <string name="stamp">Sello</string>
-    <string name="size">Tamaño</string>
+    <string name="size">Tamaño:</string>
     <string name="pen_type">Tipo de Pincel:</string>
     <string name="snap_to_grid">Ajustar a la Rejilla</string>
     <string name="show_grid">Mostrar Rejilla</string>
