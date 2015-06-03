@@ -384,7 +384,7 @@
     
     <string name="msf_import_error">Error irrecuperable mientras importaba el fichero %1$s. Cancelando la importación.</string>
     <string name="msf_version_mismatch">El fichero seleccionado usa una versión incompatible de las especificaciones de fichero .msf. Actualize MobileSheetsPro a la última versión para usar este fichero.</string>
-    <string name="msf_not_valid">%1$s no es un fichero válido para MobileSheets</string>
+    <string name="msf_not_valid">%1$s no es un fichero válido para MobileSheetsPro</string>
     
     <string name="failed_add_group">No se pudo añadir el grupo %1$s a la base de datos.</string>
     
@@ -525,7 +525,7 @@
     <!-- storage_activity.xml -->
     <string name="storage_label">Ruta:</string>
     <string name="confirm_copy_title">Confirme el cambio de Almacenamiento</string>
-    <string name="confirm_copy_msg">MobileSheets está manejando los ficheros en la ubicación de almacenamiento. Se moverán todos los ficheros a la nueva ubicación, el proceso tardará un rato. Si no desea que los ficheros se muevan, deshabilite el ajuste "Manejar Mis Ficheros".</string>
+    <string name="confirm_copy_msg">MobileSheetsPro está manejando los ficheros en la ubicación de almacenamiento. Se moverán todos los ficheros a la nueva ubicación, el proceso tardará un rato. Si no desea que los ficheros se muevan, deshabilite el ajuste "Manejar Mis Ficheros".</string>
     <string name="moving_files_title">Moviendo los ficheros a la nueva ubicación</string>
     <string name="moving_files_msg">Moviendo los ficheros a la nueva carpeta de almacenamiento, por favor espere&#8230;</string>
     <string name="confirm_cancel_move_title">Confirme la Cancelación</string>
@@ -557,7 +557,7 @@
     <string name="midiTab">MIDI</string>
     
     <string name="audioFileLabel">Ficheros de Audio:</string>
-    <string name="manage_song_name">Editor de Canciones de MobileSheets</string>
+    <string name="manage_song_name">Editor de Canciones de MobileSheetsPro</string>
     <string name="starting_dropbox_download">Descarga archivos de Dropbox</string>
     <string name="initiating_dropbox_connection">Iniciando conexión a Dropbox</string>
     <string name="customSortTitleLabel">Título de Ordenación:</string>
@@ -799,12 +799,12 @@
     <string-array name="copyOptions">
         <item>Copiar el nuevo fichero a la misma carpeta del que remplaza</item>
         <item>Mover el nuevo fichero a la misma carpeta del que remplaza</item>
-        <item>Copiar el nuevo fichero al almacenamiento de MobileSheets</item>
-        <item>Mover el nuevo fichero al almacenamiento de MobileSheets</item>
+        <item>Copiar el nuevo fichero al almacenamiento de MobileSheetsPro</item>
+        <item>Mover el nuevo fichero al almacenamiento de MobileSheetsPro</item>
     </string-array>
     <string-array name="simpleCopyOptions">
-        <item>Copiar el nuevo fichero al almacenamiento de MobileSheets</item>
-        <item>Mover el nuevo fichero al almacenamiento de MobileSheets</item>
+        <item>Copiar el nuevo fichero al almacenamiento de MobileSheetsPro</item>
+        <item>Mover el nuevo fichero al almacenamiento de MobileSheetsPro</item>
     </string-array>
     
     <!-- Metronome Settings Dialog -->
@@ -1105,7 +1105,7 @@
     
     <!-- Help Messages -->
     <string name="helpTitle">Primeros Pasos</string>
-    <string name="helpLibraryMessage">Bienvenido a MobileSheets! Si es la primera vez que usa la aplicación le recomendamos que lea el manual en línea antes de comenzar. Hay una gran cantidad de posibilidades en MobileSheets y conseguirá mucho más de la aplicación si conoce cuales son. Para leer el manual, pulse en el botón de abajo. Para continuar, pulse el botón OK o el botón para volver.</string>
+    <string name="helpLibraryMessage">Bienvenido a MobileSheetsPro! Si es la primera vez que usa la aplicación le recomendamos que lea el manual en línea antes de comenzar. Hay una gran cantidad de posibilidades en MobileSheets y conseguirá mucho más de la aplicación si conoce cuales son. Para leer el manual, pulse en el botón de abajo. Para continuar, pulse el botón OK o el botón para volver.</string>
     <string name="viewManualButton">Ver el Manual en Línea</string>
     
     <string name="prompt_manage_files_title">Seleccionar Ajustes de Almacenamiento</string>
@@ -1122,7 +1122,7 @@
     <string name="settings_activity_name">Ajustes de MobileSheetsPro</string>
     <string name="group_editor_activity_name">Editor de Grupos de MobileSheetsPro</string>
     <string name="sync_activity_name">Sincronización con PC de MobileSheetsPro</string>
-    <string name="batch_import_activity_name">Importador de Archivos por Lotes de MobileSheets</string>
+    <string name="batch_import_activity_name">Importador de Archivos por Lotes de MobileSheetsPro</string>
     <string name="convert_pdf_activity_name">Conversor PDF de MobileSheetsPro</string>
     <string name="import_activity_name">Importar base de datos de MobileSheetsPro</string>
     <string name="export_activity_name">Exportar base de datos de MobileSheetsPro</string>
@@ -1148,12 +1148,12 @@
     <!-- About section -->
     <string name="about_header">Acerca de</string>
     
-    <string name="about_preferences">Acerca de MobileSheets"</string>
+    <string name="about_preferences">Acerca de MobileSheetsPro"</string>
     <string name="version_title">Versión</string>
     <string name="email_title">Escribir un Email al Soporte de Zubersoft</string>
     <string name="email_summary">Cargar un Email con un formulario preescrito para el soporte de Zubersoft.</string>
     <string name="release_notes_title">Notas de la Versión</string>
-    <string name="release_notes_summary">Ver los cambios recientes de MobileSheets.</string>
+    <string name="release_notes_summary">Ver los cambios recientes de MobileSheetsPro.</string>
     
     <!-- Library Settings section -->
     <string name="library_header">Configuración de la Librería</string>
@@ -1374,18 +1374,18 @@
     <!-- Storage section -->
     <string name="storage_header">Almacenamiento</string>
     <string name="storage_preferences">Opciones de Almacenamiento</string>
-    <string name="mobilesheets_manage_title">Permitir que MobileSheets Maneje mis Ficheros</string>
-    <string name="mobilesheets_manage_summary">Determina si MobileSheets deberá hacer copias de todos los ficheros importados y organizarlos en la ubicación de almacenamiento de MobileSheets (como se muestra abajo). Si no selecciona esta opción, MobileSheets usará siempre los ficheros en sus directorios originales.</string>
-    <string name="storage_title">Seleccionar la Ubicación de Almacenamiento de MobileSheets</string>
-    <string name="storage_summary">Selecciona la carpeta para los ficheros manejados por MobileSheets. Si importa desde DropBox, email u otra fuente remota, sus ficheros se copiarán en este directorio.</string>
+    <string name="mobilesheets_manage_title">Permitir que MobileSheetsPro Maneje mis Ficheros</string>
+    <string name="mobilesheets_manage_summary">Determina si MobileSheetsPro deberá hacer copias de todos los ficheros importados y organizarlos en la ubicación de almacenamiento de MobileSheets (como se muestra abajo). Si no selecciona esta opción, MobileSheets usará siempre los ficheros en sus directorios originales.</string>
+    <string name="storage_title">Seleccionar la Ubicación de Almacenamiento de MobileSheetsPro</string>
+    <string name="storage_summary">Selecciona la carpeta para los ficheros manejados por MobileSheetsPro. Si importa desde DropBox, email u otra fuente remota, sus ficheros se copiarán en este directorio.</string>
     <string name="title_expose_database">Exponer Fichero de Base de Datos</string>
-    <string name="summary_expose_database">Coloca el fichero de base de datos en la ubicación de almacenamiento de MobileSheets en lugar de mantenerlo privado para la aplicación.</string>
+    <string name="summary_expose_database">Coloca el fichero de base de datos en la ubicación de almacenamiento de MobileSheetsPro en lugar de mantenerlo privado para la aplicación.</string>
     <string name="title_delete_after_copy">Borrar Original Después de Copiar</string>
-    <string name="summary_delete_after_copy">Borra los ficheros de origen después de que MobileSheets los copie a la ubicación de almacenamiento.</string>
+    <string name="summary_delete_after_copy">Borra los ficheros de origen después de que MobileSheetsPro los copie a la ubicación de almacenamiento.</string>
     <string name="title_create_subdirs">Crear Subdirectorios Para Cada Canción</string>
     <string name="summary_create_subdirs">Si se habilita, se creará un nuevo directorio para mantener los ficheros de una canción.</string>
     <string name="title_copy_audio_files">Copiar Ficheros de Audio</string>
-    <string name="summary_copy_audio_files">Determina si MobileSheets copiará los ficheros de audio a la ubicación de almacenamiento o no.</string>
+    <string name="summary_copy_audio_files">Determina si MobileSheetsPro copiará los ficheros de audio a la ubicación de almacenamiento o no.</string>
     <string name="title_add_unique_id">Añadir Id Único para Ficheros</string>
     <string name="summary_add_unique_id">Añade un identificador único a los ficheros que se importen para evitar conflictos. Úselo si importa habitualmente ficheros con nombres duplicados.</string>
     <string name="dropbox_switch_title">Cambiar Cuenta de Dropbox</string>
@@ -1404,7 +1404,7 @@
     <string name="song_add_progress_message">Guardando Información de Canción. Por favor, espere&#8230;</string>
     <string name="song_edit_progress_title">Procesando Modificaciones de la Canción</string>
     <string name="song_edit_progress_message">Guardando Modificaciones de la Canción. Por favor, espere&#8230;</string>
-    <string name="db_load_failed">Imposible cargar o crear la base de datos. Pruebe a reiniciar MobileSheets. Si no funciona tendrá que reinstalar.</string>
+    <string name="db_load_failed">Imposible cargar o crear la base de datos. Pruebe a reiniciar MobileSheetsPro. Si no funciona tendrá que reinstalar.</string>
     <string name="db_backup_found">No hay archivo de base de datos en la tableta, pero se encontró una copia de seguridad. ¿Le gustaría cargar la copia de seguridad? (recomendado) La biblioteca estará vacía de lo contrario.</string>
     <string name="db_backup_found_title">Encontrada copia de seguridad de base de datos</string>
     <string name="pdf_library_error">Imposible cargar el recurso requerido. El recurso se descargará si la red WIFI está activada.</string>
@@ -1525,7 +1525,7 @@
     <string name="confirm_selection">Confirmar Selección</string>
     <string name="open_song_confirm">¿Abrir canción \'%1$s\'?</string>
     <string name="song_update_db_fail">La actualización de la base de datos ha fallado. La canción no es válida, quizás deba editarla.</string>
-    <string name="exit_confirm">¿Seguro que desea salir de MobileSheets?</string>
+    <string name="exit_confirm">¿Seguro que desea salir de MobileSheetsPro?</string>
     <string name="begin_of_links">Inicio de los puntos de enlace</string>
     <string name="end_of_links">Fin de los puntos de enlace</string>
     <string name="no_backup_songs">No se pudo encontrar una canción válida en el archivo de copia de seguridad.</string>
@@ -1535,7 +1535,7 @@
     <string name="cant_write_db">No se pudo guardar la base de datos en el disco.</string>
     <string name="db_init_corrupted_msg">La base de datos está corrupta e inservible. MobileSheetsPro intentará restaurar automáticamente una copia de seguridad.</string>
     <string name="db_is_corrupted">La base de dayos en la copia de seguridad está corrupta y no puede usarse. Necesita restaurar una copia de seguridad diferente.</string>
-    <string name="invalid_backup_file">Archivo seleccionado inválido. Solo se permiten Archivos de Copia de Seguridad de MobileSheets con extensión .msb</string>
+    <string name="invalid_backup_file">Archivo seleccionado inválido. Solo se permiten Archivos de Copia de Seguridad de MobileSheetsPro con extensión .msb</string>
     <string name="restore_req_lic">No se permite restaurar la Librería sin una versión con licencia.</string>
     <string name="restore_req_lic_title">Requerida Versión con Licencia</string>
     <string name="restore_no_cancel">Restaurando Librería - NO CANCELAR</string>
@@ -1551,12 +1551,12 @@
     <string name="restore_retrieve_unpack">Recuperando y Desempaquetando canción %1$d de %2$d - %3$s</string>
     <string name="restore_success">Restauración completada con éxito.</string>
     <string name="restore_success_err">Restauración completada con éxito. Algunos archivos no se pudieron escribir en el disco debido a una ruta de destino incompleta o inválida, o a un error en la base de datos. Esto puede deberse a que ejecutó la restauración sin tener accesible su disco de almacenamiento externo y/o extraíble. En tal caso, conéctelo y ejecute la restauración de nuevo. También puede ocurrir si ha usado un archivo de copia de seguridad de una tableta diferente.</string>
-    <string name="free_song_limit">La versión gratuita de MobileSheets solo permite un máximo de %1$d canciones en su librería. ¿Desea ir a la tienda y actualizar a la versión de pago?</string>
+    <string name="free_song_limit">La versión gratuita de MobileSheetsPro solo permite un máximo de %1$d canciones en su librería. ¿Desea ir a la tienda y actualizar a la versión de pago?</string>
     <string name="free_song_title">Límite Máximo de Canciones Alcanzado</string>
-    <string name="free_link_limit">La versión gratuita de MobileSheets solo permite un máximo de %1$d puntos de enlace por canción. ¿Desea ir a la tienda y actualizar a la versión de pago?</string>
+    <string name="free_link_limit">La versión gratuita de MobileSheetsPro solo permite un máximo de %1$d puntos de enlace por canción. ¿Desea ir a la tienda y actualizar a la versión de pago?</string>
     <string name="free_link_title">Límite Máximo de Puntos de Enlace Alcanzado</string>
     <string name="free_link_max">Solo se puede añadir %1$d enlaces por canción de momento.</string>
-    <string name="free_bkmk_limit">La versión gratuita de MobileSheets solo permite un máximo de %1$d marcadores por canción. ¿Desea ir a la tienda y actualizar a la versión de pago?</string>
+    <string name="free_bkmk_limit">La versión gratuita de MobileSheetsPro solo permite un máximo de %1$d marcadores por canción. ¿Desea ir a la tienda y actualizar a la versión de pago?</string>
     <string name="free_bkmk_title">Límite Máximo de Marcadores Alcanzado</string>
     <string name="android_ver_str">Android OS SDK v%1$d, MobileSheetsPro v%2$s%3$s, Device: %4$s</string>
     <string name="bought_from">%1$s de %2$s</string>
@@ -1564,7 +1564,7 @@
     <string name="sel_file_invalid">El archivo seleccionado está corrupto o no soportado.</string>
     <string name="err_diff_mgr">No se pudo añadir la imagen. Si el problema persiste, intente usar un explorador de archivos diferente.</string>
     <string name="select_file">Seleccionar Fichero</string>
-    <string name="mobile_img">Imagen de MobileSheets</string>
+    <string name="mobile_img">Imagen de MobileSheetsPro</string>
     <string name="device_no_camera">Este dispositivo parece no tener cámara. Se deshabilitará esta funcionalidad.</string>
     <string name="err_init_song">Error durante la inicialización de la canción. No pudo cargarse correctamente.</string>
     <string name="unable_to_fhand">No se puede abrir y convertir el archivo a mano alzada: %1$s</string>
@@ -1572,7 +1572,7 @@
     <string name="sd_cant_access">No es posible acceder a la tarjeta SD</string>
     <string name="cant_copy_db">No se puede copiar la base de datos</string>
     <string name="cant_load_attach_title">No se puede cargar el adjunto de correo electrónico</string>
-    <string name="cant_load_attach_msg">MobileSheets no debe estar en ejecución cuando importe los archivos adjuntos de correo electrónico de Google debido a permisos de seguridad. Pulse Aceptar para cerrar MobileSheets y a continuación, importe el archivo de nuevo desde Gmail.</string>
+    <string name="cant_load_attach_msg">MobileSheetsPro no debe estar en ejecución cuando importe los archivos adjuntos de correo electrónico de Google debido a permisos de seguridad. Pulse Aceptar para cerrar MobileSheets y a continuación, importe el archivo de nuevo desde Gmail.</string>
     <string name="perf_mode_enabled">Modo Actuación Activado</string>
     <string name="perf_mode_disabled">Modo Actuación Desactivado</string>
     <string name="choose_song_title">Escoja la Canción Para Cargar</string>
@@ -1629,8 +1629,8 @@
     <string name="failed_lic_check_title">Comprobación de Licencia Fallido</string>
     <string name="grace_period_msg">La comprobación de Licencia ha fallado. Se ha activado un periodo de gracia de 72 HORAS antes de que se deniegue el acceso. Debe obtener acceso wifi para comprobar la licencia.</string>
     <string name="grace_period_title">%1$d Horas Restantes</string>
-    <string name="grace_period_left_msg">Su licencia aún no se ha verificado. Le quedan %1$d horas antes de que no pueda ejecutar MobileSheets. Por favor, obtenga una conexión wifi y recargue MobileSheets para comprobar la licencia.</string>
-    <string name="grace_period_left_hour">Su licencia aún no se ha verificado. Tiene menos de una hora antes de que no pueda ejecutarse MobileSheets. Por favor, obtenga una conexión wifi y recargue MobileSheets para comprobar la licencia.</string>
+    <string name="grace_period_left_msg">Su licencia aún no se ha verificado. Le quedan %1$d horas antes de que no pueda ejecutar MobileSheetsPro. Por favor, obtenga una conexión wifi y recargue MobileSheetsPro para comprobar la licencia.</string>
+    <string name="grace_period_left_hour">Su licencia aún no se ha verificado. Tiene menos de una hora antes de que no pueda ejecutarse MobileSheetsPro. Por favor, obtenga una conexión wifi y recargue MobileSheetsPro para comprobar la licencia.</string>
     <string name="device_id">ID de Dispositivo:</string>
     <string name="contact_support">Esta aplicación ha encontrado un error al comprobar la licencia. Por favor, contacte con soporte en http://www.zubersoft.com/mobilesheets/support.html</string>
         
@@ -1839,7 +1839,7 @@
     </string-array>
     <string-array name="restoreToLocations">
         <item>Ubicación Original del Archivo</item>
-        <item>Ubicación de Almacenamiento de MobileSheets</item>
+        <item>Ubicación de Almacenamiento de MobileSheetsPro</item>
     </string-array>
     <string-array name="title_options">
         <item>Estimar Título a partir del Nombre de Archivo</item>
