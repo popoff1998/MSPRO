@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE xml>
 <resources>
     <!-- common -->
     <string name="okText">OK</string>
@@ -96,15 +95,20 @@
     <string name="sort_az">Sort: A-Z</string>
     <string name="sort_date_created">Sort: Date Created</string>
     <string name="sort_date_modified">Sort: Date Modified</string>
+    <string name="sort_numerically">Sort: Numerically</string>
+    <string name="sort_by_field">Sort: %1$s</string>
+    <string name="byField">By Field:</string>
     
     <string name="sort_manual">Sort: Manual</string>
     <string name="sort_shuffle">Sort: Shuffle</string>
     <string name="reshuffle">Reshuffle</string>
+    <string name="save_as_manual_order">Save as manual ordering</string>
     
     <string-array name="song_sort_options">
         <item>A-Z</item>
         <item>Date Created</item>
         <item>Date Modified</item>
+        <item>Numerically</item>
     </string-array>
     
     <string-array name="setlist_sort_options">
@@ -116,6 +120,8 @@
     <string name="select_sort_title">Select Sort Method</string>
     
     <string name="setlist_currently_sorted">The setlist is currently sorted. Saving the setlist will overwrite the original order. Are you sure you want to do this?</string>
+    <string name="setlist_confirm_order_save">This will overwrite the original manual ordering with the shuffled order. Are you sure you want to do this?</string>
+    <string name="setlist_order_updated">Successfully updated setlist order.</string>
     
     <!-- action_bar.xml -->
     <string name="ab_edit">Edit</string>
@@ -123,13 +129,15 @@
     <string name="ab_settings">Settings</string>
     <string name="ab_share">Share</string>
     <string name="ab_export">Export</string>
+    <string name="ab_share_msf">Share as .msf</string>
+    <string name="ab_share_files">Share files</string>
     
     <string name="ab_add_songs_to_setlist">Add Songs to Setlist</string>
     <string name="ab_add_songs_to_collection">Add Songs to Collection</string>
     <string name="ab_remove_songs_from_setlist">Remove Songs from Setlist</string>
     <string name="ab_remove_songs_from_collection">Remove Songs from Collection</string>
-    <string name="ab_create_setlist_from_songs">Create Setlist From Songs</string>
-    <string name="ab_create_collection_from_songs">Create Collection From Songs</string>
+    <string name="ab_create_setlist_from_songs">Create Setlist from Songs</string>
+    <string name="ab_create_collection_from_songs">Create Collection from Songs</string>
     
     <!-- configure_fields_layout.xml -->
     <string name="configure_fields_title">Select Fields to Show</string>
@@ -325,8 +333,8 @@
     <string name="replace">Replace</string>
     
     <plurals name="file_name_conflict_msg">
-        <item quantity="one">A file already exists in the storage location with the same name, and is used by another song. Would you like to replace the existing file, rename the new file, or cancel?</item>
-        <item quantity="other">A file already exists in the storage location with the same name, and is used by %1$d other songs. Would you like to replace the existing file, rename the new file, or cancel?</item>
+        <item quantity="one">A file already exists in the storage location with the same name, and is used by another song. Select the action you would like to take below:</item>
+        <item quantity="other">A file already exists in the storage location with the same name, and is used by %1$d other songs. Select the action you would like to take below:</item>
     </plurals>
     
     <!-- group_editor.xml -->
@@ -352,6 +360,8 @@
     <string name="failed_to_clear_songs">Failed to clear songs for %1$s due to a database error. You may need to fully close the app and restart.</string>
     
     <string name="db_update_failed">Failed to update database. You may need to fully close the app and restart.</string>
+    
+    <string name="confirm_add_all">Are you sure you want to add %1$d songs to %2$s?</string>
         
     <!-- Import Settings Dialog -->
     <string name="import_settings_title">Import Settings</string>
@@ -359,6 +369,7 @@
     <string name="importing_title">Importing Files</string>
     <string name="initializing_import_msg">Initializing resources for file import</string>
     <string name="import_file_msg">Importing File #%1$d - %2$s</string>
+    <string name="cropping_file_msg">Cropping File #%1$d - %2$s</string>
     <string name="import_results_title">Import Results</string>
     <string name="free_song_limit_reached">Free Version Song Limit Reached. Upgrade to the paid version for more songs.</string>
     <string name="import_password_error">Failed to import file %1$s. Password protected PDFs cannot be used with quick import - use the Song Editor instead.</string>
@@ -372,6 +383,7 @@
     <string name="msf_import_song_failed">Failed to add song "%1$s" to the database.</string>
     
     <string name="msf_import_error">Unrecoverable error while importing file %1$s. Aborting import.</string>
+    <string name="msf_version_mismatch">The selected file uses an incompatible version of the .msf file specification. Update MobileSheetsPro to the latest version to use this file.</string>
     <string name="msf_not_valid">%1$s is not a valid MobileSheets File (.msf)</string>
     
     <string name="failed_add_group">Failed to add group %1$s to the database.</string>
@@ -430,6 +442,7 @@
     <string name="sysExExample">e.g. F0 43 10 7F 01 0A 00 01 01 F7</string>
     <string name="enterMidiValue">Enter the Value</string>
     <string name="createCommandFirst">Create a MIDI Command first</string>
+    <string name="channelStr">Channel</string>
     
     <string-array name="commandTypes">
         <item>Patch Select</item>
@@ -533,9 +546,10 @@
     <string name="gen_share_progress_msg">Generating file, %1$d%% complete</string>
         
     <!-- song_editor.xml -->
-    <string name="editing_title">Editing \'%1$s\'</string>
+    <string name="editing_title">Editing: %1$s</string>
     <string name="new_song_title">Enter Data for New Song</string>
-    <string name="copying_title">Copy of \'%1$s\'</string>
+    <string name="copying_title">Editing Copy: %1$s</string>
+    <string name="new_song_edit_title">New Song: %1$s</string>
     
     <string name="fieldsTab">Fields</string>
     <string name="filesTab">Files</string>
@@ -601,13 +615,26 @@
     <string name="copying_file_msg">Copying file to tablet, please wait...</string>
     
     <string name="ab_text_display_settings">Text File Settings</string>
+
+    <string-array name="editor_conflict_options">
+        <item>Replace File</item>
+        <item>Rename File</item>
+        <item>Use Existing File</item>
+    </string-array>
         
     <!-- Page Order Dialog -->
     <string name="page_order_title">Enter the Page Order</string>
     <string name="orderLabel">Page Order:</string>
+    <string name="keyboardLabel">Keyboard:</string>
     <string name="invalid_page_order">"%1$s" is not a valid page ordering.</string>
     <string name="page_out_of_bounds">The maximum allowed page is %1$d</string>
     <string name="totalPagesLabel">Total Pages in File:</string>
+
+    <string-array name="keyboards">
+        <item>Full</item>
+        <item>Numeric</item>
+        <item>Phone</item>
+    </string-array>
     
     <!-- Song Editor Settings Dialog -->
     <string name="apply_rotation_label">Apply Rotation:</string>
@@ -678,6 +705,7 @@
         <item>Go to End of Song</item>
         <item>Go to Previous Bookmark</item>
         <item>Go to Next Bookmark</item>
+        <item>Start or Stop Automatic Scrolling</item>
     </string-array>
     
     <!-- Touch Settings Activity -->
@@ -687,6 +715,8 @@
     <string name="labelTopRight">Top Right Corner:</string>
     <string name="labelBottomLeft">Bottom Left Corner:</string>
     <string name="labelBottomCenter">Bottom Center:</string>
+    <string name="labelTwoFingerTap">Two Finger Tap:</string>
+    <string name="labelThreeFingerTap">Three Finger Tap:</string>
     
     <string-array name="touch_actions">
         <item>None</item>
@@ -706,6 +736,8 @@
         <item>Annotate Song</item>
         <item>Go to Previous Bookmark</item>
         <item>Go to Next Bookmark</item>
+        <item>Start or Stop Scrolling</item>
+        <item>@string/reset_pan_zoom</item>
     </string-array>
     
     <!-- Tab Order Activity -->
@@ -744,7 +776,7 @@
     <!-- SetlistManager -->
     <string name="setlist_changes_lost">The changes you\'ve made to the setlist haven\'t been saved yet, and will be lost. Are you sure you wish to continue?</string>
     <string name="confirm_setlist_save">Changes Not Saved - Confirm Action</string>
-    <string name="auto_scroll_two">Auto-Scrolling starts in 2 seconds</string>
+    <string name="auto_scroll_two">Auto-Scrolling starts in %1$d seconds</string>
     <string name="scrolling_not_supported">The current display mode does not support automatic scrolling</string>
     
     <!-- Sharpness dialog -->
@@ -787,14 +819,19 @@
     <string name="metColorLabel">Color:</string>
     
     <!-- Metronome Playback Dialog -->
+    <string name="metronomePlaybackTitle">Metronome Playback Settings</string>
     <string name="autoStartLabel">Auto-Start</string>
     <string name="countInLabel">Count In</string>
-    <string name="numCounts"># of Beats to count:</string>
-    <string name="beatsPerPageLabel"># Beats on current page:</string>
-    <string name="beatsPerTempoLabel"># Beats per tempo:</string>
+    <string name="numCounts"># of measures to count:</string>
+    <string name="beatsPerPageLabel"># of beats on current page:</string>
+    <string name="beatsPerTempoLabel"># of beats per tempo:</string>
     <string name="autoTurnLabel">Auto-Turn Pages</string>
-    <string name="apply_to_all_pages">Apply to all pages in song</string>
+    <string name="apply_to_all_pages">Apply to all pages in current song</string>
     <string name="bpp_applied_to_all">All pages set to %1$d beats per page</string>
+    <string name="apply_to_all_songs">Apply to all songs in setlist</string>
+    <string name="settings_applied_to_songs">Successfully applied settings to all songs in setlist</string>
+
+    <string name="skip_count_in">Skipping metronome count in</string>
     
     <!-- Media Playback Settings Dialog -->
     <string name="audioPlayerSettingsTitle">Audio Player Settings</string>
@@ -902,7 +939,7 @@
     <string name="google_store">Google Play</string>
     <string name="amazon_store">Amazon App Store</string>
     <string name="nook_store">NOOK Storefront</string>
-    <string name="import_label">Import into MobileSheets</string>
+    <string name="import_label">Import into MobileSheetsPro</string>
     <string name="touch_link_from">Touch the location to link from. Swipe to turn pages.</string>
     <string name="touch_link_to">Touch the location to link to. Swipe to turn pages.</string>
     <string name="unnamed">Unnamed</string>
@@ -931,7 +968,7 @@
     <string name="mi_copy_song">Copy Song</string>
     <string name="mi_remove">Remove</string>
     <string name="mi_delete_song">Delete Song</string>
-    <string name="mi_delete_song_library">Delete Song From Library</string>
+    <string name="mi_delete_song_library">Delete Song from Library</string>
     <string name="mi_add_to_setlist">Add to Setlist</string>
     <string name="mi_remove_from_setlist">Remove from Setlist</string>
     <string name="mi_add_to_collection">Add to Collection</string>
@@ -987,7 +1024,8 @@
     <string name="labelFormat">Format:</string>
     <string name="labelExampleOutput">Example Output:</string>
     <string name="labelFields">Fields:</string>
-    <string name="checkShowCaption">Show Caption</string>
+    <string name="checkShowCaption">Show caption</string>
+    <string name="checkUseFormatTitleSort">Use formatted title for sorting</string>
     
     <string name="btnTitle">Title</string>
     <string name="tempos">Tempos</string>
@@ -1076,26 +1114,33 @@
     <!-- Activity names -->
     <string name="email_activity_name">Email Zubersoft Support</string>
     <string name="annotations_activity_name">Annotations Editor</string>
-    <string name="backup_activity_name">MobileSheets Library Backup</string>
-    <string name="restore_activity_name">MobileSheets Library Restore</string>
+    <string name="backup_activity_name">MobileSheetsPro Library Backup</string>
+    <string name="restore_activity_name">MobileSheetsPro Library Restore</string>
     <string name="storage_activity_name">Select Storage Location</string>
     <string name="directory_dialog_name">Choose Backup Directory Dialog</string>
     <string name="file_dialog_name">Choose File Dialog</string>
-    <string name="settings_activity_name">MobileSheets Settings</string>
-    <string name="group_editor_activity_name">MobileSheets Group Editor</string>
-    <string name="sync_activity_name">MobileSheets PC Sync</string>
+    <string name="settings_activity_name">MobileSheetsPro Settings</string>
+    <string name="group_editor_activity_name">MobileSheetsPro Group Editor</string>
+    <string name="sync_activity_name">MobileSheetsPro PC Sync</string>
     <string name="batch_import_activity_name">Batch File Import</string>
-    <string name="convert_pdf_activity_name">MobileSheets PDF Converter</string>
-    <string name="import_activity_name">MobileSheets Database Import</string>
-    <string name="export_activity_name">MobileSheets Database Export</string>
-    <string name="restore_db_activity_name">MobileSheets Database Restore</string>
-    <string name="release_notes_activity_name">MobileSheets Release Notes</string>
+    <string name="convert_pdf_activity_name">MobileSheetsPro PDF Converter</string>
+    <string name="import_activity_name">MobileSheetsPro Database Import</string>
+    <string name="export_activity_name">MobileSheetsPro Database Export</string>
+    <string name="restore_db_activity_name">MobileSheetsPro Database Restore</string>
+    <string name="release_notes_activity_name">MobileSheetsPro Release Notes</string>
     <string name="clear_library_activity_name">Clear Library</string>
     <string name="crop_activity_name">Crop Editor</string>
     <string name="pedal_action_activity_name">Pedal Action Settings</string>
     <string name="touch_action_activity_name">Touch Action Settings</string>
     <string name="switch_dropbox_activity_name">Switch Dropbox Account</string>
+    <string name="user_guide_activity_name">MobileSheetsPro User Guide</string>
+    <string name="find_missing_files_activity_name">@string/find_missing_files_pref</string>
     <string name="auto_save_turn">Auto-save on Page Turn</string>
+    
+    <!-- User Guide Activity -->
+    <string name="downloading_latest_manual">Downloading latest manual, please wait...</string>
+    <string name="error_downloading">An error was encountered downloading the latest manual. The last cached version will be used.</string>
+    <string name="no_manual_available">No cached version of the manual is available. You must connect to Wi-Fi to download the manual.</string>
     
     <!-- Settings screen values -->
     <string name="settings_value">Current Setting: %1$s</string>
@@ -1120,12 +1165,16 @@
     <string name="summary_song_format">Changes the formatting of song titles to include the fields you want displayed.</string>
     <string name="generate_list_format_title">Generate Song List Format</string>
     <string name="summary_generate_list_format">Changes the formatting of song titles when generating a setlist song list.</string>
-    <string name="title_custom_group_pref">Custom Category Name</string>
+    <string name="title_custom_group_pref">Custom Group Name</string>
     <string name="summary_custom_group_pref">Sets the name to be displayed for the custom category</string>
+    <string name="title_use_dark_theme_pref">Use Dark Theme</string>
+    <string name="summary_use_dark_theme_pref">Switches the library screen to use white text on a black background.</string>
     <string name="title_row_colors_pref">Alternate Row Color</string>
     <string name="summary_row_colors_pref">Provides alternating row colors to make it easier to distinguish individual entries on the library screen.</string>
     <string name="title_text_size_pref">Library Text Size</string>
     <string name="summary_text_size_pref">Allows the library text size to be modified.</string>
+    <string name="title_text_align_pref">Text Alignment</string>
+    <string name="summary_text_align_pref">Determines how to align the text in the library screen lists.</string>
     <string name="title_tab_order_pref">Tab Order</string>
     <string name="summary_tab_order_pref">Determines what tabs are shown and in what order.</string>
     <string name="title_show_song_count_pref">Show Number of Songs</string>
@@ -1178,8 +1227,10 @@
     <string name="summary_night_mode_pref">Inverts black and white to help in dark environments.</string>
     <string name="title_vertically_center_pref">Center Pages</string>
     <string name="summary_vertically_center_pref">Ensures that if a page is vertically smaller than the tablet it will be centered in the middle of the viewable area.</string>
-    
+
     <string name="overlay_display_preferences">Overlay Settings</string>
+    <string name="title_show_formatted_pref">Show Formatted Song Titles</string>
+    <string name="summary_show_formatted_pref">Determines if the song titles show in the overlay, setlist window and next up song bar will use the same formatting as the library screen.</string>
     <string name="title_show_next_pref">Show Next Song Indicator</string>
     <string name="summary_show_next_pref">Determines when a bar is shown at the top of the screen indicating what song is coming up next</string>
     <string name="title_astb_pref">Always Show The Title Bar</string>
@@ -1193,11 +1244,11 @@
     
     <string name="system_display_preferences">System Settings</string>
     <string name="dim_status_pref">Dim the Navigation Bar</string>
-    <string name="summary_dim_status_pref">If running HoneyComb or later, the navigation bar will be dimmed, otherwise this has no effect.</string>
+    <string name="summary_dim_status_pref">If running HoneyComb or later, the navigation bar will be dimmed while viewing songs, otherwise this has no effect. It will not be dimmed on the library screen.</string>
     <string name="hide_status_pref">Hide the Navigation Bar</string>
-    <string name="summary_hide_status_pref">If this option is checked, the navigation bar will be completely hidden, requiring a swipe to show it.</string>
+    <string name="summary_hide_status_pref">If this option is checked, the navigation bar will be completely hidden while viewing songs, requiring a swipe to show it. It will not be hidden on the library screen.</string>
     <string name="full_screen_pref">Fullscreen Mode</string>
-    <string name="summary_full_screen_pref">Enables fullscreen mode, which hides the Android notification bar at the top of the screen.</string>
+    <string name="summary_full_screen_pref">Enables fullscreen mode, which hides the Android notification bar at the top of the screen. This setting affects all screens.</string>
             
     <!-- Pedal Settings section -->
     <string name="bluetooth_header">Touch &amp; Pedal Settings</string>
@@ -1228,7 +1279,7 @@
     <string name="summary_transpose_method">Determines if a song will be transposed based upon key or steps.</string>
     <string name="title_wrap_text">Wrap Text</string>
     <string name="summary_wrap_text">Wraps text if it exceeds the width of the screen</string>
-    <string name="title_use_two_columns">Use Two Columns</string>
+    <string name="title_use_two_columns">Use Multiple Columns</string>
     <string name="summary_use_two_columns">Displays text in two columns on the screen if it is narrow enough to fit.</string>
     <string name="title_place_chords_above">Place Chords Above Text</string>
     <string name="summary_place_chords_above">Places chords above text instead of inline</string>
@@ -1278,7 +1329,21 @@
     <string name="summary_wake_lock_pref">Controls when the screen is prevented from turning off due to inactivity.</string>
     <string name="cpu_lock_pref">Keep CPU On</string>
     <string name="summary_cpu_lock_pref">Stops the CPU and other processing resources from sleeping. If you experience problems with a bluetooth pedal sleeping, turn on this setting. Note that this can cause battery drain.</string>
-        
+
+    <string name="diagnostics">Diagnostics</string>
+    <string name="find_missing_files_pref">Find missing files</string>
+    <string name="summary_find_missing_files">Locates songs in the library that are missing files and optionally removes them</string>
+    <string name="find_missing_files_title">Locating missing files</string>
+    <string name="ab_delete_songs">Delete Songs</string>
+    <string name="confirm_song_delete">Are you sure you want to delete all of the songs shown in the list?</string>
+    <plurals name="find_missing_files_title">
+        <item quantity="one">One song found</item>
+        <item quantity="other">%1$d songs found with %2$d total missing files</item>
+    </plurals>
+    <string name="expand_all">Expand All</string>
+    <string name="collapse_all">Collapse All</string>
+    <string name="no_files_missing">No files are missing in the library.</string>
+
     <string name="misc_preferences">Miscellaneous</string>
     <string name="stop_audio_back_pref">Stop Audio on Back</string>
     <string name="summary_stop_audio_back_pref">Stops audio playback when returning to the library screen.</string>
@@ -1361,8 +1426,8 @@
     <string name="group_empty">The list is empty.</string>
     <string name="random_selection_error">Unable to make random selection.</string>
     <string name="confirm_deletion_message">Are you sure you want to remove %1$s from your library?</string>
-    <string name="group_exists">Entry Already Exists</string>
-    <string name="group_exists_title">%1$s by that name already exists. Would you like to move all songs under that %1$s?</string>
+    <string name="group_exists_title">Entry Already Exists</string>
+    <string name="group_exists">\'%1$s\' already exists. Would you like to move all songs under \'%1$s\'?</string>
     <string name="group_unable_error">Failed to move songs under %1$s %2$s.</string>
     <string name="group_moved_songs">Songs successfully moved under %1$s %2$s.</string>
     <string name="change_group_name">%1$s successfully changed to %2$s.</string>
@@ -1407,6 +1472,7 @@
     <string name="end_of_song">End of Song</string>
     <string name="end_of_setlist">End of Setlist</string>
     <string name="end_of_song_link">End of Song. Links can only be placed in the same song.</string>
+    <string name="same_song_link">Links cannot be created between two different songs.</string>
     <string name="link_string">From Page %1$d to Page %2$d %3$s</string>
     <string name="unable_parse_metadata">Unable to parse audio file metadata.</string>
     <string name="select_audio_file">Select audio file</string>
@@ -1467,12 +1533,14 @@
     <string name="backup_file_error">Unable to read backup file %1$s. Reported error - %2$s</string>
     <string name="dropbox_file_error">Unable to read file from Dropbox: %1$s. Reported error - %2$s</string>    
     <string name="cant_write_db">Unable to write database file to disk.</string>
+    <string name="db_init_corrupted_msg">The database is corrupted and unusable. MobileSheets will try to restore an automatic database backup.</string>
+    <string name="db_is_corrupted">The database in the backup file is corrupted, and cannot be used. You will need to restore a different backup.</string>
     <string name="invalid_backup_file">Invalid file selected. Only valid MobileSheets Backup Files with a .msb extension are allowed.</string>
     <string name="restore_req_lic">Library restore is not allowed without a licensed version.</string>
     <string name="restore_req_lic_title">Licensed Version Required</string>
     <string name="restore_no_cancel">Restoring Library - DO NOT CANCEL</string>
     <string name="restore_no_cancel_or_disconnect">Restoring Library - DO NOT CANCEL OR DISCONNECT FROM THE NETWORK</string>
-    <string name="init_restore">Initiating Restore</string>
+    <string name="init_restore">Initiating Restore, this may take awhile...</string>
     <string name="restore_warn_cancel">You are the middle of restoring your library. Are you sure you want to cancel? Songs that have not been restored may not be able to load correctly if you proceed.</string>
     <string name="restore_failed_error">The restore has failed to complete due to an error:\n\n%1$s%2$s</string>
     <string name="restore_lib_error">\n\nYour library may no longer work correctly.</string>
@@ -1490,10 +1558,10 @@
     <string name="free_link_max">Only %1$d links can be added per song at this time.</string>
     <string name="free_bkmk_limit">The free version of MobileSheets only allows a maximum of %1$d bookmarks per song. Would you like to go to the market to upgrade to the paid version?</string>
     <string name="free_bkmk_title">Maximum Bookmark Limit Reached</string>
-    <string name="android_ver_str">Android OS SDK v%1$d, MobileSheets v%2$s%3$s, Device: %4$s</string>
+    <string name="android_ver_str">Android OS SDK v%1$d, MobileSheetsPro v%2$s%3$s, Device: %4$s</string>
     <string name="bought_from">%1$s from %2$s</string>
     <string name="modify_alpha_sort">You can only modify the setlist order when manual sort is selected.</string>
-    <string name="sel_file_invalid">Selected file was neither a supported image file type or pdf. Unable to add image.</string>
+    <string name="sel_file_invalid">Selected file is either corrupted or not a supported file type.</string>
     <string name="err_diff_mgr">Unable to add file. If problem persists, try using a different file manager.</string>
     <string name="select_file">Select File</string>
     <string name="mobile_img">MobileSheets Image</string>
@@ -1583,7 +1651,7 @@
     <string name="unable_process_del">Unable to process delete images message due to connection error</string>
     <string name="unable_process_mem">Unable to process delete images messages due to tablet reporting out of memory error.</string>
     <string name="unable_read_song_del">Unable to read data for song deletion message from PC</string>
-    <string name="failed_retrieve_song">Failed to retrieve requested song while deleting images.</string>
+    <string name="failed_retrieve_song">Failed to retrieve requested song while deleting files.</string>
     <string name="pc_del_song">PC has requested the deletion of song: %1$s</string>
     <string name="del_empty_dir">Deleting empty directory: %1$s</string>
     <string name="unable_process_del_msg">Unable to process delete images message: %1$s</string>
@@ -1595,7 +1663,7 @@
     <string name="pc_ver_error">Connection error while receiving PC version: %1$s</string>
     <string name="sending_db">Sending database file to PC.</string>
     <string name="err_send_db">Error sending database to PC: %1$s</string>
-    <string name="sent_files_db_good">%1$d  bytes successfully sent for file: %2$s</string>
+    <string name="sent_files_db_good">%1$d bytes successfully sent for file: %2$s</string>
     <string name="sending_cancel_ack">Sending cancel acknowledgement</string>
     <string name="sending_broadcast">Sending out broadcast identifier message.</string>
     <string name="wait_for_conn">Waiting for user to establish connection through MobileSheets Companion pop up window. If no window pops up, please exit MobileSheets, turn your tablet wifi off, then back on, and restart MobileSheets.</string>
@@ -1608,6 +1676,7 @@
     <string name="packaging_song">Packaging - %1$s</string>
     <string name="backup_cancel_pc">Backup cancellation received from PC.</string>
     <string name="backup_failed_complete">The backup has failed to complete due to an error.</string>
+    <string name="backup_pc_success">Backup completed successfully.</string>
     <string name="backup_req_pc">Backup request received from PC, starting transfer.</string>
     <string name="no_backup_unlic">This copy is not licensed. Backups are not allowed until the license check succeeds.</string>
     <string name="stop_pc_backup">Stopping library backup and sending cancellation acknowledgement</string>
@@ -1643,11 +1712,13 @@
     <string name="unable_write_file">Unable to write file to %1$s. File may be locked or inaccessible (is PC locking file?). Skipping to next file.</string>
     <string name="unable_create_file">Unable to create file for transfer: %1$s</string>
     <string name="conn_err_fail_transfer">Connection error encountered. Transfer has failed.</string>
-    <string name="err_transfer_files">Error encountered transferring images: %1$s</string>
-    <string name="err_transfer_files_mem">Error encountered transferring images. Tablet is out of memory. Please try again.</string>
+    <string name="err_transfer_files">Error encountered transferring files: %1$s</string>
+    <string name="err_transfer_files_mem">Error encountered transferring files. Tablet is out of memory. Please try again.</string>
     <string name="sending_pc_err_list">Sending list of files that failed to transfer to PC</string>
     <string name="waiting_pc_conn">Waiting for connection to PC&#8230;</string>
     <string name="conn_pc_good">Connected to PC&#8230;</string>
+    <string name="error_sync_read">Error reading message from companion app</string>
+    <string name="error_sync_write">Error sending message to companion app</string>
     
     <plurals name="recv_pc_files">
         <item quantity="one">Receiving one file from PC. Writing file to</item>
@@ -1689,6 +1760,11 @@
         <item>Light Gray</item>
         <item>Gray</item>
         <item>Dark Gray</item>
+    </string-array>
+    <string-array name="textAlignments">
+        <item>Left</item>
+        <item>Center</item>
+        <item>Right</item>    
     </string-array>
     <string-array name="profiles">
         <item>Default</item>
@@ -1810,7 +1886,7 @@
     <string name="circle">Circle</string>
     <string name="freeform">Freeform</string>
     <string name="stamp">Stamp</string>
-    <string name="size">Size</string>
+    <string name="size">Size:</string>
     <string name="pen_type">Pen Type:</string>
     <string name="snap_to_grid">Snap to Grid</string>
     <string name="show_grid">Show Grid</string>
