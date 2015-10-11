@@ -98,12 +98,12 @@
     <string name="sort_numerically">Orden: Numérico</string>
     <string name="sort_by_field">Orden: %1$s</string>
     <string name="byField">por Campo:</string>
-    
+        
     <string name="sort_manual">Orden: Manual</string>
     <string name="sort_shuffle">Orden: Mezclar</string>
     <string name="reshuffle">Remezclar</string>
     <string name="save_as_manual_order">Guardar como ordenado manual</string>
-    
+       
     <string-array name="song_sort_options">
         <item>A-Z</item>
         <item>Fecha de Creación</item>
@@ -128,29 +128,9 @@
     <string name="ab_configure_fields">Configurar Campos</string>    
     <string name="ab_settings">Ajustes</string>
     <string name="ab_share">Compartir</string>
+    <string name="ab_export">Exportar</string>
     <string name="ab_share_msf">Compartir como .msf</string>
     <string name="ab_share_files">Compartir ficheros</string>
-    <string name="ab_export_msf">Exportar como .msf</string>
-    <string name="ab_export_files">Exportar como ficheros</string>
-
-    <string name="export_dialog_title">Exportar Ficheros</string>
-    <string name="cb_export_page_order">Usar el orden de páginas de la Canción para los ficheros exportados</string>
-    <string name="cb_export_cropping">Exportar con recorte</string>
-    <string name="cb_export_rotation">Exportar con rotación</string>
-    <string name="cb_export_annotations">Export con anotaciones</string>
-    <string name="cb_join_files">Unir en un solo PDF</string>
-    <string name="export_text_warning">Atención: Los ficheros de Texto y chord pro deben convertirse a PDF para soportar anotaciones.</string>
-    <string name="exporting_title">Exportación en Progreso</string>
-    <string name="exporting_msg">Exportando, por favor espere...</string>
-    <string name="export_failed">Falló la exportación. Compruebe que no le faltan ficheros a la canción, restaure la aplicación y pruebe de nuevo</string>
-    <string name="exporting_file">Exportando fichero %1$s</string>
-
-    <string name="share_options_title">Opciones de Compartición de Archivos</string>
-    <string name="cb_share_page_order">Use el orden de páginas de la Canción para los ficheros compartidos</string>
-    <string name="cb_share_cropping">Compartir con recorte</string>
-    <string name="cb_share_rotation">Compartir con rotación</string>
-    <string name="cb_share_annotations">Compartir con anotaciones</string>
-    <string name="write_out_share">Escribiendo fichero %1$s</string>
     
     <string name="ab_add_songs_to_setlist">Añadir Canción a Setlist</string>
     <string name="ab_add_songs_to_collection">Añadir Canción a Colección</string>
@@ -158,16 +138,11 @@
     <string name="ab_remove_songs_from_collection">Eliminar Canciones de la Colección</string>
     <string name="ab_create_setlist_from_songs">Crear Setlist desde Canciones</string>
     <string name="ab_create_collection_from_songs">Crear Colección desde Canciones</string>
-    <string name="ab_print">Imprimir</string>
-
-    <string name="print_creating_doc_title">Creando Documento de Impresión</string>
-    <string name="print_creating_doc_msg">Construyendo documento a imprimir...</string>
-    <string name="print_creation_failed">Se encontró un error imprimiendo el documento.</string>
     
     <!-- configure_fields_layout.xml -->
     <string name="configure_fields_title">Seleccione Campos para Mostrar</string>
     <string name="checkCustomSort">Título de Ordenación Personalizado</string>
-    
+        
     <!-- main.xml and library screen -->
     <string name="clear_recent">Borrar Lista</string>
     <string name="cant_select_song_setlist">No puede seleccionar setlists y canciones a la vez.</string>
@@ -207,7 +182,6 @@
     <string name="source_type_long_label">Tipo de Origen:</string>
     <string name="collection_long_label">Colección:</string>
     <string name="ratingLabel">Clasificación:</string>
-    <string name="songs_to_edit">Canciones a Editar:</string>
     
     <string name="unsupported_file_type">Ha seleccionado un tipo de fichero no soportado. Por favor, seleccione un tipo soportado como PDF.</string>
     
@@ -241,7 +215,7 @@
         <item>Dos Páginas</item>
         <item>Alternar Páginas</item>
     </string-array>
-        
+     
     <!-- additional_filters_layout.xml -->
     <string name="additionalFiltersTitle">Filtros Adicionales</string>
     <string name="metronomeLabel">Metrónomo:</string>
@@ -258,7 +232,7 @@
         <item>Off</item>
         <item>Sin Ficheros de Audio</item>
         <item>Con Ficheros de Audio</item>
-    </string-array>
+    </string-array>    
     
     <!-- add_bookmark_dialog.xml -->
     <string name="pageLabel">Página:</string>
@@ -272,7 +246,6 @@
     <string name="err_db_not_init">La Base de Datos no se ha inicializado por alguna razón. Salga de la pantalla de ajustes y reinténtelo.</string>
     <string name="select_backup_dest">Seleccione un destino para la copia de seguridad</string>
     <string name="check_backup_audio">Hacer copia de seguridad de archivos de Audio</string>
-    <string name="check_backup_settings">Opciones de Copia de Seguridad</string>
     <string name="backup_select_dialog_title">Seleccione el nombre de archivo para la copia de seguridad</string>
     <string name="uploading_file_dpbox">Subiendo Archivo a DropBox</string>
     
@@ -387,9 +360,9 @@
     <string name="failed_to_clear_songs">Falló el borrado de canciones para %1$s debido a un error de la base de datos. Cierre completamente la aplicación y comience de nuevo.</string>
     
     <string name="db_update_failed">Fallo al actualizar la Base de Datos. Cierre completamente la aplicación y comience de nuevo.</string>
-    
+
     <string name="confirm_add_all">Está seguro de que quiere añadir %1$d canciones a %2$s?</string>        
-        
+
     <!-- Import Settings Dialog -->
     <string name="import_settings_title">Ajustes de Importar</string>
     
@@ -565,7 +538,6 @@
     <string name="restoreToLabel">Restaurar a:</string>
     <string name="checkCreateSubdirs">Crear una subcarpeta por canción</string>
     <string name="delete_all_files">Borrar todos los archivos en almacenamiento Interno y en Tarjeta SD (Recomendado)</string>
-    <string name="restore_settings">Opciones de Restauración (si se encuentran en el fichero de copia de seguridad)</string>
     <string name="no_internet_connection">No puede conectarse a Dropbox - No se ha detectado conexión a Internet</string>
         
     <!-- sharing -->
@@ -600,8 +572,6 @@
     <string name="rotationLabel">Rotación:</string>
     <string name="autoCropButton">Auto Recorte</string>
     <string name="resetCropButton">Reinicializar Recorte</string>
-    <string name="rotatingTitle">Rotando Páginas</string>
-    <string name="rotatingMsg">Realizando rotación, por favor espere...</string>
         
     <string name="startEndLabel">Pista Inicio/Fin:</string>
     
@@ -650,8 +620,8 @@
         <item>Remplazar Fichero</item>
         <item>Renombrar Fichero</item>
         <item>Usar Fichero Existente</item>
-    </string-array>
-        
+    </string-array> 
+           
     <!-- Page Order Dialog -->
     <string name="page_order_title">Introduzca Orden de Página</string>
     <string name="orderLabel">Orden de Página:</string>
@@ -659,7 +629,7 @@
     <string name="invalid_page_order">"%1$s" no es un orden de página válido.</string>
     <string name="page_out_of_bounds">El número máximo de página es %1$d</string>
     <string name="totalPagesLabel">Total de Páginas en Fichero:</string>
-
+     
     <string-array name="teclados">
         <item>Completo</item>
         <item>Numérico</item>
@@ -688,7 +658,7 @@
     <string name="ab_auto_crop_all">Auto recortar todas las páginas</string>
     <string name="enable_aggressive_crop">Habilitar Recorte Agresivo</string>
     <string name="disable_aggressive_crop">Deshabilitar Recorte Agresivo</string>
-    
+        
     <string name="crop_apply_title">¿Aplicar recorte a cual?</string>
     
     <!-- Pedal Settings Activity -->
@@ -747,7 +717,7 @@
     <string name="labelBottomCenter">Centro Inferior:</string>
     <string name="labelTwoFingerTap">Golpe con Dos Dedos:</string>
     <string name="labelThreeFingerTap">Golpe con Tres Dedos:</string>
-    
+        
     <string-array name="touch_actions">
         <item>Ninguna</item>
         <item>Grupo de Anotación Anterior</item>
@@ -862,7 +832,7 @@
     <string name="settings_applied_to_songs">Aplicados con éxito los ajustes a todas las canciones del setlist</string>
 
     <string name="skip_count_in">Omitir precuenta del metrónomo</string>
-    
+
     <!-- Media Playback Settings Dialog -->
     <string name="audioPlayerSettingsTitle">Ajustes del Reproductor de Audio</string>
     <string name="fadeOutLabel">Desvanecer:</string>
@@ -1003,7 +973,7 @@
     <string name="mi_remove_from_setlist">Eliminar del Setlist</string>
     <string name="mi_add_to_collection">Añadir a la Colección</string>
     <string name="mi_remove_from_collection">Eliminar de la Colección</string>
-    <string name="mi_swap_file">Intercambiar archivo</string>
+    <string name="mi_swap_file">Intercambiar Fichero</string>
     <string name="mi_view_edit_notes">Ver o Editar Notas</string>
         
     <string name="mi_copy_group">Copiar</string>
@@ -1056,7 +1026,7 @@
     <string name="labelFields">Campos:</string>
     <string name="checkShowCaption">Mostrar subtítulo</string>
     <string name="checkUseFormatTitleSort">Usar el título formateado para ordenar</string>
-    
+        
     <string name="btnTitle">Título</string>
     <string name="tempos">Tempos</string>
     <string name="difficulty">Dificultad</string>
@@ -1097,7 +1067,7 @@
         <item>Todas las Páginas del Fichero Actual</item>
         <item>Todas las Páginas de Todos los Ficheros (Canción Actual)</item>
         <item>Todas las Páginas del Setlist</item>
-    </string-array>
+    </string-array>  
     
     <!-- Create Placeholder Dialog -->
     <string name="create_placeholder_title">Crear Marcador</string>
@@ -1140,7 +1110,7 @@
     
     <string name="prompt_manage_files_title">Seleccionar Ajustes de Almacenamiento</string>
     <string name="prompt_manage_files">¿Desea que MobileSheetsPro copie y maneje todos los ficheros importados? Éste ajuste y la ubicación de almacenamiento para ficheros se pueden cambiar en cualquier momento en la página principal de ajustes.</string>
-    
+         
     <!-- Activity names -->
     <string name="email_activity_name">Escribir un Email al Soporte de Zubersoft</string>
     <string name="annotations_activity_name">Editor de Anotaciones</string>
@@ -1165,11 +1135,9 @@
     <string name="switch_dropbox_activity_name">Cambiar Cuenta de Dropbox</string>
     <string name="user_guide_activity_name">Guia del Usuario de MobileSheetsPro</string>
     <string name="find_missing_files_activity_name">@string/find_missing_files_pref</string>
-    <string name="print_dialog_activity_name">MobileSheetsPro Imprimir Canciones</string>
-    <string name="batch_edit_activity_name">Edición por Lotes</string>
     <string name="auto_save_turn">Auto Guardar al Cambiar de Página</string>
     
-    <!-- User Guide Activity -->
+        <!-- User Guide Activity -->
     <string name="downloading_latest_manual">Descargando manual más reciente, por favor espere...</string>
     <string name="error_downloading">Ha ocurrido un error descargando el manual más reciente. Se usará la última versión en caché.</string>
     <string name="no_manual_available">No hay una versión del manual disponible en el caché. Conecta a Wi-Fi para descargar el manual.</string>
@@ -1204,6 +1172,7 @@
     <string name="title_row_colors_pref">Color de Filas Alternas</string>
     <string name="summary_row_colors_pref">Proporciona colores de filas alternas para facilitar la distinción de entradas individuales en la pantalla de la librería.</string>
     <string name="title_text_size_pref">Tamaño de Texto de la Librería</string>
+    <string name="summary_text_size_pref">Permite modificar el tamaño de texto de la librería</string>
     <string name="title_text_align_pref">Alineado de Texto</string>
     <string name="summary_text_align_pref">Determina como alinear el texto en las listas de la pantalla de librería.</string>
     <string name="title_tab_order_pref">Orden de Pestañas</string>
@@ -1219,7 +1188,7 @@
     <string name="title_ignore_articles">Artículos Para Ignorar</string>
     <string name="summary_ignore_articles">Ponga la lista de artículos que serán ignorados separados por comas.</string>
     <string name="default_ignore_articles"></string>
-        
+    
     <string name="load_preferences">Opciones al Cargar</string>
     <string name="title_load_next_song_pref">Cargar Automáticamente la Siguiente Canción</string>
     <string name="summary_load_next_song_pref">Si está seleccionado, se carga automáticamente la siguiente canción listada en la pantalla de librería cuando se cambia de página tras la última página de la canción actual. Este ajuste no se aplica si se ha cargado un setlist.</string>
@@ -1272,7 +1241,7 @@
     <string name="summary_overlay_click_pref">Determina qué acción táctil muestra el overlay. Un toque simple siempre lo cierra.</string>
     <string name="title_asps_pref">Visibilidad del Deslizador de Página</string>
     <string name="summary_asps_pref">Determina si el deslizador de página está oculto, mostrándose con el overlay, o siempre visible en la parte inferior de la pantalla mientras se visualiza una canción.</string>
-    
+
     <string name="system_display_preferences">Ajustes del Sistema</string>
     <string name="dim_status_pref">Atenuar la Barra de Estado</string>
     <string name="summary_dim_status_pref">En HoneyComb o posterior, la barra de estado se atenuará mientras vea una canción, en versiones anteriores no tiene efecto. No se atenuará en la pantalla de librería.</string>
@@ -1280,14 +1249,14 @@
     <string name="summary_hide_status_pref">Si se activa esta opción, la barra de navegación se ocultará cuando vea una canción, tendrá que tocar la pantalla para mostrarla. No se ocultará en la pantalla de librería</string> 
     <string name="full_screen_pref">Modo Pantalla Completa</string>
     <string name="summary_full_screen_pref">Habilita el modo pantalla completael cual oculta la barra de notificación de Android en la parte superior de la pantalla. Este ajuste afecta a todas las pantallas.</string>
-            
+        
     <!-- Pedal Settings section -->
     <string name="bluetooth_header">Ajustes Táctiles y del Pedal</string>
     <string name="bluetooth_preferences">Ajustes del Pedal</string>
     <string name="pedal_action_pref">Acciones del Pedal</string>
     <string name="pedal_action_summary">Seleccione las acciones que ocurrirán al pulsar el pedal.</string>
     <string name="prevent_song_change_pref">Prevenir que el Pedal Cambie Canciones</string>
-    <string name="summary_prevent_song_change">Interrumpe el cambio de canciones por el pedal, necesitando en su lugar un toque en la pantalla para ello.</string>
+    <string name="summary_prevent_song_change">Interrumpe el cambio de canciones por el pedal, necesitando en su lugar un toque en la pantalla para ello.</string
     
     <string name="tap_preferences">Ajustes Táctiles</string>
     <string name="tap_action_pref">Acciones Táctiles</string>
@@ -1322,11 +1291,11 @@
     <string name="summary_detect_key_by">Determina como se detecta la tonalidad de un fichero de texto cuando se añade a una canción por primera vez.</string>
     <string name="title_enable_encoding_pref">Mostrar Codificación del Fichero</string>
     <string name="summary_enable_encoding_pref">Despliega una lista para cambiar la codificación del fichero de texto. Habilitelo si ve caracteres ? en su ficheros.</string>
-    <string name="title_auto_size_font_pref">Tamaño Automático de Letra</string>
+ <string name="title_auto_size_font_pref">Tamaño Automático de Letra</string>
     <string name="summary_auto_size_font">Escala automáticamente la letra de los nuevos ficheros chord pro de manera que ocupen tanto ancho de pantalla como sea posible, hasta el tamaño especificado en el ajuste "Máximo Tamaño de Letra".</string>
     <string name="title_max_size_font_pref">Máximo Tamaño de Letra</string>
     <string name="summary_max_size_font_pref">El ajuste máximo que se usará para el escalado automático de letra. Esto asegura que los ficheros con líneas cortas no se vean demasiado grandes en la pantalla.</string>
-    
+       
     <string-array name="transposeMethods">
         <item>Tonalidad</item>
         <item>Pasos</item>
@@ -1352,7 +1321,7 @@
         <item>Genérico</item>
         <item>KORG</item>
     </string-array>
-                
+    
     <!-- Miscellaneous section -->
     <string name="misc_header">Otros Ajustes</string>
     <string name="screen_cpu_header">Bloquear Pantalla y CPU</string>
@@ -1360,14 +1329,13 @@
     <string name="summary_wake_lock_pref">Mantiene la pantalla siempre encendida y asegura que no se apaguen ciertas características (como bluetooth)</string>
     <string name="cpu_lock_pref">Mantener Actividad de la CPU</string>
     <string name="summary_cpu_lock_pref">Impide que la CPU y otros recursos se detengan. Si experimenta problemas con el pedal bluetooth, active este ajuste. Esto consumirá más batería.</string>
-
+    
     <string name="diagnostics">Diagnosticos</string>
     <string name="find_missing_files_pref">Buscar ficheros perdidos</string>
     <string name="summary_find_missing_files">Encuentra canciones en la librería que tienen ficheros perdidos y opcionalmente las borra</string>
     <string name="find_missing_files_title">Buscando ficheros perdidos</string>
     <string name="ab_delete_songs">Borrar Canciones</string>
     <string name="confirm_song_delete">¿Está seguro que quiere borrar todas las canciones de la lista?</string>
-    <string name="missing_file_swap">Error desconocido, incapaz de intercambiar archivos. Pruebe a reiniciar la aplicación. Si este error persiste, póngase en contacto con Zubersoft</string>
     <plurals name="find_missing_files_title">
         <item quantity="one">Encontrada una canción</item>
         <item quantity="other">%1$d canciones encontradas con un total de %2$d  ficheros perdidos</item>
@@ -1375,7 +1343,7 @@
     <string name="expand_all">Expandir Todo</string>
     <string name="collapse_all">Comprimir Todo</string>
     <string name="no_files_missing">No hay ficheros perdidos en la librería.</string>
-
+    
     <string name="misc_preferences">Ajustes Varios</string>
     <string name="stop_audio_back_pref">Parar el Audio al Volver</string>
     <string name="summary_stop_audio_back_pref">Para la reproducción de audio al volver a la pantalla de la librería.</string>
@@ -1392,7 +1360,7 @@
     <string name="reset_settings_msg">¿Está seguro de que quiere borrar todos los ajustes de usuario? Esto no se podrá deshacer.</string>
     <string name="confirm_clear_library_title">Confirmar Borrar Librería</string>
     <string name="confirm_clear_library_msg">Esto borrará toda su librería. Esta acción no se puede deshacer. ¿Está seguro de que desea borrar su librería?</string>
-    
+
     <!-- Backup and Restore section -->
     <string name="backup_restore_header">Copia de Seguridad y Restauración</string>
     <string name="backup_restore_preferences">Copia de Seguridad y Restauración</string>
@@ -1422,7 +1390,7 @@
     <string name="summary_add_unique_id">Añade un identificador único a los ficheros que se importen para evitar conflictos. Úselo si importa habitualmente ficheros con nombres duplicados.</string>
     <string name="dropbox_switch_title">Cambiar Cuenta de Dropbox</string>
     <string name="dropbox_switch_summary">Cambia la cuenta activa de dropbox para la importación de ficheros.</string>  
-            
+          
     <!-- Messages displayed to the user, titles and labels -->
     <string name="export_file_success">Fichero %1$s exportado con éxito</string>
     <string name="share_file_failure">No se pudieron escribir datos en el fichero %1$s. Revise si la tarjeta SD está llena.</string>
@@ -1479,7 +1447,6 @@
     <string name="loading_songs_db">Cargando canciones de la base de datos</string>
     <string name="initial_db">Inicializando base de datos</string>
     <string name="matches_found">Coincidencias Encontradas</string>
-    <string name="no_matches_found">No se encontraron Coincidencias</string>
     <string name="unable_to_load_title">Imposible Cargar Archivo</string>
     <string name="unable_to_load_file">Imposible cargar archivo: %1$s</string>
     <string name="file_overwrite_msg">%1$s ya existe en esa ubicación. ¿Desea sobreescribirlo?</string>
@@ -1523,7 +1490,6 @@
     <string name="backup_success">Copia de Seguridad completada con éxito. Archivo escrito como %1$s</string>
     <string name="backup_error">No se pudo crear el archivo de copia de seguridad %1$s. Error reportado - %2$s</string>
     <string name="backup_db_error">No se pudo escribir la base de datos al archivo de copia de seguridad.</string>
-    <string name="backup_settings_error">No se pudieron escribir los ajustes al fichero de copia de seguridad.</string>
     <string name="no_batch_license">No se permite la Importación por Lotes en una versión sin licencia.</string>
     <string name="lic_ver_req">Requerida Versión con Licencia</string>
     <string name="perf_batch_import">Ejecutando Importación por Lotes</string>
@@ -1531,6 +1497,8 @@
     <string name="batch_import_cancel">La importación por lotes se ha cancelado.</string>
     <string name="batch_import_failed">La importación por lotes no se ha completado debido al siguiente error: 1$s</string>
     <string name="batch_mem_issue">La importación por lotes ha fallado por un error de memoria insuficiente. Por favor, informe de esto a support@zubersoft.com</string>
+    <string name="batch_import_some_failed">La importación por lotes de %1$d canciones se completó con éxito, pero %2$d archivo(s) no pudieron importarse:\n\n</string>
+    <string name="batch_failed_more">y %1$d archivos más</string>
     <string name="batch_import_success">La importación por lotes de %1$d canciones se completó con éxito.</string>
     <string name="confirm_del_song_lib">¿Está seguro de que quiere borrar %1$s de su librería?</string>
     <string name="sel_set_first">Seleccione primero un setlist</string>
@@ -1612,7 +1580,6 @@
     <string name="dropbox_export_error">Hubo un error de Dropbox, imposible exportar</string>
     <string name="file_export_canceled">La exportación ha sido cancelada.</string>
     <string name="export_select_dialog_title">Seleccione Ubicación y Nombre de Fichero para Exportar</string>
-    <string name="export_files_dialog_title">Seleccione Ubicación para Exportar</string>
     <string name="failed_to_move_db">Fallo al mover la base de datos.</string>
     <string name="no_app_found">No se encontró una aplicación que pueda cargar el fichero: %1$s</string>
         
@@ -1752,7 +1719,7 @@
     <string name="conn_pc_good">Conectado al PC&#8230;</string>
     <string name="error_sync_read">Error leyendo un mensaje de la app companion</string>
     <string name="error_sync_write">Error enviando un mensaje a la app companion</string>
-    
+        
     <plurals name="recv_pc_files">
         <item quantity="one">Recibiendo un archivo del PC. Escribiendo archivo a</item>
         <item quantity="other">Recibiendo %d archivos del PC. Escribiendo archivo a</item>
@@ -1798,7 +1765,7 @@
         <item>Izquierda</item>
         <item>Centro</item>
         <item>Derecha</item>    
-    </string-array>
+    </string-array>    
     <string-array name="profiles">
         <item>Estándar</item>
         <item>Configuración 1</item>
@@ -1955,32 +1922,9 @@
     <string name="show_list">Mostrar Lista</string>
     <string name="show_toolbox">Mostrar Caja de Herramientas</string>
     <string name="stylus_mode">Modo del Stylus</string>
-    <string name="write_annotations_to_file">Escribir Anotaciones a un Fichero</string>
     <string name="prev_page">Pág Anterior</string>
     <string name="next_page">Pág Siguiente</string>
     <string name="default_font">Predeterminado del Sistema</string>
-
-    <string name="confirm_write_annotations_title">Escribir Anotaciones a un Fichero</string>
-    <string name="confirm_write_annotations_msg">¿Está seguro que quiere escribir las anotaciones al fichero \'%1$s\'? Esto eliminará las anotaciones de MobileSheetsPro y no podrá editarlas.</string>
-    <string name="confirm_convert_text_pdf">¿Está seguro que quiere escribir las anotaciones a un fichero? Esto convertirá \'%1$s\' a PDF y Vd. no podrá editar más las anotaciones de la canción.</string>
-    <string name="writeAnnLabel">Escribir:</string>
-    <string-array name="writeAnnOptionsImg">
-        <item>Página actual</item>
-        <item>Todas las páginas de la canción actual</item>
-    </string-array>
-    <string-array name="writeAnnOptions">
-        <item>Página actual</item>
-        <item>Todas las páginas en el fichero actual</item>
-        <item>Todas las páginas en la canción actual</item>
-    </string-array>
-    <string name="cbDeleteAfterConversion">Borrar ficheros originales después de la conversión (si no son PDFs)</string>
-    <string name="cbReplacePageOrder">Remplazar fichero con orden de página a medida</string>
-    <string name="cbSaveCroppingToFile">Guardar recorte a ficheros de imagen</string>
-    <string name="cbSaveRotationToFile">Guardar rotación a ficheros de imagen</string>
-    <string name="warningAnnDupPage">Atención: Múltiples páginas en el orden actual se refieren a la misma página en el fichero. Las anotaciones se combinarán en dicha página.</string>
-    <string name="writingToFileTitle">Escribiendo a fichero</string>
-    <string name="writingToFileMsg">Escribiendo a fichero, por favor espere...</string>
-    <string name="errorExportingAnnotations">Se encontró un error exportando las anotaciones. Intente reiniciar MobileSheetsPro e inténtelo de nuevo. Si el problema persiste, por favor contacte con support@zubersoft.com</string>
     
     <string-array name="drawTypes">
         <item>Línea</item>
