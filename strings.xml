@@ -936,7 +936,7 @@
     <string name="mi_remove_from_setlist">Eliminar del Setlist</string>
     <string name="mi_add_to_collection">Añadir a la Colección</string>
     <string name="mi_remove_from_collection">Eliminar de la Colección</string>
-    <string name="mi_swap_pdf">Intercambiar PDF</string>
+    <string name="mi_swap_file">Intercambiar Fichero</string>
     <string name="mi_view_edit_notes">Ver o Editar Notas</string>
         
     <string name="mi_copy_group">Copiar</string>
