@@ -128,9 +128,29 @@
     <string name="ab_configure_fields">Configure Fields</string>
     <string name="ab_settings">Settings</string>
     <string name="ab_share">Share</string>
-    <string name="ab_export">Export</string>
     <string name="ab_share_msf">Share as .msf</string>
     <string name="ab_share_files">Share files</string>
+    <string name="ab_export_msf">Export as .msf</string>
+    <string name="ab_export_files">Export files</string>
+
+    <string name="export_dialog_title">Export Files</string>
+    <string name="cb_export_page_order">Use Song page ordering for exported files</string>
+    <string name="cb_export_cropping">Export with cropping</string>
+    <string name="cb_export_rotation">Export with rotation</string>
+    <string name="cb_export_annotations">Export with annotations</string>
+    <string name="cb_join_files">Join into one PDF</string>
+    <string name="export_text_warning">Warning: Text and chord pro files must be converted to PDFs to support annotations.</string>
+    <string name="exporting_title">Export in Progress</string>
+    <string name="exporting_msg">Exporting, please wait...</string>
+    <string name="export_failed">Export operation failed. Ensure the song is not missing files, restart the application and try again</string>
+    <string name="exporting_file">Exporting file %1$s</string>
+
+    <string name="share_options_title">File Sharing Options</string>
+    <string name="cb_share_page_order">Use Song page ordering for shared files</string>
+    <string name="cb_share_cropping">Share with cropping</string>
+    <string name="cb_share_rotation">Share with rotation</string>
+    <string name="cb_share_annotations">Share with annotations</string>
+    <string name="write_out_share">Writing out file %1$s</string>
     
     <string name="ab_add_songs_to_setlist">Add Songs to Setlist</string>
     <string name="ab_add_songs_to_collection">Add Songs to Collection</string>
@@ -138,6 +158,11 @@
     <string name="ab_remove_songs_from_collection">Remove Songs from Collection</string>
     <string name="ab_create_setlist_from_songs">Create Setlist from Songs</string>
     <string name="ab_create_collection_from_songs">Create Collection from Songs</string>
+    <string name="ab_print">Print</string>
+
+    <string name="print_creating_doc_title">Creating Print Document</string>
+    <string name="print_creating_doc_msg">Constructing document to print...</string>
+    <string name="print_creation_failed">Error encountered while printing document.</string>
     
     <!-- configure_fields_layout.xml -->
     <string name="configure_fields_title">Select Fields to Show</string>
@@ -182,6 +207,7 @@
     <string name="source_type_long_label">Source Type:</string>
     <string name="collection_long_label">Collection:</string>
     <string name="ratingLabel">Rating:</string>
+    <string name="songs_to_edit">Songs to Edit:</string>
     
     <string name="unsupported_file_type">Unsupported file type selected. Please select one of the supported types such as PDF.</string>
     
@@ -246,6 +272,7 @@
     <string name="err_db_not_init">Database is not initialized for some reason. Try exiting the settings screen and try again.</string>
     <string name="select_backup_dest">Select a backup destination</string>
     <string name="check_backup_audio">Backup Audio files</string>
+    <string name="check_backup_settings">Backup Settings</string>
     <string name="backup_select_dialog_title">Select Backup File Name</string>
     <string name="uploading_file_dpbox">Uploading File to Dropbox</string>
     
@@ -538,6 +565,7 @@
     <string name="restoreToLabel">Restore To:</string>
     <string name="checkCreateSubdirs">Create Subdirectory Per Song</string>
     <string name="delete_all_files">Delete all existing files in default storage location (Recommended)</string>
+    <string name="restore_settings">Restore Settings (if found in backup file)</string>
     <string name="no_internet_connection">Cannot Connect to Dropbox - No Connection to Internet Detected</string>
         
     <!-- sharing -->
@@ -572,6 +600,8 @@
     <string name="rotationLabel">Rotation:</string>
     <string name="autoCropButton">Auto-Crop</string>
     <string name="resetCropButton">Reset Crop</string>
+    <string name="rotatingTitle">Rotating Pages</string>
+    <string name="rotatingMsg">Performing rotation, please wait...</string>
         
     <string name="startEndLabel">Track Start/End:</string>
     
@@ -1135,6 +1165,8 @@
     <string name="switch_dropbox_activity_name">Switch Dropbox Account</string>
     <string name="user_guide_activity_name">MobileSheetsPro User Guide</string>
     <string name="find_missing_files_activity_name">@string/find_missing_files_pref</string>
+    <string name="print_dialog_activity_name">MobileSheetsPro Print Songs</string>
+    <string name="batch_edit_activity_name">Batch Edit</string>
     <string name="auto_save_turn">Auto-save on Page Turn</string>
     
     <!-- User Guide Activity -->
@@ -1172,7 +1204,6 @@
     <string name="title_row_colors_pref">Alternate Row Color</string>
     <string name="summary_row_colors_pref">Provides alternating row colors to make it easier to distinguish individual entries on the library screen.</string>
     <string name="title_text_size_pref">Library Text Size</string>
-    <string name="summary_text_size_pref">Allows the library text size to be modified.</string>
     <string name="title_text_align_pref">Text Alignment</string>
     <string name="summary_text_align_pref">Determines how to align the text in the library screen lists.</string>
     <string name="title_tab_order_pref">Tab Order</string>
@@ -1336,6 +1367,7 @@
     <string name="find_missing_files_title">Locating missing files</string>
     <string name="ab_delete_songs">Delete Songs</string>
     <string name="confirm_song_delete">Are you sure you want to delete all of the songs shown in the list?</string>
+    <string name="missing_file_swap">Unknown error occurred, unable to swap file. Try restarting the application. If this error persists, please contact Zubersoft</string>
     <plurals name="find_missing_files_title">
         <item quantity="one">One song found</item>
         <item quantity="other">%1$d songs found with %2$d total missing files</item>
@@ -1447,6 +1479,7 @@
     <string name="loading_songs_db">Loading songs from database</string>
     <string name="initial_db">Initializing database</string>
     <string name="matches_found">Matches Found</string>
+    <string name="no_matches_found">No Matches Found</string>
     <string name="unable_to_load_title">Unable to Load File</string>
     <string name="unable_to_load_file">Unable to load file: %1$s</string>
     <string name="file_overwrite_msg">%1$s already exists at that location. Would you like to overwrite it?</string>
@@ -1490,6 +1523,7 @@
     <string name="backup_success">Backup completed successfully. File written to %1$s</string>
     <string name="backup_error">Unable to create backup file %1$s. Reported error - %2$s</string>
     <string name="backup_db_error">Unable to write out database to backup file.</string>
+    <string name="backup_settings_error">Unable to write out settings to backup file.</string>
     <string name="no_batch_license">Batch Importing is not allowed without a licensed version.</string>
     <string name="lic_ver_req">Licensed Version Required</string>
     <string name="perf_batch_import">Performing Batch Import</string>
@@ -1497,8 +1531,6 @@
     <string name="batch_import_cancel">The batch import has been canceled.</string>
     <string name="batch_import_failed">The batch import has failed to complete due to the following error: %1$s</string>
     <string name="batch_mem_issue">The batch import has failed due to an out of memory error. Please report this to support@zubersoft.com</string>
-    <string name="batch_import_some_failed">Batch import of %1$d songs completed successfully, but %2$d file(s) failed to import:\n\n</string>
-    <string name="batch_failed_more">and %1$d more files</string>
     <string name="batch_import_success">Batch import of %1$d songs completed successfully.</string>
     <string name="confirm_del_song_lib">Are you sure you want to remove %1$s from your library?</string>
     <string name="sel_set_first">Select a setlist first</string>
@@ -1580,6 +1612,7 @@
     <string name="dropbox_export_error">Dropbox error encountered, unable to export</string>
     <string name="file_export_canceled">The export has been canceled.</string>
     <string name="export_select_dialog_title">Select the Export Location and Filename</string>
+    <string name="export_files_dialog_title">Select the Export Location</string>
     <string name="failed_to_move_db">Failed to move the database.</string>
     <string name="no_app_found">No application found that supports loading file: %1$s</string>
         
@@ -1722,7 +1755,7 @@
     
     <plurals name="recv_pc_files">
         <item quantity="one">Receiving one file from PC. Writing file to</item>
-        <item quantity="other">Receiving %d files from PC. Writing file to</item>
+        <item quantity="other">Receiving %d files from PC. Writing files to</item>
     </plurals>
     
     <!-- Link colors -->
@@ -1922,9 +1955,32 @@
     <string name="show_list">Show List</string>
     <string name="show_toolbox">Show Toolbox</string>
     <string name="stylus_mode">Stylus Mode</string>
+    <string name="write_annotations_to_file">Write Annotations to File</string>
     <string name="prev_page">Prev Page</string>
     <string name="next_page">Next Page</string>
     <string name="default_font">System Default</string>
+
+    <string name="confirm_write_annotations_title">Write Annotations to File</string>
+    <string name="confirm_write_annotations_msg">Are you sure you want to write the annotations to file \'%1$s\'? This will remove the annotations from MobileSheetsPro and you will not be able to edit them.</string>
+    <string name="confirm_convert_text_pdf">Are you sure you want to write the annotations to file? This will convert \'%1$s\' to PDF and you will no longer be able to edit the song\'s annotations.</string>
+    <string name="writeAnnLabel">Write:</string>
+    <string-array name="writeAnnOptionsImg">
+        <item>Current page</item>
+        <item>All pages in current song</item>
+    </string-array>
+    <string-array name="writeAnnOptions">
+        <item>Current page</item>
+        <item>All pages in current file</item>
+        <item>All pages in current song</item>
+    </string-array>
+    <string name="cbDeleteAfterConversion">Delete original files after conversion (if not PDFs)</string>
+    <string name="cbReplacePageOrder">Replace file with custom page order</string>
+    <string name="cbSaveCroppingToFile">Save cropping to image files</string>
+    <string name="cbSaveRotationToFile">Save rotation to image files</string>
+    <string name="warningAnnDupPage">Warning: Multiple pages in the current page order refer to the same page in the file. Annotations will be combined on the same page.</string>
+    <string name="writingToFileTitle">Writing to file</string>
+    <string name="writingToFileMsg">Writing to file, please wait...</string>
+    <string name="errorExportingAnnotations">An error was encountered while exporting annotations. Try restarting MobileSheetsPro and then try again. If this problem persists, please contact support@zubersoft.com</string>
     
     <string-array name="drawTypes">
         <item>Line</item>
