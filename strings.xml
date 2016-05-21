@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- common -->
     <string name="okText">OK</string>
@@ -98,7 +98,8 @@
     <string name="sort_numerically">Orden: Numérico</string>
     <string name="sort_by_field">Orden: %1$s</string>
     <string name="byField">por Campo:</string>
-    
+    <string name="checkAscending">Ascendente</string>
+
     <string name="sort_manual">Orden: Manual</string>
     <string name="sort_shuffle">Orden: Mezclar</string>
     <string name="reshuffle">Remezclar</string>
@@ -111,17 +112,25 @@
         <item>Numérico</item>
     </string-array>
     
-    <string-array name="setlist_sort_options">
+    <string-array name="group_sort_options">
         <item>Manual</item>
         <item>A-Z</item>
         <item>Mezclar</item>
+        <item>Fecha de Creación</item>
+        <item>Fecha de Modificación</item>
+    </string-array>
+
+    <string-array name="group_tab_sort_options">
+        <item>A-Z</item>
+        <item>Fecha de Creación</item>
+        <item>Fecha de Modificación</item>
     </string-array>
     
     <string name="select_sort_title">Seleccione Método de Ordenación</string>
     
-    <string name="setlist_currently_sorted">El setlist está ordenado. Si lo guarda sobrescribirá el orden original. ¿Está seguro?</string>
-    <string name="setlist_confirm_order_save">Esto sobreescribirá el ordenado manual por el mezclado.¿Seguro que desea hacerlo?</string>
-    <string name="setlist_order_updated">Actualizado con éxito el orden del setlist.</string>    
+    <string name="group_currently_sorted">La lista está ordenado. Si lo guarda sobrescribirá el orden original. ¿Está seguro?</string>
+    <string name="group_confirm_order_save">Esto sobreescribirá el ordenado manual por el mezclado.¿Seguro que desea hacerlo?</string>
+    <string name="group_order_updated">Actualizado con éxito el orden.</string>
     
     <!-- action_bar.xml -->
     <string name="ab_edit">Editar</string>
@@ -133,15 +142,21 @@
     <string name="ab_export_msf">Exportar como .msf</string>
     <string name="ab_export_files">Exportar como ficheros</string>
 
+    <string name="ab_share_setlist_mss">Compartir lista de canciones</string>
+    <string name="ab_share_setlist_songs">Compartir canciones y ficheros</string>
+    <string name="ab_export_setlist_mss">Exportar lista de canciones</string>
+    <string name="ab_export_setlist_songs">Exportar canciones y ficheros</string>
+
     <string name="export_dialog_title">Exportar Ficheros</string>
     <string name="cb_export_page_order">Usar el orden de páginas de la Canción para los ficheros exportados</string>
     <string name="cb_export_cropping">Exportar con recorte</string>
     <string name="cb_export_rotation">Exportar con rotación</string>
     <string name="cb_export_annotations">Export con anotaciones</string>
     <string name="cb_join_files">Unir en un solo PDF</string>
+    <string name="cb_export_audio">Exportar ficheros de audio</string>
     <string name="export_text_warning">Atención: Los ficheros de Texto y chord pro deben convertirse a PDF para soportar anotaciones.</string>
     <string name="exporting_title">Exportación en Progreso</string>
-    <string name="exporting_msg">Exportando, por favor espere...</string>
+    <string name="exporting_msg">Exportando, por favor espere&#8230;</string>
     <string name="export_failed">Falló la exportación. Compruebe que no le faltan ficheros a la canción, restaure la aplicación y pruebe de nuevo</string>
     <string name="exporting_file">Exportando fichero %1$s</string>
 
@@ -161,7 +176,7 @@
     <string name="ab_print">Imprimir</string>
 
     <string name="print_creating_doc_title">Creando Documento de Impresión</string>
-    <string name="print_creating_doc_msg">Construyendo documento a imprimir...</string>
+    <string name="print_creating_doc_msg">Construyendo documento a imprimir&#8230;</string>
     <string name="print_creation_failed">Se encontró un error imprimiendo el documento.</string>
     
     <!-- configure_fields_layout.xml -->
@@ -213,14 +228,26 @@
     
     <string name="group_creation_successful">%1$s %2$s creados satisfactoriamente con %3$d canciones</string>
     
-    <string name="file_changes_detected">Se han detectado modificaciones del fichero. Procesando los cambios...</string>
+    <string name="file_changes_detected">Se han detectado modificaciones del fichero. Procesando los cambios&#8230;</string>
     
     <string name="select_edit_target">Seleccione el elemento para editar</string>
     <string name="share_title">Introduzca el nuevo nombre</string>
+    <string name="export_settings">Exportar Ajustes</string>
     
     <string name="display_modes_title">Seleccione el modo de visualización</string>
     <string name="scale_modes_title">Seleccione el modo de escalado</string>
     <string name="two_page_turn_mode_title">Seleccione el modo de pasar página</string>
+
+    <string name="waiting_for_storage_title">Esperando Ubicación de Almacenamiento</string>
+    <string name="waiting_for_storage">Esperando a acceder a la ubicación de almacenamiento&#8230;</string>
+    <string name="ext_storage_unavailable">MobileSheetPro no puede acceder a la ubicación actual de almacenamiento: %1$s.\n\nSi la ubicación está en una SD extraible, asegúrece que la tarjeta está insertada y cargada correctamente por el S.O. Si acaba de reiniciar el dispositivo, El S.O. puede estar aún en el proceso de montarla. Por favor seleccione una acción de las siguientes:</string>
+    <string name="ext_storage_unavail_title">Ubicación de Almacenamiento Inaccessible</string>
+
+    <string-array name="storage_unavail_options">
+        <item>Continuar esperando</item>
+        <item>Cambiar ubicación de almacenamiento a la predeterminada</item>
+        <item>Salir de MobileSheetsPro</item>
+    </string-array>
     
     <string-array name="display_modes">
         <item>Una Página</item>
@@ -271,10 +298,10 @@
     <!-- backup_activity.xml -->
     <string name="err_db_not_init">La Base de Datos no se ha inicializado por alguna razón. Salga de la pantalla de ajustes y reinténtelo.</string>
     <string name="select_backup_dest">Seleccione un destino para la copia de seguridad</string>
-    <string name="check_backup_audio">Hacer copia de seguridad de archivos de Audio</string>
-    <string name="check_backup_settings">Opciones de Copia de Seguridad</string>
+    <string name="check_backup_audio">Incluir ficheros de Audio</string>
+    <string name="check_backup_settings">Incluir Ajustes de MSPro</string>
     <string name="backup_select_dialog_title">Seleccione el nombre de archivo para la copia de seguridad</string>
-    <string name="uploading_file_dpbox">Subiendo Archivo a DropBox</string>
+    <string name="uploading_file_cloud">Subiendo Archivo a %1$s</string>
     
     <!-- batch_import_activity.xml -->
     <string name="dir_import_label">Importar Carpetas:</string>
@@ -305,6 +332,7 @@
     <!-- bookmark window -->
     <string name="confirm_delete_bookmark">¿Está seguro que quiere borrar el marcador %1$s?</string>
     <string name="bookmarksDisplayAll">Mostrar Todas las Canciones</string>
+    <string name="showPdfBookmarks">Mostrar Marcadores PDF</string>
     
     <!-- collection_name_dialog.xml -->
     <string name="nameLabel">Nombre:</string>
@@ -341,6 +369,26 @@
         
     <!-- edit notes dialog -->
     <string name="edit_notes_title">Editar notas de %1$s</string>
+    <string name="noteTypesLabel">Tipo:</string>
+    <string name="cbNotesShow">Mostrar notas cuando se muestre la canción</string>
+    <string name="displayNotesLabel">Mostrar notas:</string>
+    <string-array name="noteTypes">
+        <item>Notas de la canción</item>
+        <item>Notas del setlist</item>
+    </string-array>
+    <string-array name="displayNotesOptions">
+        <item>Hasta pulsar</item>
+        <item>Durante 1 segundo</item>
+        <item>Durante 2 segundo</item>
+        <item>Durante 3 segundo</item>
+        <item>Durante 4 segundo</item>
+        <item>Durante 5 segundo</item>
+        <item>Durante 6 segundo</item>
+        <item>Durante 7 segundo</item>
+        <item>Durante 8 segundo</item>
+        <item>Durante 9 segundo</item>
+        <item>Durante 10 segundo</item>
+    </string-array>
         
     <!-- email_activity -->
     <string name="addressLabel">Email:</string>
@@ -449,6 +497,40 @@
     <string name="extracting_song">Extrayendo canción \'%1$s\'</string>
     <string name="extracting_setlist">Extrayendo setlist \'%1$s\'</string>
     <string name="extracting_song_from_setlist">Extrayendo canción \'%1$s\' del setlist \'%2$s\'</string>
+
+    <string name="created_setlist">Creado setlist \'%1$s\'</string>
+    <string name="updating_setlist">Actualizando  setlist \'%1$s\'</string>
+    <string name="setlist_name_not_found">No se ha encontrado un nombre de setlist en %1$s. El fichero no es válido.</string>
+    <string name="song_no_match_found">No se encontró la canción para \'%1$s\'. Omitiendo la canción.</string>
+    <string name="added_song_setlist">La canción  %1$s se ha añadido correctamente al setlist.</string>
+    <string name="matching_songs_title">Cancion coincidente encontrada</string>
+    <string name="matching_songs_msg">Se encontraron varias canciones que tienen el mismo título y nombre de fichero. por favor, escoja la canción que usará en el setlist.</string>
+    <string name="skipped_song">Canción  %1$s omitida</string>
+
+    <string name="cb_include_metadata">Incluir metadatos</string>
+    <string name="cb_include_annotations">Incluir anotaciones</string>
+    <string name="cb_include_midi">Incluir comandos MIDI</string>
+    <string name="cb_include_audio">Incluir ficheros de audio</string>
+
+    <string-array name="song_conflict_actions">
+        <item>Crear canción nueva</item>
+        <item>Actualizar canción existente</item>
+    </string-array>
+
+    <!-- import index dialog -->
+    <string name="index_progress_title">Leyendo Fichero Índice</string>
+    <string name="index_progress_msg">Leyendo fichero índice, por favor espere ...</string>
+    <string name="pdf_bookmarks_progress_title">Leyendo Marcadores PDF</string>
+    <string name="pdf_bookmarks_progress_msg">Leyendo marcadores PDF, por favor espere ...</string>
+    <string name="import_index_title">Seleccionar Canciones para Importar</string>
+    <string name="check_show_pages">Mostrar números de página</string>
+    <string name="check_show_details">Mostrar detalles</string>
+    <string name="csv_pdf_not_found">No se encuentra PDF para %1$s</string>
+    <string name="pdf_bookmarks_not_found">No se encuentran marcadores para %1$s</string>
+    <string name="csv_no_columns">No se encuentran columnas al principio del fichero CSV</string>
+    <string name="csv_invalid_columns">Todas las columnas del CSV son inválidas</string>
+    <string name="csv_title_not_found">No hay columna de título en el CSV y es necesaria</string>
+    <string name="csv_pages_not_found">No hay columna de páginas en el CSV y es necesaria</string>
         
     <!-- midi_dialog_layout.xml -->
     <string name="commandTypeLabel">Tipo de Comando:</string>
@@ -491,6 +573,7 @@
     <string name="select_none">Seleccionar Ninguno</string>
     <string name="select_all">Seleccionar Todos</string>
     <string name="unassigned">Sin Asignar</string>
+    <string name="assigned">Asignado</string>
     
     <!-- next_up_settings_dialog.xml -->
     <string name="showNextUpLabel">Mostrar Canción Siguiente:</string>
@@ -578,6 +661,7 @@
     <string name="new_song_title">Introduzca los datos para la nueva Canción</string>
     <string name="copying_title">Editando Copia: %1$s</string>
     <string name="new_song_edit_title">Nueva Canción: %1$s</string>
+    <string name="save_edit_next">Guardar y editar el siguiente</string>
     
     <string name="fieldsTab">Campos</string>
     <string name="filesTab">Fichero </string>
@@ -586,8 +670,8 @@
     
     <string name="audioFileLabel">Ficheros de Audio:</string>
     <string name="manage_song_name">Editor de Canciones de MobileSheetsPro</string>
-    <string name="starting_dropbox_download">Descarga archivos de Dropbox</string>
-    <string name="initiating_dropbox_connection">Iniciando conexión a Dropbox</string>
+    <string name="starting_cloud_download">Descarga archivos de %1$s</string>
+    <string name="initiating_cloud_connection">Iniciando conexión a %1$s</string>
     <string name="customSortTitleLabel">Título de Ordenación:</string>
     <string name="addToSetlistsLabel">Añadir a los Setlists:</string>
     <string name="addToCollectionsLabel">Añadir a las Colecciones:</string>
@@ -601,7 +685,7 @@
     <string name="autoCropButton">Auto Recorte</string>
     <string name="resetCropButton">Reinicializar Recorte</string>
     <string name="rotatingTitle">Rotando Páginas</string>
-    <string name="rotatingMsg">Realizando rotación, por favor espere...</string>
+    <string name="rotatingMsg">Realizando rotación, por favor espere&#8230;</string>
         
     <string name="startEndLabel">Pista Inicio/Fin:</string>
     
@@ -626,8 +710,11 @@
         <item quantity="one">%1$d Página en Blanco</item>
         <item quantity="other">%1$d Páginas en Blanco</item>
     </plurals>
-    
-    <string name="accept_discard_changes">¿Está seguro de que desea descartar todos los cambios?</string>
+
+    <string name="accept_discard_title">Cambios No Guardados</string>
+    <string name="accept_discard_changes">¿Quiere guardar sus cambios?</string>
+    <string name="save_changes">Guardar Cambios</string>
+    <string name="discard_changes">Descartar Cambios</string>
     
     <string name="getting_duration_title">Recuperando la información de Audio</string>
     <string name="getting_duration_msg">Cargando el fichero de audio para recuperar la  información de pista, espere&#8230;</string>
@@ -639,15 +726,17 @@
     
     <string name="add_a_file_msg">Añada un fichero usando uno de los botones junto a la lista de ficheros.</string>
     <string name="processing_file_modifications_title">Se detectaron modificaciones del fichero</string>
-    <string name="processing_file_modifications_msg">Procesando las modificaciones del fichero, espere...</string>
+    <string name="processing_file_modifications_msg">Procesando las modificaciones del fichero, espere&#8230;</string>
     
     <string name="copying_file_title">Copiando fichero</string>
-    <string name="copying_file_msg">Copiando el fichero a la tableta, espere...</string>
+    <string name="copying_file_msg">Copiando el fichero a la tableta, espere&#8230;</string>
     
     <string name="ab_text_display_settings">Ajustes del fichero de texto</string>
 
+    <string name="enter_filename_title">Introduzca el Nombre del Nuevo Fichero</string>
+
     <string-array name="editor_conflict_options">
-        <item>Remplazar Fichero</item>
+        <item>Reemplazar Fichero</item>
         <item>Renombrar Fichero</item>
         <item>Usar Fichero Existente</item>
     </string-array>
@@ -690,6 +779,13 @@
     <string name="disable_aggressive_crop">Deshabilitar Recorte Agresivo</string>
     
     <string name="crop_apply_title">¿Aplicar recorte a cual?</string>
+
+    <string-array name="crop_editor_apply_choices">
+        <item>Solo la página actual</item>
+        <item>Todas las páginas de este fichero</item>
+        <item>Todas las páginas de todos los ficheros</item>
+        <item>@string/apply_all_songs_in_setlist</item>
+    </string-array>
     
     <!-- Pedal Settings Activity -->
     <string name="debounceLabel">Evitar Rebotes:</string>
@@ -736,7 +832,22 @@
         <item>Ir al Marcador Anterior</item>
         <item>Ir al Marcador Siguiente</item>
         <item>Comenzar o Parar Auto Desplazamiento</item>
+        <item>Ir a la Página Anterior o hacer Bucle Final de la Canción</item>
+        <item>Ir a la Página Siguiente o hacer Bucle al Principio de la Canción</item>
+        <item>Anotar Canción</item>
     </string-array>
+
+    <!-- Text Editor Activity -->
+    <string name="ab_transpose">Transponer</string>
+    <string name="ab_insert">Insertar</string>
+    <string name="ab_move">Mover</string>
+    <string name="ab_preview">Vista Previa</string>
+
+    <string name="ab_te_chord">Acorde</string>
+    <string name="ab_te_comment">Comentario</string>
+    <string name="ab_te_chorus">Sección de Coro</string>
+    <string name="ab_te_tab">Sección de Tablatura</string>
+    <string name="ab_te_rep_chorus">Repetir Coro</string>
     
     <!-- Touch Settings Activity -->
     <string name="touch_activity_title">Configurar Acciones Táctiles</string>
@@ -745,8 +856,10 @@
     <string name="labelTopRight">Esquina Superior Derecha:</string>
     <string name="labelBottomLeft">Esquina Inferior Izquierda:</string>
     <string name="labelBottomCenter">Centro Inferior:</string>
+    <string name="labelBottomRight">Esquina Inferior Derecha:</string>
     <string name="labelTwoFingerTap">Golpe con Dos Dedos:</string>
     <string name="labelThreeFingerTap">Golpe con Tres Dedos:</string>
+    <string name="labelQabLocation">Caja de Acciones Rápidas:</string>
     
     <string-array name="touch_actions">
         <item>Ninguna</item>
@@ -768,6 +881,15 @@
         <item>Ir al Marcador Siguiente</item>
         <item>Iniciar o Parar Desplazamiento</item>
         <item>@string/reset_pan_zoom</item>
+        <item>@string/create_snippet_title</item>
+    </string-array>
+
+    <string-array name="qab_locations">
+        <item>@string/disabled</item>
+        <item>Esquina Superior Izquierda</item>
+        <item>Esquina Superior Derecha</item>
+        <item>Esquina Inferior Izquierda</item>
+        <item>Esquina Inferior Derecha</item>
     </string-array>
     
     <!-- Tab Order Activity -->
@@ -819,7 +941,7 @@
     <string name="fileToReplaceLabel">Fichero Existente:</string>
     <string name="autoCrop">Recortar automáticamente las páginas</string>
     <string name="checkCopyOrMove">Copiar o Mover Nuevo Fichero</string>
-    <string name="select_file_to_replace">Seleccione el Fichero a remplazar</string>
+    <string name="select_file_to_replace">Seleccione el Fichero a reemplazar</string>
     <string name="copy_move_error">La operación de intercambio ha fallado cuando se movía o copiaba el fichero. El error producido es %1$s</string>
     <string name="swap_move_error">La operación de intercambio ha fallado intentando mover el fichero deseado.</string>
     <string name="storage_unaccessible">Imposible acceder a la ubicación de almacenamiento especificada en los ajustes.</string>
@@ -905,6 +1027,7 @@
     <string name="scrollOnLoad">Comenzar desplazamiento cuando se cargue la canción</string>
     <string name="btnApplyTo">Aplicar a&#8230;</string>
     <string name="setAsDefault">Establecer como por defecto</string>
+    <string name="resetToDefaults">Restaurar a Valores por Defecto</string>
     <string name="default_set">Los ajustes actuales son ahora los ajustes de desplazamiento por defecto</string>
     <string name="apply_to_title">Aplicar los ajustes de desplazamiento a</string>
     <string name="settings_applied">Ajustes de desplazamiento ajustados con éxito</string>
@@ -928,10 +1051,12 @@
         <item>Duración fija</item>
         <item>Usar metrónomo</item>
     </string-array>
+
+    <string name="apply_all_songs_in_setlist">Todas las canciones en el Setlist</string>
     
     <string-array name="applyToScroll">
         <item>Canción actual</item>
-        <item>Todas las canciones en el Setlist</item>
+        <item>@string/apply_all_songs_in_setlist</item>
         <item>Todas las canciones en la Librería</item>
     </string-array>
     
@@ -945,6 +1070,8 @@
     <string name="labelChordHighlight">Resaltado de Acordes:</string>
     <string name="labelLyricsSize">Tamaño de Letra:</string>
     <string name="labelChordsSize">Tamaño de Acordes:</string>
+    <string name="labelTabSize">Tamaño de Tablatura:</string>
+    <string name="labelChorusSize">Tamaño de Chorus:</string>
     <string name="labelChordColor">Color de Acordes:</string>
     <string name="labelTranspose">Transportar:</string>
     <string name="labelCapo">Cejilla:</string>
@@ -960,7 +1087,6 @@
     
     <string-array name="applyToTextSettings">
         <item>Fichero actual</item>
-        <item>Todos los ficheros en la canción actual</item>
         <item>Todos los ficheros en el setlist</item>
         <item>Todos los ficheros en la librería</item>
     </string-array>
@@ -994,10 +1120,10 @@
     
     <string name="mi_load_start_of_song">Cargar Inicio de la Canción</string>
     <string name="mi_load_last_viewed_page">Cargar la Última Página Visualizada</string>
-    <string name="mi_edit_song">Editar Canción</string>
-    <string name="mi_copy_song">Copiar Canción</string>
+    <string name="mi_edit_song">Editar</string>
+    <string name="mi_copy_song">Copiar</string>
     <string name="mi_remove">Eliminar</string>
-    <string name="mi_delete_song">Eliminar Canción</string>
+    <string name="mi_delete_song">Eliminar</string>
     <string name="mi_delete_song_library">Borrar Canción de la Librería</string>
     <string name="mi_add_to_setlist">Agregar al Setlist</string>
     <string name="mi_remove_from_setlist">Eliminar del Setlist</string>
@@ -1029,6 +1155,8 @@
     <string name="ab_local_file">Fichero Local</string>
     <string name="ab_dropbox_file">Dropbox</string>
     <string name="ab_external_cloud_file">Externo/Cloud</string>
+    <string name="ab_batch_audio">Importar Audio por Lotes</string>
+    <string name="ab_import_index">Marcadores CSV o PDF</string>
     
     <string name="ab_show_filters">Mostrar Filtros</string>
     <string name="ab_hide_filters">Ocultar Filtros</string>
@@ -1041,6 +1169,7 @@
     <string name="sharpen_image">Mejorar Imagen</string>
     <string name="orientation">Orientación</string>
     <string name="text_display_settings">Ajustes de Visualización de Texto</string>
+    <string name="edit_text_file">Editar Fichero</string>
     
     <string name="start_scroll">Comenzar Desplazamiento</string>
     <string name="scroll_settings">Ajustes de Desplazamiento</string>
@@ -1108,13 +1237,14 @@
     <string name="copy_metadata">Copiar Metadatos</string>
     <string name="copy_annotations">Copiar Anotaciones</string>
     <string name="load_after_creation">Cargar Fragmento Después de Crearlo</string>
+    <string name="edit_snippet_after_creation">Editar Fragmento Después de Crearlo</string>
     <string name="creating_snippet_title">Creando Fragmento</string>
-    <string name="creating_snippet_msg">Creando Fragmento en la Base de Datos, espere...</string>
+    <string name="creating_snippet_msg">Creando Fragmento en la Base de Datos, espere&#8230;</string>
     
     <!-- Restore Database Activity -->
     <string name="no_backups_available">No hay copias de seguridad de la base de datos disponibles.</string>
     <string name="confirm_db_replace_title">Confirme el cambio de la base de datos</string>
-    <string name="confirm_db_replace_msg">¿Está seguro de que quiere remplazar completamente la base de datos? Esta acción no se podrá deshacer y puede ocasionar la pérdida del contenido de la librería. Restaurar una copia de seguridad de la base de datos es el método preferido para recuperarla</string>
+    <string name="confirm_db_replace_msg">¿Está seguro de que quiere reemplazar completamente la base de datos? Esta acción no se podrá deshacer y puede ocasionar la pérdida del contenido de la librería. Restaurar una copia de seguridad de la base de datos es el método preferido para recuperarla</string>
     <string name="db_restore_successful_title">Restauración Completada</string>
     <string name="db_restore_successful_msg">La base de datos ha sido restaurada correctamente.</string>
     <string name="db_restore_failed_title">Restauración Fallida</string>
@@ -1125,6 +1255,9 @@
     <string name="find_song_title">Buscar y Cargar una Canción</string>
     <string name="positionSetlistLabel">Posición en el Setlist:</string>
     <string name="positionLabel">Posición:</string>
+
+    <!-- Transpose dialog -->
+    <string name="original_key">CLAVE ORIGINAL: %1$s</string>
     
     <!-- Misc strings -->
     <string name="not_specified_text">Sin Especificar</string>
@@ -1153,6 +1286,7 @@
     <string name="group_editor_activity_name">Editor de Grupos de MobileSheetsPro</string>
     <string name="sync_activity_name">Sincronización con PC de MobileSheetsPro</string>
     <string name="batch_import_activity_name">Importador de Archivos por Lotes de MobileSheetsPro</string>
+    <string name="batch_import_audio_activity_name">Importar Ficheros de Audio por Lotes</string>
     <string name="convert_pdf_activity_name">Conversor PDF de MobileSheetsPro</string>
     <string name="import_activity_name">Importar base de datos de MobileSheetsPro</string>
     <string name="export_activity_name">Exportar base de datos de MobileSheetsPro</string>
@@ -1167,10 +1301,11 @@
     <string name="find_missing_files_activity_name">@string/find_missing_files_pref</string>
     <string name="print_dialog_activity_name">MobileSheetsPro Imprimir Canciones</string>
     <string name="batch_edit_activity_name">Edición por Lotes</string>
+    <string name="text_editor_activity_name">Editor de Texto de MobileSheetsPro</string>
     <string name="auto_save_turn">Auto Guardar al Cambiar de Página</string>
     
     <!-- User Guide Activity -->
-    <string name="downloading_latest_manual">Descargando manual más reciente, por favor espere...</string>
+    <string name="downloading_latest_manual">Descargando manual más reciente, por favor espere&#8230;</string>
     <string name="error_downloading">Ha ocurrido un error descargando el manual más reciente. Se usará la última versión en caché.</string>
     <string name="no_manual_available">No hay una versión del manual disponible en el caché. Conecta a Wi-Fi para descargar el manual.</string>
     
@@ -1193,6 +1328,8 @@
     <string name="library_display_preferences">Configuración de Pantalla de la Librería</string>
     <string name="letters_pref">Usar Letras Grandes Para Selección Alfabética</string>
     <string name="summary_letters_pref">Usa letras mucho mas grandes en el lado derecho de la librería para saltar a canciones que empiecen por una letra dada.</string>
+    <string name="left_hand_alpha_title">Lista Alfabética a la Izquierda</string>
+    <string name="left_hand_alpha_summary">Coloca la lista alfabética en el lado izquierdo de la pantalla para usuarios zurdos</string>
     <string name="song_format_title">Formato del Título de la Canción</string>
     <string name="summary_song_format">Cambia el formato del título de la canción para incluir los campos que quiera mostrar.</string>
     <string name="generate_list_format_title">Formato de Generación de Listado de Canciones</string>
@@ -1212,13 +1349,18 @@
     <string name="summary_show_song_count_pref">Muestra el número de canciones al lado del título en cada entrada de la librería que contenga una lista de canciones (ej. Setlists/Colecciones/Artistas)</string>
     <string name="title_clear_filters_pref">Borrar Filtros Después de Cargar</string>
     <string name="summary_clear_filters_pref">Borra automáticamente el filtro actual si se carga una canción o setlist</string>
+    <string name="title_show_toolbar_pref">Mostrar Barra de Herramientas Flotante</string>
+    <string name="summary_show_toolbar_pref">Determina si la barra de herramientas flotante se muestra en la esquina inferior derecha de la pantalla de librería</string>
     
     <string name="sorting_header">Opciones de Ordenación</string>
     <string name="title_sort_ignore_pref">Ignorar los Artículos (The, An, A, El, La) al Ordenar</string>
     <string name="summary_sort_ignore_pref">Determina si los artículos (the, an, a, él,la) se ignoran al agrupar una canción por una letra.</string>
     <string name="title_ignore_articles">Artículos Para Ignorar</string>
     <string name="summary_ignore_articles">Ponga la lista de artículos que serán ignorados separados por comas.</string>
-    <string name="default_ignore_articles"></string>
+    <string name="default_ignore_articles">Un, Una, El, La</string>
+    <string name="title_normalize_pref">Normalizar Caracteres</string>
+    <string name="summary_normalize_pref">Determina si las marcas diacríticas se eliminan de los caracteres al ordenar y otros caracteres se remplazan, p.e. Á se convierte en A, Ó se convierte en O</string>
+ 
         
     <string name="load_preferences">Opciones al Cargar</string>
     <string name="title_load_next_song_pref">Cargar Automáticamente la Siguiente Canción</string>
@@ -1229,7 +1371,9 @@
     <string name="summary_initial_load_pref">Seleccione la pestaña que se mostrará primero cuando cargue la aplicación.</string>
     <string name="title_load_entire_setlist">Cargar Siempre el Setlist Completo</string>
     <string name="summary_load_entire_setlist">Si está seleccionado, al pulsar una canción del setlist este se cargará completo y se posicionará en ella. Si no, solo se cargará dicha canción.</string>
-    
+    <string name="title_skip_one_song_groups">Descartar Ver Grupos con Una Canción</string>
+    <string name="summary_skip_one_song_groups">Si se pulsa un grupo con una sola canción, se cargará ésta en lugar de ver el grupo. Los grupos vacíos se mostrarán en gris. Si está habilitado el contar las canciones del grupo, no se mostrará el número para grupos con una única canción.</string>
+
     <!-- Display Settings section -->
     <string name="display_header">Configuración de Pantalla</string>
     
@@ -1274,13 +1418,32 @@
     <string name="summary_asps_pref">Determina si el deslizador de página está oculto, mostrándose con el overlay, o siempre visible en la parte inferior de la pantalla mientras se visualiza una canción.</string>
     
     <string name="system_display_preferences">Ajustes del Sistema</string>
+    <string name="render_pref_pref">Preferencias de presentación</string>
+    <string name="summary_render_pref_pref">Determina si las páginas deber ser presentadas con la máxima calidad y exactitud o tan rápido como sea posible. Si tiene problemas de lentitud al cargar PDFs, le ayudará cambiar esta preferencia.</string>
     <string name="dim_status_pref">Atenuar la Barra de Estado</string>
     <string name="summary_dim_status_pref">En HoneyComb o posterior, la barra de estado se atenuará mientras vea una canción, en versiones anteriores no tiene efecto. No se atenuará en la pantalla de librería.</string>
     <string name="hide_status_pref">Ocultar la barra de navegación</string>
     <string name="summary_hide_status_pref">Si se activa esta opción, la barra de navegación se ocultará cuando vea una canción, tendrá que tocar la pantalla para mostrarla. No se ocultará en la pantalla de librería</string> 
     <string name="full_screen_pref">Modo Pantalla Completa</string>
     <string name="summary_full_screen_pref">Habilita el modo pantalla completael cual oculta la barra de notificación de Android en la parte superior de la pantalla. Este ajuste afecta a todas las pantallas.</string>
-            
+
+    <string-array name="render_prefs">
+        <item>Calidad</item>
+        <item>Velocidad</item>
+    </string-array>
+
+    <!-- Import Settings section -->
+    <string name="import_header">Ajustes de Importación</string>
+    <string name="import_preferences">Ajustes de Importación</string>
+    <string name="title_import_pdf_bookmarks">Convertir Marcadores PDF</string>
+    <string name="summary_import_pdf_bookmarks">Habilita la conversión automática de marcadores PDF a marcadores MobileSheets durante la importación. El PDF no se modificará.</string>
+    <string name="title_associate_audio">Añadir Audio coincidente Automáticamente</string>
+    <string name="summary_associate_audio">Determina si el fichero de audio coincidente será automáticamente añadido a la canción cuando se importen los ficheros. Los nombres de fichero deben ser similares para que se produzca una coincidencia.</string>
+    <string name="title_aggressive_crop">Recorte Agresivo</string>
+    <string name="summary_aggressive_crop">Habilita un algoritmo más agresivo para eliminar márgenes intentando ignorar el ruido en los márgenes de la página.</string>
+    <string name="title_populate_fields_audio">Rellenar Metadatos Cuando se Importe Audio</string>
+    <string name="summary_populate_fields_audio">Determina si los campos de la canción se rellenarán usando los metadatos del fichero de audio importado.</string>
+
     <!-- Pedal Settings section -->
     <string name="bluetooth_header">Ajustes Táctiles y del Pedal</string>
     <string name="bluetooth_preferences">Ajustes del Pedal</string>
@@ -1306,8 +1469,6 @@
     <string name="text_preferences">Ajustes de Fichero de Texto</string>
     <string name="title_default_display_settings">Ajustes de Visualización Por Defecto</string>
     <string name="summary_default_display_settings">Los ajustes por defecto que se usarán al mostrar ficheros de texto. Pueden especificarse para cada fichero individual.</string>
-    <string name="title_transpose_method">Método de Transporte</string>
-    <string name="summary_transpose_method">Determina si una canción se transportará basada en su tonalidad o por pasos.</string>
     <string name="title_wrap_text">Ajustar Texto</string>
     <string name="summary_wrap_text">Ajusta el texto si excede el ancho de la pantalla</string>
     <string name="title_use_two_columns">Usar Múltiples Columnas</string>
@@ -1315,9 +1476,11 @@
     <string name="title_place_chords_above">Poner Acordes Encima del Texto</string>
     <string name="summary_place_chords_above">Pone los acordes encima del texto en lugar de entre el mismo</string>
     <string name="title_use_fields_song">Usar Campos del Texto al Crear la Canción</string>
-    <string name="summary_use_fields_song">Si está habilitado, los campos del fichero de texto como album o tonalidad se usarán como metadatos al crear la canción</string>
+    <string name="summary_use_fields_song">Si está habilitado, los campos del fichero de texto como álbum o tonalidad se usarán como metadatos al crear la canción</string>
     <string name="title_modulate_capo_down">Cejilla Transporta Hacia Abajo</string>
     <string name="summary_modulate_capo_down">Si está habilitado, la canción se transportará hacia abajo cuando se aplique la cejilla. Si no se transportará hacia arriba.</string>
+    <string name="title_output_directives">Procesar Directivas de Salida</string>
+    <string name="summary_output_directives">Determina si las directivas de salida tales como el font de la letra de la canción serán procesadas</string>
     <string name="title_detect_key_by">Detectar Tonalidad</string>
     <string name="summary_detect_key_by">Determina como se detecta la tonalidad de un fichero de texto cuando se añade a una canción por primera vez.</string>
     <string name="title_enable_encoding_pref">Mostrar Codificación del Fichero</string>
@@ -1402,6 +1565,9 @@
     <string name="restore_summary">Sustituye la librería actual con las canciones y ficheros del fichero .msb seleccionado.</string>
     <string name="restore_confirmation_title">Confirmar Restauración de Librería</string>
     <string name="restore_confirmation_msg">Esto remplazará completamente su librería actual. Esta operación no se puede deshacer. ¿Está seguro que quiere restaurar la copia de seguridad \"%1$s\"?</string>
+    <string name="advanced_recovery_preferences">Recuperación Avanzada</string>
+    <string name="restore_db_backup_title">Restaurar Automáticamente la Copia de Seguridad de la Base de Datos</string>
+    <string name="restore_db_backup_summary">Permite que una copia de seguridad de la base de datos se recupere en el caso de que se hayan perdido los datos. La recuperación es irreversible, así que tenga cuidado cuando use esta característica.</string>
     
     <!-- Storage section -->
     <string name="storage_header">Almacenamiento</string>
@@ -1443,6 +1609,7 @@
     <string name="downloading_pdf_library">Descarga de biblioteca de renderizado PDF. Por favor, espere &#8230;</string>
     <string name="downloading_pdf_lib_title">Descarga de Recurso Requerida</string>
     <string name="downloading_pdf_interrupted">No se puede descargar la biblioteca de representación de PDFs. No podrá ver archivos PDF hasta que se descargue.</string>
+    <string name="pdf_library_missing">La instalación de MobileSheetsPro parece corrompida o dañada. La librería de presentación PDF falta o está inaccesible. Por favor intente reinstalar la aplicación.</string>
     <string name="download_pdf_successful">La biblioteca de renderizado PDF se descargó correctamente. A continuación se reiniciará la aplicación.</string>
     <string name="wifi_not_enabled_pdf">WIFI no está habilitado. Se requiere una conexión a Internet para descargar la biblioteca de PDF. Conéctese y vuelva a intentarlo.</string>
     <string name="eight_song_limit">Solo se permiten %1$d canciones hasta que se pueda comprobar la licencia.</string>
@@ -1518,8 +1685,7 @@
     <string name="backup_failed">La copia de seguridad no ha podido completarse debido a lo siguiente:</string>
     <string name="backup_mem_issue">La copia de seguridad ha fallado debido a un error por no tener suficiente memoria. Por favor, informe de esto a support@zubersoft.com</string>
     <string name="packing_song">Empaquetando canción %1$d de %2$d - %3$s</string>
-    <string name="dropbox_transfer_pct">Dropbox: La transferencia de %1$s está completada al %2$d%% </string>
-    <string name="dropbox_no_connection">No se puede conectar a Dropbox - No se detectó conexión a Internet</string>
+    <string name="cloud_transfer_pct">%3$s: La transferencia de %1$s está completada al %2$d%% </string>
     <string name="backup_success">Copia de Seguridad completada con éxito. Archivo escrito como %1$s</string>
     <string name="backup_error">No se pudo crear el archivo de copia de seguridad %1$s. Error reportado - %2$s</string>
     <string name="backup_db_error">No se pudo escribir la base de datos al archivo de copia de seguridad.</string>
@@ -1529,7 +1695,7 @@
     <string name="perf_batch_import">Ejecutando Importación por Lotes</string>
     <string name="init_batch_import">Iniciando Importación por Lotes</string>
     <string name="batch_import_cancel">La importación por lotes se ha cancelado.</string>
-    <string name="batch_import_failed">La importación por lotes no se ha completado debido al siguiente error: 1$s</string>
+    <string name="batch_import_failed">La importación por lotes no se ha completado debido al siguiente error: 1%$s</string>
     <string name="batch_mem_issue">La importación por lotes ha fallado por un error de memoria insuficiente. Por favor, informe de esto a support@zubersoft.com</string>
     <string name="batch_import_success">La importación por lotes de %1$d canciones se completó con éxito.</string>
     <string name="confirm_del_song_lib">¿Está seguro de que quiere borrar %1$s de su librería?</string>
@@ -1556,6 +1722,7 @@
     <string name="select_confirm">¿Seleccionar \'%1$s\'?</string>
     <string name="confirm_selection">Confirmar Selección</string>
     <string name="open_song_confirm">¿Abrir canción \'%1$s\'?</string>
+    <string name="open_bookmark_confirm">¿Abrir marcador \'%1$s\'?</string>
     <string name="song_update_db_fail">La actualización de la base de datos ha fallado. La canción no es válida, quizás deba editarla.</string>
     <string name="exit_confirm">¿Seguro que desea salir de MobileSheetsPro?</string>
     <string name="begin_of_links">Inicio de los puntos de enlace</string>
@@ -1563,7 +1730,7 @@
     <string name="no_backup_songs">No se pudo encontrar una canción válida en el archivo de copia de seguridad.</string>
     <string name="invalid_backup">El archivo de copia de seguridad parece no ser válido.</string>
     <string name="backup_file_error">No se pudo leer el archivo de copia de seguridad %1$s. Error reportado - %2$s</string>
-    <string name="dropbox_file_error">No se pudo leer el archivo de Dropbox: %1$s. Error reportado - %2$s</string>    
+    <string name="cloud_file_error">No se pudo leer el archivo de %3$s: %1$s. Error reportado - %2$s</string>
     <string name="cant_write_db">No se pudo guardar la base de datos en el disco.</string>
     <string name="db_init_corrupted_msg">La base de datos está corrupta e inservible. MobileSheetsPro intentará restaurar automáticamente una copia de seguridad.</string>
     <string name="db_is_corrupted">La base de dayos en la copia de seguridad está corrupta y no puede usarse. Necesita restaurar una copia de seguridad diferente.</string>
@@ -1572,7 +1739,7 @@
     <string name="restore_req_lic_title">Requerida Versión con Licencia</string>
     <string name="restore_no_cancel">Restaurando Librería - NO CANCELAR</string>
     <string name="restore_no_cancel_or_disconnect">Restaurando la librería - NO CANCELAR O DESCONECTAR DE LA RED</string>
-    <string name="init_restore">Iniciando Restauración, puede tardar un rato ...</string>
+    <string name="init_restore">Iniciando Restauración, puede tardar un rato &#8230;</string>
     <string name="restore_warn_cancel">Se encuetra en mitad de la restauración de su librería. ¿Está seguro de que desea cancelar? Las canciones que no hayan sido restauradas podrán no cargarse correctamente si continúa.</string>
     <string name="restore_failed_error">La restauración no ha podido completarse debido a un error:\n\n%1$s%2$s</string>
     <string name="restore_lib_error">\n\nSu librería puede no volver a funcionar correctamente.</string>
@@ -1592,7 +1759,7 @@
     <string name="free_bkmk_title">Límite Máximo de Marcadores Alcanzado</string>
     <string name="android_ver_str">Android OS SDK v%1$d, MobileSheetsPro v%2$s%3$s, Device: %4$s</string>
     <string name="bought_from">%1$s de %2$s</string>
-    <string name="modify_alpha_sort">Solo se puede modificar el orden de un Setlist si selecciona ordenación manual.</string>
+    <string name="modify_alpha_sort">Solo se puede modificar el orden si selecciona ordenación manual.</string>
     <string name="sel_file_invalid">El archivo seleccionado está corrupto o no soportado.</string>
     <string name="err_diff_mgr">No se pudo añadir la imagen. Si el problema persiste, intente usar un explorador de archivos diferente.</string>
     <string name="select_file">Seleccionar Fichero</string>
@@ -1609,12 +1776,15 @@
     <string name="perf_mode_disabled">Modo Actuación Desactivado</string>
     <string name="choose_song_title">Escoja la Canción Para Cargar</string>
     <string name="song_has_no_pages">La canción no tiene páginas ni ficheros.</string>
-    <string name="dropbox_export_error">Hubo un error de Dropbox, imposible exportar</string>
+    <string name="cloud_export_error">Hubo un error de %1$s, imposible exportar</string>
     <string name="file_export_canceled">La exportación ha sido cancelada.</string>
     <string name="export_select_dialog_title">Seleccione Ubicación y Nombre de Fichero para Exportar</string>
     <string name="export_files_dialog_title">Seleccione Ubicación para Exportar</string>
     <string name="failed_to_move_db">Fallo al mover la base de datos.</string>
     <string name="no_app_found">No se encontró una aplicación que pueda cargar el fichero: %1$s</string>
+
+    <string name="file_export_overwrite_title">Los Ficheros ya Existen</string>
+    <string name="file_export_overwrite">¿Los siguientes ficheros serán sobrescritos, está seguro de que quiere continuar?</string>
         
     <string name="confirm_group_delete">¿Está seguro que desea borrar %1$s \'%2$s\'?</string>
     <string name="confirm_groups_delete">¿Está seguro que desea borrar los %1$d items seleccionados?</string>
@@ -1769,6 +1939,8 @@
     <string name="link_color_8">(Verde Oscuro)</string>
     <string name="link_color_9">(Azul Pálido)</string>
     <string name="link_color_10">(Magenta)</string>
+
+    <string name="disabled">Deshabilitado</string>
     
     <!-- String arrays -->
     <string-array name="sliderOptions">
@@ -1782,7 +1954,7 @@
         <item>Deslizar en diagonal</item>
     </string-array>
     <string-array name="debounceArray">
-        <item>Deshabilitado</item>
+        <item>@string/disabled</item>
         <item>Un Cuarto de Segundo</item>
         <item>Medio Segundo</item>
         <item>Un Segundo</item>
@@ -1850,6 +2022,15 @@
         <item>quintillos</item>
         <item>seisillos</item>
     </string-array>
+    <string-array name="beatSubArray2">
+        <item>blanca</item>
+        <item>negras</item>
+        <item>corcheas</item>
+        <item>tresillos</item>
+        <item>semicorcheas</item>
+        <item>quintillos</item>
+        <item>seisillos</item>
+    </string-array>
     <string-array name="beatSubHalfArray">
         <item>corcheas</item>
         <item>semicorcheas</item>
@@ -1897,6 +2078,7 @@
         <item>Incluir</item>
         <item>Excluir</item>
         <item>@string/unassigned</item>
+        <item>@string/assigned</item>
     </string-array>
     
     <!-- Annotations (annotation_editor_layout.xml) -->
@@ -1974,12 +2156,12 @@
         <item>Todas las páginas en la canción actual</item>
     </string-array>
     <string name="cbDeleteAfterConversion">Borrar ficheros originales después de la conversión (si no son PDFs)</string>
-    <string name="cbReplacePageOrder">Remplazar fichero con orden de página a medida</string>
+    <string name="cbReplacePageOrder">Reemplazar fichero con orden de página a medida</string>
     <string name="cbSaveCroppingToFile">Guardar recorte a ficheros de imagen</string>
     <string name="cbSaveRotationToFile">Guardar rotación a ficheros de imagen</string>
     <string name="warningAnnDupPage">Atención: Múltiples páginas en el orden actual se refieren a la misma página en el fichero. Las anotaciones se combinarán en dicha página.</string>
     <string name="writingToFileTitle">Escribiendo a fichero</string>
-    <string name="writingToFileMsg">Escribiendo a fichero, por favor espere...</string>
+    <string name="writingToFileMsg">Escribiendo a fichero, por favor espere&#8230;</string>
     <string name="errorExportingAnnotations">Se encontró un error exportando las anotaciones. Intente reiniciar MobileSheetsPro e inténtelo de nuevo. Si el problema persiste, por favor contacte con support@zubersoft.com</string>
     
     <string-array name="drawTypes">
